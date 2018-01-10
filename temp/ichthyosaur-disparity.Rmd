@@ -1,0 +1,92 @@
+---
+title: "Ichthyosaur disparity"
+author: [Ben Moon]
+institute: [University of Bristol]
+lang: english
+tags: [Ichthyosauriformes, macroevolution]
+
+titlepage: true
+titlepage-color: 16a085
+titlepage-text-color: ffffff
+titlepage-rule-color: ffffff
+titlepage-rule-height: 1
+
+tablenos-cleveref: On
+xnos-cleveref-fake: Off
+
+bibliography: Bibliography.bib
+csl: palaeontology.csl
+
+abstract: "Using a cladistic matrix of ichthyosaurs, I analyse the disparity of ichthyosaurs throught the Mesozoic by use of morphospace and disparity."
+
+output:
+  html_notebook:
+    toc: TRUE
+    toc_float: TRUE
+    code_folding: hide
+    theme: journal
+    highlight: zenburn
+  md_document:
+    variant: markdown
+    preserve_yaml: TRUE
+    toc: TRUE
+    md_extension: NULL
+---
+
+The document can be compiled into an HTML notebook using the following command in R.
+
+```{r compile, eval = FALSE}
+rmarkdown::render("ichthyosaur-disparity.Rmd", encoding = "utf8", output_format = "html_notebook")
+```
+
+First, install the required libraries. For this, we need `Claddis` and `dispRity`, which can both be downloaded from their respective GitHub repositories. This also requires `devtools`. If you want to parallelise the code, then adding in the package `parallel` is needed.
+
+```{r install-libraries, eval = FALSE}
+if(!require(devtools)) {install.packages("devtools")
+	library(devtools)
+	install_github("graemetlloyd/Claddis")
+	install_github("TGuillerme/dispRity", ref = "release")
+}
+```
+
+Now I load the required libraries.
+
+```{r load-libraries, collapse = TRUE}
+library(Claddis)
+library(dispRity)
+library(parallel)
+library(knitr)
+library(pander)
+library(stringr)
+
+## Calculate number of cores to use (1 less that available)
+no_cores <- detectCores() - 1
+
+## Settings for a code chunks
+opts_chunk$set(tidy = TRUE, autodep = TRUE, dpi = 300)
+
+getwd()
+```
+
+```{r child = "rmd/ana1-ordinate-data.Rmd"}
+```
+
+```{r child = "rmd/ana2-morphospace-xy.Rmd"}
+```
+
+```{r child = "rmd/ana3-time-binning.Rmd"}
+```
+
+```{r child = "rmd/ana4-disparity-time-sumvar.Rmd"}
+```
+
+```{r child = "rmd/ana5-disparity-time-centroid.Rmd"}
+```
+
+```{r child = "rmd/ana6-disparity-time-diagonal.Rmd"}
+```
+
+```{r child = "rmd/ana7-disparity-tests.Rmd"}
+```
+
+# References
