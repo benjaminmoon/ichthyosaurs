@@ -1,0 +1,117 @@
+# Reloading the data
+
+I want to reordinate the original data as we don't want to include the outgroup _Hupehsuchus nanchangensis_ in the disparity calculations. If we remove it from the ordinated dataset, that changes the variances applicable which may misrepresent the results. (Probably not by much, but better safe than sorry.)
+
+```{r reordinate-data, cache = TRUE}
+## Remove _Hupehsuchus nanchangensis_ from the trimmed distance data
+trimmed_data_disp <- list()
+for (trim in 1:length(trimmed_data)) {
+	trimmed_data_disp[[trim]] <- as.matrix(trimmed_data[[trim]][[1]][,!colnames(trimmed_data[[trim]][[1]]) %in% bin_data$outgroup][!rownames(trimmed_data[[trim]][[1]]) %in% bin_data$outgroup,])
+}
+names(trimmed_data_disp) <- names(trimmed_data)
+
+## Create ordination function
+ordination.disp <- function(x) {
+	cmdscale(x, k = nrow(x) - 1, add = TRUE)$points
+}
+ordination.uncorr.disp <- function(x) {
+	cmdscale(x, k = nrow(x) - 1, add = FALSE)
+}
+
+## Ordinate with negative eigenvalue correction
+pco_data_disp <- lapply(trimmed_data_disp, ordination.disp)
+## Remove the completeness matrix at the end; we don't need this
+pco_data_disp <- pco_data_disp[-5]
+
+## Without negative eigenvalue correction
+pco_data_uncorr_disp <- lapply(trimmed_data_disp, ordination.uncorr.disp)
+## Remove the completeness matrix at the end; we don't need this
+pco_data_uncorr_disp <- pco_data_uncorr_disp[-5]
+
+## Combine the two sets of pco data into a single list
+data_ordinated_disp <- c(pco_data_disp, pco_data_uncorr_disp)
+```
+
+# Subsetting the data
+
+So I've now plotted the morphospaces for comparison, now let's look at doing disparity analyses through the Mesozoic. I'll need some time bins, so let's set those up. I've got two different schemes to bin the data: one scheme that splits into epochs (as for the morphospace above), and one scheme that splits the data into 10 Ma bins aligned with the base of the Jurassic at 201.3 Ma (starting 251.3 Ma).
+
+```{r disparity-bins}
+## Get 10 Ma bins from the base of the Jurassic
+max_age <- seq(251.3, 100, -10)
+min_age <- seq(241.3, 90, -10)
+tenMa_bJ <- data.frame(max_age, min_age)
+
+disparity_bins <- list()
+disparity_bins[[1]] <- epoch_bins
+disparity_bins[[2]] <- tenMa_bJ
+names(disparity_bins) <- c("epochs", "tenMa_bJ")
+```
+
+Now we have the time bins, I subsample the data. `dispRity` has very convenient funtions for this, but to speed it up, and reduce the number of variables I end up with, I apply it using the repeated commadns into a list. I've tried this previously with `lapply` and `for` loops, but had problems with consistency of the results: some passes would fail, some would not correctly subsample the bins, some would be fine.
+
+```{r bins-subsample, cache = TRUE}
+## Function to subsample into epochs
+subsample.Epoch <- function(x) {
+    time.subsets(x, method = "discrete", time = c(disparity_bins$epochs$max_age, min(disparity_bins$epochs)), FADLAD = taxon_ages)
+}
+
+## Run subsampling into epochs
+subsampled_epoch <- lapply(data_ordinated_disp, subsample.Epoch)
+
+## Functiont to subsample into 10 Ma bins aligned with the base of th Jurassic
+subsample.bJ <- function(x) {
+    time.subsets(x, method = "discrete", time = c(disparity_bins$tenMa_bJ$max_age, min(disparity_bins$tenMa_bJ)), FADLAD = taxon_ages)
+}
+
+## Run subsampling into 10 Ma bins (from the base of the Triassic)
+subsampled_bJ <- lapply(data_ordinated_disp, subsample.bJ)
+```
+
+There will be warnings if bins don't contain any taxa – in this case the 212.17–202.17 tims from the bTr set – but the `dispRity` funtions will acount for that. Then I bootstrap the data for 1000 replicates. I'm also applying rarefaction to this data to see whether the population of a bin affects the resulatant disparity metric. <!-- Apply rarefaction? Later! this messes up the summary, somehow. -->
+
+```{r bootstrapping-subsamples, collapse = TRUE}
+## Set up function to do bootstrap replicates in parallel
+parBoot.Matrix <- function(x) {
+    boot.matrix(x, bootstraps = 1000)
+}
+
+## For parallelisation: create cluster
+clusBootstrap <- makeCluster(no_cores)
+## Export required variables
+clusterExport(clusBootstrap, c("boot.matrix"))
+
+## Run bootstrap replicates on epoch bins
+bootstrapped_epoch <- parLapply(clusBootstrap, subsampled_epoch, parBoot.Matrix)
+## bJ binning
+bootstrapped_bJ <- parLapply(clusBootstrap, subsampled_bJ, parBoot.Matrix)
+
+## Release cluster cores
+stopCluster(clusBootstrap)
+```
+
+Subsamples that have < 3 taxa within them will give an warning that the bootstrap/rarefaction output might be affected. This is due to the small sample sizes, so the error bars will be large and anny summary below may be spurious. In this case that includes the 141.3–131.3 time bin in the bJ series as this has only two data points.
+
+## Rarefying the data
+
+We can see how much the population of each bin affects the disparity metric using rarefaction. For that the data needs to be rarefied.
+
+```{r rarefy-subsamples, eval = TRUE}
+## Set up function to do bootstrap replicates in parallel
+parBoot.RareMatrix <- function(x) {
+	boot.matrix(x, bootstraps = 1000, rarefaction = TRUE)
+}
+
+## For parallelisation: create cluster
+clusBootstrap <- makeCluster(no_cores)
+## Export required variables
+clusterExport(clusBootstrap, c("boot.matrix"))
+
+## Run bootstrap replicates on epoch bins
+rare_bootstrapped_epoch <- parLapply(clusBootstrap, subsampled_epoch, parBoot.RareMatrix)
+## bJ binning
+rare_bootstrapped_bJ <- parLapply(clusBootstrap, subsampled_bJ, parBoot.RareMatrix)
+
+## Release cluster cores
+stopCluster(clusBootstrap)
+```

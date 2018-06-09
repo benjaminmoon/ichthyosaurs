@@ -1,0 +1,265 @@
+# Scree plots
+
+I can see how much of the total variance in the data is accounted for by each principal cooridnate axis from each distacne matrix. The higher the variance, the more important that axis is in describing the variation found. Conveniently, this is as simple as finding the variance as a percantage of the whole.
+
+```{r get-scree-data}
+## Create scree function
+var.contr <- function(x) {
+	apply(x, 2, var) / sum(apply(x, 2, var)) * 100
+}
+
+## Calculate the variance from each axis and then the percentage of total variance
+scree_data <- lapply(data_ordinated, var.contr)
+```
+
+Now I plot that data into a scree plot. Most variance is accounted for by the first few axes, but the PCO without negative eigenvalue correction has a much higher variance accounted for by these axes.
+
+```{r scree-plot, fig.cap = "Scree plot of variance on each axis of PCO ordinated distances from a cladistic matrix of ichthyosaurs. Four distance metric are presented: (1) raw distances; (2) generalised Euclidean distances; (3) Gower distances; and (4) maximum observable distances. Distances are ordinated with correction for negative eigenvalues (after Caillez [A]) and without (B). The distribution of variance is similar between ordinated Gower and maximum observable distances. Raw and GED give similar distribution of variance with negative eigenvalue correction, but differ without this correction; GED has greater variance in higher and more axes.", fig.align = "center", fig.width = 4, fig.height = 6}
+## Set up plot area
+# dev.new(width = 4, height = 6)
+# cairo_pdf("fig/scree-plot.pdf", width = 4, height = 6)
+par(mfrow = c(2, 1), pty = "m", mar = c(0.5, 0.25, 0.25, 0.25) + 0.1, oma = c(5, 3, 0, 0), mgp = c(3, 0.5, 0))
+
+## Plot corrected scree data
+plot(scree_data[[1]], type = "l", xaxt = "n", xlim = range(0, max(length(scree_data[[1]])), length(scree_data[[5]])), ylim = range(0, max(unlist(scree_data[1:4]))), lty = 2, lwd = 2)
+lines(scree_data[[2]], type = "l", lty = 1, lwd = 2, col = "red")
+lines(scree_data[[3]], type = "l", lty = 3, lwd = 2, col = "blue")
+lines(scree_data[[4]], type = "l", lty = 4, lwd = 2, col = "orange")
+text(x = length(scree_data[[1]]), y = max(unlist(scree_data[1:4])), "A", adj = c(1, 1), cex = 1.2, font = 2)
+
+## Plot uncorrected scree data
+plot(scree_data[[5]], type = "l", xlim = range(0, max(length(scree_data[[1]])), length(scree_data[[5]])), ylim = range(0, max(unlist(scree_data[5:8]))), lty = 2, lwd = 2)
+lines(scree_data[[6]], type = "l", lty = 1, lwd = 2, col = "red")
+lines(scree_data[[7]], type = "l", lty = 3, lwd = 2, col = "blue")
+lines(scree_data[[8]], type = "l", lty = 4, lwd = 2, col = "orange")
+text(x = length(scree_data[[1]]), y = max(unlist(scree_data[5:8])), "B", adj = c(1, 1), cex = 1.2, font = 2)
+
+## Axis titles
+mtext("Ordination axis", side = 1, line = 1.5, outer = TRUE, adj = c(0.5, 0.5))
+mtext("Percentage variance", side = 2, line = 1.5, outer = TRUE, adj = c(0.5, 0.5))
+
+## Add legend
+legx_scree <- mean(par()$usr[1:2])
+legy_scree <- par()$usr[3] - 0.47 * diff(par()$usr[3:4])
+legend(x = legx_scree, y = legy_scree, legend = c("Raw", "Generalised Euclidean", "Gower", "Maximum observable"), xjust = 0.6, yjust = 0, ncol = 2, lty = c(2, 1, 3, 4), col = c("black", "red", "blue", "orange"), lwd = 2, bty = "n", xpd = NA, cex = 0.8)
+
+## End PDF output
+# dev.off()
+```
+
+# Get epoch bin data
+
+Now I go on the look at the distribution of morphospace occupation thorugh time. First I'll gather dates for the epochs that ichthyosaurs are present in.
+
+```{r load-taxa-epoch}
+## Get taxon and epoch dates
+taxon_ages <- read.table("data/ichthyosaur-occurrences.txt", sep = "\t", header = TRUE, row.names = 1)
+taxon_ages <- as.data.frame(taxon_ages[rownames(data_ordinated[[1]]),])
+epoch_bins <- read.table("data/epoch-bins.txt", sep = "\t", header = TRUE, row.names = 1)
+```
+
+Then I assign each taxon to the relevant epoch, and separate out the outgroup _Hupehsuchus nanchanensis._
+
+```{r assign-taxa-epoch}
+## Assign taxa to bins
+bin_data <- list()
+for (i in 1:length(rownames(epoch_bins))) {bin_data[[i]] <- rownames(taxon_ages)[which(taxon_ages$FAD > epoch_bins[i, "min_age"] & taxon_ages$LAD < epoch_bins[i, "max_age"])]}
+names(bin_data) <- rownames(epoch_bins)
+bin_data$outgroup <- "Hupehsuchus_nanchangensis"
+bin_data$E_Trias <- bin_data$E_Trias[!bin_data$E_Trias %in% c("Hupehsuchus_nanchangensis")]
+```
+
+I subset the taxa further by only selecting the most complete taxa, in this case ≥ 20% of characters coded. This can help with avoiding sporious results, but is also covered by removing incomparable taxa when calculating the distance matrices.
+
+```{r subset-taxon-completeness}
+## First we'll count the NAs in the matrix.
+matrix_na <- apply(nexus_data$matrix, 1, is.na)
+
+## Count the number of NAs.
+matrix_na_count <- data.frame(apply(matrix_na, 2, sum))
+
+## Divide by the number of characters to get the proportion incompleteness (1 is totally incomplete).
+matrix_comp <- data.frame(apply(matrix_na_count, 1, function(y) y/dim(nexus_data$matrix)[2]))
+colnames(matrix_comp) <- "completeness"
+
+## Split the data into more/less than 20% subsets. We'll store the split as a value that can be changed.
+min_compl <- 0.20
+compl_data <- list()
+compl_data[[1]] <- rownames(matrix_comp)[which(matrix_comp$completeness <= (1 - min_compl))]
+compl_data[[2]] <- rownames(matrix_comp)[which(matrix_comp$completeness > (1 - min_compl))]
+names(compl_data) <- c(paste(">=", 100 * min_compl, "% complete", sep = ""), paste("<", 100 * min_compl, "% complete", sep = ""))
+
+## Now only list taxa for each time bin with more than 20% completeness
+compl_taxa <- list()
+for (i in 1:length(names(bin_data))) {compl_taxa[[i]] <- bin_data[[i]][!bin_data[[i]] %in% compl_data[[2]]]}
+names(compl_taxa) <- names(bin_data)
+```
+
+# Morphospace plots
+
+Now I head towards the plotting of the morphospace. First, set up a few useful things: the axes to use, in this case the first three PCO axes for each distance metric; the colours and symbols for each epoch; labels for the panel to help in automation; and a function to plot convex hulls around the data.
+
+```{r morphospace-setup}
+## Take in axes numbers
+PCOx <- 1
+PCOy <- 2
+PCOz <- 3
+
+## Get colours for the plot
+epoch_colours <- list()
+epoch_colours$col.ET <- rgb(152, 57, 153, maxColorValue = 255)
+epoch_colours$col.MT <- rgb(177, 104, 177, maxColorValue = 255)
+epoch_colours$col.LT <- rgb(189, 140, 195, maxColorValue = 255)
+epoch_colours$col.EJ <- rgb(66, 174, 208, maxColorValue = 255)
+epoch_colours$col.MJ <- rgb(128, 207, 216, maxColorValue = 255)
+epoch_colours$col.LJ <- rgb(179, 227, 238, maxColorValue = 255)
+epoch_colours$col.EK <- rgb(140, 205, 87, maxColorValue = 255)
+epoch_colours$col.LK <- rgb(166, 216, 74, maxColorValue = 255)
+epoch_colours$outgroup <- rgb(0, 0, 0, maxColorValue = 255)
+epoch_col <- unlist(epoch_colours, use.names = TRUE)
+
+## Panel labelling letters
+panel_labels <- LETTERS[seq(1, length(names(pco_data)) * 2, 1)]
+pan_n <- 1
+
+## Convex hull function
+plot.ConvexHull<-function(xcoord, ycoord, lcolor){
+	hpts <- chull(x = xcoord, y = ycoord)
+	hpts <- c(hpts, hpts[1])
+	lines(xcoord[hpts], ycoord[hpts], col = lcolor)
+}
+
+## Distance names for the plot
+plotNames <- c("RAW", "GED", "GOW", "MPD")
+```
+
+Plot the (negative eigenvalue) corrected data. This uses a series of nested `for` loops, from the inside out they: (1) set up the plot area for the RAW data, PCO axes 1 and 2; (2) plot the convex hulls for each epoch; (3) plot the taxa as points for each epoch; (4) repeat for RAW data PCO axes 1 and 3 on the same row; (5) adds the relevant axes; (6) repeat as above for the GED, GOW, and MPD data on each row. Plots the legend at the bottom. The plot label to print (in this case numbered 1 through 8) is governed by the variable `pan_n`.
+
+```{r xy-morph-plots, fig.cap = "Morphospace occupation of ichthyosaurs through the Mesozoic; data are binned by epoch. Each row shows the morphospace derived from a single distance metric: raw distances (A, B), generalised Euclidean distances (C, D), Gower distances (E, F), and maximum observable distances (G, H). Distances have been ordinated using principal coordinates analysis with correction for negative eigenvalues from Caillez (1983). Principal coordinates axes 1, 2, and 3 only are shown for clarity. Variance accounted for by each axis is given to three significant figures. Convex hulls outline taxa with >= 20% codings complete.", fig.width = 5, fig.height = 10, fig.align = "center", echo = TRUE, warning = FALSE}
+## Set up plot area
+# dev.new(width = 5, height = 10)
+# pdf("fig/disparity-xy-metric.pdf", width = 5, height = 10)
+par(mfrow = c(4, 2), 
+	pty = "s", 
+	mar = c(4, 3, 1, 2) + 0.1, 
+	oma = c(5, 0, 0, 0), 
+	mgp = c(1.5, 0.5, 0), 
+	lheight = 0.5)
+
+## Plot each panel
+for (j in 1:length(names(data_ordinated[1:4]))) {
+	for (k in 1:2) {
+		PCOy <- k + 1
+		plot(data_ordinated[[j]][, PCOx], 
+			data_ordinated[[j]][, PCOy], 
+			xlab = "", 
+			ylab = paste("PCO ", PCOy, " (", signif(scree_data[[j]][PCOy], 3), "% variance)", sep = ""), 
+			xlim = range(data_ordinated[[j]][, PCOx]) * 1.2, 
+			ylim = range(data_ordinated[[j]][, PCOy]) * 1.2, 
+			type = "n", 
+			cex.axis = 1.0, 
+			cex.lab = 1.2)
+		for (i in 1:length(names(bin_data))) {
+			plot.ConvexHull(xcoord = data_ordinated[[j]][row.names(data_ordinated[[j]]) %in% compl_taxa[[i]], PCOx], 
+				ycoord = data_ordinated[[j]][row.names(data_ordinated[[j]]) %in% compl_taxa[[i]], PCOy], 
+				lcolor = epoch_colours[[i]])
+		}
+		for (i in 1:length(names(bin_data))) {
+			points(data_ordinated[[j]][row.names(data_ordinated[[j]]) %in% bin_data[[i]], PCOx], 
+				data_ordinated[[j]][row.names(data_ordinated[[j]]) %in% bin_data[[i]], PCOy], 
+				pch = 16, 
+				col = epoch_colours[[i]])
+		}
+		text(x = max(data_ordinated[[j]][, PCOx]) * 1.2, 
+			y = max(data_ordinated[[j]][, PCOy]) * 1.2, paste0(panel_labels[pan_n]), 
+			adj = c(1, 1), 
+			cex = 1.2, 
+			font = 2)
+		pan_n <- pan_n + 1
+	}
+	mtext(paste("PCO ", PCOx, " (", signif(scree_data[[j]][PCOx], 3), "% variance)", sep = ""), side = 1, line = 2, adj = -5.8, cex = 0.8)
+	mtext(paste0(plotNames[j]), side = 4, line = 1, cex = 0.8, font = 2)
+}
+pan_n <- 1
+
+## Add a legend
+legx <- mean(par()$usr[1:2])
+legy <- par()$usr[3] - 0.3 * diff(par()$usr[3:4])
+legend(x = legx, 
+	y = legy, 
+	legend = c("Early Triassic", "Middle Triassic", "Late Triassic", "Early Jurassic", "Middle Jurassic", "Late Jurassic", "Early Cretaceous", "Late Cretaceous", "Outgroup"), 
+	xjust = 0.9, 
+	pch = 16, 
+	ncol = 3, 
+	lty = 0, 
+	col = epoch_col, 
+	bty = "n", xpd = NA, cex = 1)
+
+## End PDF creation
+# dev.off()
+```
+
+Plot the uncorrected data. This does the same as the above, but for the data without negative eigenvalue correction.
+
+```{r xy-morph-plots-uncorr, fig.cap = "Morphospace occupation of ichthyosaurs through the Mesozoic; data are binned by epoch. Each row shows the morphospace derived from a single distance metric: raw distances (A, B), generalised Euclidean distances (C, D), Gower distances (E, F), and maximum observable distances (G, H). Distances have been ordinated using principal coordinates analysis without correction for negative eigenvalues. Principal coordinates axes 1, 2, and 3 only are shown for clarity. Variance accounted for by each axis is given to three significant figures. Convex hulls outline taxa with >= 20% codings complete.", fig.width = 5, fig.height = 10, fig.align = "center", echo = TRUE, warning = FALSE}
+## Set up plot area
+# dev.new(width = 5, height = 10)
+# cairo_pdf("fig/disparity-xy-metric-uncorr.pdf", width = 5, height = 10)
+par(mfrow = c(4, 2), 
+	pty = "s", 
+	mar = c(4, 3, 1, 2) + 0.1, 
+	oma = c(5, 0, 0, 0), 
+	mgp = c(1.5, 0.5, 0), 
+	lheight = 0.5)
+pan_n <- 1
+
+## Plot each panel
+for (j in 1:length(names(data_ordinated[5:8])) + 4) {
+	for (k in 1:2) {
+		PCOy <- k + 1
+		plot(data_ordinated[[j]][, PCOx], 
+			data_ordinated[[j]][, PCOy], 
+			xlab = "", 
+			ylab = paste("PCO ", PCOy, " (", signif(scree_data[[j]][PCOy], 3), "% variance)", sep = ""), 
+			xlim = range(data_ordinated[[j]][, PCOx]) * 1.2, 
+			ylim = range(data_ordinated[[j]][, PCOy]) * 1.2, 
+			type = "n", 
+			cex.axis = 1.0, 
+			cex.lab = 1.2)
+		for (i in 1:length(names(bin_data))) {
+			plot.ConvexHull(xcoord = data_ordinated[[j]][row.names(data_ordinated[[j]]) %in% compl_taxa[[i]], PCOx], 
+				ycoord = data_ordinated[[j]][row.names(data_ordinated[[j]]) %in% compl_taxa[[i]], PCOy], 
+				lcolor = epoch_colours[[i]])
+		}
+		for (i in 1:length(names(bin_data))) {
+			points(data_ordinated[[j]][row.names(data_ordinated[[j]]) %in% bin_data[[i]], PCOx], 
+				data_ordinated[[j]][row.names(data_ordinated[[j]]) %in% bin_data[[i]], PCOy], 
+				pch = 16, 
+				col = epoch_colours[[i]])
+		}
+		text(x = max(data_ordinated[[j]][, PCOx]) * 1.2, y = max(data_ordinated[[j]][, PCOy]) * 1.2, paste0(panel_labels[pan_n]), adj = c(1, 1), cex = 1.2, font = 2)
+		pan_n <- pan_n + 1
+	}
+	mtext(paste("PCO ", PCOx, " (", signif(scree_data[[j]][PCOx], 3), "% variance)", sep = ""), side = 1, line = 2, adj = -5.8, cex = 0.8)
+	mtext(paste0(plotNames[j - 4]), side = 4, line = 1, cex = 0.8, font = 2)
+}
+pan_n <- 1
+
+## Add a legend
+legx <- mean(par()$usr[1:2])
+legy <- par()$usr[3] - 0.3 * diff(par()$usr[3:4])
+legend(x = legx, 
+	y = legy, 
+	legend = c("Early Triassic", "Middle Triassic", "Late Triassic", "Early Jurassic", "Middle Jurassic", "Late Jurassic", "Early Cretaceous", "Late Cretaceous", "Outgroup"), 
+	xjust = 0.9, 
+	pch = 16, 
+	ncol = 3, 
+	lty = 0, 
+	col = epoch_col, 
+	bty = "n", xpd = NA, cex = 1)
+
+## End PDF creation
+# dev.off()
+```
+
+The plots for both the corrected and uncorrected data are nearly identical; there's a minor shifting of some points relative to each other. More majot shifts along an axis are reflections of the axis in question; the points remain in their similar relative positions. This is promising for comparison between the negative eigenvalue corrected and uncorrected data sets.

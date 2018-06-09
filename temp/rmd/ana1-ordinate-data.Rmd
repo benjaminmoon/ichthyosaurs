@@ -1,0 +1,54 @@
+# Getting the data
+
+Here, I'll input the data. This is taken from a NEXUS file with the matrix, weightings, and ordering contained in the relevant blocks.
+
+```{r get-data}
+nexus_data <- ReadMorphNexus("data/matrix.nex")
+```
+
+Next, I'll transform the discrete cladistic matrix into a series of distance matrices. These are coverted using seveeral methods: (1) raw distances (RAW); (2) generalised Euclidean distances (GED); (3) Gower distances (GOW); and (4) maximum possible observable distances (MPD). <!-- Insert references for these. -->
+ 
+```{r transform-data, cache = TRUE}
+## Calculate the distances matrices
+dist_data <- MorphDistMatrixFast(nexus_data)
+```
+
+Because not all pairwise distances can be calculated between taxa due to missing data, most of the data sets cannot be ordinated. GED gets around this by calculated the weight mean distance between each taxon-pair. For the others, I trim these incomplete taxa; I'll do this the the GED matrix too to retain parity. I also remove the outgroup
+
+```{r trim-data, collapse = TRUE}
+## Trim the data
+trimmed_data <- lapply(dist_data, TrimMorphDistMatrix)
+
+## Remove these taxa from the GED matrix to maintain equal dimensions
+taxa_remove <- trimmed_data$raw.dist.matrix$removed.taxa
+trimmed_data$GED.dist.matrix$dist.matrix <- trimmed_data$GED.dist.matrix$dist.matrix[,!colnames(trimmed_data$GED.dist.matrix$dist.matrix) %in% taxa_remove][!rownames(trimmed_data$GED.dist.matrix$dist.matrix) %in% taxa_remove,]
+```
+
+Then I ordinate the data using procipal coordianted analysis for each distance matrix. I'll do this two ways: (1) with negative eigenvalue correction [after @Caillez1983], and (2) without negative eigenvalue correction.
+
+```{r ordinate-data, collapse = TRUE}
+## Create ordination function
+ordination <- function(x) {
+	cmdscale(x$dist.matrix, k = nrow(x$dist.matrix) - 1, add = TRUE)$points
+}
+ordination.uncorr <- function(x) {
+	cmdscale(x$dist.matrix, k = nrow(x$dist.matrix) - 1, add = FALSE)
+}
+
+## With negative eigenvalue correction
+pco_data <- lapply(trimmed_data, ordination)
+## Remove the completeness matrix at the end; we don't need this
+pco_data <- pco_data[-5]
+
+## Without negative eigenvalue correction
+pco_data_uncorr <- lapply(trimmed_data, ordination.uncorr)
+## Remove the completeness matrix at the end; we don't need this
+pco_data_uncorr <- pco_data_uncorr[-5]
+
+## Combine the two sets of pco data into a single list
+data_ordinated <- c(pco_data, pco_data_uncorr)
+```
+
+There will be some warnings if principal coordinate axes account for none of the variance from the uncorrected ordination. This is no problem, but it's worth noting how many axes of variation are found.
+
+The ordinated data is contained in a single list `data_ordinated` – a good name, I know! This has eigth components: the first four are ordinated distance matrices (RAW, GED, GOW, MPD in that order)with negative eigenvalue correction, and the second four are the same metrices ordinated without negative eigenvalue correction. Having all the data in a single list makes it somewhat easier to apply functions repetitively using e.g. `lapply` – as seen below – and this can then be parallelised using e.g. `parLapply` to gain some time in the more intensive functions.

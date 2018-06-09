@@ -1,0 +1,326 @@
+# Testing disparity differences
+
+To test between the disparity for each of the above values and binning schemes used, I shall use a series of tests: pairwaise t-tests for differeneces between bins, sequential Wilcox tests for differences between subsequent bins, and Bhattacharrya coefficient for the overlap between bootstrap distributions. All of these will also be subject to correction using the false discovery rate. For for distance matrices, two binning schemes, three disparity metrics, three tests, and two levels of correction, that makes 144 sets of tests. Fun!
+
+For all of these, there will be a print out of the test outcomes to a text file. Variables will be reused as I don't want to have to deal with either numerous variables or very deep lists. Ther are also plenty of `for` loops to make it go smoother.
+
+I also want to check whether differences in the test statitstics are due to the sample sizes, so will repeat with the data rarefied to size of the minimum sample. First, find what that is for each binning scheme. <!-- The rarefied tests need to be added. -->
+
+```{r min-bin-size, }
+## For the epoch-bins
+min_epoch_bin <- min(size.subsets(subsampled_epoch[[1]]))
+
+## For the 10 Ma bins aligned with the base of the Jurassic
+min_bJ_Bin <- min(size.subsets(subsampled_bJ[[1]]))
+```
+
+## Pairwise t-tests
+
+First, let's do the pairwise t-tests between the epochs. These test the difference between each pair of time bins, and treats them as independent of each other. There will be a warning for the first in each set as this may increase the possibility of Type I error, but the subsequent FDR correction deals with that.
+
+```{r test-number}
+## Number of the test, to separate files
+nTestFile <- 1
+
+## Get lists of the required metrics
+disp_metric_name <- c("Sum of variances", "Centroid distance", "Diagonal distance")
+disp_metric <- c("SV", "Cen", "Dia")
+dist_metric <- c("RAW", "GED", "GOW", "MPD", "uRAW", "uGED", "uGOW", "uMPD")
+```
+
+I've set this up in loops to do each disparity metric and each distance metric. The main output are tables that show the p values between each pair of bins. Headers are magically added as if by magic.
+
+```{r epochs-ttest, collapse = TRUE, results = "asis"}
+for (disp in 1:length(disp_metric)) {
+    ## Get the name of the disparity metric
+    my_name <- get(paste0("rare_disparity", disp_metric[disp], "_epoch"))
+
+    ## Print a title for this
+    cat(paste("###", disp_metric_name[disp], sep = " ", collapse = "\n"))
+
+    ## Start going through distance matrices for t-tests
+    for (dist in 1:length(dist_metric)) {
+        ## Create list for each distance matrix
+        disparity_test <- list()
+
+        ## Do pairwise t-tests
+        disparity_test[[1]] <- as.data.frame(do.call(cbind, test.dispRity(my_name[[dist]], test = t.test, comparison = "pairwise")))
+        ## Repeat with FDR
+        disparity_test[[2]] <- as.data.frame(do.call(cbind, test.dispRity(my_name[[dist]], test = t.test, comparison = "pairwise", correction = "fdr")))
+        ## Repeat with rarefaction
+        # disparity_test[[3]] <- as.data.frame(do.call(cbind, test.dispRity(rare_disparitySV_epoch[[dist]], test = t.test, comparison = "pairwise", rarefaction = min_epoch_bin, correction = "fdr")))
+        # disparity_test[[4]] <- as.data.frame(do.call(cbind, test.dispRity(rare_disparitySV_epoch[[dist]], test = t.test, comparison = "pairwise", correction = "fdr", rarefaction = min_epoch_bin)))
+        
+        ## Add names
+        names(disparity_test) <- c("t-test", "t-test with FDR")#, paste("t-test; rarefied to", min_epoch_bin, sep = " "), paste("t-test with FDR; rarefied to", min_epoch_bin, sep = " "))
+
+        ## Split the row names
+        for (split in 1:length(disparity_test)) {
+            my_Tbl <- do.call(rbind, str_split(rownames(disparity_test[[split]]), " : "))
+            disparity_test[[split]]["from"] <- my_Tbl[,1]
+            disparity_test[[split]]["to"] <- my_Tbl[,2]
+        }
+
+        ## Convert to pairwise table
+        nameVals <- sort(unique(unlist(disparity_test[[1]][4:5])))
+        disparity_sig_tables <- matrix(0, length(nameVals), length(nameVals), dimnames = list(nameVals, nameVals))
+
+        ## Add values to pairwise table
+        disparity_sig_tables[as.matrix(disparity_test[[1]][c("from", "to")])] <- disparity_test[[1]][["p.value"]]
+        disparity_sig_tables[as.matrix(disparity_test[[2]][c("to", "from")])] <- disparity_test[[2]][["p.value"]]
+
+        ## Show in document
+        cat(paste(dist_metric[dist], sep = " ", collapse = "\n"))
+        cat(pander(disparity_sig_tables))
+
+        ## Export test file
+        write.csv(disparity_sig_tables, file = paste0("data/", nTestFile, "-", dist_metric[dist], "-", disp_metric[disp], "-ttest.csv"))
+        ## Increase the file number
+        nTestFile <- nTestFile + 1
+    }
+}
+```
+
+And then for the bJ binning scheme.
+
+```{r bJ-ttest, collapse = TRUE, results = "asis"}
+for (disp in 1:length(disp_metric)) {
+    ## Get the name of the disparity metric
+    my_name <- get(paste0("rare_disparity", disp_metric[disp], "_bJ"))
+
+    ## Print a title for this
+    cat(paste("###", disp_metric_name[disp], sep = " ", collapse = "\n\n"))
+
+    ## Start going through distance matrices for t-tests
+    for (dist in 1:length(dist_metric)) {
+        ## Create list for each distance matrix
+        disparity_test <- list()
+
+        ## Do pairwise t-tests
+        disparity_test[[1]] <- as.data.frame(do.call(cbind, test.dispRity(my_name[[dist]], test = t.test, comparison = "pairwise")))
+        ## Repeat with FDR
+        disparity_test[[2]] <- as.data.frame(do.call(cbind, test.dispRity(my_name[[dist]], test = t.test, comparison = "pairwise", correction = "fdr")))
+        ## Repeat with rarefaction
+        # disparity_test[[3]] <- as.data.frame(do.call(cbind, test.dispRity(my_name[[dist]], test = t.test, comparison = "pairwise", rarefaction = min_bJ_bin, correction = "fdr")))
+        # disparity_test[[4]] <- as.data.frame(do.call(cbind, test.dispRity(my_name[[dist]], test = t.test, comparison = "pairwise", correction = "fdr", rarefaction = min_epoch_bin)))
+        ## Add names
+        names(disparity_test) <- c("t-test", "t-test with FDR")#, paste("t-test; rarefied to", min_epoch_bin, sep = " "), paste("t-test with FDR; rarefied to", min_epoch_bin, sep = " "))
+
+ 
+        ## Split the row names
+        for (split in 1:length(disparity_test)) {
+            my_Tbl <- do.call(rbind, str_split(rownames(disparity_test[[split]]), " : "))
+            disparity_test[[split]]["from"] <- my_Tbl[,1]
+            disparity_test[[split]]["to"] <- my_Tbl[,2]
+        }
+
+        ## Convert to pairwise table
+        nameVals <- sort(unique(unlist(disparity_test[[1]][4:5])))
+        disparity_sig_tables <- matrix(0, length(nameVals), length(nameVals), dimnames = list(nameVals, nameVals))
+
+        ## Add values to pairwise table
+        disparity_sig_tables[as.matrix(disparity_test[[1]][c("from", "to")])] <- disparity_test[[1]][["p.value"]]
+        disparity_sig_tables[as.matrix(disparity_test[[2]][c("to", "from")])] <- disparity_test[[2]][["p.value"]]
+
+        ## Show in document
+        cat(paste(dist_metric[dist], sep = " ", collapse = "\n\n"))
+        cat(pander(disparity_sig_tables))
+
+        ## Export test file
+        # write.csv(disparity_sig_tables, file = paste0("data/", nTestFile, "-bJ-", dist_metric[dist], "-", disp_metric[disp], "-ttest.csv"))
+        ## Increase the file number
+        nTestFile <- nTestFile + 1
+    }
+}
+```
+
+## Sequential Wilcox tests
+
+The sequential Wilcox tests are used as each time bin is not independent from the previous and each non-parametric.
+
+### Sum of variances
+
+```{r epochs-sumvar-wilcoxtest, collapse = TRUE, results = "asis"}
+## Test disparity differences without and with adjusted p-values (using FDR).
+for (dist in 1:length(disparitySV_epoch)) {
+    ## Create list for each distance matrix
+    disparity_test <- list()
+
+    ## Do sequential Wilcox test
+    disparity_test[[1]] <- as.data.frame(do.call(cbind, test.dispRity(rare_disparitySV_epoch[[dist]], test = wilcox.test, comparison = "sequential")))
+    ## Repeat with FDR
+    disparity_test[[2]] <- as.data.frame(do.call(cbind, test.dispRity(rare_disparitySV_epoch[[dist]], test = wilcox.test, comparison = "sequential", correction = "fdr")))
+    ## Repeat with rarefaction
+   # disparity_test[[3]] <- as.data.frame(do.call(cbind, test.dispRity(rare_disparitySV_epoch[[dist]], test = wilcox.test, comparison = "sequential", rarefaction = min_epoch_bin, correction = "fdr")))
+   # disparity_test[[4]] <- as.data.frame(do.call(cbind, test.dispRity(rare_disparitySV_epoch[[dist]], test = wilcox.test, comparison = "sequential", correction = "fdr", rarefaction = min_epoch_bin)))
+    ## Add names
+    names(disparity_test) <- c("Wilcox test", "Wilcox test with FDR")#, paste("t-test; rarefied to", min_epoch_bin, sep = " "), paste("t-test with FDR; rarefied to", min_epoch_bin, sep = " "))
+
+    ## Show in document
+    cat(paste(plotNames[dist], sep = " ", collapse = "\n\n"))
+    # cat(pander(disparity_test))
+
+    ## Export test file
+    # write.csv(disparity_test[[1]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-sv-swilcox-test.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+    ## Export FDR test file
+    # write.csv(disparity_test[[2]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-sv-swilcox-test-fdr.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+}
+```
+
+And between 10 Ma bins (base-Jurassic).
+
+```{r bJ-sumvar-wilcoxtest, collapse = TRUE, results = "asis"}
+## Test disparity differences without and with adjusted p-values (using FDR).
+for (dist in 1:length(disparitySV_bJ)) {
+    ## Create list for each distance matrix
+    disparity_test <- list()
+
+    ## Do sequential Wilcox test
+    disparity_test[[1]] <- as.data.frame(do.call(cbind, test.dispRity(disparitySV_bJ[[dist]], test = wilcox.test, comparison = "sequential")))
+    ## Repeat with FDR
+    disparity_test[[2]] <- as.data.frame(do.call(cbind, test.dispRity(disparitySV_bJ[[dist]], test = wilcox.test, comparison = "sequential", correction = "fdr")))
+    ## Add names
+    names(disparity_test) <- c("Wilcox test", "Wilcox test with FDR")
+
+    ## Show in document
+    cat(paste("####", plotNames[dist], sep = " ", collapse = "\n\n"))
+    cat(pander(disparity_test))
+
+    ## Export test file
+    # write.csv(disparity_test[[1]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-sv-bJ-swilcox-test.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+    ## Export FDR test file
+    # write.csv(disparity_test[[2]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-sv-bJ-swilcox-test-fdr.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+}
+```
+
+### Centroid distance
+
+In epochs.
+
+```{r epochs-centroid-wilcoxtest, collapse = TRUE, results = "asis"}
+## Test disparity differences without and with adjusted p-values (using FDR).
+for (dist in 1:length(disparityCen_epoch)) {
+    ## Create list for each distance matrix
+    disparity_test <- list()
+
+    ## Do sequential Wilcox test
+    disparity_test[[1]] <- as.data.frame(do.call(cbind, test.dispRity(disparityCen_epoch[[dist]], test = wilcox.test, comparison = "sequential")))
+    ## Repeat with FDR
+    disparity_test[[2]] <- as.data.frame(do.call(cbind, test.dispRity(disparityCen_epoch[[dist]], test = wilcox.test, comparison = "sequential", correction = "fdr")))
+    ## Add names
+    names(disparity_test) <- c("Wilcox test", "Wilcox test with FDR")
+
+    ## Show in document
+    cat(paste("####", plotNames[dist], sep = " ", collapse = "\n\n"))
+    cat(pander(disparity_test))
+
+    ## Export test file
+    # write.csv(disparity_test[[1]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-cen-epoch-swilcox-test.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+    ## Export FDR test file
+    # write.csv(disparity_test[[2]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-cen-epoch-swilcox-test-fdr.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+}
+```
+
+And for the 10 Ma bins.
+
+```{r bJ-centroid-wilcoxtest, collapse = TRUE, results = "asis"}
+## Test disparity differences without and with adjusted p-values (using FDR).
+for (dist in 1:length(disparityCen_bJ)) {
+    ## Create list for each distance matrix
+    disparity_test <- list()
+
+    ## Do sequential Wilcox test
+    disparity_test[[1]] <- as.data.frame(do.call(cbind, test.dispRity(disparityCen_bJ[[dist]], test = wilcox.test, comparison = "sequential")))
+    ## Repeat with FDR
+    disparity_test[[2]] <- as.data.frame(do.call(cbind, test.dispRity(disparityCen_bJ[[dist]], test = wilcox.test, comparison = "sequential", correction = "fdr")))
+    ## Add names
+    names(disparity_test) <- c("Wilcox test", "Wilcox test with FDR")
+
+    ## Show in document
+    cat(paste("####", plotNames[dist], sep = " ", collapse = "\n\n"))
+    cat(pander(disparity_test))
+
+    ## Export test file
+    # write.csv(disparity_test[[1]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-cen-bJ-swilcox-test.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+    ## Export FDR test file
+    # write.csv(disparity_test[[2]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-cen-bJ-swilcox-test-fdr.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+}
+```
+
+### Diagonal distance
+
+For epochs.
+
+```{r epochs-diagonal-wilcoxtest, collapse = TRUE, results = "asis"}
+## Test disparity differences without and with adjusted p-values (using FDR).
+for (dist in 1:length(disparityDia_epoch)) {
+    ## Create list for each distance matrix
+    disparity_test <- list()
+
+    ## Do sequential Wilcox test
+    disparity_test[[1]] <- as.data.frame(do.call(cbind, test.dispRity(disparityDia_epoch[[dist]], test = wilcox.test, comparison = "sequential")))
+    ## Repeat with FDR
+    disparity_test[[2]] <- as.data.frame(do.call(cbind, test.dispRity(disparityDia_epoch[[dist]], test = wilcox.test, comparison = "sequential", correction = "fdr")))
+    ## Add names
+    names(disparity_test) <- c("Wilcox test", "Wilcox test with FDR")
+
+    ## Show in document
+    cat(paste(plotNames[dist], sep = " ", collapse = "\n\n"))
+    cat(pander(disparity_test))
+
+    ## Export test file
+    # write.csv(disparity_test[[1]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-dia-epoch-swilcox-test.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+    ## Export FDR test file
+    # write.csv(disparity_test[[2]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-dia-epoch-swilcox-test-fdr.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+}
+```
+
+Between 10 Ma bins.
+
+```{r bJ-diagonal-wilcoxtest, collapse = TRUE, results = "asis"}
+## Test disparity differences without and with adjusted p-values (using FDR).
+for (dist in 1:length(disparityDia_bJ)) {
+    ## Create list for each distance matrix
+    disparity_test <- list()
+
+    ## Do sequential Wilcox test
+    disparity_test[[1]] <- as.data.frame(do.call(cbind, test.dispRity(disparityDia_bJ[[dist]], test = wilcox.test, comparison = "sequential")))
+    ## Repeat with FDR
+    disparity_test[[2]] <- as.data.frame(do.call(cbind, test.dispRity(disparityDia_bJ[[dist]], test = wilcox.test, comparison = "sequential", correction = "fdr")))
+    ## Add names
+    names(disparity_test) <- c("Wilcox test", "Wilcox test with FDR")
+
+    ## Show in document
+    cat(paste("####", plotNames[dist], sep = " ", collapse = "\n\n"))
+    cat(pander(disparity_test))
+
+    ## Export test file
+    # write.csv(disparity_test[[1]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-dia-bJ-swilcox-test.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+    ## Export FDR test file
+    # write.csv(disparity_test[[2]], file = paste0("data/", nTestFile, "-", plotNames[dist], "-dia-bJ-swilcox-test-fdr.csv"))
+    ## Increase the file number
+    nTestFile <- nTestFile + 1
+}
+```
