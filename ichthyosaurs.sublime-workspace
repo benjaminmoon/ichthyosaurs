@@ -280,10 +280,10 @@
 	"buffers":
 	[
 		{
-			"file": "README.md",
+			"file": "scripts/csv2nexus.py",
 			"settings":
 			{
-				"buffer_size": 274,
+				"buffer_size": 865,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -297,9 +297,29 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "inst",
+		"last_filter": "term",
 		"selected_items":
 		[
+			[
+				"term",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"sne",
+				"SendCode: Choose Program"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"sned",
+				"SendCode: Choose Program"
+			],
+			[
+				"csv",
+				"CSV: Justify columns"
+			],
 			[
 				"inst",
 				"Package Control: Install Package"
@@ -325,10 +345,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"csv",
-				"CSV: Justify columns"
-			],
-			[
 				"ins",
 				"Package Control: Install Package"
 			],
@@ -343,10 +359,6 @@
 			[
 				"c",
 				"Citer: Search"
-			],
-			[
-				"repl",
-				"SublimeREPL: Python"
 			],
 			[
 				"latext",
@@ -365,10 +377,6 @@
 				"UI: Select Color Scheme"
 			],
 			[
-				"term",
-				"Terminal View: Open Bash Terminal"
-			],
-			[
 				"termin",
 				"Preferences: Terminal View: Settings"
 			],
@@ -378,10 +386,6 @@
 			],
 			[
 				"send",
-				"SendCode: Choose Program"
-			],
-			[
-				"sned",
 				"SendCode: Choose Program"
 			],
 			[
@@ -521,7 +525,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 548.0
+		"width": 413.0
 	},
 	"console":
 	{
@@ -540,8 +544,49 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/glbcm/Git/ichthyosaurs",
+		"/Users/glbcm/Git/ichthyosaurs/data",
+		"/Users/glbcm/Git/ichthyosaurs/scripts"
+	],
 	"file_history":
 	[
+		"/Users/glbcm/Git/ichthyosaurs/data/ichthyosaur-matrix-collection.nex",
+		"/Users/glbcm/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/Users/glbcm/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/Users/glbcm/Git/ichthyosaurs/data/ichthyosaur-cladistic-matrix.nex",
+		"/Users/glbcm/Git/ichthyosaurs/data/ichthyosaur-matrix-collection.csv",
+		"/Users/glbcm/Git/ichthyosaurs/scripts/README.md",
+		"/Users/glbcm/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/glbcm/Git/ichthyosaurs/README.md",
+		"/Users/glbcm/Git/ichthyosaurs/data/README.md",
+		"/Users/glbcm/Git/ichthyosaurs/data/test.csv",
+		"/Users/glbcm/Git/ichthyosaurs/scripts/columns2nexus.py",
+		"/usr/bin/python",
+		"/Users/glbcm/Git/ichthyosaurs/data/ichthyosaur-matrix-collection.csv.nex",
+		"/Users/glbcm/Dropbox/working-folder/today.txt",
+		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/old/ichthyosaur-disparity.ipynb",
+		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/old/Disparity analyses.ipynb",
+		"/Users/glbcm/Dropbox/Python/python.py",
+		"/Users/glbcm/Dropbox/plans.md",
+		"/Users/glbcm/Dropbox/Git/commands.tex",
+		"/Users/glbcm/Dropbox/working-folder/useful-data/strat-bins.R",
+		"/Users/glbcm/Dropbox/working-folder/wf-R/apomorphies/findNodeValues.R",
+		"/Users/glbcm/Dropbox/working-folder/characters/characters.md",
+		"/Users/glbcm/Dropbox/working-folder/wf-R/clade.txt",
+		"/Users/glbcm/Dropbox/working-folder/wf-R/apomorphies/raxmlresults.txt",
+		"/Users/glbcm/Dropbox/working-folder/ichthyosaur-phylogeny/20171012/analyses.md",
+		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/data/matrix.nex",
+		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/data/epoch-bins.csv",
+		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/data/epoch-bins.txt",
+		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/data/ichthyosaur-occurrences.txt",
+		"/Users/glbcm/Dropbox/working-folder/ichthyosaur-phylogeny/20171003/20171003-mrbayes.nex",
+		"/Users/glbcm/Git/ichthyosaurs/data/20171003-matrix.nex",
+		"/Users/glbcm/Dropbox/working-folder/moon2017/20170615-ichthyosaur-matrix.nex",
+		"/Users/glbcm/Dropbox/working-folder/ichthyosaur-phylogeny/20171012/20171012-lnorm-0.2.nex",
+		"/Users/glbcm/Dropbox/working-folder/ichthyosaur-phylogeny/20171003/20171003-ichthyosaur-matrix.txt",
+		"/Users/glbcm/Dropbox/working-folder/ichthyosaur-phylogeny/20171003/20171003-matrix.nex",
 		"/C/Drop/Dropbox/working-folder/projects-postdocs/aquatic-convergence.md",
 		"/C/Drop/Dropbox/texmf/tex/latex/biblatex/bbx/jsystpalaeontol.bbx",
 		"/C/Drop/Dropbox/texmf/tex/latex/biblatex/bbx/mybib.bbx",
@@ -634,46 +679,11 @@
 		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/distance-cols.Rmd",
 		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity-time-plts.Rmd",
 		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/xy-scree.Rmd",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/ichthy-occ.txt",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/ichthy-bins.txt",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity-xy-plots.R",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity-time.R",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/bins.txt",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/bin-baseJ.txt",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity.R",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity-analyses.Rmd",
-		"/Volumes/Samsung 4TB/Dropbox/working-folder/ichthy-macroevo/disparity-xy/epoch-binsn.txt",
-		"/Volumes/Samsung 4TB/Dropbox/working-folder/ichthy-macroevo/disparity-xy/epoch-bins.txt",
-		"/Volumes/Samsung 4TB/Dropbox/working-folder/ichthy-macroevo/typescript-ichthyosaur-macroevolution.md",
-		"/Volumes/Samsung 4TB/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity measures.md",
-		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity-analyses.Rmd",
-		"/Users/glbcm/#.profile#",
-		"/Users/glbcm/AT.postflight.18233",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity-sumvar.Rmd",
-		"/Users/glbcm/.Rprofile",
-		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity-analyses-old2.Rmd",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/tree.tre",
-		"/C/Drop/Dropbox/working-folder/moon2017/mb/lnorm/lnorm.con.tre",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/tree.nex",
-		"/C/Drop/Dropbox/working-folder/moon2017/mb/lnorm/20170809-mb-lnorm.nex",
-		"/C/Drop/Dropbox/working-folder/moon2017/mb/lnorm/mb_matrix_lnorm-sum.nex",
-		"/C/Drop/Dropbox/working-folder/moon2017/mb/lnorm/mcc-tree.nex",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/test.R",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/test.csv",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/epoch-bins.txt",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/disparity-analyses-old.Rmd",
-		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/disparity-xy/20170615-ichthyosaur-matrix.nex",
-		"/Users/glbcm/Downloads/README.md",
-		"/Users/glbcm/Library/Application Support/Sublime Text 3/Packages/TerminalView/README.md",
-		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/disparity-xy/test.txt",
-		"/Users/glbcm/Dropbox/working-folder/ichthy-macroevo/disparity-xy/lloyd_workshop.r",
-		"/Users/glbcm/Library/Application Support/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
-		"/Users/glbcm/Library/Application Support/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
-		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/text.txt"
+		"/C/Drop/Dropbox/working-folder/ichthy-macroevo/disparity-xy/ichthy-occ.txt"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 22.0
 	},
 	"find_in_files":
 	{
@@ -687,6 +697,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"&",
+			"(",
+			"^([^\\s]+)\\s",
+			"\t",
 			"micro",
 			"clever",
 			"fontspec",
@@ -810,11 +824,7 @@
 			"235",
 			"247.1",
 			"bib",
-			"biblio",
-			"biblatex",
-			"longtable",
-			"\\\\begin{lstlisting}\\s*(\\d*)\\n\\\\end{lstlisting}\\n\\\\strut",
-			"\\\\begin{lstlisting}\\s*(\\d*\\.\\d*)\\n\\\\end{lstlisting}\\n\\\\strut"
+			"biblio"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -822,6 +832,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\\1_",
+			",",
 			"\"data/\"",
 			"\"./data/\"",
 			"\"\\n\\n\"",
@@ -947,9 +959,7 @@
 			"{Fernández}",
 			"{Patagonia}",
 			"{Neuquén} {Basin}",
-			"{Neuquén}",
-			"{Plesiosaurus}",
-			"{Purbeck} {Limestone} {Group}"
+			"{Neuquén}"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -965,31 +975,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
+					"file": "scripts/csv2nexus.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 274,
+						"buffer_size": 865,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								273,
-								273
+								865,
+								865
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 271,
-								"count": 42,
-								"modified": false,
-								"selection": false,
+								"changes": -1,
+								"modified": true,
+								"selection": true,
 								"status": -1,
-								"syntax": "plain text"
+								"syntax": "python"
 							},
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.clone": -1,
@@ -997,12 +1006,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										864,
+										865
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										837,
+										838
+									]
 								},
 								"unmatched":
 								{
@@ -1010,6 +1034,11 @@
 							},
 							"bracket_highlighter.clone_regions":
 							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1020,11 +1049,11 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -1035,6 +1064,16 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1049,33 +1088,33 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_round_content"
 							],
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
+									"1":
+									[
+										864,
+										865
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										837,
+										838
+									]
 								},
 								"unmatched":
 								{
@@ -1083,6 +1122,11 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -1093,11 +1137,11 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -1108,6 +1152,16 @@
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1122,25 +1176,11 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_round_content"
 							],
-							"syntax": "Packages/MarkdownEditing/Markdown.sublime-syntax",
-							"wrap_width": 78
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1154,7 +1194,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -1191,7 +1231,7 @@
 	"project": "ichthyosaurs.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1211,7 +1251,7 @@
 		[
 			[
 				"",
-				"~/OneDrive - University of Bristol/Documents/2017 Flannery Sutherland/scripts/JFS-lagerstatten.sublime-project"
+				"~/Dropbox/working-folder/ichthy-macroevo/ichthy-macroevo.sublime-project"
 			]
 		],
 		"width": 380.0
