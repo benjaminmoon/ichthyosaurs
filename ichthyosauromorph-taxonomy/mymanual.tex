@@ -1,0 +1,105 @@
+
+% use any font
+%\usepackage{fontspec}
+%\defaultfontfeatures{Ligatures=TeX,SmallCapsFeatures={LetterSpace=5}}
+
+% microtypography
+%\usepackage[protrusion=true,expansion=true]{microtype}
+%\UseMicrotypeSet[protrusion,expansion]{basictext}
+
+% page layout
+\usepackage[a4paper]{geometry}
+\geometry{left=7cm,right=1.75cm,top=1.65cm,bottom=3cm,marginparsep=0.25cm,marginparwidth=5cm}
+
+% footnote format
+\makeatletter
+\renewcommand\@makefntext[1]{%
+	\makebox[-1em][r]{\bfseries\color{red}{\@thefnmark}}\quad\noindent\parbox[t][\height][t]{\textwidth}{#1}}
+\makeatother
+\setlength{\footnotesep}{\baselineskip}
+
+% \LuaLaTeX stylised logo
+\usepackage{metalogo}
+
+% use ISO date format
+\usepackage{isodate}
+
+% hanging titles
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{etoolbox}
+% this length controls the hanging indent for titles
+% change the value according to your needs
+\newlength\titleindent
+\setlength\titleindent{0em}
+% section title format
+\titleformat{\section}{\Large\bfseries}{\makebox[-1.5em][r]{\thesection}}{1.5em}{}
+% section contents
+\titlecontents{section}[0em]{\bfseries%\addfontfeature{Numbers=Monospaced}
+}{\hspace{0.45em}\makebox[0.45em][r]{\hfill\thecontentslabel}\hspace{1em}}{}{\hspace{1pc}\itshape\color{red}{\contentspage}}%\titlerule*[1pc]{}\contentspage}
+\titlecontents{subsection}[1.9em]{%\addfontfeature{Numbers=Monospaced}
+}{\thecontentslabel\hspace{1em}}{}{\hspace{1pc}\itshape\color{red}{\contentspage}}
+\titlecontents{subsubsection}[4.1em]{%\addfontfeature{Numbers=Monospaced}
+}{\thecontentslabel\hspace{1em}}{}{}%\titlerule*[0.5pc]{.}\contentspage}
+
+% headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}%
+%\renewcommand*{\sectionmark}[1]{ \markboth{#1}{} }
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhfoffset[R]{2em}
+\fancyfoot[R]{\small{\leftmark~Version~\version.\isodash{}\isodate\today\hspace{1em}\vrule\hspace{1em}\makebox[0.45em][c]{\thepage}}}%
+
+\renewcommand{\sectionmark}[1]{\markboth{\textcaps{#1}}{}}
+
+% code excerpts
+\usepackage{listings}
+
+% figures and captions
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{textcomp}
+\DeclareCaptionFont{captionlabelfont}{\sffamily}
+\DeclareCaptionFont{captioncondlabelfont}{\gillcn}
+\DeclareCaptionFont{captionfont}{\fontspec{Kepler Std}[Scale=MatchLowercase]}
+\DeclareCaptionLabelFormat{captionlabelformat}{{#1~#2}}
+\captionsetup{justification=justified,singlelinecheck=false,font={footnotesize},textfont={captionfont},labelfont={captionlabelfont},labelsep=quad,labelformat=captionlabelformat,format=plain,width=\marginparwidth}
+\captionsetup[subfigure]{justification=justified,singlelinecheck=false,font={footnotesize},textfont={captionfont},labelfont={captionlabelfont},labelsep=quad,labelformat=parens,format=hang,margin={0cm,5.25cm}}
+\captionsetup[lstlisting]{justification=justified,singlelinecheck=false,font={footnotesize},textfont={captionfont},labelfont={captionlabelfont},labelsep=quad,labelformat=captionlabelformat,format=hang,margin={0cm,5.25cm}}
+
+
+% float setup
+\usepackage{floatrow}
+\floatsetup[figure]{margins=hangleft,capposition=beside,
+capbesideposition={top,left},floatwidth=\textwidth}
+
+% vertically centre in text figures
+\newcommand*{\vcenteredhbox}[1]{\begingroup
+\setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
+
+\usepackage{realscripts}
+\usepackage{paracol}
+\usepackage[inline]{enumitem}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage[export]{adjustbox}
+
+\newcommand{\guimenu}[1]{\textcolor{teal}{\textsf{#1}}}
+\newcommand{\textallsc}[1]{{\addfontfeatures{Letters={SmallCaps,UppercaseSmallCaps},Numbers={Lowercase}}#1}}
+\newcommand\textcaps[1]{{{\addfontfeatures{Numbers=Uppercase,Letters=Uppercase,LetterSpace=8}\uppercase{#1}}}}
+
+\newcommand{\GUI}{\textallsc{GUI}}
+\newcommand{\RAM}{\textallsc{RAM}}
+
+\makeatletter
+\renewcommand*{\maketitle}{%
+{\LARGE\addfontfeatures{Letters=Uppercase,Numbers=Uppercase,LetterSpace=8}\MakeUppercase{\@title}\par\vspace{1em}}%,WordSpace=2
+	{\large\@author\par\vspace{1em}}
+	{\large\textsf{\@date}\par}
+}
+\makeatother
