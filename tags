@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/Ben/GitHub/ichthyosaurs/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/8915938/
+Data folder	data/README.md	/^# Data folder$/;"	c
+Scripts	scripts/README.md	/^# Scripts$/;"	c
+\\GUI	ichthyosauromorph-taxonomy/mymanual.tex	/^\\newcommand{\\GUI}{\\textallsc{GUI}}$/;"	C
+\\RAM	ichthyosauromorph-taxonomy/mymanual.tex	/^\\newcommand{\\RAM}{\\textallsc{RAM}}$/;"	C
+\\guimenu	ichthyosauromorph-taxonomy/mymanual.tex	/^\\newcommand{\\guimenu}[1]{\\textcolor{teal}{\\textsf{#1}}}$/;"	C
+\\textallsc	ichthyosauromorph-taxonomy/mymanual.tex	/^\\newcommand{\\textallsc}[1]{{\\addfontfeatures{Letters={SmallCaps,UppercaseSmallCaps},Numbers={/;"	C
+csvfile	scripts/csv2nexus.py	/^    csvfile = pd.read_csv(sys.argv[file], encoding='utf-8')$/;"	v
+df_strip	scripts/csv2nexus.py	/^def df_strip(df):$/;"	f
+filename	scripts/csv2nexus.py	/^    filename = name + '.nex'$/;"	v
+ichthyosaurs	README.md	/^# ichthyosaurs$/;"	c
+matrices	scripts/csv2nexus.py	/^matrices = len(sys.argv)$/;"	v
+name	scripts/csv2nexus.py	/^    name = os.path.splitext(os.path.basename(sys.argv[file]))[0]$/;"	v
+np	scripts/csv2nexus.py	/^import numpy as np$/;"	I	nameref:module:numpy
+pd	scripts/csv2nexus.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pivot	scripts/csv2nexus.py	/^    pivot = csvfile.pivot(index='Taxon', columns = 'Number', values = 'State')$/;"	v
+polymorph	scripts/csv2nexus.py	/^def polymorph(df):$/;"	f
+requests	ichthyosauromorph-taxonomy/ichthyosauromorphtaxonomy.run.xml	/^<!DOCTYPE requests [$/;"	r
