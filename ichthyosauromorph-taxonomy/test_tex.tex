@@ -2,6 +2,8 @@
 
 \documentclass{article}
 
+\usepackage{xparse}
+
 \usepackage{parskip}
 \usepackage{tabularx}
 
@@ -18,6 +20,11 @@
     mergedate    = maximum
 ]{biblatex}
 \addbibresource{zotero.bib}
+
+\ProvideDocumentCommand{\cauth}{ m }{\citeauthor*{#1}}
+\ProvideDocumentCommand{\pauth}{ m }{(\citeauthor*{#1})}
+\ProvideDocumentCommand{\cyear}{ m }{\cite*{#1}}
+\ProvideDocumentCommand{\pyear}{ m }{\parencite*{#1}}
 
 \begin{document}
     \input {write_file.tex}

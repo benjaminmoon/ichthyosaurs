@@ -1,4 +1,11 @@
-reference	pageref	identified_name	identified_authority	identified_status	assignment_confidence	morphological_information	accepted_name	formation	member	stage	series	system	location	country	utm_wgs84	latitude	longitude	comments
-Tyborowski2016APP	793	Cryopterygius kielanae	Tyborowski2016APP	orig	*	Y	Undorosaurus kielanae	Kcynia Formation	Sławno Limestone Member	uppermost Lower Tithonian = Middle Volgian	Upper Jurassic	Jurassic	Owadów-Brzezinki Quarry, Sławno	Poland	34U 439831 5692022	51.3762583	20.1355167	
-Zverkov2019JSP	1187	Undorosaurus kielanae	Tyborowski2016APP	ncomb	?	N	Undorosaurus kielanae											
-Seeley1874QJGSa	707	Ophthalmosaurus icenicus	Seeley1874QJGSa	orig	v *	Y	Ophthalmosaurus icenicus	Oxford Clay Formation	Peterborough Member	Callovian	Middle Jurassic	Jurassic	Peterborough, Cambridgeshire	U.K.	30U 686781 5828294	52.57258	-0.24367	UTM located at centre of Peterborough
+reference	pageref	identified_name	identified_authority	identified_status	assignment_confidence	morphological_information	accepted_name	formation	member	bed	zone	stage	series	system	location	country	utm_wgs84	latitude	longitude	comments
+Fischer2012PO	3	Acamptonectes densus	Fischer2012PO	orig	v *	Y	Acamptonectes densus	Speeton Clay Formation			\\emph{Simbiskites concinnus/staffi} ammonite biozones	basal–upper Hauterivian	Lower Cretaceous	Cretaceous	Speeton, Yorkshire, U.K. and Cremlingen, Lower Saxony, Germany	U.K., Germany				
+Zverkov2020ZJLS	246	Nannopterygius savejeviensis	Arkhangelsky1997PZ	ncomb		Y	Nannopterygius saveljeviensis					Volgian	Upper Jurassic	Jurassic		Russia				
+Arkhangelsky1997PZ	88	Paraophthalmosaurus savejeviensis	Arkhangelsky1997PZ	orig	*	Y	Nannopterygius saveljeviensis													
+Efimov1999PZ	98	Yasykovia kabanovi	Efimov1999PZ	orig	*	Y	Nannopterygius saveljeviensis													
+Efimov1999PZ	98	Yasykovia sumini	Efimov1999PZ	orig	*	Y	Nannopterygius yasykovi													
+Seeley1874QJGSa	707	Ophthalmosaurus icenicus	Seeley1874QJGSa	orig	v *	Y	Ophthalmosaurus icenicus	Oxford Clay Formation	Peterborough Member			Callovian	Middle Jurassic	Jurassic	Peterborough, Cambridgeshire	U.K.				
+Tyborowski2016APP	793	Cryopterygius kielanae	Tyborowski2016APP	orig	*	Y	Undorosaurus kielanae	Kcynia Formation	Sławno Limestone Member			uppermost Lower Tithonian = Middle Volgian	Upper Jurassic	Jurassic	Owadów-Brzezinki Quarry, Sławno	Poland	34U 439831 5692022	51.3762583	20.1355167	A test comment.
+Zverkov2019JSP	1187	Undorosaurus kielanae	Tyborowski2016APP	ncomb	?	N	Undorosaurus kielanae													
+Bardet2000JP	504	Aegirosaurus leptospondylus	Wagner1853BKAWGA	ncomb		Y	Aegirosaurus leptospondylus	Solnhofen Formation		Malm ζ 2b		early Lower Tithonian	Upper Jurassic	Jurassic	Borscheim, Schrandel quarry district; Bavaria, Germany	Germany				
+Wagner1853BKAWGA		Ichthyosaurus leptospondylus	Wagner1853BKAWGA	orig	*	Y	Aegirosaurus leptospondylus	Solnhofen Formation				Lower Tithonian	Upper Jurassic	Jurassic	Germany	Germany				
