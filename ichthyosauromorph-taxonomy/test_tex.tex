@@ -1,0 +1,26 @@
+% !TEX program = lualatex
+
+\documentclass{article}
+
+\usepackage{parskip}
+\usepackage{tabularx}
+
+\usepackage[%
+    backend      = biber,
+    style        = authoryear,
+    maxcitenames = 2,
+    mincitenames = 1,
+    maxbibnames  = 100,
+    alldates     = year,
+    uniquename   = false,
+    uniquelist   = false,
+    giveninits   = true,
+    mergedate    = maximum
+]{biblatex}
+\addbibresource{zotero.bib}
+
+\begin{document}
+    \input {write_file.tex}
+
+    \printbibliography
+\end{document}
