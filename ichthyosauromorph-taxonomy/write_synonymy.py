@@ -8,6 +8,8 @@ taxa and synonymy.
 import sys
 import csv
 import re
+from pybibtex import build_citekey_dict
+from pybibtex import parse_bibfile_to_cite_dict
 
 # return error if the wrong number of arguments are given
 # usage is given in the error return value
@@ -18,7 +20,7 @@ except ValueError:
     print('Usage: {} taxon_file synonymy_file outfile'.format(script_file))
 
 taxon_name = '''\
-\\emph{accepted_name}~\cite{accepted_authority}\n
+\\emph{accepted_name}~\cauth{accepted_authority}\n
 '''
 
 synonym_row = '''\
@@ -30,9 +32,20 @@ def find_replace_multi(string, dictionary):
         string = re.sub(item, dictionary[item], string)
     return string
 
-texy_strings = {
-        '* ' : '\textasterisk '
-}
+def get_ref_dates(filename):
+    with open(synonymy_file, newline = '') as f:
+        syn = csv.DictReader(f, delimiter = '\t')
+        bibfile = parse_bibfile_to_cite_dict(bib_path='testbib.bib')
+    
+        for row in syn:
+            refkey = '\\cite{' + row['reference'] + '}'
+            citekey_dict = build_citekey_dict(refkey.split('\n'))
+            for citekey in citekey_dict:
+                refdate = bibfile[citekey]['date']
+            yield dict(date = refdate, **row)
+
+synonymy_dict = get_ref_dates(synonymy_file)
+sorted_synonymy = sorted(synonymy_dict, key = lambda row: row['date'])
 
 with open(outfile, 'wt') as out_file:
     
@@ -43,14 +56,16 @@ with open(outfile, 'wt') as out_file:
         this_taxon = find_replace_multi(taxon_name, taxon)
         these_synonyms = str()
     
-        for synonym in csv.DictReader(open(synonymy_file, newline = ''), delimiter = '\t'):
+        for synonym in sorted_synonymy:
             current_synonym = synonym['identified_name']
     
             if synonym['accepted_name'] == current_taxon:
                 print('Record matched:', current_synonym, "→", current_taxon)
     
                 if synonym['identified_status'] == 'ncomb':
-                    synonym_row = re.sub('citeauthor\*', 'pciteauthor', synonym_row)
+                    synonym_row = re.sub('cauth', 'pauth', synonym_row)
+                if synonym['morphological_information'] == 'N':
+                    synonym_row = re.sub('cyear', 'emyear', synonym_row)
 
                 unit_separator = ', '
 
@@ -82,7 +97,7 @@ with open(outfile, 'wt') as out_file:
                 these_synonyms = these_synonyms + re.sub('locality_info', locality_info, this_synonym)
 
         if len(these_synonyms) > 0:
-            these_synonyms = '\\begin{tabularx}{42em}{rlX}\n\\small\n' + these_synonyms + '\\end{tabularx}\n\n'
+            these_synonyms = '\\begin{synonymy}\n' + these_synonyms + '\\end{synonymy}\n\n'
 
         out_file.write(this_taxon)
         out_file.write(these_synonyms)
