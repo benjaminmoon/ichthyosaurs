@@ -20,7 +20,7 @@ except ValueError:
     print('Usage: {} taxon_file synonymy_file outfile'.format(script_file))
 
 taxon_name = '''\
-\\emph{accepted_name}~\cauth{accepted_authority}\n
+\\emph{accepted_name}~\cauthyr{accepted_authority}\n
 '''
 
 synonym_row = '''\
@@ -35,7 +35,7 @@ def find_replace_multi(string, dictionary):
 def get_ref_dates(filename):
     with open(synonymy_file, newline = '') as f:
         syn = csv.DictReader(f, delimiter = '\t')
-        bibfile = parse_bibfile_to_cite_dict(bib_path='testbib.bib')
+        bibfile = parse_bibfile_to_cite_dict(bib_path='synonymy.bib')
     
         for row in syn:
             refkey = '\\cite{' + row['reference'] + '}'
@@ -54,6 +54,10 @@ with open(outfile, 'wt') as out_file:
     for taxon in csv.DictReader(open(taxon_file, newline = ''), delimiter = '\t'):
         current_taxon = taxon['accepted_name']
         this_taxon = find_replace_multi(taxon_name, taxon)
+
+        if taxon['accepted_status'] == 'ncomb':
+            this_taxon = re.sub('cauthyr', 'pauthyr', this_taxon)
+
         these_synonyms = str()
     
         for synonym in sorted_synonymy:
