@@ -3,7 +3,7 @@
 % !TEX spellcheck = en_GB
 % !TEX encoding = utf8
 
-\documentclass[notuftebib,font=erewhon]{tufte-lualatex}
+\documentclass[notuftebib,font=erewhon,UKenglish]{tufte-lualatex}
 
 \setdefaultlanguage[variant=british]{english}
 
@@ -35,16 +35,28 @@
 % 	\newcommand*\textttcn[1]{\ankacn #1}
 % 	\newcommand*\textttnar[1]{\ankanar #1}
 
-\newenvironment*{synonymy}%
-	{
-		\footnotesize
-		\begin{tabu}[l]{rlX}
-	}%
-	{
-		\\
-		\end{tabu}
-		\normalsize
-	}
+% \newenvironment*{synonymy}%
+% 	{
+% 		\footnotesize
+% 		\begin{tabu}[l]{rlX}
+% 	}%
+% 	{
+% 		\\
+% 		\end{tabu}
+% 		\normalsize
+% 	}
+\usepackage{tabularx}
+
+\ProvideDocumentEnvironment{synonymy}
+    {}%
+    {
+        \footnotesize
+        \tabularx{42em}[l]{rlX}
+    }%
+    {
+        \endtabularx
+    }
+
 
 \usepackage{multicol}
 
@@ -69,7 +81,7 @@
 	doi          = true,
 	sorting      = nyt%
 ]{biblatex}
-\addbibresource{zotero.bib}
+\addbibresource{synonymy.bib}
 % \renewcommand*{\bibfont}{\small\gillcn}
 % \renewcommand*{\UrlFont}{\small\ankanar}
 % \usepackage{csquotes}
@@ -83,7 +95,17 @@
 % 	\restoregeometry
 % }
 
-\setVersion{0.4} %version number
+\ProvideDocumentCommand{\cauth}{ m }{\citeauthor*{#1}}
+\ProvideDocumentCommand{\crefauth}{ m }{\citeauthor*{#1}}
+\ProvideDocumentCommand{\pauth}{ m }{(\citeauthor*{#1})}
+\ProvideDocumentCommand{\cyear}{ m }{\cite*{#1}}
+\ProvideDocumentCommand{\pyear}{ m }{\parencite*{#1}}
+\ProvideDocumentCommand{\emyear}{ m }{\emph{\cite*{#1}}}
+\ProvideDocumentCommand{\cauthyr}{ m }{\cite{#1}}
+\ProvideDocumentCommand{\pauthyr}{ m }{\parencite{#1}}
+
+
+\setVersion{0.5} %version number
 
 \title{Ichthyosauromorph taxonomy}
 \author{Benjamin Moon}
@@ -126,266 +148,268 @@
 
 \textsc{Ichthyosauriformes} \cite*[Motani et al.,][]{Motani2015N}
 
-\emph{Acamptonectes densus} \cite*[Fischer et al.,][]{Fischer2012PO}\\
-\begin{synonymy}
-	*	&	\cite*{Fischer2012PO}	&	\emph{Acamptonectes densus} Fischer et al.; p~3 [Speeton Clay Formation–\emph{Simbiskites concinnus/staffi} ammonite biozones (basal–upper Hauterivian, Lower Cretaceous); Speeton, Yorkshire, UK and Cremlingen, Lower Saxony, Germany].	
-\end{synonymy}
+\input{write_file.tex}
 
-\emph{Aegirosaurus leptospondylus} \parencite*[Wagner,][]{Wagner1853BKAWGA}\\
-\begin{synonymy}
-	*	&	\cite*{Bardet2000JP}	&	\emph{Aegirosaurus leptospondylus} (Wagner); p~504 [Solnhofen Formation (Tithonian, Upper Jurassic); Borscheim and Langenaltheim, Bavaria, Germany].
-\end{synonymy}
+% \emph{Acamptonectes densus} \cite*[Fischer et al.,][]{Fischer2012PO}\\
+% \begin{synonymy}
+% 	*	&	\cite*{Fischer2012PO}	&	\emph{Acamptonectes densus} Fischer et al.; p~3 [Speeton Clay Formation–\emph{Simbiskites concinnus/staffi} ammonite biozones (basal–upper Hauterivian, Lower Cretaceous); Speeton, Yorkshire, UK and Cremlingen, Lower Saxony, Germany].	
+% \end{synonymy}
 
-\emph{Arthropterygius chrisorum} \parencite*[Russell,][]{Russell1993BGSC}\\
-\begin{synonymy}
-	*	&	\cite*{Russell1993BGSC}	&	\emph{Ophthalmosaurus chrisorum} Russell; p~198 [Ringnes Formation (Oxfordian–Kimeridgian, Upper Jurassic); Cape Grassy, Melville Island, Canada (76° 9′ 4″ N,  113° 30′ W = UTM WGS84 12X 433220 8453461)] \\
-		&	\cite*{Zverkov2019P}	&	\emph{Arthropterygius chrisorum} (Russell); Zverkov \& Prilepskaya, p~15. \\
-		&	\cite*{Zverkov2019P}	&	\emph{Palvennia hoybergeti} (\emph{pars}) (Russell); Zverkov \& Prilepskaya, p~15 [Slottsmøya Member, Agardfjellet Formation (Titonian, Upper Jurassic); Spitsbergen, Svalbard]. \\
-	?	&	\cite*{Zverkov2019P}	&	\emph{Keilhauia nui} Delsett \emph{et al.}; Zverkov \& Prilepskaya p~15. \\
-	?	&	\cite*{Zverkov2019P}	&	Ophthalmosauridae indet.; Zverkov \& Prilepskaya, tbl~1.
-\end{synonymy}
-\emph{Arthropterygius hoybergeti}
-    \parencite*[Druckenmiller \emph{et al.,}][]{Druckenmiller2012NJG} \\
-\begin{synonymy}
-	*	&	\cite*{Druckenmiller2012NJG}	&	\emph{Palvennia hoybergeti} Druckenmiller \emph{et al.}; p~326 [Slottsmøya Member, Agardfjellet Formation (Middle Volgian, Upper Jurassic); Spitsbergen, Svalbard (UTM WGS84 33N 0518775 8696150)]. \\
-		&	\cite*{Delsett2018P}	&	\emph{Palvennia hoybergeti} Druckenmiller \emph{et al.}. \\
-		&	\cite*{Zverkov2019P}	&	\emph{Arthropterygius hoybergeti} (Druckenmiller \emph{et al.}); p~31.	
-\end{synonymy}
-\emph{Arthropterygius lundi} \parencite*[Roberts \emph{et al.,}][]{Roberts2014PO} \\
-\begin{synonymy}
-	*	&	\cite*{Roberts2014PO}	&	\emph{Janusaurus lundi} Roberts \emph{et al.}; p~4 [Slottsmøya Member, Agardfjellet Formation (Tithonia, Upper Jurassic); Spitsbergen, Svalbard (UTM WGS84 N78 20.264 E15 50.044)]. \\
-		&	\cite*{Zverkov2019P}	&	\emph{Arthropterygius lundi} (Roberts \emph{et al.}); p~40.
-\end{synonymy}
+% \emph{Aegirosaurus leptospondylus} \parencite*[Wagner,][]{Wagner1853BKAWGA}\\
+% \begin{synonymy}
+% 	*	&	\cite*{Bardet2000JP}	&	\emph{Aegirosaurus leptospondylus} (Wagner); p~504 [Solnhofen Formation (Tithonian, Upper Jurassic); Borscheim and Langenaltheim, Bavaria, Germany].
+% \end{synonymy}
 
-\emph{Athabascasaurus bitumineus}
-    \cite*[Druckenmiller \& Maxwell,][]{Druckenmiller2010CJES}
+% \emph{Arthropterygius chrisorum} \parencite*[Russell,][]{Russell1993BGSC}\\
+% \begin{synonymy}
+% 	*	&	\cite*{Russell1993BGSC}	&	\emph{Ophthalmosaurus chrisorum} Russell; p~198 [Ringnes Formation (Oxfordian–Kimeridgian, Upper Jurassic); Cape Grassy, Melville Island, Canada (76° 9′ 4″ N,  113° 30′ W = UTM WGS84 12X 433220 8453461)] \\
+% 		&	\cite*{Zverkov2019P}	&	\emph{Arthropterygius chrisorum} (Russell); Zverkov \& Prilepskaya, p~15. \\
+% 		&	\cite*{Zverkov2019P}	&	\emph{Palvennia hoybergeti} (\emph{pars}) (Russell); Zverkov \& Prilepskaya, p~15 [Slottsmøya Member, Agardfjellet Formation (Titonian, Upper Jurassic); Spitsbergen, Svalbard]. \\
+% 	?	&	\cite*{Zverkov2019P}	&	\emph{Keilhauia nui} Delsett \emph{et al.}; Zverkov \& Prilepskaya p~15. \\
+% 	?	&	\cite*{Zverkov2019P}	&	Ophthalmosauridae indet.; Zverkov \& Prilepskaya, tbl~1.
+% \end{synonymy}
+% \emph{Arthropterygius hoybergeti}
+%     \parencite*[Druckenmiller \emph{et al.,}][]{Druckenmiller2012NJG} \\
+% \begin{synonymy}
+% 	*	&	\cite*{Druckenmiller2012NJG}	&	\emph{Palvennia hoybergeti} Druckenmiller \emph{et al.}; p~326 [Slottsmøya Member, Agardfjellet Formation (Middle Volgian, Upper Jurassic); Spitsbergen, Svalbard (UTM WGS84 33N 0518775 8696150)]. \\
+% 		&	\cite*{Delsett2018P}	&	\emph{Palvennia hoybergeti} Druckenmiller \emph{et al.}. \\
+% 		&	\cite*{Zverkov2019P}	&	\emph{Arthropterygius hoybergeti} (Druckenmiller \emph{et al.}); p~31.	
+% \end{synonymy}
+% \emph{Arthropterygius lundi} \parencite*[Roberts \emph{et al.,}][]{Roberts2014PO} \\
+% \begin{synonymy}
+% 	*	&	\cite*{Roberts2014PO}	&	\emph{Janusaurus lundi} Roberts \emph{et al.}; p~4 [Slottsmøya Member, Agardfjellet Formation (Tithonia, Upper Jurassic); Spitsbergen, Svalbard (UTM WGS84 N78 20.264 E15 50.044)]. \\
+% 		&	\cite*{Zverkov2019P}	&	\emph{Arthropterygius lundi} (Roberts \emph{et al.}); p~40.
+% \end{synonymy}
 
-\emph{Barracudasauroides panxianensis}
-    \parencite*[Jiang et al.,][]{Jiang2006JVP}
+% \emph{Athabascasaurus bitumineus}
+%     \cite*[Druckenmiller \& Maxwell,][]{Druckenmiller2010CJES}
 
-\emph{Besanosaurus leptorhynchus}
-    \cite*[Dal Sasso \& Pinna,][]{DalSasso1996PL}
+% \emph{Barracudasauroides panxianensis}
+%     \parencite*[Jiang et al.,][]{Jiang2006JVP}
 
-\emph{Brachypterygius alekseevi}
-    \parencite*[Arkhangelsky,][]{Arkhangelsky2001PJ}\\
-\emph{Brachypterygius extremus}
-    \parencite*[Boulenger,][]{Boulenger1904PZSL}\\
-\begin{synonymy}
-	*	&	\cite*{Boulenger1904PZSL}	&	\emph{Ichthyosaurus extremus} Boulenger [Kimmeridge Clay Formation (Kimmeridgian); Weymouth, Dorset, UK]. \\
-		&	\cite*{McGowan1976CJES}	&	\emph{Grendelius mordax} McGowan [\emph{Aulacostephanus autissiodorensis} Ammonite Biozone, Kimmeridge Clay Formation (Kimmeridgian); Norfolk, UK].
-\end{synonymy}
-\emph{Brachypterygius pseudoscythica}
-    \parencite*[Efimov,][]{Efimov1998PZ}
+% \emph{Besanosaurus leptorhynchus}
+%     \cite*[Dal Sasso \& Pinna,][]{DalSasso1996PL}
 
-\emph{Californosaurus perrini}
-    \parencite*[Merriam,][]{Merriam1902UCBDG}
+% \emph{Brachypterygius alekseevi}
+%     \parencite*[Arkhangelsky,][]{Arkhangelsky2001PJ}\\
+% \emph{Brachypterygius extremus}
+%     \parencite*[Boulenger,][]{Boulenger1904PZSL}\\
+% \begin{synonymy}
+% 	*	&	\cite*{Boulenger1904PZSL}	&	\emph{Ichthyosaurus extremus} Boulenger [Kimmeridge Clay Formation (Kimmeridgian); Weymouth, Dorset, UK]. \\
+% 		&	\cite*{McGowan1976CJES}	&	\emph{Grendelius mordax} McGowan [\emph{Aulacostephanus autissiodorensis} Ammonite Biozone, Kimmeridge Clay Formation (Kimmeridgian); Norfolk, UK].
+% \end{synonymy}
+% \emph{Brachypterygius pseudoscythica}
+%     \parencite*[Efimov,][]{Efimov1998PZ}
 
-\emph{Callawayia neoscapularis} \parencite*[McGowan,][]{McGowan1994JVPa}
+% \emph{Californosaurus perrini}
+%     \parencite*[Merriam,][]{Merriam1902UCBDG}
 
-\emph{Cartorhynchus lenticarpus} \cite*[Motani et al.,][]{Motani2015N}
+% \emph{Callawayia neoscapularis} \parencite*[McGowan,][]{McGowan1994JVPa}
 
-\emph{Caypullisaurus bonapartei} \cite*[Fernández,][]{Fernandez1997JP}
+% \emph{Cartorhynchus lenticarpus} \cite*[Motani et al.,][]{Motani2015N}
 
-\emph{Cetarthrosaurus walkeri} \cite*[Seeley,][]{Seeley1873QJGS}
+% \emph{Caypullisaurus bonapartei} \cite*[Fernández,][]{Fernandez1997JP}
 
-\emph{Chacaicosaurus cayi} \cite*[Fernández,][]{Fernandez1994A}
+% \emph{Cetarthrosaurus walkeri} \cite*[Seeley,][]{Seeley1873QJGS}
 
-\emph{Chaohusaurus chaoxianensis} \parencite*[Chen,][]{Chen1985RGC}\\
-\emph{Chaohusaurus geishanensis} \cite*[Young \& Dong,][]{Young1972MNIGP}\\
-\emph{Chaohusaurus zhangjiawanensis} \cite*[Chen et al.,][]{Chen2013AGS}
+% \emph{Chacaicosaurus cayi} \cite*[Fernández,][]{Fernandez1994A}
 
-\emph{Contectopalatus atavus} \parencite*[Quenstedt,][]{Quenstedt1852}
+% \emph{Chaohusaurus chaoxianensis} \parencite*[Chen,][]{Chen1985RGC}\\
+% \emph{Chaohusaurus geishanensis} \cite*[Young \& Dong,][]{Young1972MNIGP}\\
+% \emph{Chaohusaurus zhangjiawanensis} \cite*[Chen et al.,][]{Chen2013AGS}
 
-\emph{Cymbospondylus buchseri} \cite*[Sander,][]{Sander1989JVP}\\
-\emph{Cymbospondylus nichollsi} \cite*[Fröbisch et al.,][]{Frobisch2006ZJLS}\\
-\emph{Cymbospondylus petrinus} \cite*[Leidy,][]{Leidy1868PANSP}\\
-\emph{Cymbospondylus piscosus?} \cite*[Leidy,][]{Leidy1868PANSP}
+% \emph{Contectopalatus atavus} \parencite*[Quenstedt,][]{Quenstedt1852}
 
-\emph{Dearcmhara shawcrossi} \cite*[Brusatte et al.,][]{Brusatte2015SJGa}
+% \emph{Cymbospondylus buchseri} \cite*[Sander,][]{Sander1989JVP}\\
+% \emph{Cymbospondylus nichollsi} \cite*[Fröbisch et al.,][]{Frobisch2006ZJLS}\\
+% \emph{Cymbospondylus petrinus} \cite*[Leidy,][]{Leidy1868PANSP}\\
+% \emph{Cymbospondylus piscosus?} \cite*[Leidy,][]{Leidy1868PANSP}
 
-\emph{Eurhinosaurus longirostris} \parencite*[Mantell,][]{Mantell1851}
+% \emph{Dearcmhara shawcrossi} \cite*[Brusatte et al.,][]{Brusatte2015SJGa}
 
-\emph{Excalibosaurus costini} \cite*[McGowan,][]{McGowan1986N}
+% \emph{Eurhinosaurus longirostris} \parencite*[Mantell,][]{Mantell1851}
 
-\emph{Gengasaurus nicosiai} \cite*[Paparella et al.,][]{Paparella2016GM}
+% \emph{Excalibosaurus costini} \cite*[McGowan,][]{McGowan1986N}
 
-\emph{Grippia longirostris} \cite*[Wiman,][]{Wiman1929BGIU}
+% \emph{Gengasaurus nicosiai} \cite*[Paparella et al.,][]{Paparella2016GM}
 
-\emph{Guizhouichthyosaurus tangae} Cao \& Luo in \cite*[Yin et al.,][]{Yin2000GG}\\
-\emph{Guizhouichthyosaurus wolonggangense}
-    \parencite*[Chen et al.,][]{Chen2007GC}
+% \emph{Grippia longirostris} \cite*[Wiman,][]{Wiman1929BGIU}
 
-\emph{Gulosaurus helmi} \cite*[Cuthbertson et al.,][]{Cuthbertson2013JVP}
+% \emph{Guizhouichthyosaurus tangae} Cao \& Luo in \cite*[Yin et al.,][]{Yin2000GG}\\
+% \emph{Guizhouichthyosaurus wolonggangense}
+%     \parencite*[Chen et al.,][]{Chen2007GC}
 
-\emph{Hauffiopteryx typicus} \cite*[Maisch,][]{Maisch2008P}
+% \emph{Gulosaurus helmi} \cite*[Cuthbertson et al.,][]{Cuthbertson2013JVP}
 
-\emph{Himalayasaurus tibetensis} \cite*[Young \& Dong,][]{Young1972MNIGP}
+% \emph{Hauffiopteryx typicus} \cite*[Maisch,][]{Maisch2008P}
 
-\emph{Hudsonelpidia brevirostris} \cite*[McGowan,][]{McGowan1995CJES}
+% \emph{Himalayasaurus tibetensis} \cite*[Young \& Dong,][]{Young1972MNIGP}
 
-\emph{Ichthyosaurus acutirostris} \cite*[Owen,][]{Owen1840RBAAS}\\
-\emph{Ichthyosaurus anningae} \cite*[Lomax \& Massare,][]{Lomax2015JVP}\\
-\emph{Ichthyosaurus breviceps} \cite*[Owen,][]{Owen1881MPS}\\
-\emph{Ichthyosaurus communis} \cite*[Conybeare,][]{Conybeare1822TGSL}\\
-\emph{Ichthyosaurus conybeari} \cite*[Lydekker,][]{Lydekker1888GM}\\
-\emph{Ichthyosaurus larkini} \cite*[Lomax \& Massare,][]{Lomax2017PP}\\
-\emph{Ichthyosaurus somersetensis} \cite*[Lomax \& Massare,][]{Lomax2017PP}
+% \emph{Hudsonelpidia brevirostris} \cite*[McGowan,][]{McGowan1995CJES}
 
-\emph{Isfjordosaurus minor} \parencite*[Wiman,][]{Wiman1910BGIUa}
+% \emph{Ichthyosaurus acutirostris} \cite*[Owen,][]{Owen1840RBAAS}\\
+% \emph{Ichthyosaurus anningae} \cite*[Lomax \& Massare,][]{Lomax2015JVP}\\
+% \emph{Ichthyosaurus breviceps} \cite*[Owen,][]{Owen1881MPS}\\
+% \emph{Ichthyosaurus communis} \cite*[Conybeare,][]{Conybeare1822TGSL}\\
+% \emph{Ichthyosaurus conybeari} \cite*[Lydekker,][]{Lydekker1888GM}\\
+% \emph{Ichthyosaurus larkini} \cite*[Lomax \& Massare,][]{Lomax2017PP}\\
+% \emph{Ichthyosaurus somersetensis} \cite*[Lomax \& Massare,][]{Lomax2017PP}
 
-\emph{Keihauia nui?} \cite*[Delsett et al.,][]{Delsett2017PO} \\
-\begin{synonymy}
-	*	& \cite*{Delsett2017PO}	& \emph{Keihauia nui} Delsett et al.; p~7 [Slottsmøya Member, Agardfjellet Formation (lower Berriasian, Lower Cretaceous); northside of Janusfjellet, Spitsbergen, Svalbard (UTM WGS84 33X 0518847 8696044 = 78.33637° N, 015.83513° E)]. \\
-	?	&	\cite*{Zverkov2019P}	&	\emph{Arthropterygius chrisorum} (Russell); Zverkov \& Prilepskaya, p~15.
-\end{synonymy}
+% \emph{Isfjordosaurus minor} \parencite*[Wiman,][]{Wiman1910BGIUa}
 
-\emph{Leninia stellans} \cite*[Fischer et al.,][]{Fischer2014GM}
+% \emph{Keihauia nui?} \cite*[Delsett et al.,][]{Delsett2017PO} \\
+% \begin{synonymy}
+% 	*	& \cite*{Delsett2017PO}	& \emph{Keihauia nui} Delsett et al.; p~7 [Slottsmøya Member, Agardfjellet Formation (lower Berriasian, Lower Cretaceous); northside of Janusfjellet, Spitsbergen, Svalbard (UTM WGS84 33X 0518847 8696044 = 78.33637° N, 015.83513° E)]. \\
+% 	?	&	\cite*{Zverkov2019P}	&	\emph{Arthropterygius chrisorum} (Russell); Zverkov \& Prilepskaya, p~15.
+% \end{synonymy}
 
-\emph{Leptonectes moorei} \cite*[McGowan \& Milner,][]{McGowan1999P}\\
-\emph{Leptonectes solei} \parencite*[McGowan,][]{McGowan1993CJES}\\
-\emph{Leptonectes tenuirostris} \parencite*[Conybeare,][]{Conybeare1822TGSL}
+% \emph{Leninia stellans} \cite*[Fischer et al.,][]{Fischer2014GM}
 
-\emph{Macgowania janiceps} \parencite*[McGowan,][]{McGowan1996CJES}
+% \emph{Leptonectes moorei} \cite*[McGowan \& Milner,][]{McGowan1999P}\\
+% \emph{Leptonectes solei} \parencite*[McGowan,][]{McGowan1993CJES}\\
+% \emph{Leptonectes tenuirostris} \parencite*[Conybeare,][]{Conybeare1822TGSL}
 
-\emph{Maiaspondylus lindoei} \cite*[Maxwell \& Caldwell,][]{Maxwell2006P}
+% \emph{Macgowania janiceps} \parencite*[McGowan,][]{McGowan1996CJES}
 
-\emph{Malawania anachronus} \cite*[Fischer et al.,][]{Fischer2013BL}
+% \emph{Maiaspondylus lindoei} \cite*[Maxwell \& Caldwell,][]{Maxwell2006P}
 
-\emph{Mikadocephalus gracilirostris} \cite*[Maisch \& Matzke,][]{Maisch1997PZ}
+% \emph{Malawania anachronus} \cite*[Fischer et al.,][]{Fischer2013BL}
 
-\emph{Mixosaurus cornalianus} \parencite*[Bassani,][]{Bassani1886ASISN}\\
-\emph{Mixosaurus kuhnschneyderi} \parencite*[Brinkmann,][]{Brinkmann1998NJGPA}\\
-\emph{Mixosaurus xindianensis} \cite*[Chen \& Cheng,][]{Chen2010APS}
+% \emph{Mikadocephalus gracilirostris} \cite*[Maisch \& Matzke,][]{Maisch1997PZ}
 
-\emph{Mollesaurus periallus} \cite*[Fernández,][]{Fernandez1999JP}
+% \emph{Mixosaurus cornalianus} \parencite*[Bassani,][]{Bassani1886ASISN}\\
+% \emph{Mixosaurus kuhnschneyderi} \parencite*[Brinkmann,][]{Brinkmann1998NJGPA}\\
+% \emph{Mixosaurus xindianensis} \cite*[Chen \& Cheng,][]{Chen2010APS}
 
-\emph{Muiscasaurus catheti} \cite*[Maxwell et al.,][]{Maxwell2016PP}\\
-\begin{synonymy}
-	*	& \cite*{Maxwell2016PP}	& \emph{Muiscasaurus catheti} Maxwell et al.; p~3 [Arcillolitas abigarradas Member, Paja Formation (Barremian–Aptian, Lower Cretaceous); Vereda Llanitos, Sáchica, Boyacá, Colombia (UTM WGS84 18N 662859 616018 = 05.5713000° N, 073.5296833° W)].
-\end{synonymy}
+% \emph{Mollesaurus periallus} \cite*[Fernández,][]{Fernandez1999JP}
 
-\emph{Nannopterygius enthekiodon} \parencite*[Hulke,][]{Hulke1871QJGS}
+% \emph{Muiscasaurus catheti} \cite*[Maxwell et al.,][]{Maxwell2016PP}\\
+% \begin{synonymy}
+% 	*	& \cite*{Maxwell2016PP}	& \emph{Muiscasaurus catheti} Maxwell et al.; p~3 [Arcillolitas abigarradas Member, Paja Formation (Barremian–Aptian, Lower Cretaceous); Vereda Llanitos, Sáchica, Boyacá, Colombia (UTM WGS84 18N 662859 616018 = 05.5713000° N, 073.5296833° W)].
+% \end{synonymy}
 
-\emph{Ophthalmosaurus icenicus} \cite*[Seeley,][]{Seeley1874QJGSa}\\
-\emph{Ophthalmosaurus natans} \parencite*[Marsh,][]{Marsh1879AMNH}\\
-\emph{Ophthalmosaurus yasykovi} \parencite*[Efimov,][]{Efimov1999PZ}
+% \emph{Nannopterygius enthekiodon} \parencite*[Hulke,][]{Hulke1871QJGS}
 
-\emph{Paraophthalmosaurus kabanovi} \parencite*[Efimov,][]{Efimov1999PZ}\\
-\emph{Paraophthalmosaurus sevaljeviensis}
-    \cite*[Arkhangelsky,][]{Arkhangelsky1997PZ}
+% \emph{Ophthalmosaurus icenicus} \cite*[Seeley,][]{Seeley1874QJGSa}\\
+% \emph{Ophthalmosaurus natans} \parencite*[Marsh,][]{Marsh1879AMNH}\\
+% \emph{Ophthalmosaurus yasykovi} \parencite*[Efimov,][]{Efimov1999PZ}
 
-\emph{Parvinatator wapitiensis}
-    \cite*[Nicholls \& Brinkman,][]{Nicholls1995Vfateosc}
+% \emph{Paraophthalmosaurus kabanovi} \parencite*[Efimov,][]{Efimov1999PZ}\\
+% \emph{Paraophthalmosaurus sevaljeviensis}
+%     \cite*[Arkhangelsky,][]{Arkhangelsky1997PZ}
 
-\emph{Pervushovisaurus bannovkensis} \cite*[Arkhangelsky,][]{Arkhangelsky1998PJ} \\
-\emph{Pervushovisaurus campylodon} \parencite*[Carter,][]{Carter1846RBAAS}\\
-\begin{synonymy}
-	*	& \cite*{Carter1846RBAAS}	& \emph{Ichthyosaurus campylodon} Carter. \\
-		& \cite*{vonHuene1922}	& \emph{Myopterygius campylodon} (Carter); Huene. \\
-		& \cite*{McGowan1972CGUW}	& \emph{Platypterygius campylodon} (Carter); McGowan. \\
-		& \cite*{Fischer2016P}	& \emph{Pervushovisaurus campylodon} (Carter); Fischer, p~8 [(Cambridge Greensand Member,) West Melbury Marly Chalk Formation (Cenomanian, Upper Cretaceous); Cambridgeshire and Kent, \textcaps{UK}].
-\end{synonymy}
+% \emph{Parvinatator wapitiensis}
+%     \cite*[Nicholls \& Brinkman,][]{Nicholls1995Vfateosc}
 
-\emph{Pessopteryx nisseri} \cite*[Wiman,][]{Wiman1910BGIUa}
+% \emph{Pervushovisaurus bannovkensis} \cite*[Arkhangelsky,][]{Arkhangelsky1998PJ} \\
+% \emph{Pervushovisaurus campylodon} \parencite*[Carter,][]{Carter1846RBAAS}\\
+% \begin{synonymy}
+% 	*	& \cite*{Carter1846RBAAS}	& \emph{Ichthyosaurus campylodon} Carter. \\
+% 		& \cite*{vonHuene1922}	& \emph{Myopterygius campylodon} (Carter); Huene. \\
+% 		& \cite*{McGowan1972CGUW}	& \emph{Platypterygius campylodon} (Carter); McGowan. \\
+% 		& \cite*{Fischer2016P}	& \emph{Pervushovisaurus campylodon} (Carter); Fischer, p~8 [(Cambridge Greensand Member,) West Melbury Marly Chalk Formation (Cenomanian, Upper Cretaceous); Cambridgeshire and Kent, \textcaps{UK}].
+% \end{synonymy}
 
-\emph{Phalarodon callawayi} \cite*[Schmitz et al.,][]{Schmitz2004PAP}\\
-\emph{Phalarodon fraasi} \cite*[Merriam,][]{Merriam1910UCBDG}\\
-\emph{Phalarodon major} \cite*[Huene,][]{vonHuene1916P}
+% \emph{Pessopteryx nisseri} \cite*[Wiman,][]{Wiman1910BGIUa}
 
-\emph{Phantomosaurus neubigi} \parencite*[Sander,][]{Sander1997AMR}
+% \emph{Phalarodon callawayi} \cite*[Schmitz et al.,][]{Schmitz2004PAP}\\
+% \emph{Phalarodon fraasi} \cite*[Merriam,][]{Merriam1910UCBDG}\\
+% \emph{Phalarodon major} \cite*[Huene,][]{vonHuene1916P}
 
-\emph{Platypterygius americanus} \cite*[Nace,][]{Nace1939AJS}\\
-\begin{synonymy}
-	*	& \cite*{Nace1939AJS}	& \emph{Myopterygius americanus} Nace [Mowry Shale Member, Graneros Formation; Crook County, Wyoming.] \\
-		& \cite*{Romer1968CGUW}	& \emph{Myopterygius americanus} Nace; Romer. \\
-		& \cite*{McGowan1972CGUW}	& \emph{Platypterygius americanus} (Nace); McGowan.
-\end{synonymy}
-\emph{Platypterygius australis} \parencite*[M’Coy,][]{MCoy1867AMNH}\\
-\emph{Platypterygius hauthali} \parencite*[Huene,][]{vonHuene1927ZFMGPB}\\
-\emph{Platypterygius hercynicus} \cite*[Kuhn,][]{Kuhn1946BNGBb}\\
-\emph{Platypterygius ochevi} \cite*[Arkhangelsky et al.,][]{Arkhangelsky2008PJ}\\
-\emph{Platypterygius platydactylus} \parencite*[Broili,][]{Broili1907P}\\
-\emph{Platypterygius sachicarum} \cite*[Páramo,][]{Paramo1997RI}
+% \emph{Phantomosaurus neubigi} \parencite*[Sander,][]{Sander1997AMR}
 
-\emph{Protoichthyosaurus applebyi} \cite*[Lomax et al.,][]{Lomax2017JVP}\\
-\emph{Protoichthyosaurus prostaxalis} \cite*[Appleby,][]{Appleby1979P}
+% \emph{Platypterygius americanus} \cite*[Nace,][]{Nace1939AJS}\\
+% \begin{synonymy}
+% 	*	& \cite*{Nace1939AJS}	& \emph{Myopterygius americanus} Nace [Mowry Shale Member, Graneros Formation; Crook County, Wyoming.] \\
+% 		& \cite*{Romer1968CGUW}	& \emph{Myopterygius americanus} Nace; Romer. \\
+% 		& \cite*{McGowan1972CGUW}	& \emph{Platypterygius americanus} (Nace); McGowan.
+% \end{synonymy}
+% \emph{Platypterygius australis} \parencite*[M’Coy,][]{MCoy1867AMNH}\\
+% \emph{Platypterygius hauthali} \parencite*[Huene,][]{vonHuene1927ZFMGPB}\\
+% \emph{Platypterygius hercynicus} \cite*[Kuhn,][]{Kuhn1946BNGBb}\\
+% \emph{Platypterygius ochevi} \cite*[Arkhangelsky et al.,][]{Arkhangelsky2008PJ}\\
+% \emph{Platypterygius platydactylus} \parencite*[Broili,][]{Broili1907P}\\
+% \emph{Platypterygius sachicarum} \cite*[Páramo,][]{Paramo1997RI}
 
-\emph{Qianichthyosaurus xingyiensis} Ji, Jiang \& Motani in
-    \cite*[Yang et al.,][]{Yang2013ASNUP}\\
-\emph{Qianichthyosaurus zhoui} \cite*[Li,][]{Li1999CSB}
+% \emph{Protoichthyosaurus applebyi} \cite*[Lomax et al.,][]{Lomax2017JVP}\\
+% \emph{Protoichthyosaurus prostaxalis} \cite*[Appleby,][]{Appleby1979P}
 
-\emph{Quasianosteosaurus vikinghoegdai}
-    \cite*[Maisch \& Matzke,][]{Maisch2003NJGPAa}
+% \emph{Qianichthyosaurus xingyiensis} Ji, Jiang \& Motani in
+%     \cite*[Yang et al.,][]{Yang2013ASNUP}\\
+% \emph{Qianichthyosaurus zhoui} \cite*[Li,][]{Li1999CSB}
 
-\emph{Sclerocormus parviceps} \cite*[Jiang et al.,][]{Jiang2016SR}
+% \emph{Quasianosteosaurus vikinghoegdai}
+%     \cite*[Maisch \& Matzke,][]{Maisch2003NJGPAa}
 
-\emph{Shastasaurus alexandrae} \cite*[Merriam,][]{Merriam1902UCBDG}\\
-\emph{Shastasaurus liangae} (Yin in \cite*[Yin et al.,][]{Yin2000GG})\\
-\emph{Shastasaurus pacificus} \cite*[Merriam,][]{Merriam1895AJS}\\
-\emph{Shastasaurus sikkaniensis}
-    \parencite*[Nicholls \& Manabe,][]{Nicholls2004JVP}
+% \emph{Sclerocormus parviceps} \cite*[Jiang et al.,][]{Jiang2016SR}
 
-\emph{Shonisaurus popularis} \cite*[Camp,][]{Camp1976SOeAW}
+% \emph{Shastasaurus alexandrae} \cite*[Merriam,][]{Merriam1902UCBDG}\\
+% \emph{Shastasaurus liangae} (Yin in \cite*[Yin et al.,][]{Yin2000GG})\\
+% \emph{Shastasaurus pacificus} \cite*[Merriam,][]{Merriam1895AJS}\\
+% \emph{Shastasaurus sikkaniensis}
+%     \parencite*[Nicholls \& Manabe,][]{Nicholls2004JVP}
 
-\emph{Simbirskiasaurus birjukovi} \cite*[Otschev \& Efimov,][]{Otschev1985PZ}
+% \emph{Shonisaurus popularis} \cite*[Camp,][]{Camp1976SOeAW}
 
-\emph{Sisteronia seeleyi} \cite*[Fischer et al.,][]{Fischer2014PO}
+% \emph{Simbirskiasaurus birjukovi} \cite*[Otschev \& Efimov,][]{Otschev1985PZ}
 
-\emph{Stenopterygius aaleniensis} \cite*[Maxwell et al.,][]{Maxwell2012PO}\\
-\emph{Stenopterygius quadriscissus} \parencite*[Quenstedt,][]{Quenstedt1858}\\
-\emph{Stenopterygius triscissus} \parencite*[Quenstedt,][]{Quenstedt1858}\\
-\emph{Stenopterygius uniter} \cite*[Huene,][]{vonHuene1931ASNG}
+% \emph{Sisteronia seeleyi} \cite*[Fischer et al.,][]{Fischer2014PO}
 
-\emph{Suevoleviathan disinteger} \parencite*[Huene,][]{vonHuene1926NJFMGPBBB}\\
-\emph{Suevoleviathan integer} \parencite*[Bronn,][]{Bronn1844NJMGGP}
+% \emph{Stenopterygius aaleniensis} \cite*[Maxwell et al.,][]{Maxwell2012PO}\\
+% \emph{Stenopterygius quadriscissus} \parencite*[Quenstedt,][]{Quenstedt1858}\\
+% \emph{Stenopterygius triscissus} \parencite*[Quenstedt,][]{Quenstedt1858}\\
+% \emph{Stenopterygius uniter} \cite*[Huene,][]{vonHuene1931ASNG}
 
-\emph{Sveltonectes insolitus} \cite*[Fischer et al.,][]{Fischer2011JVP}
+% \emph{Suevoleviathan disinteger} \parencite*[Huene,][]{vonHuene1926NJFMGPBBB}\\
+% \emph{Suevoleviathan integer} \parencite*[Bronn,][]{Bronn1844NJMGGP}
 
-\emph{Temnodontosaurus azerguensis} \cite*[Martin et al.,][]{Martin2012P}\\
-\emph{Temnodontosaurus crassimanus} \parencite*[Blake,][]{Blake1876}\\
-\emph{Temnodontosaurus eurycephalus} \cite*[McGowan,][]{McGowan1974LSCROM}\\
-\emph{Temnodontosaurus nuertingensis} \parencite*[Huene,][]{vonHuene1931NJFMGPBB}\\
-\emph{Temnodontosaurus platyodon} \parencite*[Conybeare,][]{Conybeare1822TGSL}\\
-\emph{Temnodontosaurus trigonus} \parencite*[Theodori,][]{Theodori1843GAKAWMC}
+% \emph{Sveltonectes insolitus} \cite*[Fischer et al.,][]{Fischer2011JVP}
 
-\emph{Thaisaurus chonglakmanii} \cite*[Mazin et al.,][]{Mazin1991CRASS2MPCSUST}
+% \emph{Temnodontosaurus azerguensis} \cite*[Martin et al.,][]{Martin2012P}\\
+% \emph{Temnodontosaurus crassimanus} \parencite*[Blake,][]{Blake1876}\\
+% \emph{Temnodontosaurus eurycephalus} \cite*[McGowan,][]{McGowan1974LSCROM}\\
+% \emph{Temnodontosaurus nuertingensis} \parencite*[Huene,][]{vonHuene1931NJFMGPBB}\\
+% \emph{Temnodontosaurus platyodon} \parencite*[Conybeare,][]{Conybeare1822TGSL}\\
+% \emph{Temnodontosaurus trigonus} \parencite*[Theodori,][]{Theodori1843GAKAWMC}
 
-\emph{Thalattoarchon saurophagis} \cite*[Fröbisch et al.,][]{Frobisch2013PNAS}
+% \emph{Thaisaurus chonglakmanii} \cite*[Mazin et al.,][]{Mazin1991CRASS2MPCSUST}
 
-\emph{Tholodus schmidi} \cite*[Meyer,][]{Meyer1849P}
+% \emph{Thalattoarchon saurophagis} \cite*[Fröbisch et al.,][]{Frobisch2013PNAS}
 
-\emph{Toretocnemus californicus} \cite*[Merriam,][]{Merriam1903UCBDG}\\
-\emph{Toretocnemus zitteli} \parencite*[Merriam,][]{Merriam1903UCBDG}
+% \emph{Tholodus schmidi} \cite*[Meyer,][]{Meyer1849P}
 
-\emph{Undorosaurus gorodischensis} \cite*[Efimov,][]{Efimov1999PZa} \\
-\begin{synonymy}
-	*	&	\cite*{Efimov1999PZa}	&	\emph{Undorosaurus gorodischensis} Efimov; p~51. \\
-		&	\cite*{Zverkov2019JSP}	&	\emph{Cryopterygius kristiansenae} Druckenmiller \emph{et al.}; p~313 [Slottsmøya Member, Agardfjellet Formation (Middle Volgian, Upper Jurassic); Spitsbergen, Svalbard (UTM WGS84 33N 0518842 8696067)]. \\
-		&	\cite*{Zverkov2019JSP}	&	\emph{Undorosaurus gorodishensis} Efimov; p~5.		
-\end{synonymy}
-\emph{Undorosaurus kielanae} \parencite*[Tyborowski,][]{Tyborowski2016APP}\\
-\begin{synonymy}
-	*	& \cite*{Tyborowski2016APP}	& \emph{Cryopterygius kielanae} Tyborowski; p~793 [Sławno Limestone Member, Kcynia Formation (uppermost Lower Tithonian = Middle Volgian, Upper Jurassic); Owadów-Brzezinki Quarry, Sławno, Poland (UTM WGS84 34U 439831 5692022 = 51.3762583° N, 020.1355167° E)]. \\
-	?	&	\cite*{Zverkov2019JSP}	&	\emph{Undorosaurus kielanae} (Tyborowski); p~5.
-\end{synonymy}
-\emph{Undorosauru nessovi} \cite*[Efimov,][]{Efimov1999PZa} \\
-\emph{Undorosaurus trautscholdi}
-    \cite*[Arkhangelsky \& Zverkov,][]{Arkhangelsky2014PZIR}
+% \emph{Toretocnemus californicus} \cite*[Merriam,][]{Merriam1903UCBDG}\\
+% \emph{Toretocnemus zitteli} \parencite*[Merriam,][]{Merriam1903UCBDG}
 
+% \emph{Undorosaurus gorodischensis} \cite*[Efimov,][]{Efimov1999PZa} \\
+% \begin{synonymy}
+% 	*	&	\cite*{Efimov1999PZa}	&	\emph{Undorosaurus gorodischensis} Efimov; p~51. \\
+% 		&	\cite*{Zverkov2019JSP}	&	\emph{Cryopterygius kristiansenae} Druckenmiller \emph{et al.}; p~313 [Slottsmøya Member, Agardfjellet Formation (Middle Volgian, Upper Jurassic); Spitsbergen, Svalbard (UTM WGS84 33N 0518842 8696067)]. \\
+% 		&	\cite*{Zverkov2019JSP}	&	\emph{Undorosaurus gorodishensis} Efimov; p~5.		
+% \end{synonymy}
+% \emph{Undorosaurus kielanae} \parencite*[Tyborowski,][]{Tyborowski2016APP}\\
+% \begin{synonymy}
+% 	*	& \cite*{Tyborowski2016APP}	& \emph{Cryopterygius kielanae} Tyborowski; p~793 [Sławno Limestone Member, Kcynia Formation (uppermost Lower Tithonian = Middle Volgian, Upper Jurassic); Owadów-Brzezinki Quarry, Sławno, Poland (UTM WGS84 34U 439831 5692022 = 51.3762583° N, 020.1355167° E)]. \\
+% 	?	&	\cite*{Zverkov2019JSP}	&	\emph{Undorosaurus kielanae} (Tyborowski); p~5.
+% \end{synonymy}
+% \emph{Undorosauru nessovi} \cite*[Efimov,][]{Efimov1999PZa} \\
+% \emph{Undorosaurus trautscholdi}
+%     \cite*[Arkhangelsky \& Zverkov,][]{Arkhangelsky2014PZIR}
 
-% \emph{Cryopterygius kristiansenae}
-%     \cite*[Druckenmiller et al.,][]{Druckenmiller2012NJG}
 
-\emph{Utatsusaurus hataii} \cite*[Shikama et al.,][]{Shikama1978SRTUGa}
+% % \emph{Cryopterygius kristiansenae}
+% %     \cite*[Druckenmiller et al.,][]{Druckenmiller2012NJG}
 
-\emph{Wahlisaurus massarae} \cite*[Lomax,][]{Lomax2016JSP}\\
-\begin{synonymy}
-	*	& \cite*{Lomax2016JSP}	& \emph{Wahlisaurus massarae} Lomax; p~2 [Barnstone Member?, Scunthorpe Mudstone Formation?, Pre-\emph{planorbis} or \emph{Psiloceras planorbis} beds (lowermost Hettangian, Lower Jurassic); Normanton Hills, Normanton on Soar, \textcaps{UK}].
-\end{synonymy}
+% \emph{Utatsusaurus hataii} \cite*[Shikama et al.,][]{Shikama1978SRTUGa}
 
-\emph{Wimanius odontopalatus} \cite*[Maisch \& Matzke,][]{Maisch1998NJGPM}
+% \emph{Wahlisaurus massarae} \cite*[Lomax,][]{Lomax2016JSP}\\
+% \begin{synonymy}
+% 	*	& \cite*{Lomax2016JSP}	& \emph{Wahlisaurus massarae} Lomax; p~2 [Barnstone Member?, Scunthorpe Mudstone Formation?, Pre-\emph{planorbis} or \emph{Psiloceras planorbis} beds (lowermost Hettangian, Lower Jurassic); Normanton Hills, Normanton on Soar, \textcaps{UK}].
+% \end{synonymy}
 
-\emph{Xinminosaurus catactes} \cite*[Jiang et al.,][]{Jiang2008PNS}
+% \emph{Wimanius odontopalatus} \cite*[Maisch \& Matzke,][]{Maisch1998NJGPM}
+
+% \emph{Xinminosaurus catactes} \cite*[Jiang et al.,][]{Jiang2008PNS}
 
 
 % \mywidebib

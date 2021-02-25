@@ -24,7 +24,7 @@ taxon_name = '''\
 '''
 
 synonym_row = '''\
-assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{identified_authority}; p~pageref locality_info \\\\
+assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{identified_authority}; \\crefauth{reference} p~pageref locality_info \\\\
 '''
 
 def find_replace_multi(string, dictionary):
@@ -49,7 +49,7 @@ sorted_synonymy = sorted(synonymy_dict, key = lambda row: row['date'])
 
 with open(outfile, 'wt') as out_file:
     
-    out_file.write('%! TEX root = test_tex.tex\n\n')
+    out_file.write('%! TEX root = ichthyosauromorphtaxonomy.tex\n\n')
 
     for taxon in csv.DictReader(open(taxon_file, newline = ''), delimiter = '\t'):
         current_taxon = taxon['accepted_name']
