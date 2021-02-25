@@ -4,8 +4,20 @@
 
 \usepackage{xparse}
 
+\usepackage{warnock}
+
 \usepackage{parskip}
 \usepackage{tabularx}
+
+\ProvideDocumentEnvironment{synonymy}
+    {}%
+    {
+        \footnotesize
+        \tabularx{42em}[l]{rlX}
+    }%
+    {
+        \endtabularx
+    }
 
 \usepackage[%
     backend      = biber,
@@ -19,12 +31,15 @@
     giveninits   = true,
     mergedate    = maximum
 ]{biblatex}
-\addbibresource{zotero.bib}
+\addbibresource{synonymy.bib}
+
+\RenewDocumentCommand{\nameyeardelim}{}{{, }}
 
 \ProvideDocumentCommand{\cauth}{ m }{\citeauthor*{#1}}
 \ProvideDocumentCommand{\pauth}{ m }{(\citeauthor*{#1})}
 \ProvideDocumentCommand{\cyear}{ m }{\cite*{#1}}
 \ProvideDocumentCommand{\pyear}{ m }{\parencite*{#1}}
+\ProvideDocumentCommand{\emyear}{ m }{\emph{\cite*{#1}}}
 
 \begin{document}
     \input {write_file.tex}
