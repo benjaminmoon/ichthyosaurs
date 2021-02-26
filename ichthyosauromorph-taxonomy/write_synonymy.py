@@ -66,11 +66,6 @@ with open(outfile, 'wt') as out_file:
             if synonym['accepted_name'] == current_taxon:
                 print('Record matched:', current_synonym, "→", current_taxon)
     
-                if synonym['identified_status'] == 'ncomb':
-                    synonym_row = re.sub('cauth', 'pauth', synonym_row)
-                if synonym['morphological_information'] == 'N':
-                    synonym_row = re.sub('cyear', 'emyear', synonym_row)
-
                 unit_separator = ', '
 
                 lithostrat_keys = ['bed', 'member', 'formation', 'zone']
@@ -98,6 +93,13 @@ with open(outfile, 'wt') as out_file:
                     locality_info = locality_info + synonym['comments']
 
                 this_synonym = find_replace_multi(synonym_row, synonym)
+
+                if synonym['identified_status'] == 'ncomb':
+                    this_synonym = re.sub('cauth', 'pauth', this_synonym)
+
+                if synonym['morphological_information'] == 'N':
+                    this_synonym = re.sub('cyear', 'emyear', this_synonym)
+
                 these_synonyms = these_synonyms + re.sub('locality_info', locality_info, this_synonym)
 
         if len(these_synonyms) > 0:
