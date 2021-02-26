@@ -11,5 +11,7 @@ Wagner1853BKAWGA		Ichthyosaurus leptospondylus	Wagner1853BKAWGA	orig	*	Y	Aegiros
 Tyborowski2016APP	793	Cryopterygius kielanae	Tyborowski2016APP	orig	*	Y	Undorosaurus kielanae	Kcynia Formation	Sławno Limestone Member			uppermost Lower Tithonian = Middle Volgian	Upper Jurassic	Jurassic	Owadów-Brzezinki Quarry, Sławno	Poland	34U 439831 5692022	51.3762583	20.1355167	A test comment.
 Russell1993BGSC	198	Ophthalmosaurus chrisorum	Russell1993BGSC	orig	*	Y	Arthropterygius chrisorum	Ringnes Formation				Oxfordian–Kimmeridgian	Upper Jurassic	Jurassic	Cape Grassy, Melville Island, Canada	Canada	12X 433220 8453461	76° 9ʹ 4ʺ N	113° 30′ W	
 Druckenmiller2012NJG	326	Palvennia hoybergeti	Druckenmiller2012NJG	orig	*	Y	Arthropterygius hoybergeti	Agardfjellet Formation	Slottsmøya Member			Middle Volgian	Upper Jurassic	Jurassic	Spitsbergen, Svalbard	Norway	33N 0518775 8696150			
-Delsett2018P	8	Palvennia hoybergeti	Druckenmiller2012NJG	orig		Y	Arthropterygius hoybergeti										33X 0519622 8695649			
+Delsett2018P	8	Palvennia hoybergeti	Druckenmiller2012NJG	orig	p	Y	Arthropterygius hoybergeti										33X 0519622 8695649			
+Delsett2018P	8	Palvennia hoybergeti	Druckenmiller2012NJG	orig	p	Y	Arthropterygius chrisorum										33X 0519622 8695649			\\textallsc{PMO 222.669} \\emph{fide} \\textcite{Zverkov2019P}
 Zverkov2019P	31	Arthropterygius hoybergeti	Druckenmiller2012NJG	ncomb		Y	Arthropterygius hoybergeti													
+Zverkov2019P	15	Arthropterygius chrisorum	Russell1993BGSC	ncomb		Y	Arthropterygius chrisorum													

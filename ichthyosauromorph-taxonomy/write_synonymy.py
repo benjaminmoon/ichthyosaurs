@@ -47,6 +47,11 @@ def get_ref_dates(filename):
 synonymy_dict = get_ref_dates(synonymy_file)
 sorted_synonymy = sorted(synonymy_dict, key = lambda row: row['date'])
 
+unit_separator = ', '
+lithostrat_keys = ['bed', 'member', 'formation', 'zone']
+chronostrat_keys = ['stage', 'series', 'system']
+coord_keys = ['utm_wgs84', 'long', 'lat']
+
 with open(outfile, 'wt') as out_file:
     
     out_file.write('%! TEX root = ichthyosauromorphtaxonomy.tex\n\n')
@@ -65,13 +70,9 @@ with open(outfile, 'wt') as out_file:
     
             if synonym['accepted_name'] == current_taxon:
                 print('Record matched:', current_synonym, "→", current_taxon)
-    
-                unit_separator = ', '
 
-                lithostrat_keys = ['bed', 'member', 'formation', 'zone']
                 lithostratigraphy = unit_separator.join([x for x in [synonym.get(key) for key in lithostrat_keys] if x])
 
-                chronostrat_keys = ['stage', 'series', 'system']
                 chronostratigraphy = unit_separator.join([x for x in [synonym.get(key) for key in chronostrat_keys] if x])
 
                 locality_info = str()
@@ -87,8 +88,18 @@ with open(outfile, 'wt') as out_file:
                 elif len(synonym['location']) > 0:
                     locality_info = synonym['location']
 
-                if len(locality_info) > 0:
-                    locality_info = '[' + locality_info + '.] '
+                coord_info = str()
+                if len(synonym['utm_wgs84']) > 0 and len(synonym['longitude']) > 0:
+                    coord_info = r'\\textallsc{UTM WGS84 ' + synonym['utm_wgs84'] + ' = ' + synonym['latitude'] + ' ' + synonym['longitude'] + '}'
+                elif len(synonym['utm_wgs84']) > 0:
+                    coord_info = r'\\textallsc{UTM WGS84 ' + synonym['utm_wgs84'] + '}'
+
+                if len(locality_info) > 0 and len(coord_info) > 0:
+                    locality_info = '[' + locality_info + ' (' + coord_info + ').] '
+                elif len(locality_info) > 0 and len(coord_info) == 0:
+                    locality_info =  '[' + locality_info + '.] '
+                elif len(locality_info) == 0 and len(coord_info) > 0:
+                    locality_info = '[' + coord_info + '] '
                 if len(synonym['comments']) > 0:
                     locality_info = locality_info + synonym['comments']
 
