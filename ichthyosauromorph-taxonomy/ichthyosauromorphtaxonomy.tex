@@ -97,9 +97,9 @@
 
 \RenewDocumentCommand{\nameyeardelim}{}{{, }}
 
-\ProvideDocumentCommand{\cauth}{ m }{\citeauthor*{#1}}
+\ProvideDocumentCommand{\cauth}{ m }{\cite{#1}}
 \ProvideDocumentCommand{\crefauth}{ m }{\citeauthor*{#1}}
-\ProvideDocumentCommand{\pauth}{ m }{(\citeauthor*{#1})}
+\ProvideDocumentCommand{\pauth}{ m }{\parencite{#1}}
 \ProvideDocumentCommand{\cyear}{ m }{\cite*{#1}}
 \ProvideDocumentCommand{\pyear}{ m }{\parencite*{#1}}
 \ProvideDocumentCommand{\emyear}{ m }{\emph{\cite*{#1}}}
