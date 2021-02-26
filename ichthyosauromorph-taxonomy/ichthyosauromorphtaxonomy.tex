@@ -3,7 +3,7 @@
 % !TEX spellcheck = en_GB
 % !TEX encoding = utf8
 
-\documentclass[notuftebib,font=erewhon,UKenglish]{tufte-lualatex}
+\documentclass[notuftebib,font=newsource,UKenglish]{tufte-lualatex}
 
 \setdefaultlanguage[variant=british]{english}
 
@@ -48,7 +48,7 @@
     {}%
     {
         \footnotesize
-        \tabularx{60em}[l]{p{1.5em}p{2em}p{20em}X}
+        \tabularx{72em}[l]{p{1.5em}p{2em}p{22em}X}
     }%
     {
         \endtabularx
@@ -78,7 +78,8 @@
 	sorting      = nyt%
 ]{biblatex}
 \addbibresource{synonymy.bib}
-\RenewDocumentCommand{\bibfont}{}{\small\cabincd}
+% \RenewDocumentCommand{\bibfont}{}{\small\cabincd}
+\RenewDocumentCommand{\bibfont}{}{\small\sffamily}
 \RenewDocumentCommand{\UrlFont}{}{\small\ttfamily}
 
 \ProvideDocumentCommand{\mywidebib}{}{
@@ -125,13 +126,13 @@
 
 \emph{Eohupehsuchus brevicollis} \cite*[Chen et al,][]{Chen2014POa}\\
 \begin{synonymy}
-	*	& \cite*{Chen2014POa}	& \emph{Eohupehsuchus brevicollis} Chen et al.; p~4 [Jialingjiang Formation (Upper Spathian, Lower Triassic); Yangping, Yuan’an County, Hubei Province, China].
+	*	& \cite*{Chen2014POa}	& \emph{Eohupehsuchus brevicollis} Chen et al. & p~4 [Jialingjiang Formation (Upper Spathian, Lower Triassic); Yangping, Yuan’an County, Hubei Province, China].
 \end{synonymy}
 
 \emph{Eretmorhipis carrolldongi} \cite*[Chen et al.,][]{Chen2015PO}\\
 \begin{synonymy}
-	& \cite*{Carroll1991PTRSBBS}	& Hupehsuchia n.\ g., n.\ s.; p~143 [Jialingjiang Formation (Upper Spathian, Lower Triassic); Tuling, Baihechuan, Xunjian District, Nanzhang County, Hubei Province, China].\\
-	{*}	& \cite*{Chen2015PO}	& \emph{Eretmorhipis carrolldongi} Chen et al.; p~4 [Jialingjiang Formation (Upper Spathian, Lower Triassic); Yingzhishang, Yuan’an County, Hubei Province, China].
+	& \cite*{Carroll1991PTRSBBS}	& Hupehsuchia n.\ g., n.\ s. & p~143 [Jialingjiang Formation (Upper Spathian, Lower Triassic); Tuling, Baihechuan, Xunjian District, Nanzhang County, Hubei Province, China].\\
+	{*}	& \cite*{Chen2015PO}	& \emph{Eretmorhipis carrolldongi} Chen et al. & p~4 [Jialingjiang Formation (Upper Spathian, Lower Triassic); Yingzhishang, Yuan’an County, Hubei Province, China].
 \end{synonymy}
 
 \emph{Hupehsuchus nanchangensis} \cite*[Young \& Dong,][]{Young1972MNIGP}
