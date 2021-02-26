@@ -29,34 +29,30 @@
 % 	BoldItalicFeatures={StylisticSet=2}
 % 	]
 % 	\newcommand*\textsfcn[1]{\gillcn #1}
+\newfontfamily\cabincd{CabinCondensed-RegularCondensed}[%
+    Scale = MatchLowercase,
+    ItalicFont = {CabinCondensed-ItalicCondensed},
+    BoldFont = {CabinCondensed-BoldCondensed},
+    BoldItalicFont = {CabinCondensed-BoldItalicCondensed}
+]
+\ProvideDocumentCommand{\textsfcd}{ m }{{\cabincd #1}}
 % \setmonofont{AnkaCoder}[Scale=MatchLowercase]
 % \newfontfamily\ankacn{AnkaCoder Condensed}[Scale=MatchLowercase]
 % \newfontfamily\ankanar{AnkaCoder Narrow}[Scale=MatchLowercase]
 % 	\newcommand*\textttcn[1]{\ankacn #1}
 % 	\newcommand*\textttnar[1]{\ankanar #1}
 
-% \newenvironment*{synonymy}%
-% 	{
-% 		\footnotesize
-% 		\begin{tabu}[l]{rlX}
-% 	}%
-% 	{
-% 		\\
-% 		\end{tabu}
-% 		\normalsize
-% 	}
 \usepackage{tabularx}
 
 \ProvideDocumentEnvironment{synonymy}
     {}%
     {
         \footnotesize
-        \tabularx{42em}[l]{rlX}
+        \tabularx{60em}[l]{p{1.5em}p{2em}p{20em}X}
     }%
     {
         \endtabularx
     }
-
 
 \usepackage{multicol}
 
@@ -82,23 +78,22 @@
 	sorting      = nyt%
 ]{biblatex}
 \addbibresource{synonymy.bib}
-% \renewcommand*{\bibfont}{\small\gillcn}
-% \renewcommand*{\UrlFont}{\small\ankanar}
-% \usepackage{csquotes}
+\RenewDocumentCommand{\bibfont}{}{\small\cabincd}
+\RenewDocumentCommand{\UrlFont}{}{\small\ttfamily}
 
-% \newcommand*{\mywidebib}{
-% 	\newgeometry{left=1.75cm,right=1.75cm,top=1.65cm,bottom=3cm,nomarginpar}
-% 	\begin{multicols}{3}[\printbibheading]
-% 		\newrefcontext[sorting=nyt]
-% 		\printbibliography[heading=none]
-% 	\end{multicols}
-% 	\restoregeometry
-% }
+\ProvideDocumentCommand{\mywidebib}{}{
+	\newgeometry{left=1.75cm,right=1.75cm,top=1.65cm,bottom=3cm,nomarginpar}
+	\begin{multicols}{3}[\printbibheading]
+		\newrefcontext[sorting=nyt]
+		\printbibliography[heading=none]
+	\end{multicols}
+	\restoregeometry
+}
 
 \RenewDocumentCommand{\nameyeardelim}{}{{, }}
 
 \ProvideDocumentCommand{\cauth}{ m }{\cite{#1}}
-\ProvideDocumentCommand{\crefauth}{ m }{\citeauthor*{#1}}
+\ProvideDocumentCommand{\crefauth}{ m }{\citeauthor{#1}}
 \ProvideDocumentCommand{\pauth}{ m }{\parencite{#1}}
 \ProvideDocumentCommand{\cyear}{ m }{\cite*{#1}}
 \ProvideDocumentCommand{\pyear}{ m }{\parencite*{#1}}
@@ -414,7 +409,7 @@
 % \emph{Xinminosaurus catactes} \cite*[Jiang et al.,][]{Jiang2008PNS}
 
 
-% \mywidebib
-\printbibliography
+\mywidebib
+% \printbibliography
 
 \end{document}

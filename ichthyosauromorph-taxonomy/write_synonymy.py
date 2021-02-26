@@ -24,7 +24,7 @@ taxon_name = '''\
 '''
 
 synonym_row = '''\
-assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{identified_authority}; \\crefauth{reference} p~pageref locality_info \\\\
+assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{identified_authority}& \\crefauth{reference}, p~pageref locality_info \\\\
 '''
 
 def find_replace_multi(string, dictionary):
