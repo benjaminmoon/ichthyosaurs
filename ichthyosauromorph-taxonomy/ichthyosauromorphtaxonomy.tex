@@ -19,14 +19,15 @@
 
 \ProvideDocumentCommand{\species}{ m }{\emph{#1}\markboth{#1}{#1}}
 
+\setlength\LTpre{0.5\baselineskip}
 \ProvideDocumentEnvironment{synonymy}
     {}%
     {
         \footnotesize
-        \tabularx{72em}[l]{p{1.5em}p{2em}p{22em}X}
+        \begin{longtable}[l]{p{1.5em}@{\hspace{0.5em}}p{2em}@{\hspace{0.5em}}p{22em}@{\hspace{0.5em}}p{42em}}
     }%
     {
-        \endtabularx
+        \end{longtable}
     }
 
 \usepackage{multicol}
@@ -79,7 +80,7 @@
 
 % show first and last species on page in footer – like an index
 \AtBeginDocument{
-    \fancyfoot[L]{\nouppercase{{\itshape\rightmark–\leftmark}}}
+    \fancyfoot[L]{\nouppercase{{\small\itshape\rightmark–\leftmark}}}
 }
 % single section in references
 \AtBeginBibliography{
