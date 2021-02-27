@@ -17,6 +17,8 @@
 
 \usepackage{tabularx}
 
+\ProvideDocumentCommand{\species}{ m }{\emph{#1}\markboth{#1}{#1}}
+
 \ProvideDocumentEnvironment{synonymy}
     {}%
     {
@@ -75,6 +77,14 @@
 \ProvideDocumentCommand{\cauthyr}{ m }{\cite{#1}}
 \ProvideDocumentCommand{\pauthyr}{ m }{\parencite{#1}}
 
+% show first and last species on page in footer – like an index
+\AtBeginDocument{
+    \fancyfoot[L]{\nouppercase{{\itshape\rightmark–\leftmark}}}
+}
+% single section in references
+\AtBeginBibliography{
+    \fancyfoot[L]{\nouppercase{{\itshape\leftmark}}}
+}
 
 \setVersion{0.5} %version number
 
@@ -86,7 +96,7 @@
 
 \maketitle
 
-\sectionmark{ICHTHYOSAUR TAXONOMY}
+\sectionmark{Ichthyosauromorph Taxonomy}
 
 \vspace{1em}
 

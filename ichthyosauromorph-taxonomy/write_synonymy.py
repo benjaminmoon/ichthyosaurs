@@ -20,11 +20,11 @@ except ValueError:
     print('Usage: {} taxon_file synonymy_file outfile'.format(script_file))
 
 taxon_name = '''\
-\\emph{accepted_name}~\cauthyr{accepted_authority}\n
+\\species{accepted_name}~\cauthyr{accepted_authority}\n
 '''
 
 synonym_row = '''\
-assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{identified_authority}& \\crefauth{reference}, p~pageref locality_info \\\\
+assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{identified_authority} identified_note & \\crefauth{reference}, p~pageref locality_info \\\\
 '''
 
 def find_replace_multi(string, dictionary):
