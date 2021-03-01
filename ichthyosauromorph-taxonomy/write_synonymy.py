@@ -24,7 +24,7 @@ taxon_name = '''\
 '''
 
 synonym_row = '''\
-assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{identified_authority} identified_note & \\crefauth{reference}, p~pageref locality_info \\\\
+assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{identified_authority} identified_note & \\crefauth{reference} pageref locality_info \\\\
 '''
 
 def find_replace_multi(string, dictionary):
@@ -133,9 +133,8 @@ with open(outfile, 'wt') as out_file:
                 these_synonyms = these_synonyms + re.sub('locality_info', locality_info, this_synonym)
 
         if len(these_synonyms) > 0:
-            these_synonyms = '\\begin{synonymy}\n' + these_synonyms + '\\end{synonymy}\n\n'
             these_synonyms = find_replace_multi(these_synonyms, text_sanitising)
-            # re.compile(r'..')
+            these_synonyms = '\\begin{synonymy}\n' + these_synonyms + '\\end{synonymy}\n\n'
 
         out_file.write(this_taxon)
         out_file.write(these_synonyms)
