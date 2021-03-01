@@ -1,10 +1,10 @@
-accepted_name	accepted_authority	accepted_status	lsid
-Acamptonectes densus	Fischer2012PO	orig	
+accepted_name	accepted_authority	accepted_status	lsid_act
+Acamptonectes densus	Fischer2012PO	orig	urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8
 Aegirosaurus leptospondylus	Wagner1853BKAWGA	ncomb	
 Acuetzpalin carranzai	BarrientosLara2020JSAES	orig	urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB
 Arthropterygius chrisorum	Russell1993BGSC	ncomb	
-Arthropterygius hoybergeti	Druckenmiller2012NJG	ncomb	
-Arthropterygius lundi	Roberts2014PO	ncomb	
+Arthropterygius hoybergeti	Druckenmiller2012NJG	ncomb	urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9
+Arthropterygius lundi	Roberts2014PO	ncomb	urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F
 Athabascasaurus bitumineus	Druckenmiller2010CJES	orig	
 Barracudasauroides panxianensis	Jiang2006JVP	ncomb	
 Besanosaurus leptorhynchus	DalSasso1996PL	orig	

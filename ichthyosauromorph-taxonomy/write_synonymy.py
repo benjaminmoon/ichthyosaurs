@@ -44,14 +44,15 @@ def get_ref_dates(filename):
                 refdate = bibfile[citekey]['date']
             yield dict(date = refdate, **row)
 
-def format_lsid_href(dictionary):
-    this_lsid = dictionary['lsid']
-    formatted_href = r'\\textallsc{LSID: \\href{zoobank.org/' + dictionary['lsid'] + r'}{' + dictionary['lsid'] + '}}'
+def format_lsid(lsid):
+    formatted_href = r'\\textallsc{LSID:} \\href{http://zoobank.org/' + lsid + r'}{\\textallsc{' + lsid + '}}'
 
     return(formatted_href)
 
 synonymy_dict = get_ref_dates(synonymy_file)
 sorted_synonymy = sorted(synonymy_dict, key = lambda row: row['date'])
+
+text_sanitising = {r'\.\.': r'.', r'\s\s': r' '}
 
 unit_separator = ', '
 lithostrat_keys = ['bed', 'member', 'formation', 'zone']
@@ -69,8 +70,8 @@ with open(outfile, 'wt') as out_file:
         if taxon['accepted_status'] == 'ncomb':
             this_taxon = re.sub('cauthyr', 'pauthyr', this_taxon)
         
-        if len(taxon['lsid']) > 0:
-            this_taxon = re.sub('id_link', r'\\\\\n{\\footnotesize\\hspace{3em}' + format_lsid_href(taxon) + '}', this_taxon)
+        if len(taxon['lsid_act']) > 0:
+            this_taxon = re.sub('id_link', r'\\\\\n{\\footnotesize\\hspace{2em}' + format_lsid(taxon['lsid_act']) + '}', this_taxon)
         else:
             this_taxon = re.sub('id_link', '', this_taxon)
 
@@ -112,8 +113,11 @@ with open(outfile, 'wt') as out_file:
                 elif len(locality_info) == 0 and len(coord_info) > 0:
                     locality_info = '[' + coord_info + '] '
                 
-                if len(synonym['lsid']) > 0:
-                    locality_info = locality_info + format_lsid_href(synonym) + ' '
+                if len(synonym['lsid_act']) > 0:
+                    synonym['identified_note'] = synonym['identified_note'] + r' \\lsid{' + synonym['lsid_act'] + r'}'
+
+                if len(synonym['lsid_pub']) > 0:
+                    locality_info = locality_info + format_lsid(synonym['lsid_pub']) + ' '
 
                 if len(synonym['comments']) > 0:
                     locality_info = locality_info + synonym['comments']
@@ -130,6 +134,8 @@ with open(outfile, 'wt') as out_file:
 
         if len(these_synonyms) > 0:
             these_synonyms = '\\begin{synonymy}\n' + these_synonyms + '\\end{synonymy}\n\n'
+            these_synonyms = find_replace_multi(these_synonyms, text_sanitising)
+            # re.compile(r'..')
 
         out_file.write(this_taxon)
         out_file.write(these_synonyms)

@@ -7,16 +7,6 @@
 
 \setdefaultlanguage[variant=british]{english}
 
-\newfontfamily\cabincd{CabinCondensed-RegularCondensed}[%
-    Scale = MatchLowercase,
-    ItalicFont = {CabinCondensed-ItalicCondensed},
-    BoldFont = {CabinCondensed-BoldCondensed},
-    BoldItalicFont = {CabinCondensed-BoldItalicCondensed}
-]
-\ProvideDocumentCommand{\textsfcd}{ m }{{\cabincd #1}}
-
-\usepackage{tabularx}
-
 \ProvideDocumentCommand{\species}{ m }{\emph{#1}\markboth{#1}{#1}}
 
 \setlength\LTpre{0.5\baselineskip}
@@ -24,7 +14,7 @@
     {}%
     {
         \footnotesize
-        \begin{longtable}[l]{p{1.5em}@{\hspace{0.5em}}p{2.5em}@{\hspace{0.5em}}p{22em}@{\hspace{0.5em}}p{42em}}
+        \begin{longtable}[l]{@{\hspace{0em}}p{1.5em}@{\hspace{0.5em}}p{2.5em}@{\hspace{0.5em}}p{22em}@{\hspace{0.5em}}p{42em}}
     }%
     {
         \end{longtable}
@@ -33,6 +23,18 @@
 \usepackage{multicol}
 
 \usepackage{parskip}
+
+% \usepackage{tikz}
+\usepackage{tcolorbox}
+\definecolor{lsid_link}{Hsb}{25, 0.8, 0.9}
+\colorlet{lsid_link}[rgb]{lsid_link}
+
+\newtcbox{\lsidbox}{on line, colback = lsid_link, arc = 0.2em, left = -0.15em,
+    right = -0.15em, top = -0.15em, bottom = -0.15em, boxrule = 0.0pt}
+
+\ProvideDocumentCommand{\lsid}{ m }{
+    \lsidbox{{\sffamily\bfseries\footnotesize\href{http://zoobank.org/#1}{\textcolor{white}{\textallsc{LSID}}}}}
+}
 
 %% bibliography
 \usepackage[
@@ -54,7 +56,7 @@
 	sorting      = nyt%
 ]{biblatex}
 \addbibresource{synonymy.bib}
-% \RenewDocumentCommand{\bibfont}{}{\small\cabincd}
+
 \RenewDocumentCommand{\bibfont}{}{\small\sffamily}
 \RenewDocumentCommand{\UrlFont}{}{\small\ttfamily}
 
@@ -100,7 +102,6 @@
 \sectionmark{Ichthyosauromorph Taxonomy}
 
 \vspace{1em}
-
 
 \textcaps{Ichthyosauromorpha} \cite*[Motani et al.,][]{Motani2015N}
 \vspace{1em}
