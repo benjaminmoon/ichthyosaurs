@@ -112,7 +112,10 @@ with open(outfile, 'wt') as out_file:
                     locality_info =  '[' + locality_info + '.] '
                 elif len(locality_info) == 0 and len(coord_info) > 0:
                     locality_info = '[' + coord_info + '] '
-                
+                 
+                if len(synonym['pageref']) > 0:
+                    synonym['pageref'] = 'p~' + synonym['pageref']
+
                 if len(synonym['lsid_act']) > 0:
                     synonym['identified_note'] = synonym['identified_note'] + r' \\lsid{' + synonym['lsid_act'] + r'}'
 
