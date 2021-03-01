@@ -20,7 +20,7 @@ except ValueError:
     print('Usage: {} taxon_file synonymy_file outfile'.format(script_file))
 
 taxon_name = '''\
-\\species{accepted_name}~\cauthyr{accepted_authority}\n
+\\species{accepted_name}~\\cauthyr{accepted_authority} id_link\n
 '''
 
 synonym_row = '''\
@@ -44,6 +44,12 @@ def get_ref_dates(filename):
                 refdate = bibfile[citekey]['date']
             yield dict(date = refdate, **row)
 
+def format_lsid_href(dictionary):
+    this_lsid = dictionary['lsid']
+    formatted_href = r'\\textallsc{LSID: \\href{zoobank.org/' + dictionary['lsid'] + r'}{' + dictionary['lsid'] + '}}'
+
+    return(formatted_href)
+
 synonymy_dict = get_ref_dates(synonymy_file)
 sorted_synonymy = sorted(synonymy_dict, key = lambda row: row['date'])
 
@@ -62,6 +68,11 @@ with open(outfile, 'wt') as out_file:
 
         if taxon['accepted_status'] == 'ncomb':
             this_taxon = re.sub('cauthyr', 'pauthyr', this_taxon)
+        
+        if len(taxon['lsid']) > 0:
+            this_taxon = re.sub('id_link', r'\\\\\n{\\footnotesize\\hspace{3em}' + format_lsid_href(taxon) + '}', this_taxon)
+        else:
+            this_taxon = re.sub('id_link', '', this_taxon)
 
         these_synonyms = str()
     
@@ -100,6 +111,10 @@ with open(outfile, 'wt') as out_file:
                     locality_info =  '[' + locality_info + '.] '
                 elif len(locality_info) == 0 and len(coord_info) > 0:
                     locality_info = '[' + coord_info + '] '
+                
+                if len(synonym['lsid']) > 0:
+                    locality_info = locality_info + format_lsid_href(synonym) + ' '
+
                 if len(synonym['comments']) > 0:
                     locality_info = locality_info + synonym['comments']
 
