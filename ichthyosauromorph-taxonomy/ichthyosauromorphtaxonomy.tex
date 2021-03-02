@@ -7,7 +7,6 @@
 
 \setdefaultlanguage[variant=british]{english}
 
-\ProvideDocumentCommand{\species}{ m }{\emph{#1}\markboth{#1}{#1}}
 
 \setlength\LTpre{0.5\baselineskip}
 \ProvideDocumentEnvironment{synonymy}
@@ -26,6 +25,7 @@
 
 % \usepackage{tikz}
 \usepackage{tcolorbox}
+\tcbuselibrary{skins}
 \definecolor{lsid_link}{Hsb}{25, 0.8, 0.9}
 \colorlet{lsid_link}[rgb]{lsid_link}
 
@@ -35,6 +35,27 @@
 \ProvideDocumentCommand{\lsid}{ m }{
     \lsidbox{{\sffamily\bfseries\footnotesize\href{http://zoobank.org/#1}{\textcolor{white}{\textallsc{LSID}}}}}
 }
+
+% \usepackage{tocloft}
+\NewDocumentCommand{\listspeciesname}{}{List of Species}
+% \newlistof{species}{losp}{\listspeciesname}
+\NewDocumentCommand{\species}{ m }{%
+    % \refstepcounter{species}%
+    \emph{#1}\markboth{#1}{#1}%
+    \addcontentsline{losp}{species}{#1}%
+}
+% \cftsetindents{species}{0em}{0em}
+\contentsuse{species}{losp}
+\makeatletter
+\titlecontents{species}
+    [0em]
+    {}
+    {\footnotesize\itshape}
+    {\footnotesize\itshape}
+    {\footnotesize\hspace{1em}\tuftelltx@accenttext{\contentspage}}
+\makeatother
+
+% \ProvideDocumentCommand{\species}{ m }{\emph{#1}\markboth{#1}{#1}}
 
 %% bibliography
 \usepackage[
@@ -123,9 +144,8 @@ are nonetheless open source, courtesy of their development at Adobe.
 
 The synonymy lists are presented as unruled tables:
 
-\hspace{\parskip}
-\begin{minipage}{630pt}
-    \species{Cartorhynchus lenticarpus}~\cauthyr{Motani2015N} \\
+\begin{tcolorbox}[enhanced, frame hidden, borderline west = {2pt}{2pt}{red}, colback = white!00, width = 666pt] 
+    \emph{Cartorhynchus lenticarpus}~\cauthyr{Motani2015N} \\
     {\footnotesize\hspace{5em}\textallsc{LSID:} \href{http://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32}{\textallsc{urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32}}}\vspace{0.5\baselineskip}
     
     {\footnotesize
@@ -134,7 +154,7 @@ The synonymy lists are presented as unruled tables:
     *        & \cite*{Motani2015N} & \emph{Cartorhynchus lenticarpus} \cite{Motani2015N} \lsid{urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32} & \crefauth{Motani2015N} p~485 [Upper Member, Nanlinghu Formation, \emph{Subcolumbites} Ammonite Biozone (Olenekian, Lower Triassic, Triassic); Majishan Quarry, Chaohu City, Hefei, China (\textallsc{UTM WGS84 50R 577953 3499041 = 31° 37′ 26″ N 117° 49′ 19″ E}).] \textallsc{LSID:} \href{http://zoobank.org/urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5}{\textallsc{urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5}} \\
     \end{tabular}
     }
-\end{minipage}
+\end{tcolorbox}
 
 If a work names a new species or combination, the \textallsc{LSID} of the act is
 included as a link button alongside the taxon
@@ -225,13 +245,12 @@ colours, as follows:
     \item[{\upshape\lsid{x}}] link to a ZooBank \textallsc{LSID} for an act.
 \end{description}
 
+\begin{multicols}{3}
+\listofspecies
+\end{multicols}{3}
 
-
-
-% \sectionmark{Ichthyosauromorph Taxonomy}
-
-% \vspace{1em}
 \clearpage
+
 
 \textcaps{Ichthyosauromorpha} \cite*[Motani et al.,][]{Motani2015N}
 \vspace{1em}

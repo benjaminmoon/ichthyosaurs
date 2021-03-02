@@ -45,7 +45,7 @@ def get_ref_dates(filename):
             yield dict(date = refdate, **row)
 
 def format_lsid(lsid):
-    formatted_href = r'\\textallsc{LSID:} \\href{http://zoobank.org/' + lsid + r'}{\\textallsc{' + lsid + '}}'
+    formatted_href = r'\\href{http://zoobank.org/' + lsid + r'}{\\textallsc{' + lsid + '}}'
 
     return(formatted_href)
 
