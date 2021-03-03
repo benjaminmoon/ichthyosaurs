@@ -16,6 +16,7 @@
 *.cb
 *.cb2
 .*.lb
+*.losp
 
 ## Intermediate documents:
 *.dvi
