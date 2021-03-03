@@ -3,133 +3,15 @@
 % !TEX spellcheck = en_GB
 % !TEX encoding = utf8
 
-\documentclass[notuftebib,font=source,UKenglish]{tufte-lualatex}
+\documentclass{synonymy}
 
 \setdefaultlanguage[variant=british]{english}
-
-
-\setlength\LTpre{0.5\baselineskip}
-\ProvideDocumentEnvironment{synonymy}
-    {}%
-    {
-        \footnotesize
-        \begin{longtable}[l]{@{\hspace{0em}}p{1.5em}@{\hspace{0.5em}}p{2.5em}@{\hspace{0.5em}}p{22em}@{\hspace{0.5em}}p{42em}}
-    }%
-    {
-        \end{longtable}
-    }
-
-\usepackage{multicol}
-
-\usepackage{parskip}
-
-\usepackage{tcolorbox}
-\tcbuselibrary{skins}
-\definecolor{lsid_link}{Hsb}{25, 0.8, 0.9}
-\colorlet{lsid_link}[rgb]{lsid_link}
-
-\newtcbox{\lsidbox}{on line, colback = lsid_link, arc = 0.2em, left = -0.15em,
-    right = -0.15em, top = -0.15em, bottom = -0.15em, boxrule = 0.0pt}
-
-\ProvideDocumentCommand{\lsid}{ m }{
-    \lsidbox{{\sffamily\bfseries\footnotesize\href{http://zoobank.org/#1}{\textcolor{white}{\textallsc{LSID}}}}}
-}
-
-\NewDocumentEnvironment{fullwidth}{}%
-    {%
-        \begin{list}{}{%
-            \setlength{\leftmargin}{0pt}
-            \setlength{\rightmargin}{-\marginparsep}\addtolength{\rightmargin}{-\marginparwidth}%
-        } \item[]%
-    }%
-    {\end{list}}
-
-% \usepackage{tocloft}
-\NewDocumentCommand{\listspeciesname}{}{List of Species}
-\newlistof{species}{losp}{\listspeciesname}
-\NewDocumentCommand{\species}{ m m }{%
-    \refstepcounter{species}
-    \par\noindent\emph{#1}~#2
-    \addcontentsline{losp}{species}{\protect{#1}}\par%
-}
-\cftsetindents{species}{0em}{0em}
-
-\RenewDocumentCommand{\cftlospprehook}{}{%
-    \addcontentsline{toc}{section}{\listspeciesname}
-    \begin{fullwidth}%
-    \begin{multicols}{3}%
-}
-\RenewDocumentCommand{\cftlospposthook}{}{%
-    \end{multicols}%
-    \end{fullwidth}
-}
-\contentsuse{species}{losp}
-\makeatletter
-\titlecontents{species}
-    [0em]
-    {\addvspace{-0.3\baselineskip}}
-    {\footnotesize\itshape}
-    {\footnotesize\itshape}
-    {\footnotesize\hspace{1em}\tuftelltx@accenttext{\contentspage}}
-\makeatother
-
-% \ProvideDocumentCommand{\species}{ m }{\emph{#1}\markboth{#1}{#1}}
+% \usepackage{parskip}
 
 %% bibliography
-\usepackage[
-    backend      = biber,
-	sortlocale   = auto,
-	style        = authoryear,
-	hyperref     = auto,
-	maxcitenames = 2,
-	mincitenames = 1,
-	maxbibnames  = 100,
-	alldates     = year,
-	uniquename   = false,
-	uniquelist   = false,
-	backref      = false,
-	giveninits   = true,
-	dashed       = false,
-	mergedate    = maximum,
-	doi          = true,
-	sorting      = nyt%
-]{biblatex}
 \addbibresource{synonymy.bib}
 
-\RenewDocumentCommand{\bibfont}{}{\small\sffamily}
-\RenewDocumentCommand{\UrlFont}{}{\small\ttfamily}
-
-\ProvideDocumentCommand{\mywidebib}{}{
-	\newgeometry{left = 3pc, textwidth = 44pc, top = 4pc, textheight = 60pc, nomarginpar}
-	\begin{multicols}{3}[\printbibheading]
-		\newrefcontext[sorting=nyt]
-		\addcontentsline{toc}{section}{References}
-		\printbibliography[heading=none]
-	\end{multicols}
-	\restoregeometry
-}
-
-\RenewDocumentCommand{\nameyeardelim}{}{{, }}
-
-\ProvideDocumentCommand{\cauth}{ m }{\cite{#1}}
-\ProvideDocumentCommand{\crefauth}{ m }{\citeauthor{#1}}
-\ProvideDocumentCommand{\pauth}{ m }{\parencite{#1}}
-\ProvideDocumentCommand{\cyear}{ m }{\cite*{#1}}
-\ProvideDocumentCommand{\pyear}{ m }{\parencite*{#1}}
-\ProvideDocumentCommand{\emyear}{ m }{\emph{\cite*{#1}}}
-\ProvideDocumentCommand{\cauthyr}{ m }{\cite{#1}}
-\ProvideDocumentCommand{\pauthyr}{ m }{\parencite{#1}}
-
-% show first and last species on page in footer – like an index
-\AtBeginDocument{
-    \fancyfoot[L]{\nouppercase{{\small\itshape\rightmark–\leftmark}}}
-}
-% single section in references
-\AtBeginBibliography{
-    \fancyfoot[L]{\nouppercase{{\itshape\leftmark}}}
-}
-
-\setVersion{0.5} %version number
+\setVersion{0.6} %version number
 
 \title{Ichthyosauromorph taxonomy}
 \author{Benjamin Moon}
@@ -179,6 +61,5 @@
 
 
 \mywidebib
-% \printbibliography
 
 \end{document}
