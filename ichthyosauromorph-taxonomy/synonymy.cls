@@ -534,7 +534,7 @@
 \RequirePackage{tcolorbox}
     \tcbuselibrary{skins}
 % A box for examples with accentcolour bar on the left
-\tcolorboxenvironment{examplebox}{%
+\newtcolorbox{examplebox}{%
     enhanced,
     frame hidden,
     borderline west = {2pt}{2pt}{\accentcol},
