@@ -162,6 +162,39 @@
 }
 
 
+%%% Colours
+%
+% Several custom colours are used to highlight text and links. The _accent
+% colour_ can be changed; this is the main 'theme' of the document. Other
+% colours, like for citations and URLs, are standardised.
+\RequirePackage{xcolor}
+\RequirePackage{luacolor}
+% set up an accent colour
+\NewDocumentCommand{\SetAccentColour}{o m}{
+    \IfNoValueTF{#1}{
+        \colorlet{synonymy@accentcolour}{#2}
+    }{
+        \definecolor{synonymy@accentcolour}{#1}{#2}
+    }
+}
+\NewDocumentCommand{\accentcol}{}{synonymy@accentcolour}
+% default colour is red
+\SetAccentColour{red}
+% accent text to bring it out
+\NewDocumentCommand{\synonymy@accenttext}{ m }{%
+    \textcolor{synonymy@accentcolour}{#1}%
+}
+\NewDocumentCommand{\textaccent}{m}{%
+   % \textcolor{synonymy@accentcolour}{#1}%
+    \synonymy@accenttext{#1}%
+}
+% hyperref link colours
+\definecolor{synonymy@citelinkcolour}{Hsb}{185,0.80,0.40}
+\colorlet{citelinkcolour}{synonymy@citelinkcolour}
+\definecolor{synonymy@urllinkcolour}{Hsb}{300,0.80,0.40}
+\colorlet{urllinkcolour}{synonymy@urllinkcolour}
+
+
 %%% Typographical niceness
 %
 % A series of features and typographical extras.
@@ -406,12 +439,12 @@
 \IfNoValueOrEmptyTF{#1}{%
     \@sidenotes@placemarginal{#2}{%
         \RaggedRight\synonymy@sidenotefontsize\sffamily%
-        \noindent\accenttext{\thesidenote}{}~#3}%
+        \noindent\synonymy@accenttext{\thesidenote}{}~#3}%
     \refstepcounter{sidenote}%
 }{%
     \@sidenotes@placemarginal{#2}{%
         \RaggedRight\synonymy@sidenotefontsize\sffamily%
-        \noindent\accenttext{#1}~#3}%
+        \noindent\synonymy@accenttext{#1}~#3}%
     }%
 }
 % Accent-colour sidenote numbers
@@ -458,14 +491,14 @@
         {}
         {}
         {}
-        {\hspace{1em}\synonym@accenttext{\contentspage}}
+        {\hspace{1em}\synonymy@accenttext{\contentspage}}
         [\addvspace{0.5\baselineskip}]
     \titlecontents{subsection}
         [2em]
         {\addvspace{-0.5\baselineskip}}
         {\itshape}
         {\itshape}
-        {\hspace{1em}\synonym@accenttext{\contentspage}}
+        {\hspace{1em}\synonymy@accenttext{\contentspage}}
         [\addvspace{0.5\baselineskip}]
 
 %%%%%% Title formatting
@@ -495,18 +528,18 @@
 % Captions are printed at footnotesize with an accentcolour label and number.
 % Additionally they can be printed in the margin alongside the figure, table,
 % listing etc.
-\RequirePackage{caption}
-\DeclareCaptionFont{sidenotesize}{\synonymy@sidenotefontsize}
-\DeclareCaptionStyle{sidecaption}{%
-    font      = {sidenotesize,sf},
-    labelsep  = space,
-    labelfont = {color = synonym@accentcolour}
-}
-\captionsetup{style = sidecaption}
-\DeclareCaptionStyle{marginfigure}{style = sidecaption}
-\DeclareCaptionStyle{margintable}{style = sidecaption}
-\DeclareCaptionStyle{widefigure}{style = sidecaption}
-\DeclareCaptionStyle{widetable}{style = sidecaption}
+%\RequirePackage{caption}
+%\DeclareCaptionFont{sidenotesize}{\synonymy@sidenotefontsize}
+%\DeclareCaptionStyle{sidecaption}{%
+%    font      = {sidenotesize,sf},
+%    labelsep  = space,
+%    labelfont = {color = synonymy@accentcolour}
+%}
+%\captionsetup{style = sidecaption}
+%\DeclareCaptionStyle{marginfigure}{style = sidecaption}
+%\DeclareCaptionStyle{margintable}{style = sidecaption}
+%\DeclareCaptionStyle{widefigure}{style = sidecaption}
+%\DeclareCaptionStyle{widetable}{style = sidecaption}
 
 %%%%%% Headers and footers
 %
@@ -537,7 +570,7 @@
 \newtcolorbox{examplebox}{%
     enhanced,
     frame hidden,
-    borderline west = {2pt}{2pt}{\accentcol},
+    borderline west = {2pt}{2pt}{synonymy@accentcolour},
     interior hidden,
     width = 44pc
 }
@@ -637,38 +670,6 @@
 \ProvideDocumentCommand{\emyear}{ m }{\emph{\cite*{#1}}}
 \ProvideDocumentCommand{\cauthyr}{ m }{\cite{#1}}
 \ProvideDocumentCommand{\pauthyr}{ m }{\parencite{#1}}
-
-
-%%% Colours
-%
-% Several custom colours are used to highlight text and links. The _accent
-% colour_ can be changed; this is the main 'theme' of the document. Other
-% colours, like for citations and URLs, are standardised.
-\RequirePackage{xcolor}
-\RequirePackage{luacolor}
-% set up an accent colour
-\NewDocumentCommand{\SetAccentColour}{o m}{
-    \IfNoValueTF{#1}{
-        \colorlet{synonymy@accentcolour}{#2}
-    }{
-        \definecolor{synonymy@accentcolour}{#1}{#2}
-    }
-}
-\NewDocumentCommand{\accentcol}{}{synonymy@accentcolour}
-% default colour is red
-\SetAccentColour{red}
-% accent text to bring it out
-\NewDocumentCommand{\synonymy@accenttext}{ m }{%
-    \textcolor{synonymy@accentcolour}{#1}%
-}
-\NewDocumentCommand{\textaccent}{m}{%
-    \synonymy@accenttext{#1}%
-}
-% hyperref link colours
-\definecolor{synonymy@citelinkcolour}{Hsb}{185,0.80,0.40}
-\colorlet{citelinkcolour}{synonymy@citelinkcolour}
-\definecolor{synonymy@urllinkcolour}{Hsb}{300,0.80,0.40}
-\colorlet{urllinkcolour}{synonymy@urllinkcolour}
 
 
 %%% Bibliography
