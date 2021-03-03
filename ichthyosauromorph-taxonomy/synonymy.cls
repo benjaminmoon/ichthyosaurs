@@ -563,17 +563,15 @@
 %
 % These provide a little colour and emphasis on a piece of text, such as an
 % example.
-\RequirePackage{tikz}
 \RequirePackage{tcolorbox}
-    \tcbuselibrary{skins}
+    \tcbuselibrary{skins,xparse}
 % A box for examples with accentcolour bar on the left
-\newtcolorbox{examplebox}{%
-    enhanced,
-    frame hidden,
-    borderline west = {2pt}{2pt}{synonymy@accentcolour},
-    interior hidden,
-    width = 44pc
-}
+% \NewDocumentEnvironment{examplebox}{}{}{}
+% \AtBeginDocument{
+% \newtcolorbox{examplebox}{enhanced, borderline west = {2pt}{2pt}{synonymy@accentcolour}, width = 44pc}
+% }
+\ProvideTColorBox{examplebox}{}%
+    {enhanced, blanker, borderline west = {2pt}{2pt}{synonymy@accentcolour}, width = 44pc}
 
 %%%%%% Abstract
 %
@@ -615,7 +613,7 @@
 % for the full URN itself.
 \definecolor{lsid_link}{Hsb}{25, 0.8, 0.9}
 \colorlet{lsid_link}[rgb]{lsid_link}
-\newtcbox{\lsidbox}{on line, colback = lsid_link, arc = 0.2em, left = -0.15em,
+\ProvideTCBox{\lsidbox}{on line, colback = lsid_link, arc = 0.2em, left = -0.15em,
     right = -0.15em, top = -0.15em, bottom = -0.15em, boxrule = 0.0pt}
 \ProvideDocumentCommand{\lsid}{ m }{
     \lsidbox{{\sffamily\bfseries\footnotesize\href{http://zoobank.org/#1}{\textcolor{white}{\textallsc{LSID}}}}}
