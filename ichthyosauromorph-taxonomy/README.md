@@ -33,8 +33,8 @@ The four arguments required are:
 ## Dependencies for compiling the TeX file ##
 
 I've used a custom Tufte-style class, _tufte-lualatex_ that I've also included.
-This makes many changes in the style of Edward Tufte's books and the related
-_tufte-latex_ class files.[^1] [^2] I couldn't always get _tufte-latex_ to work,
+This makes many changes in the style of Edward Tufte's books[^1] and the related
+_tufte-latex_ class files.[^2] I couldn't always get _tufte-latex_ to work,
 wanted more control and an excuse to try making my own class file, so I built
 this. It replicates many of the features, but will more of my opinions built
 into it.
