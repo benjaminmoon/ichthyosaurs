@@ -23,7 +23,6 @@
 
 \usepackage{parskip}
 
-% \usepackage{tikz}
 \usepackage{tcolorbox}
 \tcbuselibrary{skins}
 \definecolor{lsid_link}{Hsb}{25, 0.8, 0.9}
@@ -36,20 +35,39 @@
     \lsidbox{{\sffamily\bfseries\footnotesize\href{http://zoobank.org/#1}{\textcolor{white}{\textallsc{LSID}}}}}
 }
 
+\NewDocumentEnvironment{fullwidth}{}%
+    {%
+        \begin{list}{}{%
+            \setlength{\leftmargin}{0pt}
+            \setlength{\rightmargin}{-\marginparsep}\addtolength{\rightmargin}{-\marginparwidth}%
+        } \item[]%
+    }%
+    {\end{list}}
+
 % \usepackage{tocloft}
 \NewDocumentCommand{\listspeciesname}{}{List of Species}
-% \newlistof{species}{losp}{\listspeciesname}
-\NewDocumentCommand{\species}{ m }{%
-    % \refstepcounter{species}%
-    \emph{#1}\markboth{#1}{#1}%
-    \addcontentsline{losp}{species}{#1}%
+\newlistof{species}{losp}{\listspeciesname}
+\NewDocumentCommand{\species}{ m m }{%
+    \refstepcounter{species}
+    \par\noindent\emph{#1}~#2
+    \addcontentsline{losp}{species}{\protect{#1}}\par%
 }
-% \cftsetindents{species}{0em}{0em}
+\cftsetindents{species}{0em}{0em}
+
+\RenewDocumentCommand{\cftlospprehook}{}{%
+    \addcontentsline{toc}{section}{\listspeciesname}
+    \begin{fullwidth}%
+    \begin{multicols}{3}%
+}
+\RenewDocumentCommand{\cftlospposthook}{}{%
+    \end{multicols}%
+    \end{fullwidth}
+}
 \contentsuse{species}{losp}
 \makeatletter
 \titlecontents{species}
     [0em]
-    {}
+    {\addvspace{-0.3\baselineskip}}
     {\footnotesize\itshape}
     {\footnotesize\itshape}
     {\footnotesize\hspace{1em}\tuftelltx@accenttext{\contentspage}}
@@ -85,6 +103,7 @@
 	\newgeometry{left = 3pc, textwidth = 44pc, top = 4pc, textheight = 60pc, nomarginpar}
 	\begin{multicols}{3}[\printbibheading]
 		\newrefcontext[sorting=nyt]
+		\addcontentsline{toc}{section}{References}
 		\printbibliography[heading=none]
 	\end{multicols}
 	\restoregeometry
@@ -122,135 +141,11 @@
 
 \tableofcontents
 
-\section{Introduction}
+\input{introduction}
 
-This document presents a list of valid ichthyosauromorph species. It is a
-constant work in progress given the pace at which new ichthyosaur research
-happens. Perhaps not as rapidly as some other fossil groups, but certainly fast
-enough to require some attention.
-
-It's also intended to give some handle on the vast literature available for
-ichthyosaurs and their near relatives by means of synonymy lists. I've chosen
-this format for it's familiarity, but also because I rather enjoy the process
-and trials to building a complete yet usable synonymy list.
-
-I've used this also as an exercise in typography – like much of my more public
-output. This document is typeset in \LuaLaTeX{} using typefaces with various
-nice features – old style figures, small capitals, optical sizes. The fonts used
-are nonetheless open source, courtesy of their development at Adobe.
-
-\subsection{Layout of synonymy lists}%
-\label{ssec:key-synonymy-lists}
-
-The synonymy lists are presented as unruled tables:
-
-\begin{tcolorbox}[enhanced, frame hidden, borderline west = {2pt}{2pt}{red}, colback = white!00, width = 666pt] 
-    \emph{Cartorhynchus lenticarpus}~\cauthyr{Motani2015N} \\
-    {\footnotesize\hspace{5em}\textallsc{LSID:} \href{http://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32}{\textallsc{urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32}}}\vspace{0.5\baselineskip}
-    
-    {\footnotesize
-    \begin{tabular}{p{4em}p{4em}p{20em}p{42em}}
-    <status> & <year> & \emph{<Taxon>} <Authority, Year> & <reference, page> [<occurrence information>.] <comments> \\
-    *        & \cite*{Motani2015N} & \emph{Cartorhynchus lenticarpus} \cite{Motani2015N} \lsid{urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32} & \crefauth{Motani2015N} p~485 [Upper Member, Nanlinghu Formation, \emph{Subcolumbites} Ammonite Biozone (Olenekian, Lower Triassic, Triassic); Majishan Quarry, Chaohu City, Hefei, China (\textallsc{UTM WGS84 50R 577953 3499041 = 31° 37′ 26″ N 117° 49′ 19″ E}).] \textallsc{LSID:} \href{http://zoobank.org/urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5}{\textallsc{urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5}} \\
-    \end{tabular}
-    }
-\end{tcolorbox}
-
-If a work names a new species or combination, the \textallsc{LSID} of the act is
-included as a link button alongside the taxon
-name,\sidenote{i.e.~\lsid{urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32}}
-where this is available. Similarly all works that have publication
-\textallsc{LSID}s have those included too.
-
-
-\subsection{‘Richter symbols’ \& certainty of assignment}%
-\label{sub:richter-symbols}
-
-I've followed the recommendations of \textcite{Matthews1973P}, pretty much to the
-letter, for the symbols and styles included in the leftmost two columns.
-
-\begin{description}
-    \item[In front of the year] \par
-    \begin{description}
-        \item[*] (asterisk) this publication marks the name becoming valid under
-            \textallsc{ICZN} rules.
-        \item[.] (dot/period) we accept responsibility for attaching this reference
-            to the taxon in question.
-        \item[] (no sign) we cannot responsibly attach this reference, but do not
-            doubt it.
-        \item[?] (question mark) there is some doubt in attaching this reference to
-            the current taxon.
-        \item[v] \emph{vidimus,} we have checked the deposited specimens. Can be
-            accompanied by the above tokens:
-            \begin{description}
-                \item[v*] we have seen the type specimen(s).
-                \item[v.] we take responsibility for attaching the deposited specimens.
-                \item[v] we do not take responsibility for attaching the deposited
-                    specimens.
-                \item[v?] the specimens cannot be certainly assigned to this taxon.
-            \end{description}
-        \item[(?)] the year of publication is uncertain.
-        \item[p] only part of the deposited specimens can be assigned to the current
-            taxon.
-            \begin{description}
-                \item[vp] the deposited specimens have been checked and only part of
-                    them belong to this taxon.
-            \end{description}
-    \end{description}
-
-\item[And by formatting the year] \par
-    \begin{description}
-        \item[1881] (italicised) this work does not add morphological
-            information, only occurrence information.
-        \item[\emph{1881}] (upright) the work adds to our knowledge on this taxon.
-        \item[\emph{(1881)}] (parentheses surrounding the year) the date of this work is
-            uncertain.
-    \end{description}
-\end{description}
-
-\subsection{Life Science Identifiers \textallsc{(LSID)}}%
-\label{ssec:introduction-lsid}
-
-\emph{Life science
-identifiers}\sidenote{\url{https://en.wikipedia.org/wiki/LSID}} are unique keys
-to identify and locate information important to the various life sciences.
-Relevant to this document are the identifiers used to link nomenclatural acts in
-\emph{ZooBank},\sidenote{\url{http://zoobank.org}} the official registry of the International
-Commission on Zoological Nomenclature \textallsc{(ICZN).} Naming new taxa in the
-recent literature requires registering the act in ZooBank to be ‘officially’
-recognised.\sidenote{\url{https://en.wikipedia.org/wiki/ZooBank}}
-
-Many of the taxa included herein were named before ZooBank was yet a glint in
-anyone's eye, although they may well have been included in the printed
-equivalent \emph{Zoological Record.} I've registered several new publications
-and acts where these were not in ZooBank before, that may be used henceforth. At
-the moment, these include only the original naming of species, not new
-combinations of specific and generic names.
-
-\subsection{Links in this document}%
-\label{sub:introduction-links}
-
-The \LaTeX{} document from which this \textallsc{PDF} is compiled includes the
-\emph{hyperref} package to provide links within the
-document\sidenote{e.g.~citations and sections} and to other references on the
-web\sidenote{e.g.~\textallsc{LSID}s and \textallsc{DOI}s}. These have different
-colours, as follows:
-
-\begin{description}
-    \item[\textcolor{citelinkcolour}{Citation}] links from the year of
-        a citation to its reference in the bibliography.
-    \item[\textallsc{\textcolor{urllinkcolour}{URL}}] often web links,
-        particularly to websites, \textallsc{DOI} links, \textallsc{LSID} with
-        the address fully written.
-    \item[{\upshape\lsid{x}}] link to a ZooBank \textallsc{LSID} for an act.
-\end{description}
-
-\begin{multicols}{3}
 \listofspecies
-\end{multicols}{3}
 
 \clearpage
-
 
 \textcaps{Ichthyosauromorpha} \cite*[Motani et al.,][]{Motani2015N}
 \vspace{1em}
