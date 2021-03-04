@@ -633,11 +633,12 @@
 \NewDocumentCommand{\listspeciesname}{}{{List~of~Species}}
 \newlistof{species}{losp}{\listspeciesname}
 % Set up a command for getting the species and author
-% \species{Species name}{\cite{authoryear}}
-\NewDocumentCommand{\species}{ m m }{%
+% \species{Species name}{\cite{authoryear}}[lsid]
+\NewDocumentCommand{\species}{ m m o }{%
     \refstepcounter{species}
     \par\noindent\emph{#1}~#2
-    \addcontentsline{losp}{species}{\protect{#1}}\par%
+    \addcontentsline{losp}{species}{\protect{#1}}\par
+    \IfNoValueTF{#3}{}{{\noindent\footnotesize\hspace{2em}\lsidref{#3}}\par}
 }
 \cftsetindents{species}{0em}{0em}
 % Use three columns
