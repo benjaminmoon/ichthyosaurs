@@ -702,12 +702,13 @@
     giveninits     = true,
     alldates       = year,
     labeldateparts = true,
-    dashed         = true,
+    dashed         = false,
     url            = false,
     isbn           = false,
     mergedate      = maximum,
     hyperref       = auto,
-    sorting        = dateauthor%
+    sorting        = dateauthor,
+    sortcites      = true
 ]{biblatex}
 
 %%%%%% Bibliography formatting
@@ -934,7 +935,7 @@
 \RenewDocumentCommand{\bibinitperiod}{}{.} % full stop after initial
 \RenewDocumentCommand{\bibinitdelim}{}{} % no spacing between initials
 \RenewDocumentCommand{\bibinithyphendelim}{}{{\addfontfeature{Letters=Uppercase} .-}} % hyphen between initials
-\RenewDocumentCommand{\bibnamedash}{}{———} % replace repeated authors dash
+% \RenewDocumentCommand{\bibnamedash}{}{———} % replace repeated authors dash
 \RenewDocumentCommand{\multinamedelim}{}{\addcomma\addspace} % comma-space between names
 \RenewDocumentCommand{\finalnamedelim}{}{\addspace\textcaps{\&}\addspace} % space-&-space before last name
 \RenewDocumentCommand{\nameyeardelim}{}{{,~}} % comma-space between name & year
@@ -999,6 +1000,60 @@
     \setunit{\addcolon\addspace}%
     \printfield{address}%
     \newunit}
+% The following macros set up replacing single repeated authors with dashes
+\RenewDocumentCommand{\bibnamedash}{}{\textemdash\textemdash\textemdash}
+\NewDocumentCommand{\multidashdelim}{}{\addspace}
+\NewDocumentCommand{\dashnamedelim}{}{\addspace}
+\NewDocumentCommand{\finaldashdelim}{}{\finalnamedelim}
+\newtoggle{bbx:goahead}
+\InitializeBibliographyStyle{\global\csundef{bbx@lastname@1}}
+\newbibmacro*{bbx:printlist}[1]{%
+  \toggletrue{bbx:goahead}%
+    \printnames[dashed:last-first]{#1}}
+\newbibmacro*{dash:delim}{%
+    \ifnumgreater{\value{listcount}}{\value{liststart}}
+    {\ifboolexpr{
+        test {\ifnumless{\value{listcount}}{\value{liststop}}}
+        or
+        test \ifmorenames
+    }
+        {\multidashdelim}
+        {\finalnamedelim}}
+    {}}
+\DeclareNameFormat{dashed:last-first}{%
+    \nameparts{#1}%
+    \ifboolexpr{togl {bbx:goahead}
+                and test {\iffieldequalcs{hash}{bbx@lastname@\the\value{listcount}}}}
+        {\usebibmacro{dash:delim}\bibnamedash}
+        {\global\togglefalse{bbx:goahead}%
+        {\usebibmacro{name:family-given}{\namepartfamily}{\namepartgiveni}{\namepartprefix}{\namepartsuffix}}}
+    \csxdef{bbx@lastname@\the\value{listcount}}{\thefield{hash}}}
+\renewbibmacro*{author}{%
+    \ifboolexpr{ test {\ifuseauthor}
+                and not test {\ifnameundef{author}} }
+        {\usebibmacro{bbx:printlist}{author}%
+            \setunit{\addspace}%
+            \usebibmacro{authorstrg}}
+        {\global\csundef{bbx@lastname@1}}
+            \usebibmacro{date+extrayear}}
+\renewbibmacro*{bbx:editor}[1]{%
+    \ifboolexpr{ test {\ifuseeditor}
+                and not test {\ifnameundef{editor}} }
+        {\usebibmacro{bbx:printlist}{editor}%
+            \setunit{\addspace}%
+            \usebibmacro{#1}%
+            \clearname{editor}}
+        {\global\csundef{bbx@lastname@1}}
+            \usebibmacro{date+extrayear}}
+\renewbibmacro*{bbx:translator}[1]{%
+    \ifboolexpr{ test {\ifusetranslator}
+                and not test {\ifnameundef{translator}} }
+        {\usebibmacro{bbx:printlist}{translator}%
+            \setunit{\addspace}%
+            \usebibmacro{#1}%
+            \clearname{translator}}
+        {\global\csundef{bbx@lastname@1}}
+            \usebibmacro{date+extrayear}}
 
 
 %%% Cross referencing and links
