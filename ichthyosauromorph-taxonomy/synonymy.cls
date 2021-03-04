@@ -14,13 +14,16 @@
 %
 % This package requires LuaLaTeX. This code checks for that. Taken from luacolor
 % package.
-\ifx\directlua\@undefined
-  \PackageError{synonymy}{%
-    This package may only be run using LuaTeX%
-  }\@ehc
-  \expandafter
-\fi%
+% \ifx\directlua\@undefined
+%   \PackageError{synonymy}{%
+%     This package may only be run using LuaTeX%
+%   }\@ehc
+%   \expandafter
+% \fi%
 
+
+%%% Use LaTeX3 parsing
+\ExplSyntaxOn
 
 %%% Key options
 %
@@ -303,7 +306,9 @@
         \setsansfont{Source Sans 3}[%
             Scale = MatchLowercase, Numbers = {OldStyle, Proportional}
         ]
-        \setmonofont{Source Code Pro}[Scale = MatchLowercase]
+        \setmonofont{Source Code Pro}[%
+            Scale = MatchLowercase, Numbers = {OldStyle}
+        ]
     }
 }{
     \ClassError { synonymy } {Unknown~language~setting}
@@ -398,7 +403,7 @@
     \setlist[description,3]{%
         nosep,%
     	labelindent = 3\parindent,%
-        font        = \normalfont\itshape
+        font        = \normalfont\itshape%
     }
 % Also create a new inline enumeration setup.
     \newlist{inlineenum}{enumerate*}{1}
@@ -563,31 +568,30 @@
 %
 % These provide a little colour and emphasis on a piece of text, such as an
 % example.
-\RequirePackage{tcolorbox}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{tikz}
     \tcbuselibrary{skins,xparse}
 % A box for examples with accentcolour bar on the left
-% \NewDocumentEnvironment{examplebox}{}{}{}
-% \AtBeginDocument{
-% \newtcolorbox{examplebox}{enhanced, borderline west = {2pt}{2pt}{synonymy@accentcolour}, width = 44pc}
-% }
+% NB using xparse/expl3 requires replaceing spaces in keys with '~'
 \ProvideTColorBox{examplebox}{}%
-    {enhanced, blanker, borderline west = {2pt}{2pt}{synonymy@accentcolour}, width = 44pc}
+    {enhanced, frame~hidden, interior~hidden, borderline~west = {2pt}{2pt}{synonymy@accentcolour}, width = 44pc}
 
 %%%%%% Abstract
 %
 % Environment for setting an abstract or beginning section.
-\RenewDocumentEnvironment{abstract}{ o }{%
-    % Environment for setting an abstract. The optional orgument specifies a
-    % title to be typeset.
-	\small%
-	\list{}{\rightmargin\parindent \leftmargin\parindent}\item[]
-	\IfNoValueTF{#1}{}{\textallsc{#1}}%
-}{%
-	\endlist%
-	\vspace{\baselineskip} \par%
-}
+% \RenewDocumentEnvironment{abstract}{ o }{%
+%     % Environment for setting an abstract. The optional orgument specifies a
+%     % title to be typeset.
+% 	\small%
+% 	\list{}{\rightmargin\parindent \leftmargin\parindent}\item[]
+% 	\IfNoValueTF{#1}{}{\textallsc{#1}}%
+% }{%
+% 	\endlist%
+% 	\vspace{\baselineskip} \par%
+% }
 
-%%%%%% Versioning
+
+%%% Versioning
 %
 % Records version and build numbers in an associated _version.dat_ file.
 \RequirePackage{mVersion}
@@ -613,15 +617,15 @@
 % for the full URN itself.
 \definecolor{lsid_link}{Hsb}{25, 0.8, 0.9}
 \colorlet{lsid_link}[rgb]{lsid_link}
-\ProvideTCBox{\lsidbox}{on line, colback = lsid_link, arc = 0.2em, left = -0.15em,
+\ProvideDocumentCommand{\lsidlink}{ m }%
+    {\sffamily\bfseries\footnotesize\href{http://zoobank.org/#1}{\textcolor{white}{\textallsc{LSID}}}}
+\newtcbox{\lsidbox}{{/tcb/on~line}, colback=lsid_link, arc = 0.2em, left = -0.15em,
     right = -0.15em, top = -0.15em, bottom = -0.15em, boxrule = 0.0pt}
-\ProvideDocumentCommand{\lsid}{ m }{
-    \lsidbox{{\sffamily\bfseries\footnotesize\href{http://zoobank.org/#1}{\textcolor{white}{\textallsc{LSID}}}}}
-}
+\ProvideDocumentCommand{\lsid}{ m }{\lsidbox{\lsidlink{#1}}}
 % A list of species gathers all taxa in the list into one single, easy to find
 % place, with links to the fuller synonymy. Formatting takes after the lists
 % above with titletoc.
-\NewDocumentCommand{\listspeciesname}{}{List of Species}
+\NewDocumentCommand{\listspeciesname}{}{{List~of~Species}}
 \newlistof{species}{losp}{\listspeciesname}
 % Set up a command for getting the species and author
 % \species{Species name}{\cite{authoryear}}
@@ -646,7 +650,7 @@
 \makeatletter
 \titlecontents{species}
     [0em]
-    {\addvspace{-0.3\baselineskip}}
+    {\addvspace{-0.5\baselineskip}}
     {\footnotesize\itshape}
     {\footnotesize\itshape}
     {\footnotesize\hspace{1em}\synonymy@accenttext{\contentspage}}
@@ -1003,3 +1007,5 @@
     citecolor  = citelinkcolour,
     urlcolor   = urllinkcolour 
 ]{hyperref}
+
+\ExplSyntaxOff
