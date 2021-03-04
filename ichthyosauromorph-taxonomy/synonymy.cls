@@ -577,7 +577,22 @@
 % A box for examples with accentcolour bar on the left
 % NB using xparse/expl3 requires replaceing spaces in keys with '~'
 \ProvideTColorBox{examplebox}{}%
-    {enhanced, frame~hidden, interior~hidden, borderline~west = {2pt}{2pt}{synonymy@accentcolour}, width = 44pc}
+    {
+        enhanced~jigsaw,
+        frame~hidden,
+        interior~hidden,
+        borderline~west = {2pt}{2pt}{synonymy@accentcolour},
+        width = 44pc, 
+        enlarge~left~by = 14pt,
+        nobeforeafter,
+        overlay = {%
+            \node[anchor=north~east, inner~ysep = 0pt, align = right, text~width =
+            12pc] at ([yshift=-0.55ex]frame.north~west)
+            {\hfill\small\rotatebox{90}{\synonymy@accenttext{Example}}};
+        },
+        before = \vskip0.5\baselineskip\noindent,
+        after = \vskip0.5\baselineskip
+}
 
 %%%%%% Abstract
 %
@@ -600,6 +615,11 @@
 \RequirePackage{mVersion}
     \increaseBuild
 
+
+%%% Images
+%
+% Include figures and graphics, and adjust text in various ways.
+\RequirePackage{graphicx}
 
 %%% Synonymy-specific typesetting
 %
