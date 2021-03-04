@@ -44,8 +44,13 @@ def get_ref_dates(filename):
                 refdate = bibfile[citekey]['date']
             yield dict(date = refdate, **row)
 
-def format_lsid(lsid):
-    formatted_href = r'\\href{http://zoobank.org/' + lsid + r'}{\\textallsc{' + lsid + '}}'
+def format_lsidref(lsid):
+    formatted_href = r'\\lsidref{' + lsid + '}'
+
+    return(formatted_href)
+
+def format_lsidlink(lsid):
+    formatted_href = r'\\lsid{' + lsid + '}'
 
     return(formatted_href)
 
@@ -71,7 +76,7 @@ with open(outfile, 'wt') as out_file:
             this_taxon = re.sub('cauthyr', 'pauthyr', this_taxon)
         
         if len(taxon['lsid_act']) > 0:
-            this_taxon = re.sub('id_link', r'\n{\\footnotesize\\hspace{2em}' + format_lsid(taxon['lsid_act']) + '}', this_taxon)
+            this_taxon = re.sub('id_link', r'\n{\\footnotesize\\hspace{2em}' + format_lsidref(taxon['lsid_act']) + '}', this_taxon)
         else:
             this_taxon = re.sub('id_link', '', this_taxon)
 
@@ -117,10 +122,10 @@ with open(outfile, 'wt') as out_file:
                     synonym['pageref'] = 'p~' + synonym['pageref']
 
                 if len(synonym['lsid_act']) > 0:
-                    synonym['identified_note'] = synonym['identified_note'] + r' \\lsid{' + synonym['lsid_act'] + r'}'
+                    synonym['identified_note'] = synonym['identified_note'] + format_lsidlink(synonym['lsid_act'])
 
                 if len(synonym['lsid_pub']) > 0:
-                    locality_info = locality_info + format_lsid(synonym['lsid_pub']) + ' '
+                    locality_info = locality_info + format_lsidref(synonym['lsid_pub']) + ' '
 
                 if len(synonym['comments']) > 0:
                     locality_info = locality_info + synonym['comments']

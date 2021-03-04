@@ -95,6 +95,7 @@
             marginparwidth = 16pc,
             left           = 3pc,
             textheight     = 60pc,
+            headheight     = 1.5pc,
             top            = 4pc
         }
     }
@@ -107,6 +108,7 @@
             marginparwidth = 16pc,
             left           = 3pc,
             textheight     = 54pc,
+            headheight     = 1.5pc,
             top            = 4pc
         }
     }
@@ -123,7 +125,7 @@
             bottom          = 3pc,
             marginparsep    = 2pc,
             marginparwidth  = 16pc,
-            headheight      = 1pc,
+            headheight      = 1.5pc,
             headsep         = 0.5pc,
             footskip        = 1.5pc
         }
@@ -350,7 +352,7 @@
     \setlist[itemize,2]{%
     	nosep,%
     	align      = right,%
-        leftmargin = 2em%
+        leftmargin = \parindent%
     }
 % Three levels of enumeration:
 % 
@@ -392,17 +394,17 @@
 %   
 % Level 1
     \setlist[description,1]{%
-    	leftmargin = \parindent,%
+    	leftmargin = 0\parindent,%
         font       = \normalfont\itshape
     }
     \setlist[description,2]{%
         noitemsep,%
-    	labelindent = 2\parindent,%
+    	labelindent = 1\parindent,%
         font        = \normalfont\itshape
     }
     \setlist[description,3]{%
         nosep,%
-    	labelindent = 3\parindent,%
+    	leftmargin  = 2\parindent,%
         font        = \normalfont\itshape%
     }
 % Also create a new inline enumeration setup.
@@ -429,6 +431,7 @@
 %
 % Use ragged right (left justification) throughout, as in Tufte's books.
 \RequirePackage{ragged2e}
+    \setlength{\RaggedRightParindent}{\parindent}
     \AtBeginDocument{\RaggedRight}
 
 %%%%%% Sidenotes
@@ -622,6 +625,8 @@
 \newtcbox{\lsidbox}{{/tcb/on~line}, colback=lsid_link, arc = 0.2em, left = -0.15em,
     right = -0.15em, top = -0.15em, bottom = -0.15em, boxrule = 0.0pt}
 \ProvideDocumentCommand{\lsid}{ m }{\lsidbox{\lsidlink{#1}}}
+\ProvideDocumentCommand{\lsidref}{ m }%
+    {\href{http://zoobank.org/#1}{\textallsc{#1}}}
 % A list of species gathers all taxa in the list into one single, easy to find
 % place, with links to the fuller synonymy. Formatting takes after the lists
 % above with titletoc.
@@ -697,12 +702,12 @@
     giveninits     = true,
     alldates       = year,
     labeldateparts = true,
-    dashed         = false,
+    dashed         = true,
     url            = false,
     isbn           = false,
     mergedate      = maximum,
     hyperref       = auto,
-    sorting        = authordate%
+    sorting        = dateauthor%
 ]{biblatex}
 
 %%%%%% Bibliography formatting
@@ -710,12 +715,12 @@
 % These control the fonts and setting of the whole bibliography. Use a small
 % sans serif font, typset URLs in code font, use three columns.
 \RenewDocumentCommand{\bibfont}{}{\small\sffamily}
-\RenewDocumentCommand{\UrlFont}{}{\small\ttfamily}
+\RenewDocumentCommand{\UrlFont}{}{\small\ttfamily\addfontfeatures{Numbers=Lowercase}}
 % Use three columns with no right margin par.
 \ProvideDocumentCommand{\mywidebib}{}{
-	\newgeometry{left = 3pc, textwidth = 44pc, top = 4pc, textheight = 60pc, nomarginpar}
+	\newgeometry{left = 3pc, right = 3pc, textwidth = 44pc, top = 4pc, textheight = 60pc, nomarginpar}
 	\begin{multicols}{3}[\printbibheading]
-		\newrefcontext[sorting=nyt]
+		\newrefcontext[sorting=authordate]
 		\addcontentsline{toc}{section}{References}
 		\printbibliography[heading=none]
 	\end{multicols}
@@ -925,16 +930,16 @@
 \DeclareFieldFormat[article,memoir,incollection]{pages}{#1}
 % Separators
 \RenewDocumentCommand{\bibnamedelimi}{}{} % no space between initials
-\RenewDocumentCommand{\bibnamedelimc}{}{ } % space between prefix (von) and surname
+\RenewDocumentCommand{\bibnamedelimc}{}{~} % space between prefix (von) and surname
 \RenewDocumentCommand{\bibinitperiod}{}{.} % full stop after initial
 \RenewDocumentCommand{\bibinitdelim}{}{} % no spacing between initials
 \RenewDocumentCommand{\bibinithyphendelim}{}{{\addfontfeature{Letters=Uppercase} .-}} % hyphen between initials
 \RenewDocumentCommand{\bibnamedash}{}{———} % replace repeated authors dash
 \RenewDocumentCommand{\multinamedelim}{}{\addcomma\addspace} % comma-space between names
 \RenewDocumentCommand{\finalnamedelim}{}{\addspace\textcaps{\&}\addspace} % space-&-space before last name
-\RenewDocumentCommand{\nameyeardelim}{}{{, }} % comma-space between name & year
+\RenewDocumentCommand{\nameyeardelim}{}{{,~}} % comma-space between name & year
 \RenewDocumentCommand{\revsdnamepunct}{}{,~} % space between surname & forename
-\RenewDocumentCommand{\intitlepunct}{}{ } % space after ‘in’ in bibliography
+\RenewDocumentCommand{\intitlepunct}{}{~} % space after ‘in’ in bibliography
 \RenewDocumentCommand{\mkbibnamefamily}{ m }{% make last names small caps
     \ifmknamesc{\textsc{#1}}{#1}}
 \RenewDocumentCommand{\mkbibnameprefix}{ m }{% small cap name prefix
