@@ -20,7 +20,7 @@ except ValueError:
     print('Usage: {} taxon_file synonymy_file outfile'.format(script_file))
 
 taxon_name = '''\
-\\species{accepted_name}{\\cauthyr{accepted_authority}} id_link\n
+\\species{accepted_name}{\\cauthyr{accepted_authority}}id_link\n
 '''
 
 synonym_row = '''\
@@ -76,7 +76,7 @@ with open(outfile, 'wt') as out_file:
             this_taxon = re.sub('cauthyr', 'pauthyr', this_taxon)
         
         if len(taxon['lsid_act']) > 0:
-            this_taxon = re.sub('id_link', r'\n{\\footnotesize\\hspace{2em}' + format_lsidref(taxon['lsid_act']) + '}', this_taxon)
+            this_taxon = re.sub('id_link', '[' + taxon['lsid_act'] + ']', this_taxon)
         else:
             this_taxon = re.sub('id_link', '', this_taxon)
 
