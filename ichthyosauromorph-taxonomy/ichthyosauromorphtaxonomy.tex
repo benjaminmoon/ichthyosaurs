@@ -12,7 +12,7 @@
 
 \setVersion{0.6} %version number
 
-\title{Ichthyosauromorph taxonomy}
+\title{Ichthyosauromorph Taxonomy}
 \author{Benjamin Moon}
 \date{\sffamily Version~\version.\isodash{}\isodate\today}
 
@@ -28,35 +28,15 @@
 
 \clearpage
 
-\textcaps{Ichthyosauromorpha} \cite*[Motani et al.,][]{Motani2015N}
-\vspace{1em}
+\Clade{Ichthyosauromorpha}{\cite{Motani2015N}}
 
-\normalsize
-{\textsc{Hupehsuchia} \cite*[Carroll \& Dong,][]{Carroll1991PTRSBBS}}
+\clade{Hupehsuchia}{\cite{Carroll1991PTRSBBS}}
 
-\emph{Eohupehsuchus brevicollis} \cite*[Chen et al,][]{Chen2014POa}\\
-\begin{synonymy}
-	*	& \cite*{Chen2014POa}	& \emph{Eohupehsuchus brevicollis} Chen et al. & p~4 [Jialingjiang Formation (Upper Spathian, Lower Triassic); Yangping, Yuan’an County, Hubei Province, China].
-\end{synonymy}
+\input{hupehsuchia.tex}
 
-\emph{Eretmorhipis carrolldongi} \cite*[Chen et al.,][]{Chen2015PO}\\
-\begin{synonymy}
-	& \cite*{Carroll1991PTRSBBS}	& Hupehsuchia n.\ g., n.\ s. & p~143 [Jialingjiang Formation (Upper Spathian, Lower Triassic); Tuling, Baihechuan, Xunjian District, Nanzhang County, Hubei Province, China].\\
-	{*}	& \cite*{Chen2015PO}	& \emph{Eretmorhipis carrolldongi} Chen et al. & p~4 [Jialingjiang Formation (Upper Spathian, Lower Triassic); Yingzhishang, Yuan’an County, Hubei Province, China].
-\end{synonymy}
+\clade{Ichthyosauriformes}{\cite{Motani2015N}}
 
-\emph{Hupehsuchus nanchangensis} \cite*[Young \& Dong,][]{Young1972MNIGP}
-
-\emph{Nanchangosaurus suni} \cite*[Wang,][]{Wang1959APS}
-
-\emph{Parahupehsuchus longus} \cite*[Chen et al.,][]{Chen2014PO}
-
-\vspace{1em}
-
-
-\textsc{Ichthyosauriformes} \cite*[Motani et al.,][]{Motani2015N}
-
-\input{write_file.tex}
+\input{ichthyosauriformes.tex}
 
 
 \mywidebib

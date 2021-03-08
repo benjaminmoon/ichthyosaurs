@@ -15,7 +15,7 @@ from pybibtex import parse_bibfile_to_cite_dict
 # usage is given in the error return value
 try:
     script_file = sys.argv[0]
-    taxon_file, synonymy_file, outfile = sys.argv[1:]
+    taxon_file, synonymy_file, clade_name, outfile = sys.argv[1:]
 except ValueError:
     print('Usage: {} taxon_file synonymy_file outfile'.format(script_file))
 
@@ -33,7 +33,7 @@ def find_replace_multi(string, dictionary):
     return string
 
 def get_ref_dates(filename):
-    with open(synonymy_file, newline = '') as f:
+    with open(filename, newline = '') as f:
         syn = csv.DictReader(f, delimiter = '\t')
         bibfile = parse_bibfile_to_cite_dict(bib_path='synonymy.bib')
     
@@ -43,6 +43,14 @@ def get_ref_dates(filename):
             for citekey in citekey_dict:
                 refdate = bibfile[citekey]['date']
             yield dict(date = refdate, **row)
+
+def get_higher_taxon(filename):
+    with open(filename, newline = '') as f:
+        tax = csv.DictReader(f, delimiter = '\t')
+
+        for row in tax:
+            if row['clade'] == clade_name:
+                yield dict(**row)
 
 def format_lsidref(lsid):
     formatted_href = r'\\lsidref{' + lsid + '}'
@@ -57,6 +65,8 @@ def format_lsidlink(lsid):
 synonymy_dict = get_ref_dates(synonymy_file)
 sorted_synonymy = sorted(synonymy_dict, key = lambda row: row['date'])
 
+taxa_to_print = get_higher_taxon(taxon_file)
+
 text_sanitising = {r'\.\.': r'.', r'\s\s': r' '}
 
 unit_separator = ', '
@@ -68,7 +78,7 @@ with open(outfile, 'wt') as out_file:
     
     out_file.write('%! TEX root = ichthyosauromorphtaxonomy.tex\n\n')
 
-    for taxon in csv.DictReader(open(taxon_file, newline = ''), delimiter = '\t'):
+    for taxon in taxa_to_print:
         current_taxon = taxon['accepted_name']
         this_taxon = find_replace_multi(taxon_name, taxon)
 

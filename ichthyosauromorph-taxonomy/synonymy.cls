@@ -621,6 +621,7 @@
 % Include figures and graphics, and adjust text in various ways.
 \RequirePackage{graphicx}
 
+
 %%% Synonymy-specific typesetting
 %
 % Each taxon consists of a species name with its LSID followed by a list of
@@ -681,6 +682,20 @@
     {\footnotesize\itshape}
     {\footnotesize\hspace{1em}\synonymy@accenttext{\contentspage}}
 \makeatother
+% Styles for higher level taxa
+% I'm using two levels here: \Clade and \clade
+\NewDocumentCommand{\Clade}{ m m }
+    {
+        \vspace{\baselineskip}\par
+        \noindent\textcaps{#1}~#2
+        \addcontentsline{toc}{subsection}{\protect{#1}}\par
+    }
+\NewDocumentCommand{\clade}{ m m }
+    {
+        \vspace{\baselineskip}\par
+        \noindent\textallsc{#1}~#2
+        \addcontentsline{toc}{subsection}{\protect{#1}}\par
+    }
 % These commands attempt to set up dictionary-like footers for the synonymy to
 % show the first and last taxon on the page.
     % \fancyfoot[L]{\nouppercase{{\small\itshape\rightmark–\leftmark}}}
