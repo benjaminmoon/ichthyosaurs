@@ -8,6 +8,7 @@ taxa and synonymy.
 import sys
 import csv
 import re
+import utm
 from pybibtex import build_citekey_dict
 from pybibtex import parse_bibfile_to_cite_dict
 
@@ -15,9 +16,9 @@ from pybibtex import parse_bibfile_to_cite_dict
 # usage is given in the error return value
 try:
     script_file = sys.argv[0]
-    taxon_file, synonymy_file, clade_name, outfile = sys.argv[1:]
+    taxon_file, synonymy_file, clade_name = sys.argv[1:]
 except ValueError:
-    print('Usage: {} taxon_file synonymy_file outfile'.format(script_file))
+    print('Usage: {} taxon_file synonymy_file clade_name'.format(script_file))
 
 taxon_name = '''\
 \\species{accepted_name}{\\cauthyr{accepted_authority}}id_link\n
@@ -62,6 +63,55 @@ def format_lsidlink(lsid):
 
     return(formatted_href)
 
+def utm_to_latlon(utm_coord):
+    utm_parser = re.compile(r'(?P<column>\d+)(?P<row>[A-Z]) (?P<easting>\d+) (?P<northing>\d+)')
+    parsed_utm = utm_parser.match(utm_coord).groupdict()
+
+    converted_latlon = utm.to_latlon(int(parsed_utm['easting']), int(parsed_utm['northing']), int(parsed_utm['column']), parsed_utm['row'])
+
+    return(converted_latlon)
+
+def prettify_latlon(utm_latlon):
+    lat = str(round(utm_latlon[0], 7))
+    lon = str(round(utm_latlon[1], 7))
+
+    if utm_latlon[0] > 0:
+        lat = lat + '°N'
+    else:
+        lat = lat + '°S'
+
+    if utm_latlon[1] > 0:
+        lon = lon + '°E'
+    else:
+        lon = lon + '°W'
+
+    return(lat + ' ' + lon)
+
+def osm_link_latlon(latlon):
+    lat = str(round(latlon[0], 7))
+    lon = str(round(latlon[1], 7))
+
+    osm_link_str = r'https://www.openstreetmap.org/?mlat=' + lat + r'\\&mlon=' + lon  + r'\\#map=6/' + lat + '/' + lon
+
+    return(osm_link_str)
+
+def osm_pretty_link_latlon(latlon):
+    osm_link_str = osm_link_latlon(latlon)
+    pretty_latlon = prettify_latlon(latlon)
+
+    tex_str = r'\\osm{' + pretty_latlon + '}{' + osm_link_str + '}'
+
+    return(tex_str)
+
+def osm_pretty_link_utm(utm_coord):
+    latlon = utm_to_latlon(utm_coord)
+    osm_link_str = osm_link_latlon(latlon)
+
+    tex_str = r'\\osm{UTM WGS84 ' + utm_coord + '}{' + osm_link_str + '}'
+
+    return(tex_str)
+
+
 synonymy_dict = get_ref_dates(synonymy_file)
 sorted_synonymy = sorted(synonymy_dict, key = lambda row: row['date'])
 
@@ -73,6 +123,8 @@ unit_separator = ', '
 lithostrat_keys = ['bed', 'member', 'formation', 'zone']
 chronostrat_keys = ['stage', 'series', 'system']
 coord_keys = ['utm_wgs84', 'long', 'lat']
+
+outfile = clade_name.lower() + '.tex'
 
 with open(outfile, 'wt') as out_file:
     
@@ -117,9 +169,12 @@ with open(outfile, 'wt') as out_file:
 
                 coord_info = str()
                 if len(synonym['utm_wgs84']) > 0 and len(synonym['longitude']) > 0:
-                    coord_info = r'\\textallsc{UTM WGS84 ' + synonym['utm_wgs84'] + ' = ' + synonym['latitude'] + ' ' + synonym['longitude'] + '}'
+                    pretty_utm = osm_pretty_link_utm(synonym['utm_wgs84'])
+                    coord_info = pretty_utm + r' = \\textallsc{' + synonym['latitude'] + ' ' + synonym['longitude'] + '}'
                 elif len(synonym['utm_wgs84']) > 0:
-                    coord_info = r'\\textallsc{UTM WGS84 ' + synonym['utm_wgs84'] + '}'
+                    pretty_utm = osm_pretty_link_utm(synonym['utm_wgs84'])
+                    latlon_convert = utm_to_latlon(synonym['utm_wgs84'])
+                    coord_info = pretty_utm + ' = ' + osm_pretty_link_latlon(latlon_convert)
 
                 if len(locality_info) > 0 and len(coord_info) > 0:
                     locality_info = '[' + locality_info + ' (' + coord_info + ').] '

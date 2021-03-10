@@ -648,6 +648,9 @@
 \ProvideDocumentCommand{\lsid}{ m }{\lsidbox{\lsidlink{#1}}}
 \ProvideDocumentCommand{\lsidref}{ m }%
     {\href{http://zoobank.org/#1}{\textallsc{#1}}}
+% Links to OpenStreetMap to show locations
+\ProvideDocumentCommand{\osm}{ m m }
+    {\href{#2}{\textallsc{#1}}}
 % A list of species gathers all taxa in the list into one single, easy to find
 % place, with links to the fuller synonymy. Formatting takes after the lists
 % above with titletoc.
@@ -674,12 +677,19 @@
 }
 % Use titletoc to format: make names italic and footnotesize
 \contentsuse{species}{losp}
+\contentsuse{clade}{losp}
 \makeatletter
 \titlecontents{species}
     [0em]
     {\addvspace{-0.5\baselineskip}}
     {\footnotesize\itshape}
     {\footnotesize\itshape}
+    {\footnotesize\hspace{1em}\synonymy@accenttext{\contentspage}}
+\titlecontents{clade}
+    [0em]
+    {}
+    {\footnotesize}
+    {\footnotesize}
     {\footnotesize\hspace{1em}\synonymy@accenttext{\contentspage}}
 \makeatother
 % Styles for higher level taxa
@@ -689,12 +699,16 @@
         \vspace{\baselineskip}\par
         \noindent\textcaps{#1}~#2
         \addcontentsline{toc}{subsection}{\protect{#1}}\par
+        \addcontentsline{losp}{clade}{\protect{\textcaps{#1}}}\par
+        \vspace{0.5\baselineskip}\par
     }
 \NewDocumentCommand{\clade}{ m m }
     {
-        \vspace{\baselineskip}\par
+        \vspace{0.5\baselineskip}\par
         \noindent\textallsc{#1}~#2
         \addcontentsline{toc}{subsection}{\protect{#1}}\par
+        \addcontentsline{losp}{clade}{\protect{\textallsc{#1}}}\par
+        \vspace{0.5\baselineskip}\par
     }
 % These commands attempt to set up dictionary-like footers for the synonymy to
 % show the first and last taxon on the page.
