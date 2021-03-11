@@ -71,6 +71,9 @@ def utm_to_latlon(utm_coord):
 
     return(converted_latlon)
 
+# def latlong_to_utm(latlon_coord):
+#     ll_parser = 
+
 def prettify_latlon(utm_latlon):
     lat = str(round(utm_latlon[0], 7))
     lon = str(round(utm_latlon[1], 7))

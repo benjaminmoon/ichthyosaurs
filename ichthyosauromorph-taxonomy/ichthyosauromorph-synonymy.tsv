@@ -70,3 +70,18 @@ Young1972MNIGP	11	Chaohusaurus geishanensis	Young1972MNIGP	orig		*	Y	Chaohusauru
 Wang1959APS		Nanchangosaurus suni	Wang1959APS	orig		*	Y	Nanchangosaurus suni	urn:lsid:zoobank.org:act:37C7C275-2D57-4FA5-ACDC-6A7CF5D2370E	Jialingjiang Formation				upper Spathian	Lower Triassic	Triassic		China					urn:lsid:zoobank.org:pub:C31DBAA9-EDA9-4D29-92DD-BFC80461F0F4
 Chen2014POb	3	Nanchangosaurus suni	Wang1959APS	orig			Y	Nanchangosaurus suni		Jialingjiang Formation				upper Spathian	Lower Triassic	Triassic	Yuan'an County, Hubei Province, China	China					
 Chen2014PO	3	Parahupehsuchus longus	Chen2014PO	orig		v *	Y	Parahupehsuchus longus	urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F	Jialingjiang Formation				upper Spathian	Lower Triassic	Triassic	Yuan'an County, Hubei Province, China	China					urn:lsid:zoobank.org:pub:0F2EED52-F0A2-4125-B96A-8E39E9854DBE
+Fernandez1994A	293	Chacaicosaurus cayi	Fernandez1994A	orig		*	Y	Chacaicosaurus cayi		Les Molles Formation				early Bajocian	Middle Jurassic	Jurassic	Chacaico Sur, Patagonia, Argentina	Argentina					
+Fernandez2007	277	Stenopterygius cayi	Fernandez1994A	ncomb			N	Chacaicosaurus cayi															
+Chen1985RGC	140	Anhuisaurus chaoxianensis	Chen1985RGC	orig		*	Y	Chaohusaurus chaoxianensis		Nanlinghu Formation	Upper Member			Spathian, Olenekian	Lower Triassic	Triassic	Majiashan, Anhui  Province, China	China					
+Chen1985RGC	142	Anhuisaurus faciles	Chen1985RGC	orig		*	Y	Chaohusaurus chaoxianensis		Nanlinghu Formation	Upper Member			Spathian, Olenekian	Lower Triassic	Triassic	Majiashan, Anhui  Province, China	China					
+Mazin1991CRASS2MPCSUST	1207	Chensaurus chaoxianensis	Chen1985RGC	ncomb			N	Chaohusaurus chaoxianensis															
+Mazin1991CRASS2MPCSUST	1207	Chensaurus faciles	Chen1985RGC	ncomb			N	Chaohusaurus chaoxianensis															
+Motani1998JVP	533	Chaohusaurus geishanensis	Young1972MNIGP	orig		p	Y	Chaohusaurus chaoxianensis															
+Motani2015JVP	e892011-3	Chaohusaurus chaoxianensis	Chen1985RGC	ncomb			Y	Chaohusaurus chaoxianensis															
+Huang2019Pa	7	Chaohusaurus brevifemoralis	Huang2019Pa	orig		*	Y	Chaohusaurus brevifemoralis	urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA	Nanlinghu Formation	Upper Member		\\emph{Subcolumbites} Ammonoid Biozone	Spathian, Olenekian	Lower Triassic	Triassic	Majiashan, Anhui Province, China	China					urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E
+Motani1998JVP	533	Chaohusaurus geishanensis	Young1972MNIGP	orig		p	Y	Chaohusaurus brevifemoralis															
+Motani1998JP		Chaohusaurus chaoxianensis	Chen1985RGC	ncomb		p	Y	Chaohusaurus brevifemoralis															
+Motani1998JP		Chaohusaurus chaoxianensis	Chen1985RGC	ncomb			Y	Chaohusaurus chaoxianensis															
+Motani2015JVP	e892011-3	Chaohusaurus chaoxianensis	Chen1985RGC	ncomb		p	Y	Chaohusaurus brevifemoralis															
+Zhou2017JVP	e1343831-3	Chaohusaurus chaoxianensis	Chen1985RGC	ncomb		p	Y	Chaohusaurus brevifemoralis															
+Chen2013AGS	673	Chaohusaurus zhanjiawanensis	Chen2013AGS	orig		v *	Y	CHaohusaurus zhanjiawanensis		Jialingjiang Formation	Third Member		\\emph{Neospathodus homeri–N. triangularis} Conodont Biozone	upper Spathian	Lower Triassic	Triassic	Zhangjiawan Village, Yangping Town, Yuan'an County, Hubei Province, China	China		31.27250	111.56849		
