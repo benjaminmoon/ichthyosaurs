@@ -28,14 +28,16 @@ synonym_row = '''\
 assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{identified_authority} identified_note & \\crefauth{reference} pageref locality_info \\\\
 '''
 
+
 def find_replace_multi(string, dictionary):
     for item in dictionary.keys():
         string = re.sub(item, dictionary[item], string)
     return string
 
+
 def get_ref_dates(filename):
-    with open(filename, newline = '') as f:
-        syn = csv.DictReader(f, delimiter = '\t')
+    with open(filename, newline='') as f:
+        syn = csv.DictReader(f, delimiter='\t')
         bibfile = parse_bibfile_to_cite_dict(bib_path='synonymy.bib')
     
         for row in syn:
@@ -43,36 +45,44 @@ def get_ref_dates(filename):
             citekey_dict = build_citekey_dict(refkey.split('\n'))
             for citekey in citekey_dict:
                 refdate = bibfile[citekey]['date']
-            yield dict(date = refdate, **row)
+            yield dict(date=refdate, **row)
+
 
 def get_higher_taxon(filename):
-    with open(filename, newline = '') as f:
-        tax = csv.DictReader(f, delimiter = '\t')
+    with open(filename, newline='') as f:
+        tax = csv.DictReader(f, delimiter='\t')
 
         for row in tax:
             if row['clade'] == clade_name:
                 yield dict(**row)
+
 
 def format_lsidref(lsid):
     formatted_href = r'\\lsidref{' + lsid + '}'
 
     return(formatted_href)
 
+
 def format_lsidlink(lsid):
     formatted_href = r'\\lsid{' + lsid + '}'
 
     return(formatted_href)
 
+
 def utm_to_latlon(utm_coord):
     utm_parser = re.compile(r'(?P<column>\d+)(?P<row>[A-Z]) (?P<easting>\d+) (?P<northing>\d+)')
     parsed_utm = utm_parser.match(utm_coord).groupdict()
 
-    converted_latlon = utm.to_latlon(int(parsed_utm['easting']), int(parsed_utm['northing']), int(parsed_utm['column']), parsed_utm['row'])
+    converted_latlon = utm.to_latlon(int(parsed_utm['easting']),
+                                     int(parsed_utm['northing']),
+                                     int(parsed_utm['column']),
+                                     parsed_utm['row'])
 
     return(converted_latlon)
 
 # def latlong_to_utm(latlon_coord):
-#     ll_parser = 
+#     ll_parser =
+
 
 def prettify_latlon(utm_latlon):
     lat = str(round(utm_latlon[0], 7))
@@ -90,13 +100,16 @@ def prettify_latlon(utm_latlon):
 
     return(lat + ' ' + lon)
 
+
 def osm_link_latlon(latlon):
     lat = str(round(latlon[0], 7))
     lon = str(round(latlon[1], 7))
 
-    osm_link_str = r'https://www.openstreetmap.org/?mlat=' + lat + r'\\&mlon=' + lon  + r'\\#map=6/' + lat + '/' + lon
+    osm_link_str = (r'https://www.openstreetmap.org/?mlat=' + lat + r'\\&mlon='
+                    + lon + r'\\#map=6/' + lat + '/' + lon)
 
     return(osm_link_str)
+
 
 def osm_pretty_link_latlon(latlon):
     osm_link_str = osm_link_latlon(latlon)
@@ -105,6 +118,7 @@ def osm_pretty_link_latlon(latlon):
     tex_str = r'\\osm{' + pretty_latlon + '}{' + osm_link_str + '}'
 
     return(tex_str)
+
 
 def osm_pretty_link_utm(utm_coord):
     latlon = utm_to_latlon(utm_coord)
@@ -116,7 +130,7 @@ def osm_pretty_link_utm(utm_coord):
 
 
 synonymy_dict = get_ref_dates(synonymy_file)
-sorted_synonymy = sorted(synonymy_dict, key = lambda row: row['date'])
+sorted_synonymy = sorted(synonymy_dict, key=lambda row: row['date'])
 
 taxa_to_print = get_higher_taxon(taxon_file)
 
@@ -129,8 +143,9 @@ coord_keys = ['utm_wgs84', 'long', 'lat']
 
 outfile = clade_name.lower() + '.tex'
 
+
 with open(outfile, 'wt') as out_file:
-    
+
     out_file.write('%! TEX root = ichthyosauromorphtaxonomy.tex\n\n')
 
     for taxon in taxa_to_print:
@@ -139,17 +154,17 @@ with open(outfile, 'wt') as out_file:
 
         if taxon['accepted_status'] == 'ncomb':
             this_taxon = re.sub('cauthyr', 'pauthyr', this_taxon)
-        
+
         if len(taxon['lsid_act']) > 0:
             this_taxon = re.sub('id_link', '[' + taxon['lsid_act'] + ']', this_taxon)
         else:
             this_taxon = re.sub('id_link', '', this_taxon)
 
         these_synonyms = str()
-    
+
         for synonym in sorted_synonymy:
             current_synonym = synonym['identified_name']
-    
+
             if synonym['accepted_name'] == current_taxon:
                 print('Record matched:', current_synonym, "→", current_taxon)
 
@@ -214,4 +229,3 @@ with open(outfile, 'wt') as out_file:
 
         out_file.write(this_taxon)
         out_file.write(these_synonyms)
-
