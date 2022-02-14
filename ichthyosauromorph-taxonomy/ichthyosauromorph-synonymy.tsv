@@ -1,5 +1,5 @@
 reference	pageref	identified_name	identified_authority	identified_status	identified_note	assignment_confidence	morphological_information	accepted_name	lsid_act	formation	member	bed	zone	stage	series	system	location	country	utm_wgs84	latitude	longitude	comments	lsid_pub	synonym_id
-Arkhangelsky1997PZ	88	Paraophthalmosaurus savejeviensis	Arkhangelsky1997PZ	orig		*	Y	Nannopterygius saveljeviensis																1
+Arkhangelsky1997PZ	88	Paraophthalmosaurus saveljeviensis	Arkhangelsky1997PZ	orig		*	Y	Nannopterygius saveljeviensis																1
 Arkhangelsky2001PJ	629	Otschevia alekseevi	Arkhangelsky2001PJ	orig		*	Y	Brachypterygius alekseevi					\\emph{Dorsoplanites panderi} Ammonite Biozone	Volgian	Upper Jurassic	Jurassic	Volga River, 18 km north of Ulyanovsk, Ulyanovsk District, Ulyanovsk Region, Russian	RU						2
 Bardet2000JP	504	Aegirosaurus leptospondylus	Wagner1853BKAWGA	ncomb			Y	Aegirosaurus leptospondylus		Solnhofen Formation		Malm ζ 2b		early Lower Tithonian	Upper Jurassic	Jurassic	Borscheim, Schrandel quarry district; Bavaria, Germany	DE						3
 BarrientosLara2020JSAES	3	Acuetzpalin carranzai	BarrientosLara2020JSAES	orig		*	Y	Acuetzpalin carranzai	urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB	La Casita Formation				Kimmeridgian	Upper Jurassic	Jurassic	Cerro de Palotes, near of Cuencamé, Durango state, Northeast Mexico	MX					urn:lsid:zoobank.org:pub:2287DBB3-3E85-409D-9D97-A946DE865FCB	4
@@ -57,7 +57,7 @@ Zverkov2019JSP	1187	Undorosaurus kielanae	Tyborowski2016APP	ncomb		?	N	Undorosau
 Zverkov2019P	31	Arthropterygius hoybergeti	Druckenmiller2012NJG	ncomb			Y	Arthropterygius hoybergeti																56
 Zverkov2019P	15	Arthropterygius chrisorum	Russell1993BGSC	ncomb			Y	Arthropterygius chrisorum																57
 Zverkov2019P	40	Arthropterygius lundi	Roberts2014PO	ncomb			Y	Arthropterygius lundi																58
-Zverkov2020ZJLS	246	Nannopterygius savejeviensis	Arkhangelsky1997PZ	ncomb			Y	Nannopterygius saveljeviensis						Volgian	Upper Jurassic	Jurassic		RU						59
+Zverkov2020ZJLS	246	Nannopterygius saveljeviensis	Arkhangelsky1997PZ	ncomb			Y	Nannopterygius saveljeviensis						Volgian	Upper Jurassic	Jurassic		RU						59
 vonHuene1922	97	Brachypterygius extremus	Boulenger1904PZSL	ncomb		v	N	Brachypterygius extremus															urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE	60
 vonHuene1922	98	Myopterygius campylodon	Carter1846RBAAS	ncomb			N	Pervushovisaurus campylodon															urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE	61
 vonHuene1922	98	Nannopterygius enthekiodon	Hulke1871QJGS	ncomb			N	Nannopterygius enthekiodon															urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE	62
