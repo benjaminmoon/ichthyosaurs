@@ -1,13 +1,14 @@
 accepted_name	accepted_authority	accepted_status	lsid_act	clade	species_id
 Acamptonectes densus	Fischer2012PO	orig	urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8	Ichthyosauriformes	1
-Aegirosaurus leptospondylus	Wagner1853BKAWGA	ncomb		Ichthyosauriformes	2
 Acuetzpalin carranzai	BarrientosLara2020JSAES	orig	urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB	Ichthyosauriformes	3
+Aegirosaurus leptospondylus	Wagner1853BKAWGA	ncomb		Ichthyosauriformes	2
 Arthropterygius chrisorum	Russell1993BGSC	ncomb		Ichthyosauriformes	4
 Arthropterygius hoybergeti	Druckenmiller2012NJG	ncomb	urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9	Ichthyosauriformes	5
 Arthropterygius lundi	Roberts2014PO	ncomb	urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F	Ichthyosauriformes	6
 Arthropterygius thalassonotus	Campos2019ZJLS	orig	urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD	Ichthyosauriformes	7
 Arthropterygius volgensis	Kasansky1903TOEPIKU	ncomb		Ichthyosauriformes	126
 Athabascasaurus bitumineus	Druckenmiller2010CJES	orig	urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6	Ichthyosauriformes	8
+Auroroborealia incognita	Zverkov2021EESTRSE	orig	urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9	Ichthyosauriformes	127
 Barracudasauroides panxianensis	Jiang2006JVP	ncomb	urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF	Ichthyosauriformes	9
 Besanosaurus leptorhynchus	DalSasso1996PL	orig	urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43	Ichthyosauriformes	10
 Brachypterygius alekseevi	Arkhangelsky2001PJ	ncomb		Ichthyosauriformes	11
@@ -16,6 +17,7 @@ Brachypterygius pseudoscythica	Efimov1998PZ	ncomb		Ichthyosauriformes	13
 Californosaurus perrini	Merriam1902UCBDG	ncomb		Ichthyosauriformes	14
 Callawayia neoscapularis	McGowan1994JVPa	ncomb		Ichthyosauriformes	15
 Cartorhynchus lenticarpus	Motani2015N	orig	urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32	Ichthyosauriformes	16
+Catutosaurus gaspariniae	Fernandez2021JVP	orig	urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721	Ichthyosauriformes	131
 Caypullisaurus bonapartei	Fernandez1997JP	orig	urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D	Ichthyosauriformes	17
 Cetarthrosaurus walkeri	Seeley1873QJGS	ncomb		Ichthyosauriformes	18
 Chacaicosaurus cayi	Fernandez1994A	orig		Ichthyosauriformes	19
@@ -28,7 +30,10 @@ Cymbospondylus buchseri	Sander1989JVP	orig		Ichthyosauriformes	25
 Cymbospondylus nichollsi	Frobisch2006ZJLS	orig		Ichthyosauriformes	26
 Cymbospondylus petrinus	Leidy1868PANSP	orig		Ichthyosauriformes	27
 Cymbospondylus piscosus?	Leidy1868PANSP	orig		Ichthyosauriformes	28
+Cymbospondylus youngorum	Sander2021S	orig		Ichthyosauriformes	128
 Dearcmhara shawcrossi	Brusatte2015SJGa	orig		Ichthyosauriformes	29
+Eohupehsuchus brevicollis	Chen2014POa	orig	urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287	Hupehsuchia	121
+Eretmorhipis carrolldongi	Chen2015PO	orig	urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178	Hupehsuchia	122
 Eurhinosaurus longirostris	Mantell1851	ncomb		Ichthyosauriformes	30
 Excalibosaurus costini	McGowan1986N	orig		Ichthyosauriformes	31
 Gengasaurus nicosiai	Paparella2016GM	orig		Ichthyosauriformes	32
@@ -40,6 +45,7 @@ Hauffiopteryx altera	Maxwell2020PE	orig	urn:lsid:zoobank.org:act:A567A292-2A58-4
 Hauffiopteryx typicus	Maisch2008P	orig		Ichthyosauriformes	38
 Himalayasaurus tibetensis	Young1972MNIGP	orig		Ichthyosauriformes	39
 Hudsonelpidia brevirostris	McGowan1995CJES	orig		Ichthyosauriformes	40
+Hupehsuchus nanchangensis	Young1972MNIGP	orig	urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA	Hupehsuchia	123
 Ichthyosaurus acutirostris	Owen1840RBAAS	orig		Ichthyosauriformes	41
 Ichthyosaurus anningae	Lomax2015JVP	orig		Ichthyosauriformes	42
 Ichthyosaurus breviceps	Owen1881MPS	orig		Ichthyosauriformes	43
@@ -48,6 +54,8 @@ Ichthyosaurus conybeari	Lydekker1888GM	orig		Ichthyosauriformes	45
 Ichthyosaurus larkini	Lomax2017PP	orig		Ichthyosauriformes	46
 Ichthyosaurus somersetensis	Lomax2017PP	orig		Ichthyosauriformes	47
 Isfjordosaurus minor	Wiman1910BGIUa	ncomb		Ichthyosauriformes	48
+Jabalisaurus metzli	BarrientosLara2021JSAES	orig	urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057	Ichthyosauriformes	129
+Kyhytysuka sachicarum	Paramo1997RI	ncomb		Ichthyosauriformes	80
 Leninia stellans	Fischer2014GM	orig		Ichthyosauriformes	49
 Leptonectes moorei	McGowan1999P	orig		Ichthyosauriformes	50
 Leptonectes solei	McGowan1993CJES	ncomb		Ichthyosauriformes	51
@@ -60,11 +68,14 @@ Mixosaurus kuhnschneyderi	Brinkmann1998NJGPA	ncomb		Ichthyosauriformes	57
 Mixosaurus xindianensis	Chen2010APS	orig		Ichthyosauriformes	58
 Mollesaurus pariallus	Fernandez1999JP	orig		Ichthyosauriformes	59
 Muiscasaurus catheti	Maxwell2016PP	orig		Ichthyosauriformes	60
+Nanchangosaurus suni	Wang1959APS	orig		Hupehsuchia	124
 Nannopterygius enthekiodon	Hulke1871QJGS	ncomb	urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC	Ichthyosauriformes	61
 Nannopterygius saveljeviensis	Arkhangelsky1997PZ	ncomb		Ichthyosauriformes	62
 Nannopterygius yasykovi	Efimov1999PZ	ncomb		Ichthyosauriformes	63
 Ophthalmosaurus icenicus	Seeley1874QJGSa	orig	urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE	Ichthyosauriformes	64
 Ophthalmosaurus natans	Marsh1879AMNH	ncomb		Ichthyosauriformes	65
+Parahupehsuchus longus	Chen2014PO	orig	urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F	Hupehsuchia	125
+Parrassaurus yacahuitztli	BarrientosLara2021A	orig	urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165	Ichthyosauriformes	130
 Parvinatator wapitiensis	Nicholls1995Vfateosc	orig		Ichthyosauriformes	66
 Pervushovisaurus bannovkensis	Arkhangelsky1998PJ	orig		Ichthyosauriformes	67
 Pervushovisaurus campylodon	Carter1846RBAAS	ncomb		Ichthyosauriformes	68
@@ -79,7 +90,6 @@ Platypterygius australis	MCoy1867AMNH	ncomb		Ichthyosauriformes	76
 Platypterygius hauthali	vonHuene1927ZFMGPB	ncomb		Ichthyosauriformes	77
 Platypterygius ochevi	Arkhangelsky2008PJ	orig		Ichthyosauriformes	78
 Platypterygius platydactylus	Broili1907P	ncomb		Ichthyosauriformes	79
-Platypterygius sachicarum	Paramo1997RI	orig		Ichthyosauriformes	80
 Protoichthyosaurus applebyi	Lomax2017JVP	orig		Ichthyosauriformes	81
 Protoichthyosaurus prostaxalis	Appleby1979P	orig		Ichthyosauriformes	82
 Qianichthyosaurus xingyiensis	Yang2013ASNUP	orig		Ichthyosauriformes	83
@@ -120,8 +130,3 @@ Utatsusaurus hataii	Shikama1978SRTUG	orig		Ichthyosauriformes	117
 Wahlisaurus massarae	Lomax2016JSP	orig		Ichthyosauriformes	118
 Wimanius odontopalatus	Maisch1998NJGPM	orig		Ichthyosauriformes	119
 Xinminosaurus catactes	Jiang2008PNS	orig		Ichthyosauriformes	120
-Eohupehsuchus brevicollis	Chen2014POa	orig	urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287	Hupehsuchia	121
-Eretmorhipis carrolldongi	Chen2015PO	orig	urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178	Hupehsuchia	122
-Hupehsuchus nanchangensis	Young1972MNIGP	orig	urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA	Hupehsuchia	123
-Nanchangosaurus suni	Wang1959APS	orig		Hupehsuchia	124
-Parahupehsuchus longus	Chen2014PO	orig	urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F	Hupehsuchia	125
