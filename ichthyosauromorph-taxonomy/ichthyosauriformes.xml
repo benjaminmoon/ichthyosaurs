@@ -1,0 +1,401 @@
+<?xml version="1.0" ?>
+<synonymy>
+	<taxon>
+		<name combination="original">Acamptonectes densus</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
+	</taxon>
+	<taxon>
+		<name combination="original">Acuetzpalin carranzai</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Aegirosaurus leptospondylus</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Arthropterygius chrisorum</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Arthropterygius hoybergeti</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Arthropterygius lundi</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
+	</taxon>
+	<taxon>
+		<name combination="original">Arthropterygius thalassonotus</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Arthropterygius volgensis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Athabascasaurus bitumineus</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
+	</taxon>
+	<taxon>
+		<name combination="original">Auroroborealia incognita</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Barracudasauroides panxianensis</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
+	</taxon>
+	<taxon>
+		<name combination="original">Besanosaurus leptorhynchus</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Brachypterygius alekseevi</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Brachypterygius extremus</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Brachypterygius pseudoscythica</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Californosaurus perrini</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Callawayia neoscapularis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Cartorhynchus lenticarpus</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
+	</taxon>
+	<taxon>
+		<name combination="original">Catutosaurus gaspariniae</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
+	</taxon>
+	<taxon>
+		<name combination="original">Caypullisaurus bonapartei</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Cetarthrosaurus walkeri</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Chacaicosaurus cayi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Chaohusaurus brevifemoralis</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Chaohusaurus chaoxianensis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Chaohusaurus geishanensis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Chaohusaurus zhangjiawanensis</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Contectopalatus atavus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Cymbospondylus buchseri</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Cymbospondylus nichollsi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Cymbospondylus petrinus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Cymbospondylus piscosus?</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Cymbospondylus youngorum</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Dearcmhara shawcrossi</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Eurhinosaurus longirostris</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Excalibosaurus costini</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Gengasaurus nicosiai</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Grippia longirostris</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Guizhouichthyosaurus tangae</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Guizhouichthyosaurus wolonggangense</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Gulosaurus helmi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Hauffiopteryx altera</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
+	</taxon>
+	<taxon>
+		<name combination="original">Hauffiopteryx typicus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Himalayasaurus tibetensis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Hudsonelpidia brevirostris</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Ichthyosaurus acutirostris</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Ichthyosaurus anningae</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Ichthyosaurus breviceps</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Ichthyosaurus communis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Ichthyosaurus conybeari</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Ichthyosaurus larkini</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Ichthyosaurus somersetensis</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Isfjordosaurus minor</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Jabalisaurus metzli</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Kyhytysuka sachicarum</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Leninia stellans</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Leptonectes moorei</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Leptonectes solei</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Leptonectes tenuirostris</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Macgowania janiceps</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Maiaspondylus lindoei</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Malawania anachronus</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Mixosaurus cornalianus</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Mixosaurus kuhnschneyderi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Mixosaurus xindianensis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Mollesaurus pariallus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Muiscasaurus catheti</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Nannopterygius enthekiodon</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Nannopterygius saveljeviensis</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Nannopterygius yasykovi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Ophthalmosaurus icenicus</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
+	</taxon>
+	<taxon>
+		<name combination="new">Ophthalmosaurus natans</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Parrassaurus yacahuitztli</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
+	</taxon>
+	<taxon>
+		<name combination="original">Parvinatator wapitiensis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Pervushovisaurus bannovkensis</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Pervushovisaurus campylodon</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Pessopteryx nisseri</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Phalarodon callawayi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Phalarodon fraasi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Phalarodon major</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Phantomosaurus neubigi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Platypterygius  hercynicus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Platypterygius americanus</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Platypterygius australis</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Platypterygius hauthali</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Platypterygius ochevi</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Platypterygius platydactylus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Protoichthyosaurus applebyi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Protoichthyosaurus prostaxalis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Qianichthyosaurus xingyiensis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Qianichthyosaurus zhoui</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Quasianosteosaurus vikinghoegdai</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Sclerocormus parviceps</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Shastasaurus alexandrae</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Shastasaurus liangae</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Shastasaurus pacificus</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Shastasaurus sikkaniensis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Shonisaurus popularis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Simbirskiasaurus birjukovi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Sisteronia seeleyi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Stenopterygius aaleniensis</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Stenopterygius quadriscissus</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Stenopterygius triscissus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Stenopterygius uniter</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Suevoleviathan disinteger</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Suevoleviathan integer</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Sveltonectes insolitus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Temnodontosaurus azerguensis</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Temnodontosaurus crassimanus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Temnodontosaurus eurycephalus</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Temnodontosaurus nuertingensis</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Temnodontosaurus platyodon</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Temnodontosaurus trigonodon</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Thaisaurus chonglakmanii</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Thalassodraco etchesi</name>
+		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
+	</taxon>
+	<taxon>
+		<name combination="original">Thalattoarchon saurophagis</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Tholodus schmidi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Toretocnemus californicus</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Toretocnemus zitteli</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Undorosaurus gorodischensis</name>
+	</taxon>
+	<taxon>
+		<name combination="new">Undorosaurus kielanae</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Undorosaurus nessovi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Undorosaurus trautscholdi</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Utatsusaurus hataii</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Wahlisaurus massarae</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Wimanius odontopalatus</name>
+	</taxon>
+	<taxon>
+		<name combination="original">Xinminosaurus catactes</name>
+	</taxon>
+</synonymy>

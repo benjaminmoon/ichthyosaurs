@@ -8,6 +8,7 @@ taxa and synonymy.
 import sys
 import csv
 import re
+from xml.etree import ElementTree as ET
 import utm
 from pybibtex import build_citekey_dict
 from pybibtex import parse_bibfile_to_cite_dict
@@ -30,12 +31,18 @@ assignment_confidence & \\cyear{reference} & \\emph{identified_name} \\cauth{ide
 
 
 def find_replace_multi(string, dictionary):
+    '''Replace multiple patterns within string.
+    '''
+
     for item in dictionary.keys():
         string = re.sub(item, dictionary[item], string)
     return string
 
 
 def get_ref_dates(filename):
+    '''Retrieve the dates from a set of references given a reference key and Bib(La)TeX file.
+    '''
+
     with open(filename, newline='') as f:
         syn = csv.DictReader(f, delimiter='\t')
         bibfile = parse_bibfile_to_cite_dict(bib_path='synonymy.bib')
@@ -49,6 +56,9 @@ def get_ref_dates(filename):
 
 
 def get_higher_taxon(filename):
+    '''Return records for a specified clade name given as an input argument.
+    '''
+
     with open(filename, newline='') as f:
         tax = csv.DictReader(f, delimiter='\t')
 
@@ -58,18 +68,27 @@ def get_higher_taxon(filename):
 
 
 def format_lsidref(lsid):
+    '''Format an LSID reference.
+    '''
+
     formatted_href = r'\\lsidref{' + lsid + '}'
 
     return(formatted_href)
 
 
 def format_lsidlink(lsid):
+    '''Format an LSID string
+    '''
+
     formatted_href = r'\\lsid{' + lsid + '}'
 
     return(formatted_href)
 
 
 def utm_to_latlon(utm_coord):
+    '''Convert UTM-formatted coordinate strings to WGS84-formatted (latitutde-longitude).
+    '''
+
     utm_parser = re.compile(r'(?P<column>\d+)(?P<row>[A-Z]) (?P<easting>\d+) (?P<northing>\d+)')
     parsed_utm = utm_parser.match(utm_coord).groupdict()
 
@@ -85,42 +104,61 @@ def utm_to_latlon(utm_coord):
 
 
 def prettify_latlon(utm_latlon):
+    '''Add typographical features for printing latitude-longitude coordinates.
+    '''
+
     lat = str(round(utm_latlon[0], 7))
     lon = str(round(utm_latlon[1], 7))
 
     if utm_latlon[0] > 0:
-        lat = lat + '°N'
+        lat = lat + '° N'
     else:
-        lat = lat + '°S'
+        lat = lat + '° S'
 
     if utm_latlon[1] > 0:
-        lon = lon + '°E'
+        lon = lon + '° E'
     else:
-        lon = lon + '°W'
+        lon = lon + '° W'
 
     return(lat + ' ' + lon)
 
 
 def osm_link_latlon(latlon):
+    '''Geneate an OpenStreetMap URL from latitude-longitude coordinates.
+    '''
+
     lat = str(round(latlon[0], 7))
     lon = str(round(latlon[1], 7))
 
-    osm_link_str = (r'https://www.openstreetmap.org/?mlat=' + lat + r'\\&mlon='
-                    + lon + r'\\#map=6/' + lat + '/' + lon)
+    osm_link_str = f'https://www.openstreetmap.org/?mlat={lat}&mlon={lon}#map=6/{lat}/{lon}'
 
     return(osm_link_str)
 
+def create_xml_element(element, text, attrib={}):
+    elem = ET.Element(element, attrib=attrib)
+    elem.text = text
+
+    return(elem)
 
 def osm_pretty_link_latlon(latlon):
+    '''Generate a typographically-formatted link for printing latitude-longitude coordinates.
+    '''
+
     osm_link_str = osm_link_latlon(latlon)
     pretty_latlon = prettify_latlon(latlon)
 
-    tex_str = r'\\osm{' + pretty_latlon + '}{' + osm_link_str + '}'
+    coord_elem = create_xml_element('coord', pretty_latlon, attrib={ 'osm_uri': osm_link_str })
+    test = ET.SubElement(coord_elem, 'test')
+    test.text = "Some extra text"
+    # tex_str = r'\\osm{' + pretty_latlon + '}{' + osm_link_str + '}'
 
-    return(tex_str)
+    return(coord_elem)
 
 
 def osm_pretty_link_utm(utm_coord):
+    '''Generate a typographically-formatted link for printing UTM coordinates.
+    '''
+
     latlon = utm_to_latlon(utm_coord)
     osm_link_str = osm_link_latlon(latlon)
 
@@ -192,7 +230,7 @@ with open(outfile, 'wt') as out_file:
                 elif len(synonym['utm_wgs84']) > 0:
                     pretty_utm = osm_pretty_link_utm(synonym['utm_wgs84'])
                     latlon_convert = utm_to_latlon(synonym['utm_wgs84'])
-                    coord_info = pretty_utm + ' = ' + osm_pretty_link_latlon(latlon_convert)
+                    coord_info = pretty_utm + ' = ' + str(ET.tostring(osm_pretty_link_latlon(latlon_convert), encoding='unicode'))
 
                 if len(locality_info) > 0 and len(coord_info) > 0:
                     locality_info = '[' + locality_info + ' (' + coord_info + ').] '
