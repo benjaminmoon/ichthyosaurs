@@ -3,167 +3,781 @@
 	<taxon>
 		<name combination="original">Acamptonectes densus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<name combination="original">Acamptonectes densus</name>
+				<authority rid="Fischer2012PO"/>
+				<reference rid="Fischer2012PO" page="3"/>
+				<location>
+					<locality>Speeton, Yorkshire, U.K.</locality>
+					<country-code>GB</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8" type="act">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="original">Acamptonectes densus</name>
+				<authority rid="Fischer2012PO"/>
+				<reference rid="Fischer2012PO" page="3"/>
+				<location>
+					<locality>Cremlingen, Lower Saxony, Germany</locality>
+					<country-code>DE</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Acuetzpalin carranzai</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Acuetzpalin carranzai</name>
+				<authority rid="BarrientosLara2020JSAES"/>
+				<reference rid="BarrientosLara2020JSAES" page="3"/>
+				<location>
+					<locality>Cerro de Palotes, near of Cuencamé, Durango state, Northeast Mexico</locality>
+					<country-code>MX</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB" type="act">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2287DBB3-3E85-409D-9D97-A946DE865FCB" type="publication">urn:lsid:zoobank.org:pub:2287DBB3-3E85-409D-9D97-A946DE865FCB</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Aegirosaurus leptospondylus</name>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Ichthyosaurus leptospondylus</name>
+				<authority rid="Wagner1853BKAWGA"/>
+				<reference rid="Wagner1853BKAWGA"/>
+				<location>
+					<locality>Germany</locality>
+					<country-code>DE</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Aegirosaurus leptospondylus</name>
+				<authority rid="Wagner1853BKAWGA"/>
+				<reference rid="Bardet2000JP" page="504"/>
+				<location>
+					<locality>Borscheim, Schrandel quarry district; Bavaria, Germany</locality>
+					<country-code>DE</country-code>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Arthropterygius chrisorum</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Ophthalmosaurus chrisorum</name>
+				<authority rid="Russell1993BGSC"/>
+				<reference rid="Russell1993BGSC" page="198"/>
+				<location>
+					<locality>Cape Grassy, Melville Island, Canada</locality>
+					<country-code>CA</country-code>
+					<utm>
+						<zone>12</zone>
+						<band>X</band>
+						<easting>433220</easting>
+						<northing>8453461</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=76.1511043&amp;mlon=-113.5000047#map=6/76.1511043/-113.5000047">
+						<latitude>76.1511043</latitude>
+						<longitude>-113.5000047</longitude>
+					</coordinates>
+				</location>
+			</synonym>
+			<synonym morphology="Y" confidence="?">
+				<name combination="new">Keilhauia nui</name>
+				<authority rid="Delsett2017PO"/>
+				<reference rid="Delsett2017PO" page="7"/>
+				<location>
+					<locality>Janusfjellet, Spitsbergen, Svalbard</locality>
+					<country-code>SJ</country-code>
+					<utm>
+						<zone>33</zone>
+						<band>X</band>
+						<easting>0518847</easting>
+						<northing>8696044</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3363734&amp;mlon=15.8351277#map=6/78.3363734/15.8351277">
+						<latitude>78.3363734</latitude>
+						<longitude>15.8351277</longitude>
+					</coordinates>
+				</location>
+				<comments>\\emph{fide} \\textcite{Zverkov2019P}</comments>
+			</synonym>
+			<synonym morphology="Y" confidence="p">
+				<name combination="new">Palvennia hoybergeti</name>
+				<authority rid="Druckenmiller2012NJG"/>
+				<reference rid="Delsett2018P" page="8"/>
+				<location>
+					<utm>
+						<zone>33</zone>
+						<band>X</band>
+						<easting>0519622</easting>
+						<northing>8695649</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&amp;mlon=15.8692035#map=6/78.3327333/15.8692035">
+						<latitude>78.3327333</latitude>
+						<longitude>15.8692035</longitude>
+					</coordinates>
+				</location>
+				<comments>\\textallsc{PMO 222.669} \\emph{fide} \\textcite{Zverkov2019P}</comments>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Arthropterygius chrisorum</name>
+				<authority rid="Russell1993BGSC"/>
+				<reference rid="Zverkov2019P" page="15"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Arthropterygius hoybergeti</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Palvennia hoybergeti</name>
+				<authority rid="Druckenmiller2012NJG"/>
+				<reference rid="Druckenmiller2012NJG" page="326"/>
+				<location>
+					<locality>Spitsbergen, Svalbard</locality>
+					<country-code>SJ</country-code>
+					<utm>
+						<zone>33</zone>
+						<band>X</band>
+						<easting>0518775</easting>
+						<northing>8696150</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3373322&amp;mlon=15.8320045#map=6/78.3373322/15.8320045">
+						<latitude>78.3373322</latitude>
+						<longitude>15.8320045</longitude>
+					</coordinates>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9" type="act">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
+			</synonym>
+			<synonym morphology="Y" confidence="p">
+				<name combination="new">Palvennia hoybergeti</name>
+				<authority rid="Druckenmiller2012NJG"/>
+				<reference rid="Delsett2018P" page="8"/>
+				<location>
+					<utm>
+						<zone>33</zone>
+						<band>X</band>
+						<easting>0519622</easting>
+						<northing>8695649</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&amp;mlon=15.8692035#map=6/78.3327333/15.8692035">
+						<latitude>78.3327333</latitude>
+						<longitude>15.8692035</longitude>
+					</coordinates>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Arthropterygius hoybergeti</name>
+				<authority rid="Druckenmiller2012NJG"/>
+				<reference rid="Zverkov2019P" page="31"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Arthropterygius lundi</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Janusaurus lundi</name>
+				<authority rid="Roberts2014PO"/>
+				<reference rid="Roberts2014PO" page="4"/>
+				<location>
+					<locality>Janusfjellet, Spitsbergen, Svalbard</locality>
+					<country-code>SJ</country-code>
+					<utm>
+						<zone>33</zone>
+						<band>X</band>
+						<easting>518821</easting>
+						<northing>8696195</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3377295&amp;mlon=15.8340711#map=6/78.3377295/15.8340711">
+						<latitude>78.3377295</latitude>
+						<longitude>15.8340711</longitude>
+					</coordinates>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F" type="act">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E" type="publication">urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E</lsid>
+				<comments>\\emph{fide} \\textcite{Zverkov2019P}</comments>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Janusaurus lundi</name>
+				<authority rid="Roberts2014PO"/>
+				<reference rid="Delsett2016GSLSP"/>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Janusaurus lundi</name>
+				<authority rid="Roberts2014PO"/>
+				<reference rid="Delsett2017PO"/>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Arthropterygius lundi</name>
+				<authority rid="Roberts2014PO"/>
+				<reference rid="Zverkov2019P" page="40"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Arthropterygius thalassonotus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Arthropterygius thalassonotus</name>
+				<authority rid="Campos2019ZJLS"/>
+				<reference rid="Campos2019ZJLS" page="184"/>
+				<location>
+					<locality>Yesera del Tromen–Pampa Tril area, north-western Neuquén Province, Argentina</locality>
+					<country-code>AR</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD" type="act">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:A668AA96-CE4F-442E-AD3E-B757AD580CFC" type="publication">urn:lsid:zoobank.org:pub:A668AA96-CE4F-442E-AD3E-B757AD580CFC</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Arthropterygius volgensis</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y">
+				<name combination="new">Arthropterygius volgensis</name>
+				<authority rid="Kasansky1903TOEPIKU"/>
+				<reference rid="Zverkov2019P" page="44"/>
+				<location>
+					<locality>mouth of the Berezoviy Dol Ravine near Novaya Racheika Village, Syzran District, Samara Region, Russian</locality>
+					<country-code>RU</country-code>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Athabascasaurus bitumineus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<name combination="original">Athabascasaurus bitumineus</name>
+				<authority rid="Druckenmiller2010CJES"/>
+				<reference rid="Druckenmiller2010CJES" page="1039"/>
+				<location>
+					<locality>~35 km north of Fort McMurray, Alberta, Canada</locality>
+					<country-code>CA</country-code>
+					<utm>
+						<zone>12</zone>
+						<band>V</band>
+						<easting>459464</easting>
+						<northing>6317120</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=56.9958329&amp;mlon=-111.6672141#map=6/56.9958329/-111.6672141">
+						<latitude>56.9958329</latitude>
+						<longitude>-111.6672141</longitude>
+					</coordinates>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6" type="act">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2540811F-95E5-45BB-9B32-8E0416F61681" type="publication">urn:lsid:zoobank.org:pub:2540811F-95E5-45BB-9B32-8E0416F61681</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Auroroborealia incognita</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Auroroborealia incognita</name>
+				<authority rid="Zverkov2021EESTRSE"/>
+				<reference rid="Zverkov2021EESTRSE" page="6"/>
+				<location>
+					<locality>Kotelny Island, New Siberian Islands, Russia</locality>
+					<country-code>RU</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9" type="act">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Barracudasauroides panxianensis</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Mixosaurus panxianensis</name>
+				<authority rid="Jiang2006JVP"/>
+				<reference rid="Jiang2006JVP" page="62"/>
+				<location>
+					<locality>Yangjuan Village, Xinmin District, Panxian County, Guizhou Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF" type="act">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF" type="publication">urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF</lsid>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Barracudasauroides panxianensis</name>
+				<authority rid="Maisch2010P"/>
+				<reference rid="Maisch2010P" page="161"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Besanosaurus leptorhynchus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Besanosaurus leptorhynchus</name>
+				<authority rid="DalSasso1996PL"/>
+				<reference rid="DalSasso1996PL" page="4"/>
+				<location>
+					<locality>Sasso Caldo, Italy</locality>
+					<country-code>IT</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43" type="act">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A" type="publication">urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A</lsid>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="original">Mikadocephalus gracilirostris</name>
+				<authority rid="Maisch1997PZ"/>
+				<reference rid="Maisch1997PZ" page="268"/>
+				<location>
+					<locality>Switzerland</locality>
+					<country-code>CH</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="original">Besanosaurus leptorhynchus</name>
+				<authority rid="DalSasso1996PL"/>
+				<reference rid="Bindellini2021P" page="20"/>
+				<location>
+					<locality>Sasso Caldo, Italy</locality>
+					<country-code>IT</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="original">Besanosaurus leptorhynchus</name>
+				<authority rid="DalSasso1996PL"/>
+				<reference rid="Bindellini2021P" page="20"/>
+				<location>
+					<locality>Val Stelle, Tre Fontane, Switzerland</locality>
+					<country-code>CH</country-code>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Brachypterygius alekseevi</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Otschevia alekseevi</name>
+				<authority rid="Arkhangelsky2001PJ"/>
+				<reference rid="Arkhangelsky2001PJ" page="629"/>
+				<location>
+					<locality>Volga River, 18 km north of Ulyanovsk, Ulyanovsk District, Ulyanovsk Region, Russian</locality>
+					<country-code>RU</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Brachypterygius alekseevi</name>
+				<authority rid="Arkhangelsky2001PJ"/>
+				<reference rid="Maisch2010P" page="167"/>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Grendelius alekseevi</name>
+				<authority rid="Zverkov2015PZIRa"/>
+				<reference rid="Zverkov2015PZIRa" page="562"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Brachypterygius extremus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<name combination="new">Ichthyosaurus extremus</name>
+				<authority rid="Boulenger1904PZSL"/>
+				<reference rid="Boulenger1904PZSL" page="425"/>
+				<location>
+					<locality>Smallmouth Sands, Weymouth, Dorset, U.K.</locality>
+					<country-code>GB</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3" type="act">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429" type="publication">urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429</lsid>
+			</synonym>
+			<synonym morphology="N" confidence="v">
+				<name combination="new">Brachypterygius extremus</name>
+				<authority rid="Boulenger1904PZSL"/>
+				<reference rid="vonHuene1922" page="97"/>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
+			</synonym>
+			<synonym morphology="Y" confidence="v *">
+				<name combination="new">Grendelius mordax</name>
+				<authority rid="McGowan1976CJES"/>
+				<reference rid="McGowan1976CJES" page="671"/>
+				<location>
+					<locality>Stowbridge, Norfolk, U.K.</locality>
+					<country-code>GB</country-code>
+					<utm>
+						<zone>31</zone>
+						<band>U</band>
+						<easting>321960</easting>
+						<northing>5835045</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=52.6361361&amp;mlon=0.368878#map=6/52.6361361/0.368878">
+						<latitude>52.6361361</latitude>
+						<longitude>0.368878</longitude>
+					</coordinates>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Brachypterygius pseudoscythica</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Otschevia pseudoscythica</name>
+				<authority rid="Efimov1998PZ"/>
+				<reference rid="Efimov1998PZ" page="83"/>
+				<location>
+					<locality>Volga River, Ulyanovsk District, Ulyanovsk Region, Russia</locality>
+					<country-code>RU</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Brachypterygius psudoscythius</name>
+				<authority rid="Efimov1998PZ"/>
+				<reference rid="Maisch2000SBNBGP" page="79"/>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Grendelius pseudoscythicus</name>
+				<authority rid="Efimov1998PZ"/>
+				<reference rid="Zverkov2015PZIRa" page="561"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Californosaurus perrini</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Shastasaurus perrini</name>
+				<authority rid="Merriam1902UCBDG"/>
+				<reference rid="Merriam1902UCBDG" page="89"/>
+				<location>
+					<locality>Shasta County, California, U.S.A.</locality>
+					<country-code>US</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Delphinosaurus perrini</name>
+				<authority rid="Merriam1902UCBDG"/>
+				<reference rid="Merriam1905AJS" page="24"/>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Californosaurus perrini</name>
+				<authority rid="Merriam1902UCBDG"/>
+				<reference rid="Kuhn1934a" page="27"/>
+				<comments>[\\emph{non Delphinosaurus} \\cite{Eichwald1853BSinM}]</comments>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Callawayia neoscapularis</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Shastasaurus neoscapularis</name>
+				<authority rid="McGowan1994JVPa"/>
+				<reference rid="McGowan1994JVPa" page="170"/>
+				<location>
+					<locality>Peace Reach, Williston Lake, British Columbia, Canada</locality>
+					<country-code>CA</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Callawayia neoscapularis</name>
+				<authority rid="McGowan1994JVPa"/>
+				<reference rid="Maisch2000SBNBGP" page="69"/>
+				<comments>New combination takes priority over \\emph{Metashastasaurus} \\parencite[1001]{Nicholls2001CJES}.</comments>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Metashastasaurus neoscapularis</name>
+				<authority rid="McGowan1994JVPa"/>
+				<reference rid="Nicholls2001CJES" page="985"/>
+				<location>
+					<locality>Chicken Creek, British Columbia, Canada</locality>
+					<country-code>CA</country-code>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Cartorhynchus lenticarpus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Cartorhynchus lenticarpus</name>
+				<authority rid="Motani2015N"/>
+				<reference rid="Motani2015N" page="485"/>
+				<location>
+					<locality>Majishan Quarry, Chaohu City, Hefei, China</locality>
+					<country-code>CN</country-code>
+					<utm>
+						<zone>50</zone>
+						<band>R</band>
+						<easting>577953</easting>
+						<northing>3499041</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=31.6238885&amp;mlon=117.8219391#map=6/31.6238885/117.8219391">
+						<latitude>31.6238885</latitude>
+						<longitude>117.8219391</longitude>
+					</coordinates>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32" type="act">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5" type="publication">urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Catutosaurus gaspariniae</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y">
+				<name combination="original">Ophthalmosaurus monocharactus</name>
+				<authority rid="Appleby1956PZSL"/>
+				<reference rid="Gasparini1988A" page="3"/>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="original">Aegirosaurus sp.</name>
+				<authority rid="Bardet2000JP"/>
+				<reference rid="Maisch2000SBNBGP" page="87"/>
+			</synonym>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Catutosaurus gaspariniae</name>
+				<authority rid="Fernandez2021JVP"/>
+				<reference rid="Fernandez2021JVP" page="2"/>
+				<location>
+					<locality>El Ministerio Quarry, Los Catutos, Zapala Department, Neuquén Province, Argentina</locality>
+					<country-code>AR</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721" type="act">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w" type="publication">urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Caypullisaurus bonapartei</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Caypullisaurus bonapartei</name>
+				<authority rid="Fernandez1997JP"/>
+				<reference rid="Fernandez1997JP" page="480"/>
+				<location>
+					<locality>Cerro Lotena, Neuquén Province, northwest patagonia, Argentina</locality>
+					<country-code>AR</country-code>
+					<utm>
+						<zone>19</zone>
+						<band>H</band>
+						<easting>442358</easting>
+						<northing>5661434</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=-39.1944368&amp;mlon=-69.6675031#map=6/-39.1944368/-69.6675031">
+						<latitude>-39.1944368</latitude>
+						<longitude>-69.6675031</longitude>
+					</coordinates>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D" type="act">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77" type="publication">urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Cetarthrosaurus walkeri</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Ichthyosaurus walkeri</name>
+				<authority rid="Seeley1869"/>
+				<reference rid="Seeley1869" page="65"/>
+				<comments>Reworked into Cambridge Greensand Member (Lower Chalk Formation; early Cenomanian). Described from a cast.</comments>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Cetarthrosaurus walkeri</name>
+				<authority rid="Seeley1869"/>
+				<reference rid="Seeley1873QJGS" page="505"/>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Cetarthrosaurus walkeri</name>
+				<authority rid="Seeley1869"/>
+				<reference rid="Fischer2014PO" page="17"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Chacaicosaurus cayi</name>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Chacaicosaurus cayi</name>
+				<authority rid="Fernandez1994A"/>
+				<reference rid="Fernandez1994A" page="293"/>
+				<location>
+					<locality>Chacaico Sur, Patagonia, Argentina</locality>
+					<country-code>AR</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="original">Stenopterygius cayi</name>
+				<authority rid="Fernandez1994A"/>
+				<reference rid="Fernandez2007" page="277"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Chaohusaurus brevifemoralis</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="p">
+				<name combination="original">Chaohusaurus chaoxianensis</name>
+				<authority rid="Chen1985RGC"/>
+				<reference rid="Motani1998JP"/>
+			</synonym>
+			<synonym morphology="Y" confidence="p">
+				<name combination="original">Chaohusaurus geishanensis</name>
+				<authority rid="Young1972MNIGP"/>
+				<reference rid="Motani1998JVP" page="533"/>
+			</synonym>
+			<synonym morphology="Y" confidence="p">
+				<name combination="original">Chaohusaurus chaoxianensis</name>
+				<authority rid="Chen1985RGC"/>
+				<reference rid="Motani2015JVP" page="e892011-3"/>
+			</synonym>
+			<synonym morphology="Y" confidence="p">
+				<name combination="original">Chaohusaurus chaoxianensis</name>
+				<authority rid="Chen1985RGC"/>
+				<reference rid="Zhou2017JVP" page="e1343831-3"/>
+			</synonym>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Chaohusaurus brevifemoralis</name>
+				<authority rid="Huang2019Pa"/>
+				<reference rid="Huang2019Pa" page="7"/>
+				<location>
+					<locality>Majiashan, Anhui Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA" type="act">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E" type="publication">urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Chaohusaurus chaoxianensis</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Anhuisaurus chaoxianensis</name>
+				<authority rid="Chen1985RGC"/>
+				<reference rid="Chen1985RGC" page="140"/>
+				<location>
+					<locality>Majiashan, Anhui  Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Anhuisaurus faciles</name>
+				<authority rid="Chen1985RGC"/>
+				<reference rid="Chen1985RGC" page="142"/>
+				<location>
+					<locality>Majiashan, Anhui  Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Chensaurus chaoxianensis</name>
+				<authority rid="Chen1985RGC"/>
+				<reference rid="Mazin1991CRASS2MPCSUST" page="1207"/>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Chensaurus faciles</name>
+				<authority rid="Chen1985RGC"/>
+				<reference rid="Mazin1991CRASS2MPCSUST" page="1207"/>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Chaohusaurus chaoxianensis</name>
+				<authority rid="Chen1985RGC"/>
+				<reference rid="Motani1998JP"/>
+			</synonym>
+			<synonym morphology="Y" confidence="p">
+				<name combination="new">Chaohusaurus geishanensis</name>
+				<authority rid="Young1972MNIGP"/>
+				<reference rid="Motani1998JVP" page="533"/>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Chaohusaurus chaoxianensis</name>
+				<authority rid="Chen1985RGC"/>
+				<reference rid="Motani2015JVP" page="e892011-3"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Chaohusaurus geishanensis</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Chaohusaurus geishanensis</name>
+				<authority rid="Young1972MNIGP"/>
+				<reference rid="Young1972MNIGP" page="11"/>
+				<location>
+					<locality>Chao County, Anhui Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Chaohusaurus zhangjiawanensis</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<name combination="original">Chaohusaurus zhangjiawanensis</name>
+				<authority rid="Chen2013AGS"/>
+				<reference rid="Chen2013AGS" page="673"/>
+				<location>
+					<locality>Zhangjiawan Village, Yangping Town, Yuan'an County, Hubei Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Contectopalatus atavus</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Ichthyosaurus atavus</name>
+				<authority rid="Quenstedt1852"/>
+				<reference rid="Quenstedt1852" page="129"/>
+				<location>
+					<locality>Althengstett, Baden-Württenbug, Germany</locality>
+					<country-code>DE</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Mixosaurus atavus atavus</name>
+				<authority rid="Quenstedt1852"/>
+				<reference rid="Fraas1891" page="38"/>
+				<comments>\\emph{fide} \\textcite[67]{McGowan2003}</comments>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Mixosaurus atavus</name>
+				<authority rid="Quenstedt1852"/>
+				<reference rid="vonHuene1916P" page="3"/>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Contectopalatus atavus</name>
+				<authority rid="Quenstedt1852"/>
+				<reference rid="Maisch1998NJGPAb" page="115"/>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Mixosaurus atavus</name>
+				<authority rid="Quenstedt1852"/>
+				<reference rid="McGowan2003" page="67"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Cymbospondylus buchseri</name>
@@ -179,7 +793,17 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Cymbospondylus youngorum</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Cymbospondylus youngorum</name>
+				<authority rid="Sander2021S"/>
+				<reference rid="Sander2021S" page="1"/>
+				<location>
+					<locality>Favret Canyon, Augusta Mountains, Pershing County, Nevada, USA</locality>
+					<country-code>US</country-code>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Dearcmhara shawcrossi</name>
@@ -208,16 +832,54 @@
 	<taxon>
 		<name combination="original">Hauffiopteryx altera</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="N" confidence="p">
+				<name combination="original">Eurhinosaurus longirostris</name>
+				<authority rid="Mantell1851"/>
+				<reference rid="Jager2005" page="29"/>
+			</synonym>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Hauffiopterx altera</name>
+				<authority rid="Maxwell2020PE"/>
+				<reference rid="Maxwell2020PE" page="11"/>
+				<location>
+					<locality>Dotternhausen-Dormettingen, Bade-Württemberg, Germany</locality>
+					<country-code>DE</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479" type="act">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7" type="publication">urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Hauffiopteryx typicus</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Hauffiopterx typicus</name>
+				<authority rid="Maisch2008P"/>
+				<reference rid="Maxwell2020PE" page="3"/>
+				<location>
+					<locality>Dotternhausen-Dormettingen, Bade-Württemberg, Germany</locality>
+					<country-code>DE</country-code>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Himalayasaurus tibetensis</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Himalayasaurus tibetensis</name>
+				<authority rid="Young1972MNIGP"/>
+				<reference rid="Young1972MNIGP" page="7"/>
+				<location>
+					<locality>Tulong Area, Xizang, Tibet, China</locality>
+					<country-code>CN</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:7CDB5708-E15C-4C69-98A1-C2041140D046" type="act">urn:lsid:zoobank.org:act:7CDB5708-E15C-4C69-98A1-C2041140D046</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74" type="publication">urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Hudsonelpidia brevirostris</name>
@@ -249,14 +911,60 @@
 	<taxon>
 		<name combination="original">Jabalisaurus metzli</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y">
+				<name combination="original">Ophthalmosaurus cf. icenicus</name>
+				<authority rid="Seeley1874QJGSa"/>
+				<reference rid="Buchy2010JP" page="149"/>
+				<location>
+					<locality>Sierra El Jabalí, near Gómez Farías, Saltillo, Caohuila, Mexico</locality>
+					<country-code>MX</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="original">Ophthalmosaurus cf. icenicus</name>
+				<authority rid="Seeley1874QJGSa"/>
+				<reference rid="Frey2014DORMM"/>
+				<location>
+					<locality>Sierra El Jabalí, near Gómez Farías, Saltillo, Caohuila, Mexico</locality>
+					<country-code>MX</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Jabalisaurus metzli</name>
+				<authority rid="BarrientosLara2021JSAES"/>
+				<reference rid="BarrientosLara2021JSAES" page="4"/>
+				<location>
+					<locality>Sierra El Jabalí, near Gómez Farías, Saltillo, Caohuila, Mexico</locality>
+					<country-code>MX</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057" type="act">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Kyhytysuka sachicarum</name>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Platypterygius sachicarum</name>
+				<authority rid="Paramo1997RI"/>
+				<reference rid="Paramo1997RI" page="2"/>
+				<location>
+					<locality>Loma Pedro Luis, Villa de Leyva, Boyacá, Colombia</locality>
+					<country-code>CO</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Kyhytysuka sachicarum</name>
+				<authority rid="Paramo1997RI"/>
+				<reference rid="Cortes2021JSP" page="2"/>
+				<location>
+					<locality>El Roble Locality, Villa de Leyva, Boaycá, Colombia</locality>
+					<country-code>CO</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:E3FD55AF-2AD1-46CA-A49C-1FB4B102AB2C" type="publication">urn:lsid:zoobank.org:pub:E3FD55AF-2AD1-46CA-A49C-1FB4B102AB2C</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Leninia stellans</name>
@@ -293,28 +1001,97 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Muiscasaurus catheti</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Muiscasaurus catheti</name>
+				<authority rid="Maxwell2016PP"/>
+				<reference rid="Maxwell2016PP" page="61"/>
+				<location>
+					<locality>Vereda Llanitos, Sachica, Boyaca, Colombia</locality>
+					<country-code>CO</country-code>
+					<utm>
+						<zone>18</zone>
+						<band>N</band>
+						<easting>662860</easting>
+						<northing>616018</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.5712963&amp;mlon=-73.5296776#map=6/5.5712963/-73.5296776">
+						<latitude>5.5712963</latitude>
+						<longitude>-73.5296776</longitude>
+					</coordinates>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Nannopterygius enthekiodon</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<name combination="new">Ichthyosaurus enthekiodon</name>
+				<authority rid="Hulke1871QJGS"/>
+				<reference rid="Hulke1871QJGS" page="441"/>
+				<location>
+					<locality>Kimmeridge Bay, Dorset, U.K.</locality>
+					<country-code>GB</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC" type="act">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C" type="publication">urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C</lsid>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Nannopterygius enthekiodon</name>
+				<authority rid="Hulke1871QJGS"/>
+				<reference rid="vonHuene1922" page="98"/>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Nannopterygius saveljeviensis</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Paraophthalmosaurus saveljeviensis</name>
+				<authority rid="Arkhangelsky1997PZ"/>
+				<reference rid="Arkhangelsky1997PZ" page="88"/>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Yasykovia kabanovi</name>
+				<authority rid="Efimov1999PZ"/>
+				<reference rid="Efimov1999PZ" page="98"/>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Nannopterygius saveljeviensis</name>
+				<authority rid="Arkhangelsky1997PZ"/>
+				<reference rid="Zverkov2020ZJLS" page="246"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Nannopterygius yasykovi</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Yasykovia sumini</name>
+				<authority rid="Efimov1999PZ"/>
+				<reference rid="Efimov1999PZ" page="98"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Ophthalmosaurus icenicus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<name combination="original">Ophthalmosaurus icenicus</name>
+				<authority rid="Seeley1874QJGSa"/>
+				<reference rid="Seeley1874QJGSa" page="707"/>
+				<location>
+					<locality>Peterborough, Cambridgeshire</locality>
+					<country-code>GB</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE" type="act">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:4C83C9B2-665D-4AD7-8AF8-D365E5491831" type="publication">urn:lsid:zoobank.org:pub:4C83C9B2-665D-4AD7-8AF8-D365E5491831</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Ophthalmosaurus natans</name>
@@ -322,7 +1099,19 @@
 	<taxon>
 		<name combination="original">Parrassaurus yacahuitztli</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Parrassaurus yacahuitztli</name>
+				<authority rid="BarrientosLara2021A"/>
+				<reference rid="BarrientosLara2021A" page="2"/>
+				<location>
+					<locality>Rancho el Sombrero, Sierra de Parras, Saltillo Municipality, Coahuila, Mexico</locality>
+					<country-code>MX</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165" type="act">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:3C6D6D2B-6F30-4DF3AEB4-FD2B-C61B3CF7" type="publication">urn:lsid:zoobank.org:pub:3C6D6D2B-6F30-4DF3AEB4-FD2B-C61B3CF7</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Parvinatator wapitiensis</name>
@@ -332,14 +1121,43 @@
 	</taxon>
 	<taxon>
 		<name combination="new">Pervushovisaurus campylodon</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Ichthyosaurus campylodon</name>
+				<authority rid="Carter1846RBAAS"/>
+				<reference rid="Carter1846RBAAS" page="60"/>
+				<location>
+					<locality>Cambridge,  Cambridgeshire, U.K.</locality>
+					<country-code>GB</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="N">
+				<name combination="new">Myopterygius campylodon</name>
+				<authority rid="Carter1846RBAAS"/>
+				<reference rid="vonHuene1922" page="98"/>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Platypterygius campylodon</name>
+				<authority rid="Carter1846RBAAS"/>
+				<reference rid="McGowan1972CGUW" page="17"/>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="new">Pervushovisaurus campylodon</name>
+				<authority rid="Carter1846RBAAS"/>
+				<reference rid="Fischer2016P" page="8"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Pessopteryx nisseri</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Pessopteryx nisseri</name>
+				<authority rid="Wiman1910BGIUa"/>
+				<reference rid="Wiman1910BGIUa" page="139"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Phalarodon callawayi</name>
@@ -358,9 +1176,31 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Platypterygius americanus</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Myopterygius americanus</name>
+				<authority rid="Nace1939AJS"/>
+				<reference rid="Nace1939AJS" page="674"/>
+				<location>
+					<locality>Crook County Wyoming, U.S.A.</locality>
+					<country-code>US</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="original">Myopterygius americanus</name>
+				<authority rid="Nace1939AJS"/>
+				<reference rid="Romer1968CGUW" page="27"/>
+				<location>
+					<locality>Osage, Wyoming, U.S.A.</locality>
+					<country-code>US</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="original">Platypterygius americanus</name>
+				<authority rid="Nace1939AJS"/>
+				<reference rid="McGowan1972CGUW" page="17"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Platypterygius australis</name>
@@ -373,7 +1213,14 @@
 	</taxon>
 	<taxon>
 		<name combination="new">Platypterygius platydactylus</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="N">
+				<name combination="new">Platypterygius platydactylus</name>
+				<authority rid="Broili1907P"/>
+				<reference rid="vonHuene1922" page="99"/>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Protoichthyosaurus applebyi</name>
@@ -459,7 +1306,20 @@
 	<taxon>
 		<name combination="original">Thalassodraco etchesi</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<name combination="original">Thalassodraco etchesi</name>
+				<authority rid="Jacobs2020PO"/>
+				<reference rid="Jacobs2020PO" page="7"/>
+				<location>
+					<locality>Rope Lake Bay, Kimmeridge, Dorset U.K.</locality>
+					<country-code>GB</country-code>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23" type="act">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0" type="publication">urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0</lsid>
+				<comments>\\textallsc{UK GR SY932775}</comments>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Thalattoarchon saurophagis</name>
@@ -475,14 +1335,73 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Undorosaurus gorodischensis</name>
-		<synonym/>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Undorosaurus gorodischensis</name>
+				<authority rid="Efimov1999PZa"/>
+				<reference rid="Efimov1999PZa" page="52"/>
+				<location>
+					<locality>Undory, Volga Oblast, Russia</locality>
+					<country-code>RU</country-code>
+				</location>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="original">Cryopterygius kristiansenae</name>
+				<authority rid="Druckenmiller2012NJG"/>
+				<reference rid="Druckenmiller2012NJG" page="313"/>
+				<location>
+					<locality>Janusfjellet, Spitsbergen, Svalbard</locality>
+					<country-code>SJ</country-code>
+					<utm>
+						<zone>33</zone>
+						<band>X</band>
+						<easting>0518842</easting>
+						<northing>8696067</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3365801&amp;mlon=15.8349207#map=6/78.3365801/15.8349207">
+						<latitude>78.3365801</latitude>
+						<longitude>15.8349207</longitude>
+					</coordinates>
+				</location>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575" type="act">urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
+				<comments>\\emph{fide} \\textcite{Zverkov2019JSP}</comments>
+			</synonym>
+			<synonym morphology="Y">
+				<name combination="original">Undorosaurus gorodischensis</name>
+				<authority rid="Efimov1999PZa"/>
+				<reference rid="Zverkov2019JSP" page="1189"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="new">Undorosaurus kielanae</name>
-		<synonym/>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="new">Cryopterygius kielanae</name>
+				<authority rid="Tyborowski2016APP"/>
+				<reference rid="Tyborowski2016APP" page="793"/>
+				<location>
+					<locality>Owadów-Brzezinki Quarry, Sławno</locality>
+					<country-code>PL</country-code>
+					<utm>
+						<zone>34</zone>
+						<band>U</band>
+						<easting>439831</easting>
+						<northing>5692022</northing>
+					</utm>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=51.3762562&amp;mlon=20.1355025#map=6/51.3762562/20.1355025">
+						<latitude>51.3762562</latitude>
+						<longitude>20.1355025</longitude>
+					</coordinates>
+				</location>
+			</synonym>
+			<synonym morphology="N" confidence="?">
+				<name combination="new">Undorosaurus kielanae</name>
+				<authority rid="Tyborowski2016APP"/>
+				<reference rid="Zverkov2019JSP" page="1187"/>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Undorosaurus nessovi</name>
@@ -495,7 +1414,17 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Wahlisaurus massarae</name>
-		<synonym/>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<name combination="original">Wahlisaurus massarae</name>
+				<authority rid="Lomax2016JSP"/>
+				<reference rid="Lomax2016JSP" page="388"/>
+				<location>
+					<locality>Normanton Hills near Normanton on Soar, Nottinghamshire, U.K.</locality>
+					<country-code>GB</country-code>
+				</location>
+			</synonym>
+		</synonym-list>
 	</taxon>
 	<taxon>
 		<name combination="original">Wimanius odontopalatus</name>

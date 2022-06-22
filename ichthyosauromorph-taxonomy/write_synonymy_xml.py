@@ -73,30 +73,85 @@ def element_lsid(lsid, base_url = 'https://zoobank.org/'):
     return(lsid_elem)
 
 
-def utm_to_latlon(utm_coord):
-    '''Convert UTM-formatted coordinate strings to WGS84-formatted (latitutde-longitude).
+def parse_utm(utm_coord):
+    '''Parse a UTM string into its constituent parts held in a dictionary.
     '''
 
-    utm_parser = re.compile(r'(?P<column>\d+)(?P<row>[A-Z]) (?P<easting>\d+) (?P<northing>\d+)')
+    utm_parser = re.compile(r'(?P<zone>\d+)(?P<band>[A-Z]) (?P<easting>\d+) (?P<northing>\d+)')
     parsed_utm = utm_parser.match(utm_coord).groupdict()
+
+    return(parsed_utm)
+
+
+def utm_to_latlon(parsed_utm):
+    '''Convert parsed UTM-formatted coordinate disctionary to WGS84-formatted (latitutde-longitude).
+    '''
 
     converted_latlon = utm.to_latlon(int(parsed_utm['easting']),
                                      int(parsed_utm['northing']),
-                                     int(parsed_utm['column']),
-                                     parsed_utm['row'])
+                                     int(parsed_utm['zone']),
+                                     parsed_utm['band'])
 
     return(converted_latlon)
 
 
-def element_coordinates(latlon, utm):
+def element_utm(utm_coord):
+    '''Return an XML element holding UTM coordinates for a given location.
+    '''
+
+    parsed_utm = parse_utm(utm_coord)
+    converted_latlon = utm_to_latlon(parsed_utm)
+
+    coord_utm_elem = et.Element('utm')
+
+    zone_elem = et.SubElement(coord_utm_elem, 'zone')
+    zone_elem.text = parsed_utm['zone']
+    
+    band_elem = et.SubElement(coord_utm_elem, 'band')
+    band_elem.text = parsed_utm['band']
+
+    easting_elem = et.SubElement(coord_utm_elem, 'easting')
+    easting_elem.text = parsed_utm['easting']
+
+    northing_elem = et.SubElement(coord_utm_elem, 'northing')
+    northing_elem.text = parsed_utm['northing']
+
+    return([converted_latlon, coord_utm_elem])
+
+
+def parse_latlon(latlon):
+    '''Parse a latitutde or longitude coordinates and convert to decimal. Normalizes values with minutes (and seconds).
+    '''
+
+    if re.search(r'[\u2033\"\']+', latlon):
+        coord_parser = re.compile(r'(?P<degree>-?\d+\.?\d+)°?\s+(?P<minute>\d+)[′\']?\s+(?P<second>\d+\.?\d+)[″\'\"]?\s+(?P<direction>[NESW]?)', re.UNICODE)
+    elif re.search(r'[\u2032\']+', latlon):
+        coord_parser = re.compile(r'(?P<degree>-?\d+\.?\d+)°?\s+(?P<minute>\d+\.?\d+)[′\']?\s+(?P<direction>[NESW]?)', re.UNICODE)
+    else:
+        coord_parser = re.compile(r'(?P<degree>-?\d+\.?\d+)°?\s?(?P<direction>[NESW]?)', re.UNICODE)
+
+    parsed_latlon = coord_parser.match(latlon).groupdict()
+
+    print(parsed_latlon)
+
+
+def element_coordinates(lat, lon):
     '''Return an XML element holding WGS84 and/or UTM coordinates for a given location, with a URL to that location on OpenStreetMap.
     '''
 
-    if utm and not latlon:
-        latlon = utm_to_latlon(utm)
+    # # Format the coordinates to print prettily.
+    # if lat > 0:
+    #     lat_direction = '° N'
+    # else:
+    #     lat_direction = '° S'
 
-    lat = str(round(latlon[0], 7))
-    lon = str(round(latlon[1], 7))
+    # if lon > 0:
+    #     lon_direction = '° E'
+    # else:
+    #     lon_direction = '° W'
+
+    lat = str(round(lat, 7))
+    lon = str(round(lon, 7))
 
     osm_url_str = f'https://www.openstreetmap.org/?mlat={lat}&mlon={lon}#map=6/{lat}/{lon}'
 
@@ -104,28 +159,11 @@ def element_coordinates(latlon, utm):
     coord_elem = et.Element('coordinates')
     coord_elem.set('osm-url', osm_url_str)
 
-    coord_wgs_elem = et.SubElement(coord_elem, 'wgs')
-    coord_wgs_elem.set('latitude', lat)
-    coord_wgs_elem.set('longitude', lon)
-
-    # Format the coordinates to print prettily.
-    if latlon[0] > 0:
-        lat = lat + '° N'
-    else:
-        lat = lat + '° S'
-
-    if latlon[1] > 0:
-        lon = lon + '° E'
-    else:
-        lon = lon + '° W'
-
-    coord_wgs_elem.text = lat + ' ' + lon
+    coord_lat_elem = et.SubElement(coord_elem, 'latitude')
+    coord_lat_elem.text = lat
+    coord_lon_elem = et.SubElement(coord_elem, 'longitude')
+    coord_lon_elem.text = lon
     
-    # Also return the UTM coordinates if present, but these don't contribute to the coordinates (except to generate latitude and longitude values).
-    if utm:
-        coord_utm_elem = et.SubElement(coord_elem, 'utm')
-        coord_utm_elem.text = 'UTM WGS84 ' + utm
-
     return(coord_elem)
 
 
@@ -138,7 +176,7 @@ text_sanitising = {r'\.\.': r'.', r'\s\s': r' '}
 
 unit_separator = ', '
 lithostrat_keys = ['bed', 'member', 'formation', 'zone']
-chronostrat_keys = ['stage', 'series', 'system']
+chronostrat_keys = ('stage', 'series', 'system')
 coord_keys = ['utm_wgs84', 'long', 'lat']
 
 outfile = clade_name.lower() + '.xml'
@@ -169,11 +207,90 @@ for taxon in taxa_to_print:
 
     filter_synonyms = [x for x in sorted_synonymy if x['accepted_name'] == current_taxon]
 
+    if filter_synonyms:
+        synonym_list_elem = et.SubElement(taxon_elem, 'synonym-list')
+
+    # indent this a level?
     for synonym in filter_synonyms:
         current_synonym = synonym['identified_name']
-        print('Record matched:', current_synonym, "→", current_taxon)
+        print('Record matched:', current_synonym, '→', current_taxon)
 
-        synonym_elem = et.SubElement(taxon_elem, 'synonym')
+        synonym_elem = et.SubElement(synonym_list_elem, 'synonym')
+
+        if synonym['morphological_information']:
+            synonym_elem.set('morphology', synonym['morphological_information'])
+        
+        if synonym['assignment_confidence']:
+            synonym_elem.set('confidence', synonym['assignment_confidence'])
+
+        synonym_name_elem = et.SubElement(synonym_elem, 'name')
+        synonym_name_elem.text = synonym['identified_name']
+        
+        if taxon['accepted_status'] == 'ncomb':
+            synonym_name_elem.set('combination', 'new')
+        else:
+            synonym_name_elem.set('combination', 'original')
+
+        authority_elem = et.SubElement(synonym_elem, 'authority')
+        authority_elem.set('rid', synonym['identified_authority'])
+
+        reference_elem = et.SubElement(synonym_elem, 'reference')
+        reference_elem.set('rid', synonym['reference'])
+                
+        if synonym['pageref']:
+            reference_elem.set('page', synonym['pageref'])
+
+        if synonym['location'] or synonym['utm_wgs84'] or synonym['longitude']:
+            location_elem = et.SubElement(synonym_elem, 'location')
+
+            if synonym['location']:
+                locality_elem = et.SubElement(location_elem, 'locality')
+                locality_elem.text = synonym['location']
+
+            if synonym['country']:
+                country_elem = et.SubElement(location_elem, 'country-code')
+                country_elem.text = synonym['country']
+
+            if synonym['utm_wgs84']:
+                utm_elem = element_utm(synonym['utm_wgs84'])
+                location_elem.append(utm_elem[1])
+
+                wgs_elem = element_coordinates(lat=utm_elem[0][0], lon=utm_elem[0][1])
+                location_elem.append(wgs_elem)
+
+            # elif synonym['longitude']:
+                # parse_latlon(synonym['latitude'])
+                # wgs_elem = element_coordinates(lat=synonym['latitude'], lon=synonym['longitude'])
+                # location_elem.append(wgs_elem)
+            
+            # el
+            # if synonym['longitude']:
+            #     coord_elem = element_coordinates(lat=synonym['latitude'], lon=synonym['longitude'])
+            #     location_elem(coord_elem)
+
+        # print([x for x in any(chronostrat_keys in synonym.keys())])
+        print(synonym.keys())
+        #     print('yes')
+        # else:
+        #     print('no')
+
+        if synonym['lsid_act']:
+            lsid_act_elem = element_lsid(lsid=synonym['lsid_act'])
+            lsid_act_elem.set('type', 'act')
+            synonym_elem.append(lsid_act_elem)
+
+        if synonym['lsid_pub']:
+            lsid_pub_elem = element_lsid(lsid=synonym['lsid_pub'])
+            lsid_pub_elem.set('type', 'publication')
+            synonym_elem.append(lsid_pub_elem)
+
+        if synonym['comments']:
+            comments_elem = et.SubElement(synonym_elem, 'comments')
+            comments_elem.text = synonym['comments']
+        
+
+        
+
 
 
 
