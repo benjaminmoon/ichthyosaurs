@@ -2,98 +2,168 @@
 <synonymy>
 	<taxon>
 		<name combination="original">Acamptonectes densus</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Acuetzpalin carranzai</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Aegirosaurus leptospondylus</name>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Arthropterygius chrisorum</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Arthropterygius hoybergeti</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Arthropterygius lundi</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Arthropterygius thalassonotus</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Arthropterygius volgensis</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Athabascasaurus bitumineus</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Auroroborealia incognita</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Barracudasauroides panxianensis</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Besanosaurus leptorhynchus</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Brachypterygius alekseevi</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Brachypterygius extremus</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Brachypterygius pseudoscythica</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Californosaurus perrini</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Callawayia neoscapularis</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Cartorhynchus lenticarpus</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Catutosaurus gaspariniae</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Caypullisaurus bonapartei</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Cetarthrosaurus walkeri</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Chacaicosaurus cayi</name>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Chaohusaurus brevifemoralis</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Chaohusaurus chaoxianensis</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Chaohusaurus geishanensis</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Chaohusaurus zhangjiawanensis</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Contectopalatus atavus</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Cymbospondylus buchseri</name>
@@ -109,6 +179,7 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Cymbospondylus youngorum</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Dearcmhara shawcrossi</name>
@@ -136,13 +207,17 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Hauffiopteryx altera</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Hauffiopteryx typicus</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Himalayasaurus tibetensis</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Hudsonelpidia brevirostris</name>
@@ -173,10 +248,15 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Jabalisaurus metzli</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Kyhytysuka sachicarum</name>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Leninia stellans</name>
@@ -213,27 +293,36 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Muiscasaurus catheti</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Nannopterygius enthekiodon</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Nannopterygius saveljeviensis</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Nannopterygius yasykovi</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Ophthalmosaurus icenicus</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Ophthalmosaurus natans</name>
 	</taxon>
 	<taxon>
 		<name combination="original">Parrassaurus yacahuitztli</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Parvinatator wapitiensis</name>
@@ -243,9 +332,14 @@
 	</taxon>
 	<taxon>
 		<name combination="new">Pervushovisaurus campylodon</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Pessopteryx nisseri</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Phalarodon callawayi</name>
@@ -264,6 +358,9 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Platypterygius americanus</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Platypterygius australis</name>
@@ -276,6 +373,7 @@
 	</taxon>
 	<taxon>
 		<name combination="new">Platypterygius platydactylus</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Protoichthyosaurus applebyi</name>
@@ -360,7 +458,8 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Thalassodraco etchesi</name>
-		<lsid url="http://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Thalattoarchon saurophagis</name>
@@ -376,9 +475,14 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Undorosaurus gorodischensis</name>
+		<synonym/>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="new">Undorosaurus kielanae</name>
+		<synonym/>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Undorosaurus nessovi</name>
@@ -391,6 +495,7 @@
 	</taxon>
 	<taxon>
 		<name combination="original">Wahlisaurus massarae</name>
+		<synonym/>
 	</taxon>
 	<taxon>
 		<name combination="original">Wimanius odontopalatus</name>

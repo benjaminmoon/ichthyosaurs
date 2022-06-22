@@ -165,6 +165,20 @@ for taxon in taxa_to_print:
 
         taxon_elem.append(lsid_act_elem)
 
+    # filter_synonyms = dict(filter(lambda val: val['accepted_name'] == current_taxon, synonymy_file.items()))
+
+    filter_synonyms = [x for x in sorted_synonymy if x['accepted_name'] == current_taxon]
+
+    for synonym in filter_synonyms:
+        current_synonym = synonym['identified_name']
+        print('Record matched:', current_synonym, "→", current_taxon)
+
+        synonym_elem = et.SubElement(taxon_elem, 'synonym')
+
+
+
+
+
     
 
 
