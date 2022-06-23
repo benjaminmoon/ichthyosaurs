@@ -851,6 +851,13 @@
 			<synonym morphology="N">
 				<identified-name combination="new">
 					<italic>Brachypterygius psudoscythius</italic>
+					<note>
+						<p>
+							[
+							<italic>sic.</italic>
+							]
+						</p>
+					</note>
 				</identified-name>
 				<authority rid="Efimov1998PZ"/>
 				<reference rid="Maisch2000SBNBGP" page="79"/>
@@ -858,6 +865,13 @@
 			<synonym morphology="N">
 				<identified-name combination="new">
 					<italic>Grendelius pseudoscythicus</italic>
+					<note>
+						<p>
+							[
+							<italic>sic.</italic>
+							]
+						</p>
+					</note>
 				</identified-name>
 				<authority rid="Efimov1998PZ"/>
 				<reference rid="Zverkov2015PZIRa" page="561"/>
@@ -1456,6 +1470,15 @@
 			<synonym morphology="Y">
 				<identified-name combination="new">
 					<italic>Mixosaurus atavus atavus</italic>
+					<note>
+						<p>
+							[as 
+							<italic>Mixossaurus atavus</italic>
+							 var.~
+							<italic>minor</italic>
+							]
+						</p>
+					</note>
 				</identified-name>
 				<authority rid="Quenstedt1852"/>
 				<reference rid="Fraas1891" page="38"/>

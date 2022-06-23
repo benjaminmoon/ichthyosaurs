@@ -235,6 +235,13 @@ for taxon in taxa_to_print:
             synonym_name.text = synonym['identified_name']
 
         synonym_name_elem.append(synonym_name)
+
+        if synonym['identified_note']:
+            synonym_note = parse_pandoc(synonym['identified_note'])
+
+            synonym_note_elem = et.SubElement(synonym_name_elem, 'note')
+            synonym_note_elem.append(synonym_note)
+                
         
         if taxon['accepted_status'] == 'ncomb':
             synonym_name_elem.set('combination', 'new')
@@ -246,7 +253,7 @@ for taxon in taxa_to_print:
 
         reference_elem = et.SubElement(synonym_elem, 'reference')
         reference_elem.set('rid', synonym['reference'])
-                
+
         if synonym['pageref']:
             reference_elem.set('page', synonym['pageref'])
 
