@@ -8,10 +8,12 @@ import sys
 import csv
 import re
 from xml.etree import ElementTree as et
-from xml.dom import minidom as md
+from xml.dom import minidom
 import utm
 from pybibtex import build_citekey_dict
 from pybibtex import parse_bibfile_to_cite_dict
+import pandoc
+import html
 
 # return error if the wrong number of arguments are given
 # usage is given in the error return value
@@ -55,8 +57,8 @@ def get_higher_taxon(filename):
         tax = csv.DictReader(f, delimiter='\t')
 
         for row in tax:
-            if row['clade'] == clade_name:
-                yield dict(**row)
+            # if row['clade'] == clade_name:
+            yield dict(**row)
 
 
 
@@ -120,7 +122,9 @@ def element_utm(utm_coord):
 
 
 def parse_latlon(latlon):
-    '''Parse a latitutde or longitude coordinates and convert to decimal. Normalizes values with minutes (and seconds).
+    '''Parse a latitude or longitude coordinates and convert to decimal. Normalizes values with minutes (and seconds).
+
+    NB this isn't used.
     '''
 
     if re.search(r'[\u2033\"\']+', latlon):
@@ -139,19 +143,8 @@ def element_coordinates(lat, lon):
     '''Return an XML element holding WGS84 and/or UTM coordinates for a given location, with a URL to that location on OpenStreetMap.
     '''
 
-    # # Format the coordinates to print prettily.
-    # if lat > 0:
-    #     lat_direction = '° N'
-    # else:
-    #     lat_direction = '° S'
-
-    # if lon > 0:
-    #     lon_direction = '° E'
-    # else:
-    #     lon_direction = '° W'
-
-    lat = str(round(lat, 7))
-    lon = str(round(lon, 7))
+    lat = str(round(float(lat), 7))
+    lon = str(round(float(lon), 7))
 
     osm_url_str = f'https://www.openstreetmap.org/?mlat={lat}&mlon={lon}#map=6/{lat}/{lon}'
 
@@ -167,6 +160,16 @@ def element_coordinates(lat, lon):
     return(coord_elem)
 
 
+def parse_pandoc(str):
+    '''Parse a string of Pandoc markdown input and return formatted XML. Includes rendering citations.
+    '''
+    comment = pandoc.read(str)
+    comment = pandoc.write(comment, format='jats', options=['-C', '--bibliography=synonymy.bib', '--wrap=none'])
+    parsed_comment = et.fromstring(comment)
+
+    return(parsed_comment)
+
+
 synonymy_dict = get_ref_dates(synonymy_file)
 sorted_synonymy = sorted(synonymy_dict, key=lambda row: row['date'])
 
@@ -175,9 +178,10 @@ taxa_to_print = get_higher_taxon(taxon_file)
 text_sanitising = {r'\.\.': r'.', r'\s\s': r' '}
 
 unit_separator = ', '
-lithostrat_keys = ('bed', 'member', 'formation', 'zone')
+lithostrat_keys = ('bed', 'member', 'formation')
 chronostrat_keys = ('stage', 'series', 'system')
-coord_keys = ['utm_wgs84', 'long', 'lat']
+biostrat_keys = ('zone', 'subzone')
+
 
 outfile = clade_name.lower() + '.xml'
 
@@ -189,6 +193,7 @@ for taxon in taxa_to_print:
     # this_taxon = find_replace_multi(taxon_name, taxon)
 
     taxon_elem = et.SubElement(root, 'taxon')
+    taxon_elem.set('clade', taxon['clade'])
     
     name_elem = et.SubElement(taxon_elem, 'name')
     name_elem.text = current_taxon
@@ -222,8 +227,14 @@ for taxon in taxa_to_print:
         if synonym['assignment_confidence']:
             synonym_elem.set('confidence', synonym['assignment_confidence'])
 
-        synonym_name_elem = et.SubElement(synonym_elem, 'name')
-        synonym_name_elem.text = synonym['identified_name']
+        synonym_name_elem = et.SubElement(synonym_elem, 'identified-name')
+        if re.search(r'\*', synonym['identified_name']):
+            synonym_name = parse_pandoc(synonym['identified_name'])
+        else:
+            synonym_name = et.Element('italic')
+            synonym_name.text = synonym['identified_name']
+
+        synonym_name_elem.append(synonym_name)
         
         if taxon['accepted_status'] == 'ncomb':
             synonym_name_elem.set('combination', 'new')
@@ -256,24 +267,13 @@ for taxon in taxa_to_print:
 
                 wgs_elem = element_coordinates(lat=utm_elem[0][0], lon=utm_elem[0][1])
                 location_elem.append(wgs_elem)
-
-            # elif synonym['longitude']:
-                # parse_latlon(synonym['latitude'])
-                # wgs_elem = element_coordinates(lat=synonym['latitude'], lon=synonym['longitude'])
-                # location_elem.append(wgs_elem)
-            
-            # el
-            # if synonym['longitude']:
-            #     coord_elem = element_coordinates(lat=synonym['latitude'], lon=synonym['longitude'])
-            #     location_elem(coord_elem)
-
-        # if chronostrat_keys in synonym.keys():
-        #     strat_elem = et.SubElement(synonym_elem, 'stratigraphy')
-        # else:
-        #     print("I don't see it")
+            elif synonym['longitude'] and synonym['latitude']:
+                coord_elem = element_coordinates(lat=synonym['latitude'], lon=synonym['longitude'])
+                location_elem.append(coord_elem)
        
         lithostrat_elem = et.Element('lithostratigraphy')
         chronostrat_elem = et.Element('chronostratigraphy')
+        biostrat_elem = et.Element('biostratigraphy')
         for key in lithostrat_keys:
             if synonym[key]:
                 strat_elem = et.SubElement(lithostrat_elem, key)
@@ -284,10 +284,23 @@ for taxon in taxa_to_print:
                 strat_elem = et.SubElement(chronostrat_elem, key)
                 strat_elem.text = synonym[key]
 
-        if lithostrat_elem or chronostrat_elem:
+        for key in biostrat_keys:
+            if synonym[key]:
+                parsed_text = parse_pandoc(synonym[key])
+
+                strat_elem = et.SubElement(biostrat_elem, key)
+                strat_elem.append(parsed_text)
+
+
+        if lithostrat_elem or chronostrat_elem or biostrat_elem:
             stratigraphy_elem = et.SubElement(synonym_elem, 'stratigraphy')
-            stratigraphy_elem.append(lithostrat_elem)
-            stratigraphy_elem.append(chronostrat_elem)
+
+            if lithostrat_elem:
+                stratigraphy_elem.append(lithostrat_elem)
+            if chronostrat_elem:
+                stratigraphy_elem.append(chronostrat_elem)
+            if biostrat_elem:
+                stratigraphy_elem.append(biostrat_elem)
 
         if synonym['lsid_act']:
             lsid_act_elem = element_lsid(lsid=synonym['lsid_act'])
@@ -300,15 +313,18 @@ for taxon in taxa_to_print:
             synonym_elem.append(lsid_pub_elem)
 
         if synonym['comments']:
+            parsed_comment = parse_pandoc(synonym['comments'])
+
             comments_elem = et.SubElement(synonym_elem, 'comments')
-            comments_elem.text = synonym['comments']
-        
+            comments_elem.append(parsed_comment)
+
         
 # tree = et.ElementTree(root)
 
 # Format the XML content to make it easier to view
-xml_str = md.parseString(et.tostring(root)).toprettyxml(indent="\t")
+xml_str = minidom.parseString(et.tostring(root, encoding='unicode')).toprettyxml(indent='\t')
+xml_str = html.unescape(xml_str)
 
 with open(outfile, 'w') as f:
-    # tree.write(f)
+    # tree.write(f, encoding='unicode')
     f.write(xml_str)

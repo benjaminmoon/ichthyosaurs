@@ -1,11 +1,13 @@
 <?xml version="1.0" ?>
 <synonymy>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Acamptonectes densus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
-				<name combination="original">Acamptonectes densus</name>
+				<identified-name combination="original">
+					<italic>Acamptonectes densus</italic>
+				</identified-name>
 				<authority rid="Fischer2012PO"/>
 				<reference rid="Fischer2012PO" page="3"/>
 				<location>
@@ -15,19 +17,28 @@
 				<stratigraphy>
 					<lithostratigraphy>
 						<formation>Speeton Clay Formation</formation>
-						<zone>\\emph{Simbiskites concinnus/staffi} ammonite biozones</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>basal–upper Hauterivian</stage>
 						<series>Lower Cretaceous</series>
 						<system>Cretaceous</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Simbiskites concinnus/staffi</italic>
+								 ammonite biozones
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8" type="act">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="original">Acamptonectes densus</name>
+				<identified-name combination="original">
+					<italic>Acamptonectes densus</italic>
+				</identified-name>
 				<authority rid="Fischer2012PO"/>
 				<reference rid="Fischer2012PO" page="3"/>
 				<location>
@@ -35,25 +46,32 @@
 					<country-code>DE</country-code>
 				</location>
 				<stratigraphy>
-					<lithostratigraphy>
-						<zone>\\emph{Simbiskites concinnus/staffi} ammonite biozones</zone>
-					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>basal–upper Hauterivian</stage>
 						<series>Lower Cretaceous</series>
 						<system>Cretaceous</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Simbiskites concinnus/staffi</italic>
+								 ammonite biozones
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Acuetzpalin carranzai</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Acuetzpalin carranzai</name>
+				<identified-name combination="original">
+					<italic>Acuetzpalin carranzai</italic>
+				</identified-name>
 				<authority rid="BarrientosLara2020JSAES"/>
 				<reference rid="BarrientosLara2020JSAES" page="3"/>
 				<location>
@@ -75,11 +93,13 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Aegirosaurus leptospondylus</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Ichthyosaurus leptospondylus</name>
+				<identified-name combination="new">
+					<italic>Ichthyosaurus leptospondylus</italic>
+				</identified-name>
 				<authority rid="Wagner1853BKAWGA"/>
 				<reference rid="Wagner1853BKAWGA"/>
 				<location>
@@ -98,7 +118,9 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Aegirosaurus leptospondylus</name>
+				<identified-name combination="new">
+					<italic>Aegirosaurus leptospondylus</italic>
+				</identified-name>
 				<authority rid="Wagner1853BKAWGA"/>
 				<reference rid="Bardet2000JP" page="504"/>
 				<location>
@@ -119,11 +141,13 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Arthropterygius chrisorum</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Ophthalmosaurus chrisorum</name>
+				<identified-name combination="new">
+					<italic>Ophthalmosaurus chrisorum</italic>
+				</identified-name>
 				<authority rid="Russell1993BGSC"/>
 				<reference rid="Russell1993BGSC" page="198"/>
 				<location>
@@ -135,7 +159,7 @@
 						<easting>433220</easting>
 						<northing>8453461</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=76.1511043&amp;mlon=-113.5000047#map=6/76.1511043/-113.5000047">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=76.1511043&mlon=-113.5000047#map=6/76.1511043/-113.5000047">
 						<latitude>76.1511043</latitude>
 						<longitude>-113.5000047</longitude>
 					</coordinates>
@@ -152,7 +176,9 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y" confidence="?">
-				<name combination="new">Keilhauia nui</name>
+				<identified-name combination="new">
+					<italic>Keilhauia nui</italic>
+				</identified-name>
 				<authority rid="Delsett2017PO"/>
 				<reference rid="Delsett2017PO" page="7"/>
 				<location>
@@ -164,7 +190,7 @@
 						<easting>0518847</easting>
 						<northing>8696044</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3363734&amp;mlon=15.8351277#map=6/78.3363734/15.8351277">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3363734&mlon=15.8351277#map=6/78.3363734/15.8351277">
 						<latitude>78.3363734</latitude>
 						<longitude>15.8351277</longitude>
 					</coordinates>
@@ -180,10 +206,17 @@
 						<system>Cretaceous</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<comments>\\emph{fide} \\textcite{Zverkov2019P}</comments>
+				<comments>
+					<p>
+						<italic>fide</italic>
+						 Zverkov and Prilepskaya (2019)
+					</p>
+				</comments>
 			</synonym>
 			<synonym morphology="Y" confidence="p">
-				<name combination="new">Palvennia hoybergeti</name>
+				<identified-name combination="new">
+					<italic>Palvennia hoybergeti</italic>
+				</identified-name>
 				<authority rid="Druckenmiller2012NJG"/>
 				<reference rid="Delsett2018P" page="8"/>
 				<location>
@@ -193,26 +226,37 @@
 						<easting>0519622</easting>
 						<northing>8695649</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&amp;mlon=15.8692035#map=6/78.3327333/15.8692035">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&mlon=15.8692035#map=6/78.3327333/15.8692035">
 						<latitude>78.3327333</latitude>
 						<longitude>15.8692035</longitude>
 					</coordinates>
 				</location>
-				<comments>\\textallsc{PMO 222.669} \\emph{fide} \\textcite{Zverkov2019P}</comments>
+				<comments>
+					<p>
+						<named-content content-type="specimen">PMO 222.669</named-content>
+						 
+						<italic>fide</italic>
+						 Zverkov and Prilepskaya (2019)
+					</p>
+				</comments>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Arthropterygius chrisorum</name>
+				<identified-name combination="new">
+					<italic>Arthropterygius chrisorum</italic>
+				</identified-name>
 				<authority rid="Russell1993BGSC"/>
 				<reference rid="Zverkov2019P" page="15"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Arthropterygius hoybergeti</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Palvennia hoybergeti</name>
+				<identified-name combination="new">
+					<italic>Palvennia hoybergeti</italic>
+				</identified-name>
 				<authority rid="Druckenmiller2012NJG"/>
 				<reference rid="Druckenmiller2012NJG" page="326"/>
 				<location>
@@ -224,7 +268,7 @@
 						<easting>0518775</easting>
 						<northing>8696150</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3373322&amp;mlon=15.8320045#map=6/78.3373322/15.8320045">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3373322&mlon=15.8320045#map=6/78.3373322/15.8320045">
 						<latitude>78.3373322</latitude>
 						<longitude>15.8320045</longitude>
 					</coordinates>
@@ -244,7 +288,9 @@
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
 			</synonym>
 			<synonym morphology="Y" confidence="p">
-				<name combination="new">Palvennia hoybergeti</name>
+				<identified-name combination="new">
+					<italic>Palvennia hoybergeti</italic>
+				</identified-name>
 				<authority rid="Druckenmiller2012NJG"/>
 				<reference rid="Delsett2018P" page="8"/>
 				<location>
@@ -254,25 +300,29 @@
 						<easting>0519622</easting>
 						<northing>8695649</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&amp;mlon=15.8692035#map=6/78.3327333/15.8692035">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&mlon=15.8692035#map=6/78.3327333/15.8692035">
 						<latitude>78.3327333</latitude>
 						<longitude>15.8692035</longitude>
 					</coordinates>
 				</location>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Arthropterygius hoybergeti</name>
+				<identified-name combination="new">
+					<italic>Arthropterygius hoybergeti</italic>
+				</identified-name>
 				<authority rid="Druckenmiller2012NJG"/>
 				<reference rid="Zverkov2019P" page="31"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Arthropterygius lundi</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Janusaurus lundi</name>
+				<identified-name combination="new">
+					<italic>Janusaurus lundi</italic>
+				</identified-name>
 				<authority rid="Roberts2014PO"/>
 				<reference rid="Roberts2014PO" page="4"/>
 				<location>
@@ -284,7 +334,7 @@
 						<easting>518821</easting>
 						<northing>8696195</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3377295&amp;mlon=15.8340711#map=6/78.3377295/15.8340711">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3377295&mlon=15.8340711#map=6/78.3377295/15.8340711">
 						<latitude>78.3377295</latitude>
 						<longitude>15.8340711</longitude>
 					</coordinates>
@@ -302,31 +352,44 @@
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F" type="act">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E" type="publication">urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E</lsid>
-				<comments>\\emph{fide} \\textcite{Zverkov2019P}</comments>
+				<comments>
+					<p>
+						<italic>fide</italic>
+						 Zverkov and Prilepskaya (2019)
+					</p>
+				</comments>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Janusaurus lundi</name>
+				<identified-name combination="new">
+					<italic>Janusaurus lundi</italic>
+				</identified-name>
 				<authority rid="Roberts2014PO"/>
 				<reference rid="Delsett2016GSLSP"/>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Janusaurus lundi</name>
+				<identified-name combination="new">
+					<italic>Janusaurus lundi</italic>
+				</identified-name>
 				<authority rid="Roberts2014PO"/>
 				<reference rid="Delsett2017PO"/>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Arthropterygius lundi</name>
+				<identified-name combination="new">
+					<italic>Arthropterygius lundi</italic>
+				</identified-name>
 				<authority rid="Roberts2014PO"/>
 				<reference rid="Zverkov2019P" page="40"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Arthropterygius thalassonotus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Arthropterygius thalassonotus</name>
+				<identified-name combination="original">
+					<italic>Arthropterygius thalassonotus</italic>
+				</identified-name>
 				<authority rid="Campos2019ZJLS"/>
 				<reference rid="Campos2019ZJLS" page="184"/>
 				<location>
@@ -348,11 +411,13 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Arthropterygius volgensis</name>
 		<synonym-list>
 			<synonym morphology="Y">
-				<name combination="new">Arthropterygius volgensis</name>
+				<identified-name combination="new">
+					<italic>Arthropterygius volgensis</italic>
+				</identified-name>
 				<authority rid="Kasansky1903TOEPIKU"/>
 				<reference rid="Zverkov2019P" page="44"/>
 				<location>
@@ -360,24 +425,31 @@
 					<country-code>RU</country-code>
 				</location>
 				<stratigraphy>
-					<lithostratigraphy>
-						<zone>\\emph{Dorsoplanites panderi} Ammonite Biozone</zone>
-					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>middle Volgian</stage>
 						<series>Upper Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Dorsoplanites panderi</italic>
+								 Ammonite Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Athabascasaurus bitumineus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
-				<name combination="original">Athabascasaurus bitumineus</name>
+				<identified-name combination="original">
+					<italic>Athabascasaurus bitumineus</italic>
+				</identified-name>
 				<authority rid="Druckenmiller2010CJES"/>
 				<reference rid="Druckenmiller2010CJES" page="1039"/>
 				<location>
@@ -389,7 +461,7 @@
 						<easting>459464</easting>
 						<northing>6317120</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=56.9958329&amp;mlon=-111.6672141#map=6/56.9958329/-111.6672141">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=56.9958329&mlon=-111.6672141#map=6/56.9958329/-111.6672141">
 						<latitude>56.9958329</latitude>
 						<longitude>-111.6672141</longitude>
 					</coordinates>
@@ -410,38 +482,51 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Auroroborealia incognita</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Auroroborealia incognita</name>
+				<identified-name combination="original">
+					<italic>Auroroborealia incognita</italic>
+				</identified-name>
 				<authority rid="Zverkov2021EESTRSE"/>
 				<reference rid="Zverkov2021EESTRSE" page="6"/>
 				<location>
 					<locality>Kotelny Island, New Siberian Islands, Russia</locality>
 					<country-code>RU</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=75.515&mlon=138.927#map=6/75.515/138.927">
+						<latitude>75.515</latitude>
+						<longitude>138.927</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
-					<lithostratigraphy>
-						<zone>\\emph{Pinacoceras verchojanicum} Ammonoid Biozone</zone>
-					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>lower Norian</stage>
 						<series>Upper Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Pinacoceras verchojanicum</italic>
+								 Ammonoid Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9" type="act">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Barracudasauroides panxianensis</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Mixosaurus panxianensis</name>
+				<identified-name combination="new">
+					<italic>Mixosaurus panxianensis</italic>
+				</identified-name>
 				<authority rid="Jiang2006JVP"/>
 				<reference rid="Jiang2006JVP" page="62"/>
 				<location>
@@ -452,52 +537,76 @@
 					<lithostratigraphy>
 						<member>Upper Member</member>
 						<formation>Guanling Formation</formation>
-						<zone>\\emph{Nicoraella germanicus} Conodont Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Pelsonian, Anisian</stage>
 						<series>Middle Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Nicoraella germanicus</italic>
+								 Conodont Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF" type="act">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF" type="publication">urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF</lsid>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Barracudasauroides panxianensis</name>
+				<identified-name combination="new">
+					<italic>Barracudasauroides panxianensis</italic>
+				</identified-name>
 				<authority rid="Maisch2010P"/>
 				<reference rid="Maisch2010P" page="161"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Besanosaurus leptorhynchus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Besanosaurus leptorhynchus</name>
+				<identified-name combination="original">
+					<italic>Besanosaurus leptorhynchus</italic>
+				</identified-name>
 				<authority rid="DalSasso1996PL"/>
 				<reference rid="DalSasso1996PL" page="4"/>
 				<location>
 					<locality>Sasso Caldo, Italy</locality>
 					<country-code>IT</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=45.901028&mlon=8.919611#map=6/45.901028/8.919611">
+						<latitude>45.901028</latitude>
+						<longitude>8.919611</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
 						<formation>Besano Formation</formation>
-						<zone>\\emph{Nevadites secedensis} Ammonite Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Ilyrian, Anisian</stage>
 						<series>Middle Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Nevadites secedensis</italic>
+								 Ammonite Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43" type="act">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A" type="publication">urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A</lsid>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="original">Mikadocephalus gracilirostris</name>
+				<identified-name combination="original">
+					<italic>Mikadocephalus gracilirostris</italic>
+				</identified-name>
 				<authority rid="Maisch1997PZ"/>
 				<reference rid="Maisch1997PZ" page="268"/>
 				<location>
@@ -507,37 +616,61 @@
 				<stratigraphy>
 					<lithostratigraphy>
 						<formation>Besano Formation</formation>
-						<zone>\\emph{Reitziites reitzi–Nevadites secedensis} ammonoid biozones</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Ilyrian, Anisian</stage>
 						<series>Middle Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Reitziites reitzi</italic>
+								–
+								<italic>Nevadites secedensis</italic>
+								 ammonoid biozones
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="original">Besanosaurus leptorhynchus</name>
+				<identified-name combination="original">
+					<italic>Besanosaurus leptorhynchus</italic>
+				</identified-name>
 				<authority rid="DalSasso1996PL"/>
 				<reference rid="Bindellini2021P" page="20"/>
 				<location>
 					<locality>Sasso Caldo, Italy</locality>
 					<country-code>IT</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=45.901028&mlon=8.919611#map=6/45.901028/8.919611">
+						<latitude>45.901028</latitude>
+						<longitude>8.919611</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
 						<formation>Besano Formation</formation>
-						<zone>\\emph{Nevadites secedensis} Ammonoid Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Ilyrian, Anisian</stage>
 						<series>Middle Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Nevadites secedensis</italic>
+								 Ammonoid Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="original">Besanosaurus leptorhynchus</name>
+				<identified-name combination="original">
+					<italic>Besanosaurus leptorhynchus</italic>
+				</identified-name>
 				<authority rid="DalSasso1996PL"/>
 				<reference rid="Bindellini2021P" page="20"/>
 				<location>
@@ -547,22 +680,31 @@
 				<stratigraphy>
 					<lithostratigraphy>
 						<formation>Besano Formation</formation>
-						<zone>\\emph{Nevadites secedensis} Ammonoid Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Ilyrian, Anisian</stage>
 						<series>Middle Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Nevadites secedensis</italic>
+								 Ammonoid Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Brachypterygius alekseevi</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Otschevia alekseevi</name>
+				<identified-name combination="new">
+					<italic>Otschevia alekseevi</italic>
+				</identified-name>
 				<authority rid="Arkhangelsky2001PJ"/>
 				<reference rid="Arkhangelsky2001PJ" page="629"/>
 				<location>
@@ -570,34 +712,45 @@
 					<country-code>RU</country-code>
 				</location>
 				<stratigraphy>
-					<lithostratigraphy>
-						<zone>\\emph{Dorsoplanites panderi} Ammonite Biozone</zone>
-					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Volgian</stage>
 						<series>Upper Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Dorsoplanites panderi</italic>
+								 Ammonite Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Brachypterygius alekseevi</name>
+				<identified-name combination="new">
+					<italic>Brachypterygius alekseevi</italic>
+				</identified-name>
 				<authority rid="Arkhangelsky2001PJ"/>
 				<reference rid="Maisch2010P" page="167"/>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Grendelius alekseevi</name>
+				<identified-name combination="new">
+					<italic>Grendelius alekseevi</italic>
+				</identified-name>
 				<authority rid="Zverkov2015PZIRa"/>
 				<reference rid="Zverkov2015PZIRa" page="562"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Brachypterygius extremus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
-				<name combination="new">Ichthyosaurus extremus</name>
+				<identified-name combination="new">
+					<italic>Ichthyosaurus extremus</italic>
+				</identified-name>
 				<authority rid="Boulenger1904PZSL"/>
 				<reference rid="Boulenger1904PZSL" page="425"/>
 				<location>
@@ -618,13 +771,17 @@
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429" type="publication">urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429</lsid>
 			</synonym>
 			<synonym morphology="N" confidence="v">
-				<name combination="new">Brachypterygius extremus</name>
+				<identified-name combination="new">
+					<italic>Brachypterygius extremus</italic>
+				</identified-name>
 				<authority rid="Boulenger1904PZSL"/>
 				<reference rid="vonHuene1922" page="97"/>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
 			</synonym>
 			<synonym morphology="Y" confidence="v *">
-				<name combination="new">Grendelius mordax</name>
+				<identified-name combination="new">
+					<italic>Grendelius mordax</italic>
+				</identified-name>
 				<authority rid="McGowan1976CJES"/>
 				<reference rid="McGowan1976CJES" page="671"/>
 				<location>
@@ -636,7 +793,7 @@
 						<easting>321960</easting>
 						<northing>5835045</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=52.6361361&amp;mlon=0.368878#map=6/52.6361361/0.368878">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=52.6361361&mlon=0.368878#map=6/52.6361361/0.368878">
 						<latitude>52.6361361</latitude>
 						<longitude>0.368878</longitude>
 					</coordinates>
@@ -644,22 +801,31 @@
 				<stratigraphy>
 					<lithostratigraphy>
 						<formation>Kimmeridge Clay Formation</formation>
-						<zone>\\emph{Aulacostephanus autissiodorensis} Ammonite Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>middle Kimmeridgian</stage>
 						<series>Upper Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Aulacostephanus autissiodorensis</italic>
+								 Ammonite Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Brachypterygius pseudoscythica</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Otschevia pseudoscythica</name>
+				<identified-name combination="new">
+					<italic>Otschevia pseudoscythica</italic>
+				</identified-name>
 				<authority rid="Efimov1998PZ"/>
 				<reference rid="Efimov1998PZ" page="83"/>
 				<location>
@@ -667,33 +833,44 @@
 					<country-code>RU</country-code>
 				</location>
 				<stratigraphy>
-					<lithostratigraphy>
-						<zone>\\emph{Ilowaiskya pseudoscythica} Ammonite Biozone</zone>
-					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Volgian</stage>
 						<series>Upper Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Ilowaiskya pseudoscythica</italic>
+								 Ammonite Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Brachypterygius psudoscythius</name>
+				<identified-name combination="new">
+					<italic>Brachypterygius psudoscythius</italic>
+				</identified-name>
 				<authority rid="Efimov1998PZ"/>
 				<reference rid="Maisch2000SBNBGP" page="79"/>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Grendelius pseudoscythicus</name>
+				<identified-name combination="new">
+					<italic>Grendelius pseudoscythicus</italic>
+				</identified-name>
 				<authority rid="Efimov1998PZ"/>
 				<reference rid="Zverkov2015PZIRa" page="561"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Californosaurus perrini</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Shastasaurus perrini</name>
+				<identified-name combination="new">
+					<italic>Shastasaurus perrini</italic>
+				</identified-name>
 				<authority rid="Merriam1902UCBDG"/>
 				<reference rid="Merriam1902UCBDG" page="89"/>
 				<location>
@@ -704,27 +881,38 @@
 					<lithostratigraphy>
 						<formation>Hosselkus Limestone Formation</formation>
 					</lithostratigraphy>
-					<chronostratigraphy/>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Delphinosaurus perrini</name>
+				<identified-name combination="new">
+					<italic>Delphinosaurus perrini</italic>
+				</identified-name>
 				<authority rid="Merriam1902UCBDG"/>
 				<reference rid="Merriam1905AJS" page="24"/>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Californosaurus perrini</name>
+				<identified-name combination="new">
+					<italic>Californosaurus perrini</italic>
+				</identified-name>
 				<authority rid="Merriam1902UCBDG"/>
 				<reference rid="Kuhn1934a" page="27"/>
-				<comments>[\\emph{non Delphinosaurus} \\cite{Eichwald1853BSinM}]</comments>
+				<comments>
+					<p>
+						(
+						<italic>non Delphinosaurus</italic>
+						 von Eichwald 1853)
+					</p>
+				</comments>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Callawayia neoscapularis</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Shastasaurus neoscapularis</name>
+				<identified-name combination="new">
+					<italic>Shastasaurus neoscapularis</italic>
+				</identified-name>
 				<authority rid="McGowan1994JVPa"/>
 				<reference rid="McGowan1994JVPa" page="170"/>
 				<location>
@@ -734,23 +922,40 @@
 				<stratigraphy>
 					<lithostratigraphy>
 						<formation>Pardonet Formation</formation>
-						<zone>\\emph{Epigondolella triangularis} Conodont Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Norian</stage>
 						<series>Upper Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Epigondolella triangularis</italic>
+								 Conodont Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Callawayia neoscapularis</name>
+				<identified-name combination="new">
+					<italic>Callawayia neoscapularis</italic>
+				</identified-name>
 				<authority rid="McGowan1994JVPa"/>
 				<reference rid="Maisch2000SBNBGP" page="69"/>
-				<comments>New combination takes priority over \\emph{Metashastasaurus} \\parencite[1001]{Nicholls2001CJES}.</comments>
+				<comments>
+					<p>
+						New combination takes priority over 
+						<italic>Metashastasaurus</italic>
+						 (Nicholls and Manabe 2001, 1001).
+					</p>
+				</comments>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Metashastasaurus neoscapularis</name>
+				<identified-name combination="new">
+					<italic>Metashastasaurus neoscapularis</italic>
+				</identified-name>
 				<authority rid="McGowan1994JVPa"/>
 				<reference rid="Nicholls2001CJES" page="985"/>
 				<location>
@@ -770,12 +975,14 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Cartorhynchus lenticarpus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Cartorhynchus lenticarpus</name>
+				<identified-name combination="original">
+					<italic>Cartorhynchus lenticarpus</italic>
+				</identified-name>
 				<authority rid="Motani2015N"/>
 				<reference rid="Motani2015N" page="485"/>
 				<location>
@@ -787,7 +994,7 @@
 						<easting>577953</easting>
 						<northing>3499041</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=31.6238885&amp;mlon=117.8219391#map=6/31.6238885/117.8219391">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=31.6238885&mlon=117.8219391#map=6/31.6238885/117.8219391">
 						<latitude>31.6238885</latitude>
 						<longitude>117.8219391</longitude>
 					</coordinates>
@@ -796,70 +1003,100 @@
 					<lithostratigraphy>
 						<member>Upper Member</member>
 						<formation>Nanlinghu Formation</formation>
-						<zone>\\emph{Subcolumbites} Ammonite Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Olenekian</stage>
 						<series>Lower Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Subcolumbites</italic>
+								 Ammonite Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32" type="act">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5" type="publication">urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Catutosaurus gaspariniae</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
 		<synonym-list>
 			<synonym morphology="Y">
-				<name combination="original">Ophthalmosaurus monocharactus</name>
+				<identified-name combination="original">
+					<italic>Ophthalmosaurus monocharactus</italic>
+				</identified-name>
 				<authority rid="Appleby1956PZSL"/>
 				<reference rid="Gasparini1988A" page="3"/>
 				<stratigraphy>
 					<lithostratigraphy>
 						<formation>Vaca Muerta Formation</formation>
 					</lithostratigraphy>
-					<chronostratigraphy/>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="original">Aegirosaurus sp.</name>
+				<identified-name combination="original">
+					<p>
+						<italic>Aegirosaurus</italic>
+						 sp.
+					</p>
+				</identified-name>
 				<authority rid="Bardet2000JP"/>
 				<reference rid="Maisch2000SBNBGP" page="87"/>
 			</synonym>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Catutosaurus gaspariniae</name>
+				<identified-name combination="original">
+					<italic>Catutosaurus gaspariniae</italic>
+				</identified-name>
 				<authority rid="Fernandez2021JVP"/>
 				<reference rid="Fernandez2021JVP" page="2"/>
 				<location>
 					<locality>El Ministerio Quarry, Los Catutos, Zapala Department, Neuquén Province, Argentina</locality>
 					<country-code>AR</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=-38.80829&mlon=-70.18219#map=6/-38.80829/-70.18219">
+						<latitude>-38.80829</latitude>
+						<longitude>-70.18219</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
 						<member>Los Catutos Member</member>
 						<formation>Vaca Muerta Formation</formation>
-						<zone>\\emph{Aulasphinctes proximus}–\\emph{Windhauseniceras internispinosum} ammonoid biozones</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>upper middle–lower upper Tithonian</stage>
 						<series>Upper Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Aulasphinctes proximus</italic>
+								–
+								<italic>Windhauseniceras internispinosum</italic>
+								 ammonoid biozones
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721" type="act">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w" type="publication">urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Caypullisaurus bonapartei</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Caypullisaurus bonapartei</name>
+				<identified-name combination="original">
+					<italic>Caypullisaurus bonapartei</italic>
+				</identified-name>
 				<authority rid="Fernandez1997JP"/>
 				<reference rid="Fernandez1997JP" page="480"/>
 				<location>
@@ -871,7 +1108,7 @@
 						<easting>442358</easting>
 						<northing>5661434</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=-39.1944368&amp;mlon=-69.6675031#map=6/-39.1944368/-69.6675031">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=-39.1944368&mlon=-69.6675031#map=6/-39.1944368/-69.6675031">
 						<latitude>-39.1944368</latitude>
 						<longitude>-69.6675031</longitude>
 					</coordinates>
@@ -879,24 +1116,33 @@
 				<stratigraphy>
 					<lithostratigraphy>
 						<formation>Vaca Muerta Formation</formation>
-						<zone>\\emph{Virgatosphinctes mendozanus} Ammonite Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>late Tithonian</stage>
 						<series>Upper Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Virgatosphinctes mendozanus</italic>
+								 Ammonite Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D" type="act">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77" type="publication">urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Cetarthrosaurus walkeri</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Ichthyosaurus walkeri</name>
+				<identified-name combination="new">
+					<italic>Ichthyosaurus walkeri</italic>
+				</identified-name>
 				<authority rid="Seeley1869"/>
 				<reference rid="Seeley1869" page="65"/>
 				<stratigraphy>
@@ -909,25 +1155,33 @@
 						<system>Cretaceous</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<comments>Reworked into Cambridge Greensand Member (Lower Chalk Formation; early Cenomanian). Described from a cast.</comments>
+				<comments>
+					<p>Reworked into Cambridge Greensand Member (Lower Chalk Formation; early Cenomanian). Described from a cast.</p>
+				</comments>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Cetarthrosaurus walkeri</name>
+				<identified-name combination="new">
+					<italic>Cetarthrosaurus walkeri</italic>
+				</identified-name>
 				<authority rid="Seeley1869"/>
 				<reference rid="Seeley1873QJGS" page="505"/>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Cetarthrosaurus walkeri</name>
+				<identified-name combination="new">
+					<italic>Cetarthrosaurus walkeri</italic>
+				</identified-name>
 				<authority rid="Seeley1869"/>
 				<reference rid="Fischer2014PO" page="17"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Chacaicosaurus cayi</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Chacaicosaurus cayi</name>
+				<identified-name combination="original">
+					<italic>Chacaicosaurus cayi</italic>
+				</identified-name>
 				<authority rid="Fernandez1994A"/>
 				<reference rid="Fernandez1994A" page="293"/>
 				<location>
@@ -946,38 +1200,50 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="original">Stenopterygius cayi</name>
+				<identified-name combination="original">
+					<italic>Stenopterygius cayi</italic>
+				</identified-name>
 				<authority rid="Fernandez1994A"/>
 				<reference rid="Fernandez2007" page="277"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Chaohusaurus brevifemoralis</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="p">
-				<name combination="original">Chaohusaurus chaoxianensis</name>
+				<identified-name combination="original">
+					<italic>Chaohusaurus chaoxianensis</italic>
+				</identified-name>
 				<authority rid="Chen1985RGC"/>
 				<reference rid="Motani1998JP"/>
 			</synonym>
 			<synonym morphology="Y" confidence="p">
-				<name combination="original">Chaohusaurus geishanensis</name>
+				<identified-name combination="original">
+					<italic>Chaohusaurus geishanensis</italic>
+				</identified-name>
 				<authority rid="Young1972MNIGP"/>
 				<reference rid="Motani1998JVP" page="533"/>
 			</synonym>
 			<synonym morphology="Y" confidence="p">
-				<name combination="original">Chaohusaurus chaoxianensis</name>
+				<identified-name combination="original">
+					<italic>Chaohusaurus chaoxianensis</italic>
+				</identified-name>
 				<authority rid="Chen1985RGC"/>
 				<reference rid="Motani2015JVP" page="e892011-3"/>
 			</synonym>
 			<synonym morphology="Y" confidence="p">
-				<name combination="original">Chaohusaurus chaoxianensis</name>
+				<identified-name combination="original">
+					<italic>Chaohusaurus chaoxianensis</italic>
+				</identified-name>
 				<authority rid="Chen1985RGC"/>
 				<reference rid="Zhou2017JVP" page="e1343831-3"/>
 			</synonym>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Chaohusaurus brevifemoralis</name>
+				<identified-name combination="original">
+					<italic>Chaohusaurus brevifemoralis</italic>
+				</identified-name>
 				<authority rid="Huang2019Pa"/>
 				<reference rid="Huang2019Pa" page="7"/>
 				<location>
@@ -988,24 +1254,33 @@
 					<lithostratigraphy>
 						<member>Upper Member</member>
 						<formation>Nanlinghu Formation</formation>
-						<zone>\\emph{Subcolumbites} Ammonoid Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Spathian, Olenekian</stage>
 						<series>Lower Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Subcolumbites</italic>
+								 Ammonoid Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA" type="act">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E" type="publication">urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Chaohusaurus chaoxianensis</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Anhuisaurus chaoxianensis</name>
+				<identified-name combination="new">
+					<italic>Anhuisaurus chaoxianensis</italic>
+				</identified-name>
 				<authority rid="Chen1985RGC"/>
 				<reference rid="Chen1985RGC" page="140"/>
 				<location>
@@ -1025,7 +1300,9 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Anhuisaurus faciles</name>
+				<identified-name combination="new">
+					<italic>Anhuisaurus faciles</italic>
+				</identified-name>
 				<authority rid="Chen1985RGC"/>
 				<reference rid="Chen1985RGC" page="142"/>
 				<location>
@@ -1045,37 +1322,49 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Chensaurus chaoxianensis</name>
+				<identified-name combination="new">
+					<italic>Chensaurus chaoxianensis</italic>
+				</identified-name>
 				<authority rid="Chen1985RGC"/>
 				<reference rid="Mazin1991CRASS2MPCSUST" page="1207"/>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Chensaurus faciles</name>
+				<identified-name combination="new">
+					<italic>Chensaurus faciles</italic>
+				</identified-name>
 				<authority rid="Chen1985RGC"/>
 				<reference rid="Mazin1991CRASS2MPCSUST" page="1207"/>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Chaohusaurus chaoxianensis</name>
+				<identified-name combination="new">
+					<italic>Chaohusaurus chaoxianensis</italic>
+				</identified-name>
 				<authority rid="Chen1985RGC"/>
 				<reference rid="Motani1998JP"/>
 			</synonym>
 			<synonym morphology="Y" confidence="p">
-				<name combination="new">Chaohusaurus geishanensis</name>
+				<identified-name combination="new">
+					<italic>Chaohusaurus geishanensis</italic>
+				</identified-name>
 				<authority rid="Young1972MNIGP"/>
 				<reference rid="Motani1998JVP" page="533"/>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Chaohusaurus chaoxianensis</name>
+				<identified-name combination="new">
+					<italic>Chaohusaurus chaoxianensis</italic>
+				</identified-name>
 				<authority rid="Chen1985RGC"/>
 				<reference rid="Motani2015JVP" page="e892011-3"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Chaohusaurus geishanensis</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Chaohusaurus geishanensis</name>
+				<identified-name combination="original">
+					<italic>Chaohusaurus geishanensis</italic>
+				</identified-name>
 				<authority rid="Young1972MNIGP"/>
 				<reference rid="Young1972MNIGP" page="11"/>
 				<location>
@@ -1095,42 +1384,63 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Chaohusaurus zhangjiawanensis</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
-				<name combination="original">Chaohusaurus zhangjiawanensis</name>
+				<identified-name combination="original">
+					<italic>Chaohusaurus zhangjiawanensis</italic>
+				</identified-name>
 				<authority rid="Chen2013AGS"/>
 				<reference rid="Chen2013AGS" page="673"/>
 				<location>
 					<locality>Zhangjiawan Village, Yangping Town, Yuan'an County, Hubei Province, China</locality>
 					<country-code>CN</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=31.2725&mlon=111.56849#map=6/31.2725/111.56849">
+						<latitude>31.2725</latitude>
+						<longitude>111.56849</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
 						<member>Third Member</member>
 						<formation>Jialingjiang Formation</formation>
-						<zone>\\emph{Neospathodus homeri–N. triangularis} Conodont Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>upper Spathian</stage>
 						<series>Lower Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Neospathodus homeri</italic>
+								–
+								<italic>N. triangularis</italic>
+								 Conodont Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Contectopalatus atavus</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Ichthyosaurus atavus</name>
+				<identified-name combination="new">
+					<italic>Ichthyosaurus atavus</italic>
+				</identified-name>
 				<authority rid="Quenstedt1852"/>
 				<reference rid="Quenstedt1852" page="129"/>
 				<location>
 					<locality>Althengstett, Baden-Württenbug, Germany</locality>
 					<country-code>DE</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=48.72871&mlon=8.79063#map=6/48.72871/8.79063">
+						<latitude>48.72871</latitude>
+						<longitude>8.79063</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
@@ -1144,45 +1454,60 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Mixosaurus atavus atavus</name>
+				<identified-name combination="new">
+					<italic>Mixosaurus atavus atavus</italic>
+				</identified-name>
 				<authority rid="Quenstedt1852"/>
 				<reference rid="Fraas1891" page="38"/>
-				<comments>\\emph{fide} \\textcite[67]{McGowan2003}</comments>
+				<comments>
+					<p>
+						<italic>fide</italic>
+						 McGowan and Motani (2003, 8:67)
+					</p>
+				</comments>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Mixosaurus atavus</name>
+				<identified-name combination="new">
+					<italic>Mixosaurus atavus</italic>
+				</identified-name>
 				<authority rid="Quenstedt1852"/>
 				<reference rid="vonHuene1916P" page="3"/>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Contectopalatus atavus</name>
+				<identified-name combination="new">
+					<italic>Contectopalatus atavus</italic>
+				</identified-name>
 				<authority rid="Quenstedt1852"/>
 				<reference rid="Maisch1998NJGPAb" page="115"/>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Mixosaurus atavus</name>
+				<identified-name combination="new">
+					<italic>Mixosaurus atavus</italic>
+				</identified-name>
 				<authority rid="Quenstedt1852"/>
 				<reference rid="McGowan2003" page="67"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Cymbospondylus buchseri</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Cymbospondylus nichollsi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Cymbospondylus petrinus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Cymbospondylus piscosus?</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Cymbospondylus youngorum</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Cymbospondylus youngorum</name>
+				<identified-name combination="original">
+					<italic>Cymbospondylus youngorum</italic>
+				</identified-name>
 				<authority rid="Sander2021S"/>
 				<reference rid="Sander2021S" page="1"/>
 				<location>
@@ -1193,52 +1518,145 @@
 					<lithostratigraphy>
 						<member>Fossil Hill Member</member>
 						<formation>Favret Formation</formation>
-						<zone>\\emph{Nevadisculites taylori} Ammonoid Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Anisian</stage>
 						<series>Middle Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Nevadisculites taylori</italic>
+								 Ammonoid Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Dearcmhara shawcrossi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Hupehsuchia">
+		<name combination="original">Eohupehsuchus brevicollis</name>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287">urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287</lsid>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<identified-name combination="original">
+					<italic>Eohupehsuchus brevicollis</italic>
+				</identified-name>
+				<authority rid="Chen2014POa"/>
+				<reference rid="Chen2014POa" page="4"/>
+				<location>
+					<locality>Yangping, Yuan'an County, Hubei Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Jialingjiang Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287" type="act">urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:1B8887A9-F513-427D-BE9A-DBBB15DD9A44" type="publication">urn:lsid:zoobank.org:pub:1B8887A9-F513-427D-BE9A-DBBB15DD9A44</lsid>
+			</synonym>
+		</synonym-list>
+	</taxon>
+	<taxon clade="Hupehsuchia">
+		<name combination="original">Eretmorhipis carrolldongi</name>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178">urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178</lsid>
+		<synonym-list>
+			<synonym morphology="Y">
+				<identified-name combination="original">
+					<p>
+						<italic>Hupehsuchia</italic>
+						 n. gen. n. sp.
+					</p>
+				</identified-name>
+				<authority rid=""/>
+				<reference rid="Carroll1991PTRSBBS" page="143"/>
+				<location>
+					<locality>Tuling, Baihechuan, Xunjiang District, Nanzhang County, Hubei Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Jialingjiang Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
+			</synonym>
+			<synonym morphology="Y" confidence="v *">
+				<identified-name combination="original">
+					<italic>Eretmorhipis carrolldongi</italic>
+				</identified-name>
+				<authority rid="Chen2015PO"/>
+				<reference rid="Chen2015PO" page="4"/>
+				<location>
+					<locality>Yingzhishang, Yuan'an County, Hubei Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Jialingjiang Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178" type="act">urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:132627FE-9142-4EE2-BACB-08CAFC65C3E2" type="publication">urn:lsid:zoobank.org:pub:132627FE-9142-4EE2-BACB-08CAFC65C3E2</lsid>
+			</synonym>
+		</synonym-list>
+	</taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Eurhinosaurus longirostris</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Excalibosaurus costini</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Gengasaurus nicosiai</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Grippia longirostris</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Guizhouichthyosaurus tangae</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Guizhouichthyosaurus wolonggangense</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Gulosaurus helmi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Hauffiopteryx altera</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
 		<synonym-list>
 			<synonym morphology="N" confidence="p">
-				<name combination="original">Eurhinosaurus longirostris</name>
+				<identified-name combination="original">
+					<italic>Eurhinosaurus longirostris</italic>
+				</identified-name>
 				<authority rid="Mantell1851"/>
 				<reference rid="Jager2005" page="29"/>
 			</synonym>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Hauffiopterx altera</name>
+				<identified-name combination="original">
+					<italic>Hauffiopterx altera</italic>
+				</identified-name>
 				<authority rid="Maxwell2020PE"/>
 				<reference rid="Maxwell2020PE" page="11"/>
 				<location>
@@ -1249,24 +1667,39 @@
 					<lithostratigraphy>
 						<bed>Lias εII,4/5</bed>
 						<formation>Posidonia Shale Formation</formation>
-						<zone>\\emph{Harpoceras serpentinum} Ammonoid Biozone, \\emph{Harpoceras exaratum} Ammonoid Subbiozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Toarcian</stage>
 						<series>Lower Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Harpoceras serpentinum</italic>
+								 Ammonoid Biozone
+							</p>
+						</zone>
+						<subzone>
+							<p>
+								<italic>Harpoceras exaratum</italic>
+								 Ammonoid Subbiozone
+							</p>
+						</subzone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479" type="act">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7" type="publication">urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Hauffiopteryx typicus</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Hauffiopterx typicus</name>
+				<identified-name combination="original">
+					<italic>Hauffiopterx typicus</italic>
+				</identified-name>
 				<authority rid="Maisch2008P"/>
 				<reference rid="Maxwell2020PE" page="3"/>
 				<location>
@@ -1277,22 +1710,37 @@
 					<lithostratigraphy>
 						<bed>Lias εII,4</bed>
 						<formation>Posidonia Shale Formation</formation>
-						<zone>\\emph{Harpoceras serpentinum} Ammonoid Biozone, \\emph{Harpoceras exaratum} Ammonoid Subbiozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Toarcian</stage>
 						<series>Lower Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Harpoceras serpentinum</italic>
+								 Ammonoid Biozone
+							</p>
+						</zone>
+						<subzone>
+							<p>
+								<italic>Harpoceras exaratum</italic>
+								 Ammonoid Subbiozone
+							</p>
+						</subzone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Himalayasaurus tibetensis</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Himalayasaurus tibetensis</name>
+				<identified-name combination="original">
+					<italic>Himalayasaurus tibetensis</italic>
+				</identified-name>
 				<authority rid="Young1972MNIGP"/>
 				<reference rid="Young1972MNIGP" page="7"/>
 				<location>
@@ -1314,39 +1762,70 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Hudsonelpidia brevirostris</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Hupehsuchia">
+		<name combination="original">Hupehsuchus nanchangensis</name>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA">urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA</lsid>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<identified-name combination="original">
+					<italic>Hupehsuchus nanchangensis</italic>
+				</identified-name>
+				<authority rid="Young1972MNIGP"/>
+				<reference rid="Young1972MNIGP" page="28"/>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Jialingjiang Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA" type="act">urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74" type="publication">urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74</lsid>
+			</synonym>
+		</synonym-list>
+	</taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ichthyosaurus acutirostris</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ichthyosaurus anningae</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ichthyosaurus breviceps</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ichthyosaurus communis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ichthyosaurus conybeari</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ichthyosaurus larkini</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ichthyosaurus somersetensis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Isfjordosaurus minor</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Jabalisaurus metzli</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
 		<synonym-list>
 			<synonym morphology="Y">
-				<name combination="original">Ophthalmosaurus cf. icenicus</name>
+				<identified-name combination="original">
+					<p>
+						<italic>Ophthalmosaurus</italic>
+						 cf. 
+						<italic>icenicus</italic>
+					</p>
+				</identified-name>
 				<authority rid="Seeley1874QJGSa"/>
 				<reference rid="Buchy2010JP" page="149"/>
 				<location>
@@ -1366,7 +1845,13 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="original">Ophthalmosaurus cf. icenicus</name>
+				<identified-name combination="original">
+					<p>
+						<italic>Ophthalmosaurus</italic>
+						 cf. 
+						<italic>icenicus</italic>
+					</p>
+				</identified-name>
 				<authority rid="Seeley1874QJGSa"/>
 				<reference rid="Frey2014DORMM"/>
 				<location>
@@ -1375,12 +1860,18 @@
 				</location>
 			</synonym>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Jabalisaurus metzli</name>
+				<identified-name combination="original">
+					<italic>Jabalisaurus metzli</italic>
+				</identified-name>
 				<authority rid="BarrientosLara2021JSAES"/>
 				<reference rid="BarrientosLara2021JSAES" page="4"/>
 				<location>
 					<locality>Sierra El Jabalí, near Gómez Farías, Saltillo, Caohuila, Mexico</locality>
 					<country-code>MX</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=24.95246&mlon=-100.94193#map=6/24.95246/-100.94193">
+						<latitude>24.95246</latitude>
+						<longitude>-100.94193</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
@@ -1397,16 +1888,22 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Kyhytysuka sachicarum</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Platypterygius sachicarum</name>
+				<identified-name combination="new">
+					<italic>Platypterygius sachicarum</italic>
+				</identified-name>
 				<authority rid="Paramo1997RI"/>
 				<reference rid="Paramo1997RI" page="2"/>
 				<location>
 					<locality>Loma Pedro Luis, Villa de Leyva, Boyacá, Colombia</locality>
 					<country-code>CO</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.65427&mlon=-73.53025#map=6/5.65427/-73.53025">
+						<latitude>5.65427</latitude>
+						<longitude>-73.53025</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
@@ -1421,12 +1918,18 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Kyhytysuka sachicarum</name>
+				<identified-name combination="new">
+					<italic>Kyhytysuka sachicarum</italic>
+				</identified-name>
 				<authority rid="Paramo1997RI"/>
 				<reference rid="Cortes2021JSP" page="2"/>
 				<location>
 					<locality>El Roble Locality, Villa de Leyva, Boaycá, Colombia</locality>
 					<country-code>CO</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.665383&mlon=-73.538417#map=6/5.665383/-73.538417">
+						<latitude>5.665383</latitude>
+						<longitude>-73.538417</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
@@ -1443,44 +1946,46 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Leninia stellans</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Leptonectes moorei</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Leptonectes solei</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Leptonectes tenuirostris</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Macgowania janiceps</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Maiaspondylus lindoei</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Malawania anachronus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Mixosaurus cornalianus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Mixosaurus kuhnschneyderi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Mixosaurus xindianensis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Mollesaurus pariallus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Muiscasaurus catheti</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Muiscasaurus catheti</name>
+				<identified-name combination="original">
+					<italic>Muiscasaurus catheti</italic>
+				</identified-name>
 				<authority rid="Maxwell2016PP"/>
 				<reference rid="Maxwell2016PP" page="61"/>
 				<location>
@@ -1492,7 +1997,7 @@
 						<easting>662860</easting>
 						<northing>616018</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.5712963&amp;mlon=-73.5296776#map=6/5.5712963/-73.5296776">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.5712963&mlon=-73.5296776#map=6/5.5712963/-73.5296776">
 						<latitude>5.5712963</latitude>
 						<longitude>-73.5296776</longitude>
 					</coordinates>
@@ -1511,12 +2016,59 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Hupehsuchia">
+		<name combination="original">Nanchangosaurus suni</name>
+		<synonym-list>
+			<synonym morphology="Y" confidence="*">
+				<identified-name combination="original">
+					<italic>Nanchangosaurus suni</italic>
+				</identified-name>
+				<authority rid="Wang1959APS"/>
+				<reference rid="Wang1959APS"/>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Jialingjiang Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:37C7C275-2D57-4FA5-ACDC-6A7CF5D2370E" type="act">urn:lsid:zoobank.org:act:37C7C275-2D57-4FA5-ACDC-6A7CF5D2370E</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:C31DBAA9-EDA9-4D29-92DD-BFC80461F0F4" type="publication">urn:lsid:zoobank.org:pub:C31DBAA9-EDA9-4D29-92DD-BFC80461F0F4</lsid>
+			</synonym>
+			<synonym morphology="Y">
+				<identified-name combination="original">
+					<italic>Nanchangosaurus suni</italic>
+				</identified-name>
+				<authority rid="Wang1959APS"/>
+				<reference rid="Chen2014POb" page="3"/>
+				<location>
+					<locality>Yuan'an County, Hubei Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Jialingjiang Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
+			</synonym>
+		</synonym-list>
+	</taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Nannopterygius enthekiodon</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
-				<name combination="new">Ichthyosaurus enthekiodon</name>
+				<identified-name combination="new">
+					<italic>Ichthyosaurus enthekiodon</italic>
+				</identified-name>
 				<authority rid="Hulke1871QJGS"/>
 				<reference rid="Hulke1871QJGS" page="441"/>
 				<location>
@@ -1537,32 +2089,39 @@
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C" type="publication">urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C</lsid>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Nannopterygius enthekiodon</name>
+				<identified-name combination="new">
+					<italic>Nannopterygius enthekiodon</italic>
+				</identified-name>
 				<authority rid="Hulke1871QJGS"/>
 				<reference rid="vonHuene1922" page="98"/>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Nannopterygius saveljeviensis</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Paraophthalmosaurus saveljeviensis</name>
+				<identified-name combination="new">
+					<italic>Paraophthalmosaurus saveljeviensis</italic>
+				</identified-name>
 				<authority rid="Arkhangelsky1997PZ"/>
 				<reference rid="Arkhangelsky1997PZ" page="88"/>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Yasykovia kabanovi</name>
+				<identified-name combination="new">
+					<italic>Yasykovia kabanovi</italic>
+				</identified-name>
 				<authority rid="Efimov1999PZ"/>
 				<reference rid="Efimov1999PZ" page="98"/>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Nannopterygius saveljeviensis</name>
+				<identified-name combination="new">
+					<italic>Nannopterygius saveljeviensis</italic>
+				</identified-name>
 				<authority rid="Arkhangelsky1997PZ"/>
 				<reference rid="Zverkov2020ZJLS" page="246"/>
 				<stratigraphy>
-					<lithostratigraphy/>
 					<chronostratigraphy>
 						<stage>Volgian</stage>
 						<series>Upper Jurassic</series>
@@ -1572,22 +2131,26 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Nannopterygius yasykovi</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Yasykovia sumini</name>
+				<identified-name combination="new">
+					<italic>Yasykovia sumini</italic>
+				</identified-name>
 				<authority rid="Efimov1999PZ"/>
 				<reference rid="Efimov1999PZ" page="98"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ophthalmosaurus icenicus</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
-				<name combination="original">Ophthalmosaurus icenicus</name>
+				<identified-name combination="original">
+					<italic>Ophthalmosaurus icenicus</italic>
+				</identified-name>
 				<authority rid="Seeley1874QJGSa"/>
 				<reference rid="Seeley1874QJGSa" page="707"/>
 				<location>
@@ -1610,20 +2173,55 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Ophthalmosaurus natans</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Hupehsuchia">
+		<name combination="original">Parahupehsuchus longus</name>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F">urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F</lsid>
+		<synonym-list>
+			<synonym morphology="Y" confidence="v *">
+				<identified-name combination="original">
+					<italic>Parahupehsuchus longus</italic>
+				</identified-name>
+				<authority rid="Chen2014PO"/>
+				<reference rid="Chen2014PO" page="3"/>
+				<location>
+					<locality>Yuan'an County, Hubei Province, China</locality>
+					<country-code>CN</country-code>
+				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Jialingjiang Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F" type="act">urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:0F2EED52-F0A2-4125-B96A-8E39E9854DBE" type="publication">urn:lsid:zoobank.org:pub:0F2EED52-F0A2-4125-B96A-8E39E9854DBE</lsid>
+			</synonym>
+		</synonym-list>
+	</taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Parrassaurus yacahuitztli</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Parrassaurus yacahuitztli</name>
+				<identified-name combination="original">
+					<italic>Parrassaurus yacahuitztli</italic>
+				</identified-name>
 				<authority rid="BarrientosLara2021A"/>
 				<reference rid="BarrientosLara2021A" page="2"/>
 				<location>
 					<locality>Rancho el Sombrero, Sierra de Parras, Saltillo Municipality, Coahuila, Mexico</locality>
 					<country-code>MX</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=25.138611&mlon=-101.482778#map=6/25.138611/-101.482778">
+						<latitude>25.138611</latitude>
+						<longitude>-101.482778</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
@@ -1640,17 +2238,19 @@
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Parvinatator wapitiensis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Pervushovisaurus bannovkensis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Pervushovisaurus campylodon</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Ichthyosaurus campylodon</name>
+				<identified-name combination="new">
+					<italic>Ichthyosaurus campylodon</italic>
+				</identified-name>
 				<authority rid="Carter1846RBAAS"/>
 				<reference rid="Carter1846RBAAS" page="60"/>
 				<location>
@@ -1669,65 +2269,82 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
-				<name combination="new">Myopterygius campylodon</name>
+				<identified-name combination="new">
+					<italic>Myopterygius campylodon</italic>
+				</identified-name>
 				<authority rid="Carter1846RBAAS"/>
 				<reference rid="vonHuene1922" page="98"/>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Platypterygius campylodon</name>
+				<identified-name combination="new">
+					<italic>Platypterygius campylodon</italic>
+				</identified-name>
 				<authority rid="Carter1846RBAAS"/>
 				<reference rid="McGowan1972CGUW" page="17"/>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="new">Pervushovisaurus campylodon</name>
+				<identified-name combination="new">
+					<italic>Pervushovisaurus campylodon</italic>
+				</identified-name>
 				<authority rid="Carter1846RBAAS"/>
 				<reference rid="Fischer2016P" page="8"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Pessopteryx nisseri</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Pessopteryx nisseri</name>
+				<identified-name combination="original">
+					<italic>Pessopteryx nisseri</italic>
+				</identified-name>
 				<authority rid="Wiman1910BGIUa"/>
 				<reference rid="Wiman1910BGIUa" page="139"/>
 				<stratigraphy>
 					<lithostratigraphy>
 						<bed>Lower Saurian Niveau</bed>
 						<formation>Vikinghøgda Formation</formation>
-						<zone>\\emph{Keyserlingites subrobustus} Ammonoid Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Spathian</stage>
 						<series>Lower Triassic</series>
 						<system>Triassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Keyserlingites subrobustus</italic>
+								 Ammonoid Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Phalarodon callawayi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Phalarodon fraasi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Phalarodon major</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Phantomosaurus neubigi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Platypterygius  hercynicus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Platypterygius americanus</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Myopterygius americanus</name>
+				<identified-name combination="original">
+					<italic>Myopterygius americanus</italic>
+				</identified-name>
 				<authority rid="Nace1939AJS"/>
 				<reference rid="Nace1939AJS" page="674"/>
 				<location>
@@ -1739,11 +2356,12 @@
 						<member>Mowry Shale Member</member>
 						<formation>Graneros Formation</formation>
 					</lithostratigraphy>
-					<chronostratigraphy/>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="original">Myopterygius americanus</name>
+				<identified-name combination="original">
+					<italic>Myopterygius americanus</italic>
+				</identified-name>
 				<authority rid="Nace1939AJS"/>
 				<reference rid="Romer1968CGUW" page="27"/>
 				<location>
@@ -1755,164 +2373,186 @@
 						<member>Mowry Shale Member</member>
 						<formation>Graneros Formation</formation>
 					</lithostratigraphy>
-					<chronostratigraphy/>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="original">Platypterygius americanus</name>
+				<identified-name combination="original">
+					<italic>Platypterygius americanus</italic>
+				</identified-name>
 				<authority rid="Nace1939AJS"/>
 				<reference rid="McGowan1972CGUW" page="17"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Platypterygius australis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Platypterygius hauthali</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Platypterygius ochevi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Platypterygius platydactylus</name>
 		<synonym-list>
 			<synonym morphology="N">
-				<name combination="new">Platypterygius platydactylus</name>
+				<identified-name combination="new">
+					<italic>Platypterygius platydactylus</italic>
+				</identified-name>
 				<authority rid="Broili1907P"/>
 				<reference rid="vonHuene1922" page="99"/>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Protoichthyosaurus applebyi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Protoichthyosaurus prostaxalis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Qianichthyosaurus xingyiensis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Qianichthyosaurus zhoui</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Quasianosteosaurus vikinghoegdai</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Sclerocormus parviceps</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Shastasaurus alexandrae</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Shastasaurus liangae</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Shastasaurus pacificus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Shastasaurus sikkaniensis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Shonisaurus popularis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Simbirskiasaurus birjukovi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Sisteronia seeleyi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Stenopterygius aaleniensis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Stenopterygius quadriscissus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Stenopterygius triscissus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Stenopterygius uniter</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Suevoleviathan disinteger</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Suevoleviathan integer</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Sveltonectes insolitus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Temnodontosaurus azerguensis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Temnodontosaurus crassimanus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Temnodontosaurus eurycephalus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Temnodontosaurus nuertingensis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Temnodontosaurus platyodon</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Temnodontosaurus trigonodon</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Thaisaurus chonglakmanii</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Thalassodraco etchesi</name>
 		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
-				<name combination="original">Thalassodraco etchesi</name>
+				<identified-name combination="original">
+					<italic>Thalassodraco etchesi</italic>
+				</identified-name>
 				<authority rid="Jacobs2020PO"/>
 				<reference rid="Jacobs2020PO" page="7"/>
 				<location>
 					<locality>Rope Lake Bay, Kimmeridge, Dorset U.K.</locality>
 					<country-code>GB</country-code>
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=50.59813&mlon=-2.096825#map=6/50.59813/-2.096825">
+						<latitude>50.59813</latitude>
+						<longitude>-2.096825</longitude>
+					</coordinates>
 				</location>
 				<stratigraphy>
 					<lithostratigraphy>
 						<bed>White Stone Band</bed>
 						<formation>Kimmeridge Clay Formation</formation>
-						<zone>\\emph{Pectinatites pectinatus} Ammonite Biozone</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>early Tithonian</stage>
 						<series>Upper Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Pectinatites pectinatus</italic>
+								 Ammonite Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23" type="act">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0" type="publication">urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0</lsid>
-				<comments>\\textallsc{UK GR SY932775}</comments>
+				<comments>
+					<p>
+						<sc>UK GR SY932775</sc>
+					</p>
+				</comments>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Thalattoarchon saurophagis</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Tholodus schmidi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Toretocnemus californicus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Toretocnemus zitteli</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Undorosaurus gorodischensis</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Undorosaurus gorodischensis</name>
+				<identified-name combination="original">
+					<italic>Undorosaurus gorodischensis</italic>
+				</identified-name>
 				<authority rid="Efimov1999PZa"/>
 				<reference rid="Efimov1999PZa" page="52"/>
 				<location>
@@ -1920,18 +2560,25 @@
 					<country-code>RU</country-code>
 				</location>
 				<stratigraphy>
-					<lithostratigraphy>
-						<zone>\\emph{Epivirgatites nikitini} Ammonite Biozone</zone>
-					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>Volgian</stage>
 						<series>Upper Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								<italic>Epivirgatites nikitini</italic>
+								 Ammonite Biozone
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="original">Cryopterygius kristiansenae</name>
+				<identified-name combination="original">
+					<italic>Cryopterygius kristiansenae</italic>
+				</identified-name>
 				<authority rid="Druckenmiller2012NJG"/>
 				<reference rid="Druckenmiller2012NJG" page="313"/>
 				<location>
@@ -1943,7 +2590,7 @@
 						<easting>0518842</easting>
 						<northing>8696067</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3365801&amp;mlon=15.8349207#map=6/78.3365801/15.8349207">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3365801&mlon=15.8349207#map=6/78.3365801/15.8349207">
 						<latitude>78.3365801</latitude>
 						<longitude>15.8349207</longitude>
 					</coordinates>
@@ -1961,20 +2608,29 @@
 				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575" type="act">urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
-				<comments>\\emph{fide} \\textcite{Zverkov2019JSP}</comments>
+				<comments>
+					<p>
+						<italic>fide</italic>
+						 Zverkov and Efimov (2019)
+					</p>
+				</comments>
 			</synonym>
 			<synonym morphology="Y">
-				<name combination="original">Undorosaurus gorodischensis</name>
+				<identified-name combination="original">
+					<italic>Undorosaurus gorodischensis</italic>
+				</identified-name>
 				<authority rid="Efimov1999PZa"/>
 				<reference rid="Zverkov2019JSP" page="1189"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Undorosaurus kielanae</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="new">Cryopterygius kielanae</name>
+				<identified-name combination="new">
+					<italic>Cryopterygius kielanae</italic>
+				</identified-name>
 				<authority rid="Tyborowski2016APP"/>
 				<reference rid="Tyborowski2016APP" page="793"/>
 				<location>
@@ -1986,7 +2642,7 @@
 						<easting>439831</easting>
 						<northing>5692022</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=51.3762562&amp;mlon=20.1355025#map=6/51.3762562/20.1355025">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=51.3762562&mlon=20.1355025#map=6/51.3762562/20.1355025">
 						<latitude>51.3762562</latitude>
 						<longitude>20.1355025</longitude>
 					</coordinates>
@@ -2004,26 +2660,30 @@
 				</stratigraphy>
 			</synonym>
 			<synonym morphology="N" confidence="?">
-				<name combination="new">Undorosaurus kielanae</name>
+				<identified-name combination="new">
+					<italic>Undorosaurus kielanae</italic>
+				</identified-name>
 				<authority rid="Tyborowski2016APP"/>
 				<reference rid="Zverkov2019JSP" page="1187"/>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Undorosaurus nessovi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Undorosaurus trautscholdi</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Utatsusaurus hataii</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Wahlisaurus massarae</name>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
-				<name combination="original">Wahlisaurus massarae</name>
+				<identified-name combination="original">
+					<italic>Wahlisaurus massarae</italic>
+				</identified-name>
 				<authority rid="Lomax2016JSP"/>
 				<reference rid="Lomax2016JSP" page="388"/>
 				<location>
@@ -2034,21 +2694,31 @@
 					<lithostratigraphy>
 						<member>Barnstone Member?</member>
 						<formation>Scunthorpe Mudstone Formation?</formation>
-						<zone>Pre-\\emph{planorbis} or \\emph{Psiloceras planorbis} beds</zone>
 					</lithostratigraphy>
 					<chronostratigraphy>
 						<stage>lowermost Hettangian</stage>
 						<series>Lower Jurassic</series>
 						<system>Jurassic</system>
 					</chronostratigraphy>
+					<biostratigraphy>
+						<zone>
+							<p>
+								Pre-
+								<italic>planorbis</italic>
+								 or 
+								<italic>Psiloceras planorbis</italic>
+								 beds
+							</p>
+						</zone>
+					</biostratigraphy>
 				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Wimanius odontopalatus</name>
 	</taxon>
-	<taxon>
+	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Xinminosaurus catactes</name>
 	</taxon>
 </synonymy>
