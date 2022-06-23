@@ -12,6 +12,17 @@
 					<locality>Speeton, Yorkshire, U.K.</locality>
 					<country-code>GB</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Speeton Clay Formation</formation>
+						<zone>\\emph{Simbiskites concinnus/staffi} ammonite biozones</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>basal–upper Hauterivian</stage>
+						<series>Lower Cretaceous</series>
+						<system>Cretaceous</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8" type="act">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
 			</synonym>
@@ -23,6 +34,16 @@
 					<locality>Cremlingen, Lower Saxony, Germany</locality>
 					<country-code>DE</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<zone>\\emph{Simbiskites concinnus/staffi} ammonite biozones</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>basal–upper Hauterivian</stage>
+						<series>Lower Cretaceous</series>
+						<system>Cretaceous</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
 			</synonym>
 		</synonym-list>
@@ -39,6 +60,16 @@
 					<locality>Cerro de Palotes, near of Cuencamé, Durango state, Northeast Mexico</locality>
 					<country-code>MX</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>La Casita Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Kimmeridgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB" type="act">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2287DBB3-3E85-409D-9D97-A946DE865FCB" type="publication">urn:lsid:zoobank.org:pub:2287DBB3-3E85-409D-9D97-A946DE865FCB</lsid>
 			</synonym>
@@ -55,6 +86,16 @@
 					<locality>Germany</locality>
 					<country-code>DE</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Solnhofen Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Lower Tithonian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
 				<name combination="new">Aegirosaurus leptospondylus</name>
@@ -64,6 +105,17 @@
 					<locality>Borscheim, Schrandel quarry district; Bavaria, Germany</locality>
 					<country-code>DE</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<bed>Malm ζ 2b</bed>
+						<formation>Solnhofen Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>early Lower Tithonian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -88,6 +140,16 @@
 						<longitude>-113.5000047</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Ringnes Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Oxfordian–Kimmeridgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y" confidence="?">
 				<name combination="new">Keilhauia nui</name>
@@ -107,6 +169,17 @@
 						<longitude>15.8351277</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Slottsmøya Member</member>
+						<formation>Agardfjellet Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>early Berriasian</stage>
+						<series>Lower Cretaceous</series>
+						<system>Cretaceous</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<comments>\\emph{fide} \\textcite{Zverkov2019P}</comments>
 			</synonym>
 			<synonym morphology="Y" confidence="p">
@@ -156,6 +229,17 @@
 						<longitude>15.8320045</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Slottsmøya Member</member>
+						<formation>Agardfjellet Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Middle Volgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9" type="act">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
 			</synonym>
@@ -205,6 +289,17 @@
 						<longitude>15.8340711</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Slottsmøya Member</member>
+						<formation>Agardfjellet Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>middle Volgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F" type="act">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E" type="publication">urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E</lsid>
 				<comments>\\emph{fide} \\textcite{Zverkov2019P}</comments>
@@ -238,6 +333,16 @@
 					<locality>Yesera del Tromen–Pampa Tril area, north-western Neuquén Province, Argentina</locality>
 					<country-code>AR</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Vaca Muerta Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>late Tithonian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD" type="act">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:A668AA96-CE4F-442E-AD3E-B757AD580CFC" type="publication">urn:lsid:zoobank.org:pub:A668AA96-CE4F-442E-AD3E-B757AD580CFC</lsid>
 			</synonym>
@@ -254,6 +359,16 @@
 					<locality>mouth of the Berezoviy Dol Ravine near Novaya Racheika Village, Syzran District, Samara Region, Russian</locality>
 					<country-code>RU</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<zone>\\emph{Dorsoplanites panderi} Ammonite Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>middle Volgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -279,6 +394,17 @@
 						<longitude>-111.6672141</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Wabiskaw Member</member>
+						<formation>Clearwater Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>lowermost Albian</stage>
+						<series>Lower Cretaceous</series>
+						<system>Cretaceous</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6" type="act">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2540811F-95E5-45BB-9B32-8E0416F61681" type="publication">urn:lsid:zoobank.org:pub:2540811F-95E5-45BB-9B32-8E0416F61681</lsid>
 			</synonym>
@@ -296,6 +422,16 @@
 					<locality>Kotelny Island, New Siberian Islands, Russia</locality>
 					<country-code>RU</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<zone>\\emph{Pinacoceras verchojanicum} Ammonoid Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>lower Norian</stage>
+						<series>Upper Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9" type="act">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
 			</synonym>
 		</synonym-list>
@@ -312,6 +448,18 @@
 					<locality>Yangjuan Village, Xinmin District, Panxian County, Guizhou Province, China</locality>
 					<country-code>CN</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Upper Member</member>
+						<formation>Guanling Formation</formation>
+						<zone>\\emph{Nicoraella germanicus} Conodont Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Pelsonian, Anisian</stage>
+						<series>Middle Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF" type="act">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF" type="publication">urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF</lsid>
 			</synonym>
@@ -334,6 +482,17 @@
 					<locality>Sasso Caldo, Italy</locality>
 					<country-code>IT</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Besano Formation</formation>
+						<zone>\\emph{Nevadites secedensis} Ammonite Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Ilyrian, Anisian</stage>
+						<series>Middle Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43" type="act">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A" type="publication">urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A</lsid>
 			</synonym>
@@ -345,6 +504,17 @@
 					<locality>Switzerland</locality>
 					<country-code>CH</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Besano Formation</formation>
+						<zone>\\emph{Reitziites reitzi–Nevadites secedensis} ammonoid biozones</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Ilyrian, Anisian</stage>
+						<series>Middle Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
 				<name combination="original">Besanosaurus leptorhynchus</name>
@@ -354,6 +524,17 @@
 					<locality>Sasso Caldo, Italy</locality>
 					<country-code>IT</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Besano Formation</formation>
+						<zone>\\emph{Nevadites secedensis} Ammonoid Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Ilyrian, Anisian</stage>
+						<series>Middle Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
 				<name combination="original">Besanosaurus leptorhynchus</name>
@@ -363,6 +544,17 @@
 					<locality>Val Stelle, Tre Fontane, Switzerland</locality>
 					<country-code>CH</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Besano Formation</formation>
+						<zone>\\emph{Nevadites secedensis} Ammonoid Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Ilyrian, Anisian</stage>
+						<series>Middle Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -377,6 +569,16 @@
 					<locality>Volga River, 18 km north of Ulyanovsk, Ulyanovsk District, Ulyanovsk Region, Russian</locality>
 					<country-code>RU</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<zone>\\emph{Dorsoplanites panderi} Ammonite Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Volgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
 				<name combination="new">Brachypterygius alekseevi</name>
@@ -402,6 +604,16 @@
 					<locality>Smallmouth Sands, Weymouth, Dorset, U.K.</locality>
 					<country-code>GB</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Kimmeridge Clay Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Kimmeridgian–Tithonian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3" type="act">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429" type="publication">urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429</lsid>
 			</synonym>
@@ -429,6 +641,17 @@
 						<longitude>0.368878</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Kimmeridge Clay Formation</formation>
+						<zone>\\emph{Aulacostephanus autissiodorensis} Ammonite Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>middle Kimmeridgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -443,6 +666,16 @@
 					<locality>Volga River, Ulyanovsk District, Ulyanovsk Region, Russia</locality>
 					<country-code>RU</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<zone>\\emph{Ilowaiskya pseudoscythica} Ammonite Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Volgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
 				<name combination="new">Brachypterygius psudoscythius</name>
@@ -467,6 +700,12 @@
 					<locality>Shasta County, California, U.S.A.</locality>
 					<country-code>US</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Hosselkus Limestone Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy/>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
 				<name combination="new">Delphinosaurus perrini</name>
@@ -492,6 +731,17 @@
 					<locality>Peace Reach, Williston Lake, British Columbia, Canada</locality>
 					<country-code>CA</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Pardonet Formation</formation>
+						<zone>\\emph{Epigondolella triangularis} Conodont Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Norian</stage>
+						<series>Upper Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
 				<name combination="new">Callawayia neoscapularis</name>
@@ -507,6 +757,16 @@
 					<locality>Chicken Creek, British Columbia, Canada</locality>
 					<country-code>CA</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Pardonet Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Norian</stage>
+						<series>Upper Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -532,6 +792,18 @@
 						<longitude>117.8219391</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Upper Member</member>
+						<formation>Nanlinghu Formation</formation>
+						<zone>\\emph{Subcolumbites} Ammonite Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Olenekian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32" type="act">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5" type="publication">urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5</lsid>
 			</synonym>
@@ -545,6 +817,12 @@
 				<name combination="original">Ophthalmosaurus monocharactus</name>
 				<authority rid="Appleby1956PZSL"/>
 				<reference rid="Gasparini1988A" page="3"/>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Vaca Muerta Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy/>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
 				<name combination="original">Aegirosaurus sp.</name>
@@ -559,6 +837,18 @@
 					<locality>El Ministerio Quarry, Los Catutos, Zapala Department, Neuquén Province, Argentina</locality>
 					<country-code>AR</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Los Catutos Member</member>
+						<formation>Vaca Muerta Formation</formation>
+						<zone>\\emph{Aulasphinctes proximus}–\\emph{Windhauseniceras internispinosum} ammonoid biozones</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper middle–lower upper Tithonian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721" type="act">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w" type="publication">urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w</lsid>
 			</synonym>
@@ -586,6 +876,17 @@
 						<longitude>-69.6675031</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Vaca Muerta Formation</formation>
+						<zone>\\emph{Virgatosphinctes mendozanus} Ammonite Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>late Tithonian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D" type="act">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77" type="publication">urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77</lsid>
 			</synonym>
@@ -598,6 +899,16 @@
 				<name combination="new">Ichthyosaurus walkeri</name>
 				<authority rid="Seeley1869"/>
 				<reference rid="Seeley1869" page="65"/>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Gault Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>late Albian</stage>
+						<series>Lower Cretaceous</series>
+						<system>Cretaceous</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<comments>Reworked into Cambridge Greensand Member (Lower Chalk Formation; early Cenomanian). Described from a cast.</comments>
 			</synonym>
 			<synonym morphology="Y">
@@ -623,6 +934,16 @@
 					<locality>Chacaico Sur, Patagonia, Argentina</locality>
 					<country-code>AR</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Les Molles Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>early Bajocian</stage>
+						<series>Middle Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
 				<name combination="original">Stenopterygius cayi</name>
@@ -663,6 +984,18 @@
 					<locality>Majiashan, Anhui Province, China</locality>
 					<country-code>CN</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Upper Member</member>
+						<formation>Nanlinghu Formation</formation>
+						<zone>\\emph{Subcolumbites} Ammonoid Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Spathian, Olenekian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA" type="act">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E" type="publication">urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E</lsid>
 			</synonym>
@@ -679,6 +1012,17 @@
 					<locality>Majiashan, Anhui  Province, China</locality>
 					<country-code>CN</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Upper Member</member>
+						<formation>Nanlinghu Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Spathian, Olenekian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y" confidence="*">
 				<name combination="new">Anhuisaurus faciles</name>
@@ -688,6 +1032,17 @@
 					<locality>Majiashan, Anhui  Province, China</locality>
 					<country-code>CN</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Upper Member</member>
+						<formation>Nanlinghu Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Spathian, Olenekian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
 				<name combination="new">Chensaurus chaoxianensis</name>
@@ -727,6 +1082,16 @@
 					<locality>Chao County, Anhui Province, China</locality>
 					<country-code>CN</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Qinglong Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -741,6 +1106,18 @@
 					<locality>Zhangjiawan Village, Yangping Town, Yuan'an County, Hubei Province, China</locality>
 					<country-code>CN</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Third Member</member>
+						<formation>Jialingjiang Formation</formation>
+						<zone>\\emph{Neospathodus homeri–N. triangularis} Conodont Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -755,6 +1132,16 @@
 					<locality>Althengstett, Baden-Württenbug, Germany</locality>
 					<country-code>DE</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Wellenkalk Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Anisian</stage>
+						<series>Middle Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
 				<name combination="new">Mixosaurus atavus atavus</name>
@@ -802,6 +1189,18 @@
 					<locality>Favret Canyon, Augusta Mountains, Pershing County, Nevada, USA</locality>
 					<country-code>US</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Fossil Hill Member</member>
+						<formation>Favret Formation</formation>
+						<zone>\\emph{Nevadisculites taylori} Ammonoid Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Anisian</stage>
+						<series>Middle Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -846,6 +1245,18 @@
 					<locality>Dotternhausen-Dormettingen, Bade-Württemberg, Germany</locality>
 					<country-code>DE</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<bed>Lias εII,4/5</bed>
+						<formation>Posidonia Shale Formation</formation>
+						<zone>\\emph{Harpoceras serpentinum} Ammonoid Biozone, \\emph{Harpoceras exaratum} Ammonoid Subbiozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Toarcian</stage>
+						<series>Lower Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479" type="act">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7" type="publication">urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7</lsid>
 			</synonym>
@@ -862,6 +1273,18 @@
 					<locality>Dotternhausen-Dormettingen, Bade-Württemberg, Germany</locality>
 					<country-code>DE</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<bed>Lias εII,4</bed>
+						<formation>Posidonia Shale Formation</formation>
+						<zone>\\emph{Harpoceras serpentinum} Ammonoid Biozone, \\emph{Harpoceras exaratum} Ammonoid Subbiozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Toarcian</stage>
+						<series>Lower Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -876,6 +1299,16 @@
 					<locality>Tulong Area, Xizang, Tibet, China</locality>
 					<country-code>CN</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Langjiexue Group</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Norian</stage>
+						<series>Middle Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:7CDB5708-E15C-4C69-98A1-C2041140D046" type="act">urn:lsid:zoobank.org:act:7CDB5708-E15C-4C69-98A1-C2041140D046</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74" type="publication">urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74</lsid>
 			</synonym>
@@ -920,6 +1353,17 @@
 					<locality>Sierra El Jabalí, near Gómez Farías, Saltillo, Caohuila, Mexico</locality>
 					<country-code>MX</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>coquina layer</member>
+						<formation>La Casita Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Kimmeridgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
 				<name combination="original">Ophthalmosaurus cf. icenicus</name>
@@ -938,6 +1382,17 @@
 					<locality>Sierra El Jabalí, near Gómez Farías, Saltillo, Caohuila, Mexico</locality>
 					<country-code>MX</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>coquina layer</member>
+						<formation>La Casita Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Kimmeridgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057" type="act">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
 			</synonym>
 		</synonym-list>
@@ -953,6 +1408,17 @@
 					<locality>Loma Pedro Luis, Villa de Leyva, Boyacá, Colombia</locality>
 					<country-code>CO</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Arcillolitas Abigarrada Member</member>
+						<formation>Paja Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Barremian–Aptian</stage>
+						<series>Lower Cretaceous</series>
+						<system>Cretaceous</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
 				<name combination="new">Kyhytysuka sachicarum</name>
@@ -962,6 +1428,17 @@
 					<locality>El Roble Locality, Villa de Leyva, Boaycá, Colombia</locality>
 					<country-code>CO</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Arcillolitas Abigarrada Member</member>
+						<formation>Paja Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>latest Barremian</stage>
+						<series>Lower Cretaceous</series>
+						<system>Cretaceous</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:E3FD55AF-2AD1-46CA-A49C-1FB4B102AB2C" type="publication">urn:lsid:zoobank.org:pub:E3FD55AF-2AD1-46CA-A49C-1FB4B102AB2C</lsid>
 			</synonym>
 		</synonym-list>
@@ -1020,6 +1497,17 @@
 						<longitude>-73.5296776</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Arcillolitas abigarradas Member</member>
+						<formation>Paja Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Barremian–Aptian</stage>
+						<series>Lower Cretaceous</series>
+						<system>Cretaceous</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1035,6 +1523,16 @@
 					<locality>Kimmeridge Bay, Dorset, U.K.</locality>
 					<country-code>GB</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Kimmeridge Clay Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Kimmeridgian–Tithonian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC" type="act">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C" type="publication">urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C</lsid>
 			</synonym>
@@ -1063,6 +1561,14 @@
 				<name combination="new">Nannopterygius saveljeviensis</name>
 				<authority rid="Arkhangelsky1997PZ"/>
 				<reference rid="Zverkov2020ZJLS" page="246"/>
+				<stratigraphy>
+					<lithostratigraphy/>
+					<chronostratigraphy>
+						<stage>Volgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1088,6 +1594,17 @@
 					<locality>Peterborough, Cambridgeshire</locality>
 					<country-code>GB</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Peterborough Member</member>
+						<formation>Oxford Clay Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Callovian</stage>
+						<series>Middle Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE" type="act">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:4C83C9B2-665D-4AD7-8AF8-D365E5491831" type="publication">urn:lsid:zoobank.org:pub:4C83C9B2-665D-4AD7-8AF8-D365E5491831</lsid>
 			</synonym>
@@ -1108,6 +1625,16 @@
 					<locality>Rancho el Sombrero, Sierra de Parras, Saltillo Municipality, Coahuila, Mexico</locality>
 					<country-code>MX</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>La Caja Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>upper Tithonian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165" type="act">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:3C6D6D2B-6F30-4DF3AEB4-FD2B-C61B3CF7" type="publication">urn:lsid:zoobank.org:pub:3C6D6D2B-6F30-4DF3AEB4-FD2B-C61B3CF7</lsid>
 			</synonym>
@@ -1130,6 +1657,16 @@
 					<locality>Cambridge,  Cambridgeshire, U.K.</locality>
 					<country-code>GB</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<formation>Upper Greensand Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Albian–Cenomanian</stage>
+						<series>Lower–Upper Cretaceous</series>
+						<system>Cretaceous</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="N">
 				<name combination="new">Myopterygius campylodon</name>
@@ -1156,6 +1693,18 @@
 				<name combination="original">Pessopteryx nisseri</name>
 				<authority rid="Wiman1910BGIUa"/>
 				<reference rid="Wiman1910BGIUa" page="139"/>
+				<stratigraphy>
+					<lithostratigraphy>
+						<bed>Lower Saurian Niveau</bed>
+						<formation>Vikinghøgda Formation</formation>
+						<zone>\\emph{Keyserlingites subrobustus} Ammonoid Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Spathian</stage>
+						<series>Lower Triassic</series>
+						<system>Triassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1185,6 +1734,13 @@
 					<locality>Crook County Wyoming, U.S.A.</locality>
 					<country-code>US</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Mowry Shale Member</member>
+						<formation>Graneros Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy/>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
 				<name combination="original">Myopterygius americanus</name>
@@ -1194,6 +1750,13 @@
 					<locality>Osage, Wyoming, U.S.A.</locality>
 					<country-code>US</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Mowry Shale Member</member>
+						<formation>Graneros Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy/>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
 				<name combination="original">Platypterygius americanus</name>
@@ -1315,6 +1878,18 @@
 					<locality>Rope Lake Bay, Kimmeridge, Dorset U.K.</locality>
 					<country-code>GB</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<bed>White Stone Band</bed>
+						<formation>Kimmeridge Clay Formation</formation>
+						<zone>\\emph{Pectinatites pectinatus} Ammonite Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>early Tithonian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23" type="act">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0" type="publication">urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0</lsid>
 				<comments>\\textallsc{UK GR SY932775}</comments>
@@ -1344,6 +1919,16 @@
 					<locality>Undory, Volga Oblast, Russia</locality>
 					<country-code>RU</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<zone>\\emph{Epivirgatites nikitini} Ammonite Biozone</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>Volgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="Y">
 				<name combination="original">Cryopterygius kristiansenae</name>
@@ -1363,6 +1948,17 @@
 						<longitude>15.8349207</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Slottsmøya Member</member>
+						<formation>Agardfjellet Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>middle Volgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575" type="act">urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575</lsid>
 				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
 				<comments>\\emph{fide} \\textcite{Zverkov2019JSP}</comments>
@@ -1395,6 +1991,17 @@
 						<longitude>20.1355025</longitude>
 					</coordinates>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Sławno Limestone Member</member>
+						<formation>Kcynia Formation</formation>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>uppermost Lower Tithonian = Middle Volgian</stage>
+						<series>Upper Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 			<synonym morphology="N" confidence="?">
 				<name combination="new">Undorosaurus kielanae</name>
@@ -1423,6 +2030,18 @@
 					<locality>Normanton Hills near Normanton on Soar, Nottinghamshire, U.K.</locality>
 					<country-code>GB</country-code>
 				</location>
+				<stratigraphy>
+					<lithostratigraphy>
+						<member>Barnstone Member?</member>
+						<formation>Scunthorpe Mudstone Formation?</formation>
+						<zone>Pre-\\emph{planorbis} or \\emph{Psiloceras planorbis} beds</zone>
+					</lithostratigraphy>
+					<chronostratigraphy>
+						<stage>lowermost Hettangian</stage>
+						<series>Lower Jurassic</series>
+						<system>Jurassic</system>
+					</chronostratigraphy>
+				</stratigraphy>
 			</synonym>
 		</synonym-list>
 	</taxon>

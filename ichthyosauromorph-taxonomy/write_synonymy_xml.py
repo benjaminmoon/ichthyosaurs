@@ -175,7 +175,7 @@ taxa_to_print = get_higher_taxon(taxon_file)
 text_sanitising = {r'\.\.': r'.', r'\s\s': r' '}
 
 unit_separator = ', '
-lithostrat_keys = ['bed', 'member', 'formation', 'zone']
+lithostrat_keys = ('bed', 'member', 'formation', 'zone')
 chronostrat_keys = ('stage', 'series', 'system')
 coord_keys = ['utm_wgs84', 'long', 'lat']
 
@@ -203,9 +203,8 @@ for taxon in taxa_to_print:
 
         taxon_elem.append(lsid_act_elem)
 
-    # filter_synonyms = dict(filter(lambda val: val['accepted_name'] == current_taxon, synonymy_file.items()))
-
     filter_synonyms = [x for x in sorted_synonymy if x['accepted_name'] == current_taxon]
+    # filter_synonyms = [e for e in ({k: v for k, v in sub.items() if v} for sub in filter_synonyms) if e]
 
     if filter_synonyms:
         synonym_list_elem = et.SubElement(taxon_elem, 'synonym-list')
@@ -268,11 +267,27 @@ for taxon in taxa_to_print:
             #     coord_elem = element_coordinates(lat=synonym['latitude'], lon=synonym['longitude'])
             #     location_elem(coord_elem)
 
-        # print([x for x in any(chronostrat_keys in synonym.keys())])
-        print(synonym.keys())
-        #     print('yes')
+        # if chronostrat_keys in synonym.keys():
+        #     strat_elem = et.SubElement(synonym_elem, 'stratigraphy')
         # else:
-        #     print('no')
+        #     print("I don't see it")
+       
+        lithostrat_elem = et.Element('lithostratigraphy')
+        chronostrat_elem = et.Element('chronostratigraphy')
+        for key in lithostrat_keys:
+            if synonym[key]:
+                strat_elem = et.SubElement(lithostrat_elem, key)
+                strat_elem.text = synonym[key]
+
+        for key in chronostrat_keys:
+            if synonym[key]:
+                strat_elem = et.SubElement(chronostrat_elem, key)
+                strat_elem.text = synonym[key]
+
+        if lithostrat_elem or chronostrat_elem:
+            stratigraphy_elem = et.SubElement(synonym_elem, 'stratigraphy')
+            stratigraphy_elem.append(lithostrat_elem)
+            stratigraphy_elem.append(chronostrat_elem)
 
         if synonym['lsid_act']:
             lsid_act_elem = element_lsid(lsid=synonym['lsid_act'])
@@ -288,17 +303,7 @@ for taxon in taxa_to_print:
             comments_elem = et.SubElement(synonym_elem, 'comments')
             comments_elem.text = synonym['comments']
         
-
         
-
-
-
-
-
-
-    
-
-
 # tree = et.ElementTree(root)
 
 # Format the XML content to make it easier to view
