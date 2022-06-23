@@ -1,0 +1,80 @@
+\startxmlsetups xml:taxon-synonymy
+    \xmlsetsetup{#1}{*}{-}
+    % main elements
+    \xmlsetsetup{#1}{synonymy|taxon|p}{xml:*}
+    % taxa
+    \xmlsetsetup{#1}{synonym-list}{xml:taxon:*}
+    % synonymy
+    \xmlsetsetup{#1}{synonym}{xml:synonym:*}
+    % locality information
+    \xmlsetsetup{#1}{location|locality|country-code|utm|coordinates}{xml:locality:*}
+    \xmlsetsetup{#1}{stratigraphy|lithostratigraphy|chronostratigraphy|biostratigraphy}{xml:stratigraphy:*}
+    % IDs
+    \xmlsetsetup{#1}{lsid[@type='act']}{xml:lsid:act}
+    \xmlsetsetup{#1}{lsid[@type='publication']}{xml:lsid:pub}
+    % formatted text
+    \xmlsetsetup{#1}{named-content[@context-type='specimen']}{xml:specimen}
+    \xmlsetsetup{#1}{italic|bold|sc}{xml:*}
+\stopxmlsetups
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%% XML Definitions %%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Main elements %%%
+
+\startxmlsetups xml:synonymy
+    \xmlflush{#1}
+\stopxmlsetups
+
+\startxmlsetups xml:taxon
+    \startstructurelevel
+        [title=\xmlfilter{#1}{/name/command(xml:taxon:name)}]
+        \xmlflush{#1}
+    \stopstructurelevel
+\stopxmlsetups
+
+\startxmlsetups xml:p
+    \xmlflush{#1}\par
+\stopxmlsetups
+
+%%% Taxa %%%
+
+\startxmlsetups xml:taxon:name
+    \xmlflush{#1}
+\stopxmlsetups
+
+\startxmlsetups xml:taxon:synonym-list
+    \startSynonymyList
+        \xmlflush{#1}
+    \stopSynonymyList
+\stopxmlsetups
+
+%%% Synonymy %%%
+
+\startxmlsetups xml:synonym:synonym
+    \startparagraphscell
+        \xmlatt{#1}{confidence}
+    \stopparagraphscell
+    \startparagraphscell
+        \xmlatt{#1}{morphology}
+    \stopparagraphscell
+    \startparagraphscell
+        \xmlfilter{#1}{/identified-name/command(xml:taxon:name)}
+        \xmlfilter{#1}{/authority/command(xml:taxon:authority)};
+        \xmlfilter{#1}{/location/locality/command(xml:taxon:name)}
+    \stopparagraphscell    
+\stopxmlsetups
+
+    % \xmlsetsetup{#1}{synonym|identified-name|authority|reference}{xml:synonym:*}
+\xmlregistersetup{xml:taxon-synonymy}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ConTeXt Definitions %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Synonymy list %%%
+\defineparagraphs[SynonymyList][n=3]
+% \setupparagraph[SynonymyList]

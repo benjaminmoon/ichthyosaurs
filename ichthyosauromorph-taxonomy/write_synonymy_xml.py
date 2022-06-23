@@ -72,6 +72,11 @@ def element_lsid(lsid, base_url = 'https://zoobank.org/'):
     lsid_url = base_url + lsid
     lsid_elem.set('url', lsid_url)
 
+    if re.search('act', lsid):
+        lsid_elem.set('type', 'act')
+    elif re.search('pub', lsid):
+        lsid_elem.set('type', 'publication')
+
     return(lsid_elem)
 
 
@@ -311,12 +316,10 @@ for taxon in taxa_to_print:
 
         if synonym['lsid_act']:
             lsid_act_elem = element_lsid(lsid=synonym['lsid_act'])
-            lsid_act_elem.set('type', 'act')
             synonym_elem.append(lsid_act_elem)
 
         if synonym['lsid_pub']:
             lsid_pub_elem = element_lsid(lsid=synonym['lsid_pub'])
-            lsid_pub_elem.set('type', 'publication')
             synonym_elem.append(lsid_pub_elem)
 
         if synonym['comments']:

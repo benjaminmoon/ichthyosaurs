@@ -2,7 +2,7 @@
 <synonymy>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Acamptonectes densus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8" type="act">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -66,7 +66,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Acuetzpalin carranzai</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB" type="act">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -251,7 +251,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Arthropterygius hoybergeti</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9" type="act">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="new">
@@ -317,7 +317,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Arthropterygius lundi</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F" type="act">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="new">
@@ -384,7 +384,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Arthropterygius thalassonotus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD" type="act">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -444,7 +444,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Athabascasaurus bitumineus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6" type="act">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -484,7 +484,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Auroroborealia incognita</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9" type="act">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -521,7 +521,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Barracudasauroides panxianensis</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF" type="act">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="new">
@@ -566,7 +566,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Besanosaurus leptorhynchus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43" type="act">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -745,7 +745,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Brachypterygius extremus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3" type="act">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="new">
@@ -991,7 +991,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Cartorhynchus lenticarpus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32" type="act">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -1039,7 +1039,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Catutosaurus gaspariniae</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721" type="act">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
 		<synonym-list>
 			<synonym morphology="Y">
 				<identified-name combination="original">
@@ -1105,7 +1105,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Caypullisaurus bonapartei</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D" type="act">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -1224,7 +1224,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Chaohusaurus brevifemoralis</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA" type="act">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="p">
 				<identified-name combination="original">
@@ -1564,7 +1564,7 @@
 	</taxon>
 	<taxon clade="Hupehsuchia">
 		<name combination="original">Eohupehsuchus brevicollis</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287">urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287" type="act">urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -1593,7 +1593,7 @@
 	</taxon>
 	<taxon clade="Hupehsuchia">
 		<name combination="original">Eretmorhipis carrolldongi</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178">urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178" type="act">urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178</lsid>
 		<synonym-list>
 			<synonym morphology="Y">
 				<identified-name combination="original">
@@ -1667,7 +1667,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Hauffiopteryx altera</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479" type="act">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
 		<synonym-list>
 			<synonym morphology="N" confidence="p">
 				<identified-name combination="original">
@@ -1790,7 +1790,7 @@
 	</taxon>
 	<taxon clade="Hupehsuchia">
 		<name combination="original">Hupehsuchus nanchangensis</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA">urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA" type="act">urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -1839,7 +1839,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Jabalisaurus metzli</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057" type="act">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
 		<synonym-list>
 			<synonym morphology="Y">
 				<identified-name combination="original">
@@ -2086,7 +2086,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Nannopterygius enthekiodon</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC" type="act">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="new">
@@ -2168,7 +2168,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ophthalmosaurus icenicus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE" type="act">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -2201,7 +2201,7 @@
 	</taxon>
 	<taxon clade="Hupehsuchia">
 		<name combination="original">Parahupehsuchus longus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F">urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F" type="act">urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -2230,7 +2230,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Parrassaurus yacahuitztli</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165" type="act">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -2512,7 +2512,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Thalassodraco etchesi</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23" type="act">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
