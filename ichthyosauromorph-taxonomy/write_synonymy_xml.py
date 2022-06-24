@@ -200,7 +200,7 @@ for taxon in taxa_to_print:
     taxon_elem = et.SubElement(root, 'taxon')
     taxon_elem.set('clade', taxon['clade'])
     
-    name_elem = et.SubElement(taxon_elem, 'name')
+    name_elem = et.SubElement(taxon_elem, 'taxon-name')
     name_elem.text = current_taxon
 
     if taxon['accepted_status'] == 'ncomb':

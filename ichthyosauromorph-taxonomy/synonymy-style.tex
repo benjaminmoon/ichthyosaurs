@@ -34,7 +34,7 @@
 
 \startxmlsetups xml:taxon
     \startsection
-        [title=\xmlfilter{#1}{/name/command(xml:taxon:name)}]
+        [title=\xmlfilter{#1}{/taxon-name/command(xml:taxon:name)}]
         \xmlflush{#1}
     \stopsection
 \stopxmlsetups
@@ -60,17 +60,17 @@
 
 \startxmlsetups xml:taxon:synonym-list
     \bTABLE
-        \bTABLEhead
-            \bTR
-                \bTH Ref. \eTH
-                \bTH Conf. \eTH
-                \bTH {\setff{allsmallcaps}LSID} \eTH
-                \bTH Synonym \eTH
-            \eTR
-        \eTABLEhead
-        \bTABLEbody
+        % \bTABLEhead
+        %     \bTR
+        %         \bTH Ref. \eTH
+        %         \bTH Conf. \eTH
+        %         \bTH {\setff{allsmallcaps}LSID} \eTH
+        %         \bTH Synonym \eTH
+        %     \eTR
+        % \eTABLEhead
+        % \bTABLEbody
             \xmlflush{#1}
-        \eTABLEbody
+        % \eTABLEbody
     \eTABLE
 \stopxmlsetups
 
