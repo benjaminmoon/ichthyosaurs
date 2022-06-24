@@ -1,22 +1,23 @@
-\startxmlsetups xml:taxon-synonymy
+\startxmlsetups xml:taxonsynonymy
     \xmlsetsetup{#1}{*}{-}
     % main elements
-    \xmlsetsetup{#1}{synonymy|taxon|p}{xml:*}
+    \xmlsetsetup{#1}{synonymy|taxon|name|p}{xml:*}
     % taxa
-    \xmlsetsetup{#1}{synonym-list}{xml:taxon:*}
+    % \xmlsetsetup{#1}{synonym-list}{xml:taxon:*}
     % synonymy
-    \xmlsetsetup{#1}{synonym}{xml:synonym:*}
+    % \xmlsetsetup{#1}{synonym}{xml:synonym:*}
     % locality information
-    \xmlsetsetup{#1}{location|locality|country-code|utm|coordinates}{xml:locality:*}
-    \xmlsetsetup{#1}{stratigraphy|lithostratigraphy|chronostratigraphy|biostratigraphy}{xml:stratigraphy:*}
-    % IDs
-    \xmlsetsetup{#1}{lsid[@type='act']}{xml:lsid:act}
-    \xmlsetsetup{#1}{lsid[@type='publication']}{xml:lsid:pub}
-    % formatted text
-    \xmlsetsetup{#1}{named-content[@context-type='specimen']}{xml:specimen}
-    \xmlsetsetup{#1}{italic|bold|sc}{xml:*}
+    % \xmlsetsetup{#1}{location|locality|country-code|utm|coordinates}{xml:locality:*}
+    % \xmlsetsetup{#1}{stratigraphy|lithostratigraphy|chronostratigraphy|biostratigraphy}{xml:stratigraphy:*}
+    % % IDs
+    % \xmlsetsetup{#1}{lsid[@type='act']}{xml:lsid:act}
+    % \xmlsetsetup{#1}{lsid[@type='publication']}{xml:lsid:pub}
+    % % formatted text
+    % \xmlsetsetup{#1}{named-content[@context-type='specimen']}{xml:specimen}
+    \xmlsetsetup{#1}{italic}{xml:formatting:*}%|bold|sc}{xml:*}
 \stopxmlsetups
     
+\xmlregistersetup{xml:taxonsynonymy}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%% XML Definitions %%%
@@ -25,14 +26,22 @@
 %%% Main elements %%%
 
 \startxmlsetups xml:synonymy
-    \xmlflush{#1}
+    \directsetup{document:start}
+        \xmlflush{#1}
+    \directsetup{document:stop}
 \stopxmlsetups
 
 \startxmlsetups xml:taxon
-    \startstructurelevel
-        [title=\xmlfilter{#1}{/name/command(xml:taxon:name)}]
+    % \startsection
+        % [title=\xmlfilter{#1}{/name/command(xml:taxon:name)}]
         \xmlflush{#1}
-    \stopstructurelevel
+        
+        hello world
+    % \stopsection
+\stopxmlsetups
+
+\startxmlsetups xml:taxon:name
+    \xmlflush{#1}
 \stopxmlsetups
 
 \startxmlsetups xml:p
@@ -45,36 +54,107 @@
     \xmlflush{#1}
 \stopxmlsetups
 
-\startxmlsetups xml:taxon:synonym-list
-    \startSynonymyList
-        \xmlflush{#1}
-    \stopSynonymyList
-\stopxmlsetups
+% \startxmlsetups xml:taxon:synonym-list
+%     \startparagraphs[SynonymyList]
+%         \xmlflush{#1}
+%     \stopparagraphs
+% \stopxmlsetups
 
 %%% Synonymy %%%
 
-\startxmlsetups xml:synonym:synonym
-    \startparagraphscell
-        \xmlatt{#1}{confidence}
-    \stopparagraphscell
-    \startparagraphscell
-        \xmlatt{#1}{morphology}
-    \stopparagraphscell
-    \startparagraphscell
-        \xmlfilter{#1}{/identified-name/command(xml:taxon:name)}
-        \xmlfilter{#1}{/authority/command(xml:taxon:authority)};
-        \xmlfilter{#1}{/location/locality/command(xml:taxon:name)}
-    \stopparagraphscell    
-\stopxmlsetups
+% \startxmlsetups xml:synonym:synonym
+%     \startparagraphscell
+%         cell1
+%         \xmlatt{#1}{confidence}
+%     \stopparagraphscell
+%     \startparagraphscell
+%         cell2
+%         \xmlatt{#1}{morphology}
+%     \stopparagraphscell
+%     \startparagraphscell
+%         cell3
+%         \xmlfilter{#1}{/identified-name/command(xml:taxon:name)}
+%         % \xmlfilter{#1}{/authority/command(xml:taxon:authority)};
+%         \xmlfilter{#1}{/location/locality/command(xml:taxon:name)}
+%     \stopparagraphscell    
+% \stopxmlsetups
 
     % \xmlsetsetup{#1}{synonym|identified-name|authority|reference}{xml:synonym:*}
-\xmlregistersetup{xml:taxon-synonymy}
+
+%%% Formatting
+
+\startxmlsetups xml:formatting:italic
+    {\em \xmlflush{#1}}
+\stopxmlsetups
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% ConTeXt Definitions %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%% language
+
+\mainlanguage[uk]
+
+%%% Setup structure
+
+\setupinteraction
+    [author={Ben Moon},
+     state=start,
+     style=\tf,
+     color={red}]
+\setupbackend
+    [format={pdf/a-3a},
+     profile={default_cmyk.icc,default_rgb.icc,default_gray.icc},
+     intent={sRGB IEC61966-2.1},
+     level=9]
+     % Set up for PDF/A-3a on screen
+\setupbackend[export=yes]
+\setupstructure[state=start, method=auto]
+
+%%% Page layout
+
+%%% Page size
+\setuppapersize[letter]
+
+%%% Set up the margins, text size etc
+\setuplayout
+    [location=doublesided,
+     topspace=22.5mm,
+     bottomspace=20mm,
+     backspace=30mm,
+     cutspace=30mm,
+     header=10pt,
+     headerdistance=10pt,
+     height=middle,
+     width=middle,
+     footer=0mm,
+     footerdistance=0mm]
+
+%%% Title and heading formatting
+
+\definestructurelevels
+    [default]
+    [section,
+     subsection,
+     subsubsection,
+     subsubsubsection,
+     subsubsubsubsection]
+
 %%% Synonymy list %%%
-\defineparagraphs[SynonymyList][n=3]
+
+\defineparagraphs
+    [SynonymyList]
+    [n=3]
 % \setupparagraph[SynonymyList]
+
+%%% Document start
+
+\startsetups document:start
+    \title{Ichthyosauromorph Taxonomy}
+
+    Hello world
+\stopsetups
+
+\startsetups document:stop
+\stopsetups

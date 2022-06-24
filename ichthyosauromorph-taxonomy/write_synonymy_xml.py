@@ -13,7 +13,7 @@ import utm
 from pybibtex import build_citekey_dict
 from pybibtex import parse_bibfile_to_cite_dict
 import pandoc
-import html
+# import html
 
 # return error if the wrong number of arguments are given
 # usage is given in the error return value
@@ -73,9 +73,9 @@ def element_lsid(lsid, base_url = 'https://zoobank.org/'):
     lsid_elem.set('url', lsid_url)
 
     if re.search('act', lsid):
-        lsid_elem.set('type', 'act')
+        lsid_elem.set('lsid-type', 'act')
     elif re.search('pub', lsid):
-        lsid_elem.set('type', 'publication')
+        lsid_elem.set('lsid-type', 'publication')
 
     return(lsid_elem)
 
@@ -91,7 +91,7 @@ def parse_utm(utm_coord):
 
 
 def utm_to_latlon(parsed_utm):
-    '''Convert parsed UTM-formatted coordinate disctionary to WGS84-formatted (latitutde-longitude).
+    '''Convert parsed UTM-formatted coordinate dictionary to WGS84-formatted (latitutde-longitude).
     '''
 
     converted_latlon = utm.to_latlon(int(parsed_utm['easting']),
@@ -333,7 +333,7 @@ for taxon in taxa_to_print:
 
 # Format the XML content to make it easier to view
 xml_str = minidom.parseString(et.tostring(root, encoding='unicode')).toprettyxml(indent='\t')
-xml_str = html.unescape(xml_str)
+# xml_str = html.unescape(xml_str)
 
 with open(outfile, 'w') as f:
     # tree.write(f, encoding='unicode')

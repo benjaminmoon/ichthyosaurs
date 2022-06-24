@@ -2,7 +2,7 @@
 <synonymy>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Acamptonectes densus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8" type="act">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8" lsid-type="act">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -32,8 +32,8 @@
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8" type="act">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8" lsid-type="act">urn:lsid:zoobank.org:act:AAB4BA7E-F53D-4962-8A9C-3240DFE2C4D8</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" lsid-type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
 			</synonym>
 			<synonym morphology="Y">
 				<identified-name combination="original">
@@ -60,13 +60,13 @@
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975" lsid-type="publication">urn:lsid:zoobank.org:pub:66B3821A-1025-48DC-9C5F-7E6277FFD975</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Acuetzpalin carranzai</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB" type="act">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB" lsid-type="act">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -88,8 +88,8 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB" type="act">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2287DBB3-3E85-409D-9D97-A946DE865FCB" type="publication">urn:lsid:zoobank.org:pub:2287DBB3-3E85-409D-9D97-A946DE865FCB</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB" lsid-type="act">urn:lsid:zoobank.org:act:90130A25-6901-4DA6-84B8-D0680DF9BCAB</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2287DBB3-3E85-409D-9D97-A946DE865FCB" lsid-type="publication">urn:lsid:zoobank.org:pub:2287DBB3-3E85-409D-9D97-A946DE865FCB</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -159,7 +159,7 @@
 						<easting>433220</easting>
 						<northing>8453461</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=76.1511043&mlon=-113.5000047#map=6/76.1511043/-113.5000047">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=76.1511043&amp;mlon=-113.5000047#map=6/76.1511043/-113.5000047">
 						<latitude>76.1511043</latitude>
 						<longitude>-113.5000047</longitude>
 					</coordinates>
@@ -190,7 +190,7 @@
 						<easting>0518847</easting>
 						<northing>8696044</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3363734&mlon=15.8351277#map=6/78.3363734/15.8351277">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3363734&amp;mlon=15.8351277#map=6/78.3363734/15.8351277">
 						<latitude>78.3363734</latitude>
 						<longitude>15.8351277</longitude>
 					</coordinates>
@@ -226,7 +226,7 @@
 						<easting>0519622</easting>
 						<northing>8695649</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&mlon=15.8692035#map=6/78.3327333/15.8692035">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&amp;mlon=15.8692035#map=6/78.3327333/15.8692035">
 						<latitude>78.3327333</latitude>
 						<longitude>15.8692035</longitude>
 					</coordinates>
@@ -251,7 +251,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Arthropterygius hoybergeti</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9" type="act">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9" lsid-type="act">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="new">
@@ -268,7 +268,7 @@
 						<easting>0518775</easting>
 						<northing>8696150</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3373322&mlon=15.8320045#map=6/78.3373322/15.8320045">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3373322&amp;mlon=15.8320045#map=6/78.3373322/15.8320045">
 						<latitude>78.3373322</latitude>
 						<longitude>15.8320045</longitude>
 					</coordinates>
@@ -284,8 +284,8 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9" type="act">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9" lsid-type="act">urn:lsid:zoobank.org:act:03BA5E23-17B5-4AB1-B98A-681B9968A3F9</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" lsid-type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
 			</synonym>
 			<synonym morphology="Y" confidence="p">
 				<identified-name combination="new">
@@ -300,7 +300,7 @@
 						<easting>0519622</easting>
 						<northing>8695649</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&mlon=15.8692035#map=6/78.3327333/15.8692035">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3327333&amp;mlon=15.8692035#map=6/78.3327333/15.8692035">
 						<latitude>78.3327333</latitude>
 						<longitude>15.8692035</longitude>
 					</coordinates>
@@ -317,7 +317,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Arthropterygius lundi</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F" type="act">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F" lsid-type="act">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="new">
@@ -334,7 +334,7 @@
 						<easting>518821</easting>
 						<northing>8696195</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3377295&mlon=15.8340711#map=6/78.3377295/15.8340711">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3377295&amp;mlon=15.8340711#map=6/78.3377295/15.8340711">
 						<latitude>78.3377295</latitude>
 						<longitude>15.8340711</longitude>
 					</coordinates>
@@ -350,8 +350,8 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F" type="act">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E" type="publication">urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F" lsid-type="act">urn:lsid:zoobank.org:act:71E65B35-7215-44AA-BCE7-E9A3B265E04F</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E" lsid-type="publication">urn:lsid:zoobank.org:pub:FF4834F1-AEED-4B08-8E74-7125801C1B3E</lsid>
 				<comments>
 					<p>
 						<italic>fide</italic>
@@ -384,7 +384,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Arthropterygius thalassonotus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD" type="act">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD" lsid-type="act">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -406,8 +406,8 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD" type="act">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:A668AA96-CE4F-442E-AD3E-B757AD580CFC" type="publication">urn:lsid:zoobank.org:pub:A668AA96-CE4F-442E-AD3E-B757AD580CFC</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD" lsid-type="act">urn:lsid:zoobank.org:act:3F09C714-961C-433C-B056-DFD3F8E3B5CD</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:A668AA96-CE4F-442E-AD3E-B757AD580CFC" lsid-type="publication">urn:lsid:zoobank.org:pub:A668AA96-CE4F-442E-AD3E-B757AD580CFC</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -444,7 +444,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Athabascasaurus bitumineus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6" type="act">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6" lsid-type="act">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -461,7 +461,7 @@
 						<easting>459464</easting>
 						<northing>6317120</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=56.9958329&mlon=-111.6672141#map=6/56.9958329/-111.6672141">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=56.9958329&amp;mlon=-111.6672141#map=6/56.9958329/-111.6672141">
 						<latitude>56.9958329</latitude>
 						<longitude>-111.6672141</longitude>
 					</coordinates>
@@ -477,14 +477,14 @@
 						<system>Cretaceous</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6" type="act">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2540811F-95E5-45BB-9B32-8E0416F61681" type="publication">urn:lsid:zoobank.org:pub:2540811F-95E5-45BB-9B32-8E0416F61681</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6" lsid-type="act">urn:lsid:zoobank.org:act:1CE8B3C1-8771-443A-8831-00025FB84CA6</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2540811F-95E5-45BB-9B32-8E0416F61681" lsid-type="publication">urn:lsid:zoobank.org:pub:2540811F-95E5-45BB-9B32-8E0416F61681</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Auroroborealia incognita</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9" type="act">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9" lsid-type="act">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -495,7 +495,7 @@
 				<location>
 					<locality>Kotelny Island, New Siberian Islands, Russia</locality>
 					<country-code>RU</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=75.515&mlon=138.927#map=6/75.515/138.927">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=75.515&amp;mlon=138.927#map=6/75.515/138.927">
 						<latitude>75.515</latitude>
 						<longitude>138.927</longitude>
 					</coordinates>
@@ -515,13 +515,13 @@
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9" type="act">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9" lsid-type="act">urn:lsid:zoobank.org:act:5EFAB647-9971-4361-925D-A64B665521E9</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Barracudasauroides panxianensis</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF" type="act">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF" lsid-type="act">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="new">
@@ -552,8 +552,8 @@
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF" type="act">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF" type="publication">urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF" lsid-type="act">urn:lsid:zoobank.org:act:05C7C635-6E53-4070-8856-047553A6B0BF</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF" lsid-type="publication">urn:lsid:zoobank.org:pub:A3ED6813-7AA8-47CA-8197-04CA562417DF</lsid>
 			</synonym>
 			<synonym morphology="N">
 				<identified-name combination="new">
@@ -566,7 +566,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Besanosaurus leptorhynchus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43" type="act">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43" lsid-type="act">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -577,7 +577,7 @@
 				<location>
 					<locality>Sasso Caldo, Italy</locality>
 					<country-code>IT</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=45.901028&mlon=8.919611#map=6/45.901028/8.919611">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=45.901028&amp;mlon=8.919611#map=6/45.901028/8.919611">
 						<latitude>45.901028</latitude>
 						<longitude>8.919611</longitude>
 					</coordinates>
@@ -600,8 +600,8 @@
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43" type="act">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A" type="publication">urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43" lsid-type="act">urn:lsid:zoobank.org:act:47C32E1B-18FE-40CF-B98E-E9A537601E43</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A" lsid-type="publication">urn:lsid:zoobank.org:pub:EEA0F11C-D7BF-41BE-856E-DC2F3599273A</lsid>
 			</synonym>
 			<synonym morphology="Y">
 				<identified-name combination="original">
@@ -643,7 +643,7 @@
 				<location>
 					<locality>Sasso Caldo, Italy</locality>
 					<country-code>IT</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=45.901028&mlon=8.919611#map=6/45.901028/8.919611">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=45.901028&amp;mlon=8.919611#map=6/45.901028/8.919611">
 						<latitude>45.901028</latitude>
 						<longitude>8.919611</longitude>
 					</coordinates>
@@ -745,7 +745,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Brachypterygius extremus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3" type="act">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3" lsid-type="act">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="new">
@@ -767,8 +767,8 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3" type="act">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429" type="publication">urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3" lsid-type="act">urn:lsid:zoobank.org:act:5B04A1AF-9081-417D-9BFC-DC3AFA6DAAE3</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429" lsid-type="publication">urn:lsid:zoobank.org:pub:98E5CD50-9FAF-458D-9D0A-9464EF76F429</lsid>
 			</synonym>
 			<synonym morphology="N" confidence="v">
 				<identified-name combination="new">
@@ -776,7 +776,7 @@
 				</identified-name>
 				<authority rid="Boulenger1904PZSL"/>
 				<reference rid="vonHuene1922" page="97"/>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" lsid-type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
 			</synonym>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="new">
@@ -793,7 +793,7 @@
 						<easting>321960</easting>
 						<northing>5835045</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=52.6361361&mlon=0.368878#map=6/52.6361361/0.368878">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=52.6361361&amp;mlon=0.368878#map=6/52.6361361/0.368878">
 						<latitude>52.6361361</latitude>
 						<longitude>0.368878</longitude>
 					</coordinates>
@@ -991,7 +991,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Cartorhynchus lenticarpus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32" type="act">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32" lsid-type="act">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -1008,7 +1008,7 @@
 						<easting>577953</easting>
 						<northing>3499041</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=31.6238885&mlon=117.8219391#map=6/31.6238885/117.8219391">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=31.6238885&amp;mlon=117.8219391#map=6/31.6238885/117.8219391">
 						<latitude>31.6238885</latitude>
 						<longitude>117.8219391</longitude>
 					</coordinates>
@@ -1032,14 +1032,14 @@
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32" type="act">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5" type="publication">urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32" lsid-type="act">urn:lsid:zoobank.org:act:FCCC9BB7-FD52-42F4-B2EC-B0B7E2A1CA32</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5" lsid-type="publication">urn:lsid:zoobank.org:pub:9CFFEE63-2B8A-4C01-B9C7-CD3C53D684F5</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Catutosaurus gaspariniae</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721" type="act">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721" lsid-type="act">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
 		<synonym-list>
 			<synonym morphology="Y">
 				<identified-name combination="original">
@@ -1072,7 +1072,7 @@
 				<location>
 					<locality>El Ministerio Quarry, Los Catutos, Zapala Department, Neuquén Province, Argentina</locality>
 					<country-code>AR</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=-38.80829&mlon=-70.18219#map=6/-38.80829/-70.18219">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=-38.80829&amp;mlon=-70.18219#map=6/-38.80829/-70.18219">
 						<latitude>-38.80829</latitude>
 						<longitude>-70.18219</longitude>
 					</coordinates>
@@ -1090,22 +1090,20 @@
 					<biostratigraphy>
 						<zone>
 							<p>
-								<italic>Aulasphinctes proximus</italic>
-								–
-								<italic>Windhauseniceras internispinosum</italic>
+								<italic>Aulasphinctes proximus</italic>–<italic>Windhauseniceras internispinosum</italic>
 								 ammonoid biozones
 							</p>
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721" type="act">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w" type="publication">urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721" lsid-type="act">urn:lsid:zoobank.org:act:BC3E93E7-C574-4B50-9315-2CDAD067C721</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w" lsid-type="publication">urn:lsid:zoobank.org:pub:FDB6C301-BAE5-4212-9310-BE09E24605F9 SUPPLEMENTAL DATA—Supplemental materials are available for this article for free at w</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Caypullisaurus bonapartei</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D" type="act">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D" lsid-type="act">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -1122,7 +1120,7 @@
 						<easting>442358</easting>
 						<northing>5661434</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=-39.1944368&mlon=-69.6675031#map=6/-39.1944368/-69.6675031">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=-39.1944368&amp;mlon=-69.6675031#map=6/-39.1944368/-69.6675031">
 						<latitude>-39.1944368</latitude>
 						<longitude>-69.6675031</longitude>
 					</coordinates>
@@ -1145,8 +1143,8 @@
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D" type="act">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77" type="publication">urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D" lsid-type="act">urn:lsid:zoobank.org:act:046EED7E-C624-465F-B0D4-1BB782CCD97D</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77" lsid-type="publication">urn:lsid:zoobank.org:pub:1A5DDCD0-1713-410A-AE1B-F02EA1F1DF77</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1224,7 +1222,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Chaohusaurus brevifemoralis</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA" type="act">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA" lsid-type="act">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="p">
 				<identified-name combination="original">
@@ -1283,8 +1281,8 @@
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA" type="act">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E" type="publication">urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA" lsid-type="act">urn:lsid:zoobank.org:act:B0085E53-C6E4-4C2E-96FF-6D485D3585BA</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E" lsid-type="publication">urn:lsid:zoobank.org:pub:3FA09089-C940-4499-ABBC-B48F0F70F38E</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1410,7 +1408,7 @@
 				<location>
 					<locality>Zhangjiawan Village, Yangping Town, Yuan'an County, Hubei Province, China</locality>
 					<country-code>CN</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=31.2725&mlon=111.56849#map=6/31.2725/111.56849">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=31.2725&amp;mlon=111.56849#map=6/31.2725/111.56849">
 						<latitude>31.2725</latitude>
 						<longitude>111.56849</longitude>
 					</coordinates>
@@ -1451,7 +1449,7 @@
 				<location>
 					<locality>Althengstett, Baden-Württenbug, Germany</locality>
 					<country-code>DE</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=48.72871&mlon=8.79063#map=6/48.72871/8.79063">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=48.72871&amp;mlon=8.79063#map=6/48.72871/8.79063">
 						<latitude>48.72871</latitude>
 						<longitude>8.79063</longitude>
 					</coordinates>
@@ -1564,7 +1562,7 @@
 	</taxon>
 	<taxon clade="Hupehsuchia">
 		<name combination="original">Eohupehsuchus brevicollis</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287" type="act">urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287" lsid-type="act">urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -1586,14 +1584,14 @@
 						<system>Triassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287" type="act">urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:1B8887A9-F513-427D-BE9A-DBBB15DD9A44" type="publication">urn:lsid:zoobank.org:pub:1B8887A9-F513-427D-BE9A-DBBB15DD9A44</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287" lsid-type="act">urn:lsid:zoobank.org:act:94F905DD-8995-4477-841A-85DEDA8C8287</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:1B8887A9-F513-427D-BE9A-DBBB15DD9A44" lsid-type="publication">urn:lsid:zoobank.org:pub:1B8887A9-F513-427D-BE9A-DBBB15DD9A44</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
 	<taxon clade="Hupehsuchia">
 		<name combination="original">Eretmorhipis carrolldongi</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178" type="act">urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178" lsid-type="act">urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178</lsid>
 		<synonym-list>
 			<synonym morphology="Y">
 				<identified-name combination="original">
@@ -1639,8 +1637,8 @@
 						<system>Triassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178" type="act">urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:132627FE-9142-4EE2-BACB-08CAFC65C3E2" type="publication">urn:lsid:zoobank.org:pub:132627FE-9142-4EE2-BACB-08CAFC65C3E2</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178" lsid-type="act">urn:lsid:zoobank.org:act:317DA1DF-4381-43F5-90CE-ADFD680F7178</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:132627FE-9142-4EE2-BACB-08CAFC65C3E2" lsid-type="publication">urn:lsid:zoobank.org:pub:132627FE-9142-4EE2-BACB-08CAFC65C3E2</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1667,7 +1665,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Hauffiopteryx altera</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479" type="act">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479" lsid-type="act">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
 		<synonym-list>
 			<synonym morphology="N" confidence="p">
 				<identified-name combination="original">
@@ -1711,8 +1709,8 @@
 						</subzone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479" type="act">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7" type="publication">urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479" lsid-type="act">urn:lsid:zoobank.org:act:A567A292-2A58-495A-839F-FF8382B49479</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7" lsid-type="publication">urn:lsid:zoobank.org:pub:041F166A-28FC-4ED6-AD7C-DF64EF4EF1A7</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1780,8 +1778,8 @@
 						<system>Triassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:7CDB5708-E15C-4C69-98A1-C2041140D046" type="act">urn:lsid:zoobank.org:act:7CDB5708-E15C-4C69-98A1-C2041140D046</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74" type="publication">urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:7CDB5708-E15C-4C69-98A1-C2041140D046" lsid-type="act">urn:lsid:zoobank.org:act:7CDB5708-E15C-4C69-98A1-C2041140D046</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74" lsid-type="publication">urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1790,7 +1788,7 @@
 	</taxon>
 	<taxon clade="Hupehsuchia">
 		<name combination="original">Hupehsuchus nanchangensis</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA" type="act">urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA" lsid-type="act">urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -1808,8 +1806,8 @@
 						<system>Triassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA" type="act">urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74" type="publication">urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA" lsid-type="act">urn:lsid:zoobank.org:act:416BF673-273A-4F3D-99B3-F369DBEC6CEA</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74" lsid-type="publication">urn:lsid:zoobank.org:pub:D2CAD534-D3B0-4B2B-871F-7011E4B1EE74</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1839,7 +1837,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Jabalisaurus metzli</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057" type="act">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057" lsid-type="act">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
 		<synonym-list>
 			<synonym morphology="Y">
 				<identified-name combination="original">
@@ -1891,7 +1889,7 @@
 				<location>
 					<locality>Sierra El Jabalí, near Gómez Farías, Saltillo, Caohuila, Mexico</locality>
 					<country-code>MX</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=24.95246&mlon=-100.94193#map=6/24.95246/-100.94193">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=24.95246&amp;mlon=-100.94193#map=6/24.95246/-100.94193">
 						<latitude>24.95246</latitude>
 						<longitude>-100.94193</longitude>
 					</coordinates>
@@ -1907,7 +1905,7 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057" type="act">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057" lsid-type="act">urn:lsid:zoobank.org:act:EAEBE989-A483-478E-85B0-32995FDC8057</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -1923,7 +1921,7 @@
 				<location>
 					<locality>Loma Pedro Luis, Villa de Leyva, Boyacá, Colombia</locality>
 					<country-code>CO</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.65427&mlon=-73.53025#map=6/5.65427/-73.53025">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.65427&amp;mlon=-73.53025#map=6/5.65427/-73.53025">
 						<latitude>5.65427</latitude>
 						<longitude>-73.53025</longitude>
 					</coordinates>
@@ -1949,7 +1947,7 @@
 				<location>
 					<locality>El Roble Locality, Villa de Leyva, Boaycá, Colombia</locality>
 					<country-code>CO</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.665383&mlon=-73.538417#map=6/5.665383/-73.538417">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.665383&amp;mlon=-73.538417#map=6/5.665383/-73.538417">
 						<latitude>5.665383</latitude>
 						<longitude>-73.538417</longitude>
 					</coordinates>
@@ -1965,7 +1963,7 @@
 						<system>Cretaceous</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:E3FD55AF-2AD1-46CA-A49C-1FB4B102AB2C" type="publication">urn:lsid:zoobank.org:pub:E3FD55AF-2AD1-46CA-A49C-1FB4B102AB2C</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:E3FD55AF-2AD1-46CA-A49C-1FB4B102AB2C" lsid-type="publication">urn:lsid:zoobank.org:pub:E3FD55AF-2AD1-46CA-A49C-1FB4B102AB2C</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -2020,7 +2018,7 @@
 						<easting>662860</easting>
 						<northing>616018</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.5712963&mlon=-73.5296776#map=6/5.5712963/-73.5296776">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=5.5712963&amp;mlon=-73.5296776#map=6/5.5712963/-73.5296776">
 						<latitude>5.5712963</latitude>
 						<longitude>-73.5296776</longitude>
 					</coordinates>
@@ -2058,8 +2056,8 @@
 						<system>Triassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:37C7C275-2D57-4FA5-ACDC-6A7CF5D2370E" type="act">urn:lsid:zoobank.org:act:37C7C275-2D57-4FA5-ACDC-6A7CF5D2370E</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:C31DBAA9-EDA9-4D29-92DD-BFC80461F0F4" type="publication">urn:lsid:zoobank.org:pub:C31DBAA9-EDA9-4D29-92DD-BFC80461F0F4</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:37C7C275-2D57-4FA5-ACDC-6A7CF5D2370E" lsid-type="act">urn:lsid:zoobank.org:act:37C7C275-2D57-4FA5-ACDC-6A7CF5D2370E</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:C31DBAA9-EDA9-4D29-92DD-BFC80461F0F4" lsid-type="publication">urn:lsid:zoobank.org:pub:C31DBAA9-EDA9-4D29-92DD-BFC80461F0F4</lsid>
 			</synonym>
 			<synonym morphology="Y">
 				<identified-name combination="original">
@@ -2086,7 +2084,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="new">Nannopterygius enthekiodon</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC" type="act">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC" lsid-type="act">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="new">
@@ -2108,8 +2106,8 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC" type="act">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C" type="publication">urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC" lsid-type="act">urn:lsid:zoobank.org:act:8467F95F-AC53-4EA7-9612-230E9222A6FC</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C" lsid-type="publication">urn:lsid:zoobank.org:pub:4F0E90D0-27FF-409A-9CD5-976F182B8B4C</lsid>
 			</synonym>
 			<synonym morphology="N">
 				<identified-name combination="new">
@@ -2117,7 +2115,7 @@
 				</identified-name>
 				<authority rid="Hulke1871QJGS"/>
 				<reference rid="vonHuene1922" page="98"/>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" lsid-type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -2168,7 +2166,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Ophthalmosaurus icenicus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE" type="act">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE" lsid-type="act">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -2191,8 +2189,8 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE" type="act">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:4C83C9B2-665D-4AD7-8AF8-D365E5491831" type="publication">urn:lsid:zoobank.org:pub:4C83C9B2-665D-4AD7-8AF8-D365E5491831</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE" lsid-type="act">urn:lsid:zoobank.org:act:F598EAB9-08BF-44CF-BBF3-BB940BD24DBE</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:4C83C9B2-665D-4AD7-8AF8-D365E5491831" lsid-type="publication">urn:lsid:zoobank.org:pub:4C83C9B2-665D-4AD7-8AF8-D365E5491831</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -2201,7 +2199,7 @@
 	</taxon>
 	<taxon clade="Hupehsuchia">
 		<name combination="original">Parahupehsuchus longus</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F" type="act">urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F" lsid-type="act">urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -2223,14 +2221,14 @@
 						<system>Triassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F" type="act">urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:0F2EED52-F0A2-4125-B96A-8E39E9854DBE" type="publication">urn:lsid:zoobank.org:pub:0F2EED52-F0A2-4125-B96A-8E39E9854DBE</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F" lsid-type="act">urn:lsid:zoobank.org:act:0B2F1D4D-0435-496F-B1C0-6913F265240F</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:0F2EED52-F0A2-4125-B96A-8E39E9854DBE" lsid-type="publication">urn:lsid:zoobank.org:pub:0F2EED52-F0A2-4125-B96A-8E39E9854DBE</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Parrassaurus yacahuitztli</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165" type="act">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165" lsid-type="act">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="*">
 				<identified-name combination="original">
@@ -2241,7 +2239,7 @@
 				<location>
 					<locality>Rancho el Sombrero, Sierra de Parras, Saltillo Municipality, Coahuila, Mexico</locality>
 					<country-code>MX</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=25.138611&mlon=-101.482778#map=6/25.138611/-101.482778">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=25.138611&amp;mlon=-101.482778#map=6/25.138611/-101.482778">
 						<latitude>25.138611</latitude>
 						<longitude>-101.482778</longitude>
 					</coordinates>
@@ -2256,8 +2254,8 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165" type="act">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:3C6D6D2B-6F30-4DF3AEB4-FD2B-C61B3CF7" type="publication">urn:lsid:zoobank.org:pub:3C6D6D2B-6F30-4DF3AEB4-FD2B-C61B3CF7</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165" lsid-type="act">urn:lsid:zoobank.org:act:EACD70CD-6B63-4485-9C27-23EFDC64D165</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:3C6D6D2B-6F30-4DF3AEB4-FD2B-C61B3CF7" lsid-type="publication">urn:lsid:zoobank.org:pub:3C6D6D2B-6F30-4DF3AEB4-FD2B-C61B3CF7</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -2297,7 +2295,7 @@
 				</identified-name>
 				<authority rid="Carter1846RBAAS"/>
 				<reference rid="vonHuene1922" page="98"/>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" lsid-type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
 			</synonym>
 			<synonym morphology="Y">
 				<identified-name combination="new">
@@ -2425,7 +2423,7 @@
 				</identified-name>
 				<authority rid="Broili1907P"/>
 				<reference rid="vonHuene1922" page="99"/>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE" lsid-type="publication">urn:lsid:zoobank.org:pub:2E316B82-8A25-43AE-A1C5-3785124EA6AE</lsid>
 			</synonym>
 		</synonym-list>
 	</taxon>
@@ -2512,7 +2510,7 @@
 	</taxon>
 	<taxon clade="Ichthyosauriformes">
 		<name combination="original">Thalassodraco etchesi</name>
-		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23" type="act">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
+		<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23" lsid-type="act">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
 		<synonym-list>
 			<synonym morphology="Y" confidence="v *">
 				<identified-name combination="original">
@@ -2523,7 +2521,7 @@
 				<location>
 					<locality>Rope Lake Bay, Kimmeridge, Dorset U.K.</locality>
 					<country-code>GB</country-code>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=50.59813&mlon=-2.096825#map=6/50.59813/-2.096825">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=50.59813&amp;mlon=-2.096825#map=6/50.59813/-2.096825">
 						<latitude>50.59813</latitude>
 						<longitude>-2.096825</longitude>
 					</coordinates>
@@ -2547,8 +2545,8 @@
 						</zone>
 					</biostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23" type="act">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0" type="publication">urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23" lsid-type="act">urn:lsid:zoobank.org:act:35626449-D5AC-4970-B76E-27A827126D23</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0" lsid-type="publication">urn:lsid:zoobank.org:pub:C1D99FF1-D4FC-4526-8E28-1B8FA64E21C0</lsid>
 				<comments>
 					<p>
 						<sc>UK GR SY932775</sc>
@@ -2613,7 +2611,7 @@
 						<easting>0518842</easting>
 						<northing>8696067</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3365801&mlon=15.8349207#map=6/78.3365801/15.8349207">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=78.3365801&amp;mlon=15.8349207#map=6/78.3365801/15.8349207">
 						<latitude>78.3365801</latitude>
 						<longitude>15.8349207</longitude>
 					</coordinates>
@@ -2629,8 +2627,8 @@
 						<system>Jurassic</system>
 					</chronostratigraphy>
 				</stratigraphy>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575" type="act">urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575</lsid>
-				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575" lsid-type="act">urn:lsid:zoobank.org:act:40BEB21D-3CFF-4D4B-A9D3-B2EA7AFC6575</lsid>
+				<lsid url="https://zoobank.org/urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6" lsid-type="publication">urn:lsid:zoobank.org:pub:8791DF9D-E15B-4470-A02A-F05ECC3BB7D6</lsid>
 				<comments>
 					<p>
 						<italic>fide</italic>
@@ -2665,7 +2663,7 @@
 						<easting>439831</easting>
 						<northing>5692022</northing>
 					</utm>
-					<coordinates osm-url="https://www.openstreetmap.org/?mlat=51.3762562&mlon=20.1355025#map=6/51.3762562/20.1355025">
+					<coordinates osm-url="https://www.openstreetmap.org/?mlat=51.3762562&amp;mlon=20.1355025#map=6/51.3762562/20.1355025">
 						<latitude>51.3762562</latitude>
 						<longitude>20.1355025</longitude>
 					</coordinates>

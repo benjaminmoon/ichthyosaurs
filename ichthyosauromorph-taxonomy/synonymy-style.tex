@@ -1,0 +1,456 @@
+\startxmlsetups xml:taxon-synonymy
+    \xmlsetsetup{#1}{*}{-}
+    % main elements
+    \xmlsetsetup{#1}{synonymy|taxon|p}{xml:*}
+    % taxa
+    \xmlsetsetup{#1}{synonym-list}{xml:taxon:*}
+    % synonymy
+    \xmlsetsetup{#1}{synonym}{xml:synonym:*}
+    % locality information
+    % \xmlsetsetup{#1}{location|locality|country-code|utm|coordinates}{xml:locality:*}
+    % \xmlsetsetup{#1}{stratigraphy|lithostratigraphy|chronostratigraphy|biostratigraphy}{xml:stratigraphy:*}
+    % % IDs
+    % \xmlsetsetup{#1}{lsid[@type='act']}{xml:lsid:act}
+    % \xmlsetsetup{#1}{lsid[@type='publication']}{xml:lsid:pub}
+    % % formatted text
+    % \xmlsetsetup{#1}{named-content[@context-type='specimen']}{xml:specimen}
+    \xmlsetsetup{#1}{italic}{xml:formatting:*}%|bold|sc}{xml:*}
+\stopxmlsetups
+    
+\xmlregistersetup{xml:taxon-synonymy}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%% XML Definitions %%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% Main elements %
+%%%%%%%%%%%%%%%%%
+
+\startxmlsetups xml:synonymy
+    \directsetup{document:start}
+        \xmlflush{#1}
+    \directsetup{document:stop}
+\stopxmlsetups
+
+\startxmlsetups xml:taxon
+    \startsection
+        [title=\xmlfilter{#1}{/name/command(xml:taxon:name)}]
+        \xmlflush{#1}
+    \stopsection
+\stopxmlsetups
+
+\startxmlsetups xml:taxon:name
+    \xmlflush{#1}
+\stopxmlsetups
+
+\startxmlsetups xml:p
+    \xmlflush{#1}\par
+\stopxmlsetups
+
+\startxmlsetups xml:flush
+    \xmlflush{#1}
+\stopxmlsetups
+
+% Taxa %
+%%%%%%%%
+
+\startxmlsetups xml:taxon:name
+    \xmlflush{#1}
+\stopxmlsetups
+
+\startxmlsetups xml:taxon:synonym-list
+    \bTABLE
+        \bTABLEhead
+            \bTR
+                \bTH Ref. \eTH
+                \bTH Conf. \eTH
+                \bTH {\setff{allsmallcaps}LSID} \eTH
+                \bTH Synonym \eTH
+            \eTR
+        \eTABLEhead
+        \bTABLEbody
+            \xmlflush{#1}
+        \eTABLEbody
+    \eTABLE
+\stopxmlsetups
+
+% Synonymy %
+%%%%%%%%%%%%
+
+\startxmlsetups xml:synonym:synonym
+    \bTR
+        \bTD \xmlatt{#1}{morphology}\par \eTD
+        \bTD \xmlatt{#1}{confidence} \eTD
+        \bTD
+            \xmlfilter{#1}{/lsid[@lsid-type='act']/command(xml:lsid:act)}\par
+            \xmlfilter{#1}{/lsid[@lsid-type='publication']/command(xml:lsid:pub)}
+        \eTD
+        \bTD
+            \xmlfilter{#1}{/identified-name/command(xml:taxon:name)}
+            % \xmlfilter{#1}{/authority/command(xml:taxon:authority)}
+            \par
+            \xmlfilter{#1}{/location/locality/command(xml:taxon:name)}
+            \par
+            \xmlfilter{#1}{/stratigraphy/command(xml:synonym:stratigraphy)}
+        \eTD
+    \eTR
+\stopxmlsetups
+
+    % \xmlsetsetup{#1}{synonym|identified-name|authority|reference}{xml:synonym:*}
+\startxmlsetups xml:synonym:stratigraphy
+    \xmldoif{#1}
+        {/lithostratigraphy}
+        {\startStratigraphyDescription{Lithostratigraphy}
+            \xmlfilter{#1}{/lithostratigraphy/command(xml:stratigraphy:lithostratigraphy)}
+         \stopStratigraphyDescription}
+    \xmldoif{#1}
+        {/chronostratigraphy}
+        {\startStratigraphyDescription{Chronostratigraphy}
+            \xmlfilter{#1}{/chronostratigraphy/command(xml:stratigraphy:chronostratigraphy)}
+         \stopStratigraphyDescription}
+    \xmldoif{#1}
+        {/biostratigraphy}
+        {\startStratigraphyDescription{Biostratigraphy}
+            \xmlfilter{#1}{/biostratigraphy/command(xml:stratigraphy:biostratigraphy)}
+         \stopStratigraphyDescription}
+\stopxmlsetups
+
+\startxmlsetups xml:stratigraphy:lithostratigraphy
+    \xmldoif{#1}
+        {/formation}
+        {\xmldoif{#1}
+            {/member}
+            {\xmldoif{#1}
+                {/bed}
+                {\xmlfilter{#1}{/bed/command(xml:flush)}, }
+             \xmlfilter{#1}{/member/command(xml:flush)}, }
+         \xmlfilter{#1}{/formation/command(xml:flush)}}
+\stopxmlsetups
+
+\startxmlsetups xml:stratigraphy:chronostratigraphy
+    \xmldoif{#1}
+        {/system}
+        {\xmldoif{#1}
+            {/series}
+            {\xmldoif{#1}
+                {/stage}
+                {\xmlfilter{#1}{/stage/command(xml:flush)}, }
+             \xmlfilter{#1}{/series/command(xml:flush)}, }
+         \xmlfilter{#1}{/system/command(xml:flush)}}
+\stopxmlsetups
+
+\startxmlsetups xml:stratigraphy:biostratigraphy
+    \xmlfilter{#1}{/zone/p/command(xml:flush)}
+    \xmldoif{#1}
+        {/subzone}
+        {, \xmlfilter{#1}{/subzone/p/command(xml:flush)}}
+\stopxmlsetups
+
+% Formatting %
+%%%%%%%%%%%%%%
+
+\startxmlsetups xml:lsid:act
+    \lsidAct{\xmlflush{#1}}
+\stopxmlsetups
+
+\startxmlsetups xml:lsid:pub
+    \lsidPub{\xmlflush{#1}}
+\stopxmlsetups
+
+\startxmlsetups xml:formatting:italic
+    {\em \xmlflush{#1}}
+\stopxmlsetups
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ConTeXt Definitions %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Language %
+%%%%%%%%%%%%
+
+\mainlanguage[uk]
+% \startluacode
+%      local blockthlig = {
+%          name    = "blockthlig",
+%          options = {
+%              {
+%                  substitutions = {
+%                      th = "t|h",
+%                      Th = "T|h",
+%                  },
+%              },
+%          },
+%      }
+%      table.save("blockthlig.llg",blockthlig)
+% \stopluacode
+
+% \setuplanguage[uk][goodies={lang-en.llg, blockthlig.llg }]]
+
+% PDF standards and interaction %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setupinteraction
+    [author={Ben Moon},
+     state=start,
+     style=\tf,
+     color={red}]
+\setupbackend
+    [format={pdf/a-3a},
+     profile={default_cmyk.icc,default_rgb.icc,default_gray.icc},
+     intent={sRGB IEC61966-2.1},
+     level=9]
+     % Set up for PDF/A-3a on screen
+\setupbackend[export=yes]
+\setupstructure[state=start, method=auto]
+
+%%% Include section bookmarks in the PDF
+\placebookmarks[section,subsection,subsubsection,subsubsubsection][section,subsection]
+\setupinteractionscreen[option=bookmark]
+\enabledirectives[references.bookmarks.preroll]
+
+% Colours %
+%%%%%%%%%%%
+
+\definecolor[background][x=FFF3E6]
+\definecolor[textcolor][x=38495C]
+\definecolor[margintext][x=556D89]
+\definecolor[solred][x=B30000]
+\definecolor[solorange][x=B22600]
+\definecolor[solemphasis][x=101D28]
+\definecolor[solblue][x=006DE5]
+\setupcolors[textcolor=textcolor]
+\setupbackgrounds[page][background=color,backgroundcolor=background]
+
+% Page layout %
+%%%%%%%%%%%%%%%
+
+%%% Page size
+\setuppapersize[letter]
+
+%%% Set up the margins, text size etc
+\setuplayout
+    [location=doublesided,
+     topspace=22.5mm,
+     bottomspace=20mm,
+     backspace=30mm,
+     cutspace=30mm,
+     header=10pt,
+     headerdistance=10pt,
+     height=middle,
+     width=middle,
+     footer=0mm,
+     footerdistance=0mm]
+
+%%% Title and heading formatting
+
+\definestructurelevels
+    [default]
+    [section,
+     subsection,
+     subsubsection,
+     subsubsubsection,
+     subsubsubsubsection]
+
+% Fonts and typography %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Load font definitions
+\loadtypescriptfile[source]
+
+%%% Include alternative fonts
+% \definefontalternative[mf]
+% \definefontalternative[mi]
+% \definefontalternative[ms]
+% \definefontalternative[sf]
+% \definefontalternative[si]
+% \definefontalternative[ss]
+
+%%% Prevent Th ligature
+% \blockligatures[Th]
+% \replaceword[ligs][The][{Th}e]
+
+%%% OpenType font features
+% \definefontfeature[default][blockligatures=yes]
+\definefontfeature[default][default]
+    [protrusion=quality,
+     expansion=quality,
+     onum=yes,
+     pnum=yes,
+     itlc=yes,
+     textitalics=yes,
+     blockligatures=yes]
+\definefontfeature [smallcaps]    [ smcp=yes, ]
+\definefontfeature [caps]         [ onum=no, ]
+\definefontfeature [allsmallcaps] [ smcp=yes, c2sc=yes, ]
+\definefontfeature [superscript]  [ sups=yes, ]
+\definefontfeature [subscript]    [ subs=yes, ]
+\definefontfeature [nocaps]       [ smcp=no, c2sc=no, ]
+
+%%% Set up font size switches
+\definebodyfontenvironment [10pt] [x=9pt, xx=8pt, d=24pt, small=9pt]
+
+%%% Use true italic fonts
+\setupitaliccorrection[global, always]
+\setupbodyfontenvironment  [10pt] [em=italic] % use italic as em, not slanted
+
+%%% Kerning for all and small caps
+\definecharacterkerning [SmallCaps] [factor=0.05]
+\definecharacterkerning [AllCaps] [factor=0.08]
+
+%%% Start using desired font
+% \setupbodyfont[source, 11pt]
+\setupbodyfont[source, 11pt]
+% \setupbodyfont[baskerville-original, 10pt]
+
+%%% Set up line spacing
+\setupinterlinespace[12pt]
+
+%%% Use fancy 'microtypography'
+\setupalign
+    [hanging,
+     bottom,
+     nohz,
+     hyphenated,
+     low]
+
+%%% Indent paragraphs except first
+\setupindenting[6mm, yes, first]
+\setuptolerance[horizontal, strict]
+
+% Hyphenation %
+%%%%%%%%%%%%%%%
+
+%%% Allow hyphens in more locations, principally after dashes and other punctuation
+\setbreakpoints[compound]
+\definebreakpoint [compound] [–] [nleft=3,nright=3,type=1]
+\definebreakpoint [compound] [—] [nleft=3,nright=3,type=1]
+
+% Title and heading formatting %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Set up section levels
+\definestructurelevels
+    [default]
+    [section,
+     subsection,
+     subsubsection,
+     subsubsubsection,
+     subsubsubsubsection]
+
+%%% Formation section headings
+\setuphead
+    [title]
+    [style={\rmd\WORDS\setcharacterkerning[AllCaps]\setupinterlinespace[26pt]},
+     align={middle,nothyphenated,verytolerant},
+     before={},
+     header=empty,
+     expansion=yes]
+     % main title centred in all caps
+\setuphead
+    [section]
+    [style={\WORDS\setcharacterkerning[AllCaps]},
+     align={middle,nothyphenated,verytolerant},
+     before={\blank[line,max]},
+     after={\blank[halfline,max]},
+     expansion=yes]
+     % section centred in all caps
+\setuphead
+    [subsection]
+    [style={\smallcaps\setcharacterkerning[SmallCaps]},
+     align={flushleft,nothyphenated,verytolerant},
+     before={\blank[halfline,max]},
+     after={\blank[halfline,max]}]
+     %  subsection left aligned caps and small caps
+\setuphead
+    [subsubsection]
+    [style=italic,
+     before={\blank[halfline,max]},
+     alternative=text,
+     textdistance=\currentspaceskip,
+     commandafter={.}]
+     % subsubsection left aligned italic run-in, followed by full stop
+\setuphead
+    [subsubsubsection]
+    [style=italic,
+     alternative=text,
+     textdistance=\currentspaceskip,
+     commandafter={.}]
+     % subsubsection for systematic description, matches level above (modified later)
+
+%%% Exclude numbers from headings
+\setuphead
+    [section, subsection, subsubsection, subsubsubsection]
+    [number=no, expansion=yes]
+
+% Synonymy list %
+%%%%%%%%%%%%%%%%%
+
+\setupTABLE
+    [row]
+    [each]
+    [frame=off,
+     split=repeat,
+     option=stretch,
+     style={\tfx\setupinterlinespace},
+     headstyle={\ssx\em}]
+\setupTABLE
+    [column]
+    [1]
+    [width=2em]
+\setupTABLE
+    [column]
+    [2,3]
+    [width=2em]
+
+% LSIDs %
+%%%%%%%%%
+
+\defineframed
+    [lsid]
+    [corner=round,
+     radius=0.2pc,
+     location=low,
+     frame=off,
+     background=color,
+     backgroundcolor=solorange,%lsidbutton,
+     height=fit,
+     foregroundcolor=white,
+     foregroundstyle={\ss\bf},]
+\useURL [LSID] [http://zoobank.org] [] [\lsid{LSID}]
+\definecolor
+    [lsidbutton]
+    [h=25,s=0.8,v=0.9]
+\define[1]\lsidAct{%
+    \begingroup
+        \setupinteraction[style=normal,color=solorange]%lsidbutton]%
+        \goto{{\ss\setff{allsmallcaps}\bf Act}}[url(http://zoobank.org/#1)]%
+    \endgroup
+}
+\define[1]\lsidPub{%
+    \begingroup
+        \setupinteraction[style=normal,color=solorange]%lsidbutton]%
+        \goto{{\ss\setff{allsmallcaps}\bf Pub}}[url(http://zoobank.org/#1)]%
+    \endgroup
+}
+
+% Stratigraphy %
+%%%%%%%%%%%%%%%%
+
+\definedescription[StratigraphyDescription]
+\setupdescription
+    [StratigraphyDescription]
+    [headstyle={\ss\setff{allsmallcaps}},
+     width=fit,
+     alternative=hanging,
+     margin=3em,
+     before={\blank[none]},
+     after={\blank[none]}]
+%%% Document start
+
+\startsetups document:start
+    \title{Ichthyosauromorph Taxonomy}
+\stopsetups
+
+\startsetups document:stop
+\stopsetups
